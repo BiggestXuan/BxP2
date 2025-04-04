@@ -1,0 +1,21 @@
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}"
+license="ARR"
+[[mods]] #mandatory
+modId="bxp2" #mandatory
+version="0.0.1" #mandatory
+displayName="BxP 2" #mandatory
+authors="Biggest_Xuan" #optional
+description=''
+[[dependencies.bxp2]] #optional
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+[[dependencies.bxp2]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"

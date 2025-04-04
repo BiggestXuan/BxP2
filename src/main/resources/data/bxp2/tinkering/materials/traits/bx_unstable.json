@@ -1,0 +1,16 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:bx"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "bxp2:bx"
+      }
+    ]
+  }
+}

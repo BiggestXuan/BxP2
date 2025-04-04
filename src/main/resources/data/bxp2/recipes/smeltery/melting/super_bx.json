@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:bx_super_ingot"
+  },
+  "temperature": 1000,
+  "time": 5,
+  "result":
+  {
+    "fluid": "bxp2:molten_super_bx",
+    "amount": 90
+  }
+}

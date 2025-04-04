@@ -1,0 +1,33 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:bx2"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:giant_killer"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "bxp2:giant_killer"
+      },{
+        "level": 1,
+        "name": "bxp2:eternal"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "bxp2:giant_killer"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      }
+    ]
+  }
+}

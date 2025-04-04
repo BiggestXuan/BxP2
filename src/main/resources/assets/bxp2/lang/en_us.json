@@ -1,0 +1,81 @@
+{
+  "item.bxp2.bx_ench_ingot": "Ench BX Ingot",
+  "item.bxp2.bx_ingot": "BX Ingot",
+  "item.bxp2.bx_gold_ingot": "Golden BX Ingot",
+  "item.bxp2.bx_super_ingot": "Super BX Ingot",
+  "item.bxp2.bx_unstable_ingot": "Unstable BX Ingot",
+  "item.bxp2.caigengzi": "Unstable BX Ingot",
+
+  "itemGroup.bxp2": "BxP 2",
+
+  "material.bxp2.bx_unstable": "Unstable BX",
+  "modifier.bxp2.bx": "BX Weak Power",
+  "modifier.bxp2.bx.flavor": "Consider power in inventory!",
+  "modifier.bxp2.bx.description": "Increase up to 15% additional damage based on the BX products in your inventory",
+  "fluid.bxp2.molten_unstable_bx": "Molten Unstable BX",
+  "item.bxp2.molten_unstable_bx_bucket": "Molten Unstable BX Bucket",
+  "block.bxp2.molten_unstable_bx_fluid": "Molten Unstable BX"
+,
+  "material.bxp2.bx": "BX",
+  "fluid.bxp2.molten_bx": "Molten BX",
+  "item.bxp2.molten_bx_bucket": "Molten BX Bucket",
+  "block.bxp2.molten_bx_fluid": "Molten BX",
+
+  "modifier.bxp2.bx1": "BX's Power",
+  "modifier.bxp2.bx1.flavor": "Consider power in inventory！",
+  "modifier.bxp2.bx1.description": "Increase up to 82.5% additional damage based on the BX products in your inventory",
+
+  "modifier.bxp2.coldness": "Coldness",
+  "modifier.bxp2.coldness.flavor": "Coldness",
+  "modifier.bxp2.coldness.description": "Cause additional 25% damage to full-health targets"
+,
+  "material.bxp2.ench_bx": "Ench BX",
+  "fluid.bxp2.molten_ench_bx": "MoltenEnch BX",
+  "item.bxp2.molten_ench_bx_bucket": "Molten Ench BX Bucket",
+  "block.bxp2.molten_ench_bx_fluid": "Molten Ench BX "
+,
+  "material.bxp2.super_bx": "Super BX",
+  "fluid.bxp2.molten_super_bx": "MoltenSuper BX",
+  "item.bxp2.molten_super_bx_bucket": "Molten Super BX Bucket",
+  "block.bxp2.molten_super_bx_fluid": "Molten Super BX ",
+
+  "modifier.bxp2.bx2": "BX God Power",
+  "modifier.bxp2.bx2.flavor": "Consider power in inventory！",
+  "modifier.bxp2.bx2.description": "Increase up to 270% additional damage based on the BX products in your inventory",
+
+  "modifier.bxp2.giant_killer": "Giant Killer",
+  "modifier.bxp2.giant_killer.flavor": "Don't be afraid of those big guys!",
+  "modifier.bxp2.giant_killer.description": "Deal additional damage to targets with higher health than you, unlimited",
+
+  "modifier.bxp2.kill_all": "All things dust",
+  "modifier.bxp2.kill_all.flavor": "Destroy everything here!",
+  "modifier.bxp2.kill_all.description": "Deal additional damage to the target at three times its maximum health"
+,
+  "material.bxp2.draconium": "Draconium",
+  "fluid.bxp2.molten_draconium": "MoltenDraconium",
+  "item.bxp2.molten_draconium_bucket": "Molten Draconium Bucket",
+  "block.bxp2.molten_draconium_fluid": "Molten Draconium "
+,
+  "material.bxp2.awakened_draconium": "Awakened Draconium",
+  "fluid.bxp2.molten_awakened_draconium": "MoltenAwakened Draconium",
+  "item.bxp2.molten_awakened_draconium_bucket": "Molten Awakened Draconium Bucket",
+  "block.bxp2.molten_awakened_draconium_fluid": "Molten Awakened Draconium ",
+
+  "modifier.bxp2.sorrow": "Soulrending",
+  "modifier.bxp2.sorrow.flavor": "Seize their souls!",
+  "modifier.bxp2.sorrow.description": "Attacks have a chance to incapacitate targets",
+
+  "modifier.bxp2.eternal": "Timeless Eternity",
+  "modifier.bxp2.eternal.flavor": "Endures forever",
+  "modifier.bxp2.eternal.description": "Your items cannot break from durability loss",
+
+  "modifier.bxp2.scalebound_fury": "Scale-Reversed Fury",
+  "modifier.bxp2.scalebound_fury.flavor": "Power at a price",
+  "modifier.bxp2.scalebound_fury.description": "Attacks may occasionally backlash",
+
+  "modifier.bxp2.chronodragon_fury": "Chronodragon's Wrath",
+  "modifier.bxp2.chronodragon_fury.flavor": "The power of time!",
+  "modifier.bxp2.chronodragon_fury.description": "Gradually increases damage while held. Tier affects max bonus",
+
+  "tooltip.modifiers.chronodragon.fury": "Current damage bonus:"
+}

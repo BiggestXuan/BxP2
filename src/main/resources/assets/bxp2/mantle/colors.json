@@ -1,0 +1,22 @@
+{
+  "modifier.bxp2": {
+    "bx": "#5AE4E6",
+    "bx1": "#AEC936",
+    "bx2": "#00994C",
+    "coldness": "#660066",
+    "kill_all": "#222222",
+    "giant_killer": "#C3B430",
+    "sorrow": "#03B3B9",
+    "eternal": "#313531",
+    "scalebound_fury": "#F03831",
+    "chronodragon_fury": "#F2C223"
+  },
+  "material.bxp2": {
+    "bx_unstable": "#5AE4E6",
+    "bx": "#AEC936",
+    "ench_bx": "#00994C",
+    "super_bx": "#3C52E2",
+    "draconium": "#8D16D2",
+    "awakened_draconium": "#E99A33"
+  }
+}

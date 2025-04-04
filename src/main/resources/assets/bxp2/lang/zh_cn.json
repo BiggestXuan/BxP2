@@ -1,0 +1,81 @@
+{
+  "item.bxp2.bx_ench_ingot": "附魔大轩锭",
+  "item.bxp2.bx_ingot": "大轩锭",
+  "item.bxp2.bx_gold_ingot": "轩金锭",
+  "item.bxp2.bx_super_ingot": "超级大轩锭",
+  "item.bxp2.bx_unstable_ingot": "不稳定的大轩锭",
+  "item.bxp2.caigengzi": "菜梗子",
+
+  "itemGroup.bxp2": "大轩整合包2",
+
+  "material.bxp2.bx_unstable": "不稳定大轩",
+  "modifier.bxp2.bx": "大轩力量",
+  "modifier.bxp2.bx.flavor": "聚集能量在背包！",
+  "modifier.bxp2.bx.description": "根据你背包中的大轩制品提高最高15%额外伤害",
+  "fluid.bxp2.molten_unstable_bx": "熔融不稳定大轩",
+  "item.bxp2.molten_unstable_bx_bucket": "熔融不稳定大轩桶",
+  "block.bxp2.molten_unstable_bx_fluid": "熔融不稳定大轩"
+,
+  "material.bxp2.bx": "大轩",
+  "fluid.bxp2.molten_bx": "熔融大轩",
+  "item.bxp2.molten_bx_bucket": "熔融大轩桶",
+  "block.bxp2.molten_bx_fluid": "熔融大轩",
+
+  "modifier.bxp2.bx1": "大轩之力",
+  "modifier.bxp2.bx1.flavor": "聚集能量在背包！",
+  "modifier.bxp2.bx1.description": "根据你背包中的大轩制品提高最高82.5%额外伤害",
+
+  "modifier.bxp2.coldness": "冷血",
+  "modifier.bxp2.coldness.flavor": "你太可怕了！",
+  "modifier.bxp2.coldness.description": "对满血目标造成额外25%伤害"
+,
+  "material.bxp2.ench_bx": "附魔大轩",
+  "fluid.bxp2.molten_ench_bx": "熔融附魔大轩",
+  "item.bxp2.molten_ench_bx_bucket": "熔融附魔大轩桶",
+  "block.bxp2.molten_ench_bx_fluid": "熔融附魔大轩"
+,
+  "material.bxp2.super_bx": "究极大轩",
+  "fluid.bxp2.molten_super_bx": "熔融究极大轩",
+  "item.bxp2.molten_super_bx_bucket": "熔融究极大轩桶",
+  "block.bxp2.molten_super_bx_fluid": "熔融究极大轩",
+
+  "modifier.bxp2.bx2": "大轩神力",
+  "modifier.bxp2.bx2.flavor": "聚集能量在背包！",
+  "modifier.bxp2.bx2.description": "根据你背包中的大轩制品提高最高270%额外伤害",
+
+  "modifier.bxp2.giant_killer": "巨人杀手",
+  "modifier.bxp2.giant_killer.flavor": "别怕那些大家伙！",
+  "modifier.bxp2.giant_killer.description": "对生命值比你高的目标造成额外伤害，无上限",
+
+  "modifier.bxp2.kill_all": "万物归尘",
+  "modifier.bxp2.kill_all.flavor": "毁灭这里的一切吧！",
+  "modifier.bxp2.kill_all.description": "对目标造成其最大生命值3倍的额外伤害"
+,
+  "material.bxp2.draconium": "飞龙金属",
+  "fluid.bxp2.molten_draconium": "熔融飞龙金属",
+  "item.bxp2.molten_draconium_bucket": "熔融飞龙金属桶",
+  "block.bxp2.molten_draconium_fluid": "熔融飞龙金属"
+,
+  "material.bxp2.awakened_draconium": "神龙金属",
+  "fluid.bxp2.molten_awakened_draconium": "熔融神龙金属",
+  "item.bxp2.molten_awakened_draconium_bucket": "熔融神龙金属桶",
+  "block.bxp2.molten_awakened_draconium_fluid": "熔融神龙金属",
+
+  "modifier.bxp2.sorrow": "断魂夺魄",
+  "modifier.bxp2.sorrow.flavor": "夺取它们的灵魂！",
+  "modifier.bxp2.sorrow.description": "攻击有概率使目标丧失行动能力",
+
+  "modifier.bxp2.eternal": "亘古永恒",
+  "modifier.bxp2.eternal.flavor": "一直保留下去",
+  "modifier.bxp2.eternal.description": "你的物品不会因为耐久度损坏",
+
+  "modifier.bxp2.scalebound_fury": "逆鳞之怒",
+  "modifier.bxp2.scalebound_fury.flavor": "力量与风险并存",
+  "modifier.bxp2.scalebound_fury.description": "攻击时有时会受到反噬",
+
+  "modifier.bxp2.chronodragon_fury": "时龙之怒",
+  "modifier.bxp2.chronodragon_fury.flavor": "时间的力量！",
+  "modifier.bxp2.chronodragon_fury.description": "手持时缓慢提高伤害，词条等级影响最高增幅",
+
+  "tooltip.modifiers.chronodragon.fury": "当前伤害增幅："
+}
