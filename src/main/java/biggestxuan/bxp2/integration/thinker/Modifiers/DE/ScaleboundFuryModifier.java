@@ -1,9 +1,7 @@
 package biggestxuan.bxp2.integration.thinker.Modifiers.DE;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.utils.MathUtils;
-import net.minecraft.world.damagesource.DamageSources;
-import net.minecraft.world.damagesource.DamageType;
+import biggestxuan.bxp2.utils.Utils;
 import net.minecraft.world.entity.player.Player;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
@@ -27,7 +25,7 @@ public class ScaleboundFuryModifier extends Modifier implements MeleeDamageModif
     @Override
     public float getMeleeDamage(IToolStackView iToolStackView, ModifierEntry modifierEntry, ToolAttackContext toolAttackContext, float v, float v1) {
         if(!toolAttackContext.getLevel().isClientSide){
-            if(MathUtils.isRandom((BxP2.devMode ? 0.9 : 0.01) / modifierEntry.getLevel())){
+            if(Utils.isRandom((BxP2.devMode ? 0.9 : 0.01) / modifierEntry.getLevel())){
                 Player player = toolAttackContext.getPlayerAttacker();
                 if(player != null){
                     player.hurt(player.level().damageSources().playerAttack(player),v1 * 0.1F);

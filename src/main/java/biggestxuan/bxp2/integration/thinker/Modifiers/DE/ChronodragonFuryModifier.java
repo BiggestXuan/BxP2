@@ -1,7 +1,7 @@
 package biggestxuan.bxp2.integration.thinker.Modifiers.DE;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.utils.MathUtils;
+import biggestxuan.bxp2.utils.Utils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -61,6 +61,6 @@ public class ChronodragonFuryModifier extends Modifier implements InventoryTickM
     @Override
     public void addTooltip(IToolStackView iToolStackView, ModifierEntry modifierEntry, @Nullable Player player, List<Component> list, TooltipKey tooltipKey, TooltipFlag tooltipFlag) {
         int time = iToolStackView.getPersistentData().getInt(BxP2.RL("dragon_time"));
-        list.add(BxP2.tr("tooltip.modifiers.chronodragon.fury").copy().append(MathUtils.formatPercent(0.000033 * time)));
+        list.add(BxP2.tr("tooltip.modifiers.chronodragon.fury").copy().append(Utils.formatPercent(0.000033 * time)));
     }
 }

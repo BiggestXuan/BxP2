@@ -77,5 +77,20 @@
   "modifier.bxp2.chronodragon_fury.flavor": "时间的力量！",
   "modifier.bxp2.chronodragon_fury.description": "手持时缓慢提高伤害，词条等级影响最高增幅",
 
-  "tooltip.modifiers.chronodragon.fury": "当前伤害增幅："
+  "tooltip.modifiers.chronodragon.fury": "当前伤害增幅：",
+  "block.bloodmagic.life_essence_block": "生命源质",
+  "quests.bxp2.main": "大轩整合包2",
+  "block.mbd2.bx_simple_power": "简易大轩能源器",
+  "mbd2.bx_simple_power": "简易大轩能源器",
+  "block.mbd2.bx_simple_mana": "简易大轩产魔器",
+  "mbd2.bx_simple_mana": "简易大轩产魔",
+  "block.mbd2.blood_transposer": "血液转置器",
+  "mbd2.blood_transposer": "血液转置",
+  "block.mbd2.common_food_to_blood": "通用食物血液提取器",
+  "mbd2.common_food_to_blood": "通用食物血液提取",
+  "block.mbd2.bx_furnace": "大轩锻炉",
+  "block.mbd2.energy_input": "能源输入仓",
+  "block.mbd2.energy_output": "能源输出仓",
+  "block.mbd2.item_output": "物品输出仓",
+  "block.mbd2.item_input": "物品输入仓"
 }

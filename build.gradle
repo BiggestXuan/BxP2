@@ -153,6 +153,11 @@ dependencies {
     implementation fg.deobf("curse.maven:draconic-evolution-223565:6065044")
     implementation fg.deobf("curse.maven:brandons-core-231382:5422013")
     implementation fg.deobf("curse.maven:codechicken-lib-1-8-242818:5753868")
+    implementation fg.deobf("curse.maven:crafttweaker-239197:6256146")
+    implementation fg.deobf("curse.maven:game-phase-975444:5115068")
+    implementation fg.deobf("curse.maven:kubejs-238086:5853326")
+    implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
+    implementation fg.deobf("curse.maven:multiblocked2-1104057:6381388")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

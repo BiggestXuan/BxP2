@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bxp2:block/energy_output"
+    }
+  }
+}

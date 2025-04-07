@@ -6,7 +6,6 @@ import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.combat.MeleeDamageModifierHook;
-import slimeknights.tconstruct.library.modifiers.hook.ranged.ProjectileLaunchModifierHook;
 import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
@@ -39,10 +38,6 @@ public class BXModifier extends Modifier implements MeleeDamageModifierHook{
     }
 
     public static class BXModifier1 extends BXModifier{
-        @Override
-        protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
-            super.registerHooks(hookBuilder);
-        }
 
         protected int getMaxValue(){
             return 1500;
@@ -54,10 +49,6 @@ public class BXModifier extends Modifier implements MeleeDamageModifierHook{
     }
 
     public static class BXModifier2 extends BXModifier{
-        @Override
-        protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
-            super.registerHooks(hookBuilder);
-        }
 
         protected int getMaxValue(){
             return 4500;

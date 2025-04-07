@@ -1,6 +1,6 @@
 package biggestxuan.bxp2.utils;
 
-import biggestxuan.bxp2.items.IBXItem;
+import biggestxuan.bxp2.api.items.IBXItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 

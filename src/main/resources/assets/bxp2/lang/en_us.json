@@ -77,5 +77,20 @@
   "modifier.bxp2.chronodragon_fury.flavor": "The power of time!",
   "modifier.bxp2.chronodragon_fury.description": "Gradually increases damage while held. Tier affects max bonus",
 
-  "tooltip.modifiers.chronodragon.fury": "Current damage bonus:"
+  "tooltip.modifiers.chronodragon.fury": "Current damage bonus:",
+  "block.bloodmagic.life_essence_block": "Life Essence",
+  "quests.bxp2.main": "BiggestXuan Modpack 2",
+  "block.mbd2.bx_simple_power": "Simple BX Power",
+  "mbd2.bx_simple_power": "Simple BX Power",
+  "block.mbd2.blood_transposer": "Blood Transposer Machine",
+  "block.mbd2.bx_simple_mana": "Simple BX Mana Machine",
+  "mbd2.bx_simple_mana": "Simple BX Mana",
+  "mbd2.blood_transposer": "Blood Transposer",
+  "block.mbd2.common_food_to_blood": "Common Food To Blood Machine",
+  "mbd2.common_food_to_blood": "Common Food To Blood",
+  "block.mbd2.bx_furnace": "BX Furnace",
+  "block.mbd2.energy_input": "Energy input hatch",
+  "block.mbd2.energy_output": "Energy output hatch",
+  "block.mbd2.item_output": "Item input hatch",
+  "block.mbd2.item_input": "Item output hatch"
 }

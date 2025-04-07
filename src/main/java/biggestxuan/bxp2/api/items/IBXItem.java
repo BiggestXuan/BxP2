@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.items;
+package biggestxuan.bxp2.api.items;
 
 import net.minecraft.world.item.ItemStack;
 
