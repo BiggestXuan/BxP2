@@ -1,7 +1,13 @@
 package biggestxuan.bxp2.integration.KubeJS;
 
+import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.items.IBXItem;
+import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
+import biggestxuan.bxp2.recipes.BXFurnaceRecipe;
+import biggestxuan.bxp2.recipes.RecipeUtils;
+import biggestxuan.bxp2.utils.Utils;
 import dev.architectury.fluid.FluidStack;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -10,7 +16,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,6 +27,10 @@ import java.util.Map;
  */
 @SuppressWarnings("unused")
 public class KJSUtils {
+    public static int getDifficulty(){
+        return Config.difficulty;
+    }
+
     public static Map<ItemStack,Integer> getAllBXItems(){
         Map<ItemStack,Integer> map = new HashMap<>();
         for(var item :BxPItems.ITEMS.getEntries()){
@@ -47,12 +59,52 @@ public class KJSUtils {
     }
 
     public static String getRecipeName(ItemStack item, String add){
-        ResourceLocation rl = BuiltInRegistries.ITEM.getKey(item.getItem());
-        return "bxp2:recipes/" + rl.toString().split(":")[0] + "_" +rl.toString().split(":")[1] + "_" + add + item.getCount();
+        return RecipeUtils.getRecipeName(item,add);
     }
 
     public static String getRecipeName(FluidStack fluidStack, String add){
-        ResourceLocation rl = BuiltInRegistries.FLUID.getKey(fluidStack.getFluid());
-        return "bxp2:recipes/" + rl.toString().split(":")[1] + "_" + add + fluidStack.getAmount();
+        return RecipeUtils.getRecipeName(fluidStack,add);
+    }
+
+    public static String getItemName(ItemStack item){
+        return RecipeUtils.getItemName(item);
+    }
+
+    public static float getSimpleMachineDifficultyRate(){
+        float rate = 1;
+        switch (Config.difficulty){
+            case 1 -> rate = 1.5f;
+            case 3 -> rate = 0.7f;
+        }
+        return rate;
+    }
+
+    public static Map<String, Map<Map<ItemStack[],int[]>,ItemStack[]>> getBXUnstableIngotRecipe(){
+        return RecipeUtils.getBXFurnaceRecipe(
+                new BXFurnaceRecipe(
+                        "bx_unstable_furnace",
+                        new ItemStack[]{
+                                BxP2.getStack("ad_astra:desh_ingot"),
+                                BxP2.getStack("thermal:invar_ingot"),
+                                BxP2.getStack("botania:manasteel_ingot")
+                        },new ItemStack[]{BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance()}
+                        , BxPCatalyst.ADAPT.BX_UNSTABLE_FURNACE,
+                        1500,0,1000
+                ).copy()
+        );
+    }
+
+    public static Map<String, Map<Map<ItemStack[],int[]>,ItemStack[]>> getBXIngotRecipe(){
+        return RecipeUtils.getBXFurnaceRecipe(
+            new BXFurnaceRecipe("bx_furnace",
+                   new ItemStack[]{
+                           BxP2.getStack("minecraft:iron_ingot"),
+                           BxP2.getStack("minecraft:stone"),
+                           BxP2.getStack("minecraft:egg")
+                   },new ItemStack[]{BxP2.getStack("bxp2:bx_ingot")}
+                    , BxPCatalyst.ADAPT.BX_FURNACE,
+                    10000,10000000,0
+            ).copy()
+        );
     }
 }

@@ -1,9 +1,13 @@
 package biggestxuan.bxp2.utils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Random;
+import biggestxuan.bxp2.BxP2;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+
+import java.util.*;
 
 /**
  * @Author Biggest_Xuan
@@ -136,7 +140,17 @@ public final class Utils {
         List<T> list = new ArrayList<>(c);
         List<List<T>> result = new ArrayList<>();
         generateSubsetsHelper(list, 0, new ArrayList<>(), result);
+        result.sort(Comparator.comparingInt(List::size));
         return result;
+    }
+
+    public static ItemStack[] getItemStackArray(Collection<ItemStack> c){
+        ItemStack[] items = new ItemStack[c.size()];
+        int i = 0;
+        for(ItemStack item : c){
+            items[i++] = item;
+        }
+        return items;
     }
 
     private static <T> void generateSubsetsHelper(List<T> list, int index, List<T> current, List<List<T>> result) {
@@ -148,5 +162,13 @@ public final class Utils {
         current.add(list.get(index));
         generateSubsetsHelper(list, index + 1, current, result);
         current.remove(current.size() - 1);
+    }
+
+    public static void sendMessage(Player player, String message){
+        player.displayClientMessage(BxP2.tr(message),false);
+    }
+
+    public static void sendMessage(Player player, Component message){
+        player.displayClientMessage(message,false);
     }
 }

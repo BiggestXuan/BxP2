@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6D2F0EB2665162B5"
+	group: "5099321D8633CF57"
+	id: "6D2F0EB2665162B5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "通用机械"
+}

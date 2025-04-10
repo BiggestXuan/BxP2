@@ -1,10 +1,16 @@
 package biggestxuan.bxp2.items;
 
+import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.api.items.IBXItem;
+import biggestxuan.bxp2.client.DifficultyScreen;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.Level;
 
 /**
  * @Author Biggest_Xuan
@@ -38,5 +44,14 @@ public class BxPItem extends Item implements IBXItem {
         public BxPFoodItem(int hunger,float saturation) {
             super(new Properties().food(new FoodProperties.Builder().nutrition(hunger).saturationMod(saturation).build()));
         }
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level p_41432_, Player p_41433_, InteractionHand p_41434_) {
+        if(p_41432_.isClientSide && BxP2.devMode){
+            //DifficultyScreen.open();
+            //return InteractionResultHolder.success(p_41433_.getItemInHand(p_41434_));
+        }
+        return super.use(p_41432_, p_41433_, p_41434_);
     }
 }

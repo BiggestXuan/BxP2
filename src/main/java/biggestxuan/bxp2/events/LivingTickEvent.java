@@ -1,6 +1,8 @@
 package biggestxuan.bxp2.events;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.effects.BxPEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.level.Level;
@@ -21,6 +23,10 @@ public class LivingTickEvent {
         if(!world.isClientSide){
             if(living instanceof Warden && world.getDayTime() % 100 == 0){
                 living.heal(0.05F * (living.getMaxHealth() - living.getHealth()));
+            }
+            MobEffectInstance instance = living.getEffect(BxPEffects.Debilitated.get());
+            if(instance != null && world.getDayTime() % 100 == 0){
+                living.hurt(world.damageSources().outOfBorder(),living.getMaxHealth() * (1 + instance.getAmplifier()) * 0.02F);
             }
         }
     }

@@ -34,4 +34,5 @@ public class BxPItems {
         }
     });
     public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(8));
+    public static final RegistryObject<Item> DIFFICULTY_CHANGE = ITEMS.register("difficulty_change",DifficultyChangeItem::new);
 }

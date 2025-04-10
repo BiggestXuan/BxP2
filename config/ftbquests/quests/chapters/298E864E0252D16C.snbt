@@ -1,0 +1,356 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "298E864E0252D16C"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "298E864E0252D16C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:oak_log"
+			id: "38024D3B1806219E"
+			rewards: [{
+				count: 16
+				id: "2B79F7518DE2E211"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				icon: "minecraft:oak_log"
+				id: "47F4F2B32CB0771F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任何的木头都可以啦"
+				type: "item"
+			}]
+			title: "来一些木头吧"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38024D3B1806219E"]
+			id: "01CD1FE9964B19C1"
+			rewards: [{
+				count: 16
+				id: "61667FA54E60D6BC"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BBCA0FB4622A8D2"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["01CD1FE9964B19C1"]
+			id: "78846269B9FDE8F3"
+			rewards: [{
+				count: 16
+				id: "3570F572C3203C63"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AAC511DB65D15FF"
+				item: "extendedcrafting:handheld_table"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["38024D3B1806219E"]
+			id: "1100D7D8A7A04EF7"
+			rewards: [{
+				count: 8
+				id: "563725A52246ED97"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "34F6C3C3EB960779"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "基础物资！"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "152998D02AB61294"
+			rewards: [{
+				count: 4
+				id: "2A1DE7445D04B0D4"
+				item: "minecraft:diamond_ore"
+				random_bonus: 4
+				type: "item"
+			}]
+			subtitle: "你是想留着还是直接挖掉呢？"
+			tasks: [{
+				id: "2E94FE1C58B7D7B8"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38024D3B1806219E"]
+			id: "02386D8BD969F2E7"
+			tasks: [{
+				id: "72207CB7C1DBF18E"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["02386D8BD969F2E7"]
+			id: "5A65229A1C902A43"
+			tasks: [
+				{
+					id: "19B67AE833A40792"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "259CC584B5FD3B42"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["02386D8BD969F2E7"]
+			id: "4925B6F2552C20FF"
+			tasks: [
+				{
+					id: "62C33882EEC4233F"
+					item: "tconstruct:part_chest"
+					type: "item"
+				}
+				{
+					id: "74896E2F103580A3"
+					item: "tconstruct:tinkers_chest"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38024D3B1806219E"]
+			id: "423E8C03CC52D43E"
+			rewards: [{
+				count: 16
+				id: "39F58C7EEA97B9B8"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1576307D9D07087B"
+				item: { Count: 8, id: "minecraft:coal" }
+				type: "item"
+			}]
+			title: "作为燃料非常有用！"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"423E8C03CC52D43E"
+				"4FCDB059856EC079"
+			]
+			id: "6B04535AFED5E6FD"
+			tasks: [
+				{
+					id: "05B3E5E46A6A218B"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "05BB46CB86803CAC"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "62C00CBF07454854"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "110BD50A91C58F1D"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "3BE7572339C00AF2"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			title: "开始你的第一台炉子吧！"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "4FCDB059856EC079"
+			tasks: [{
+				count: 16L
+				id: "2980E37D3F5D99C2"
+				item: { Count: 16, id: "tconstruct:grout" }
+				type: "item"
+			}]
+			title: "烧砖"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6B04535AFED5E6FD"]
+			id: "63C2AE01F3D4C943"
+			rewards: [
+				{
+					id: "75DAC4A576AEFA8E"
+					item: {
+						Count: 1
+						id: "tconstruct:encyclopedia"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7331286BBDE8DBAE"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+			]
+			subtitle: "字面意思"
+			tasks: [
+				{
+					id: "000B1A21C9CF27A0"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					icon: { Count: 16, id: "tconstruct:seared_bricks" }
+					id: "2135D457B3188A7D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:smeltery"
+						}
+					}
+					title: "任意焦黑方块"
+					type: "item"
+				}
+			]
+			title: "这里迟早是千层饼"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "227FE5C5D9CC443C"
+			tasks: [{
+				count: 16L
+				id: "4E9F8CE59FF2BCBA"
+				item: { Count: 16, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "45B54ECD5CB7F385"
+			tasks: [{
+				count: 16L
+				id: "2E95F5E8685B36D7"
+				item: { Count: 16, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "4666837B4F0E53B1"
+			tasks: [{
+				count: 16L
+				id: "3EA94AAEA2C8F2F1"
+				item: { Count: 16, id: "thermal:tin_ingot" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "71B7631E58A90D2F"
+			tasks: [{
+				id: "66C1A48DB515FAFA"
+				item: "thermal:lead_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "2F8402A95EB36759"
+			tasks: [{
+				count: 16L
+				id: "332FD51DF13C0852"
+				item: { Count: 16, id: "thermal:nickel_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "61922F92D8FEC00E"
+			tasks: [{
+				count: 16L
+				id: "63C6F0EA0DDD47B7"
+				item: { Count: 16, id: "mekanism:ingot_osmium" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1100D7D8A7A04EF7"]
+			id: "11DF45B9D5C2039C"
+			tasks: [{
+				count: 16L
+				id: "55215F83155DBB6D"
+				item: "thermal:silver_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+	]
+	title: "从这里开始吧！"
+}

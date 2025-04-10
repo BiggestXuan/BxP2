@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "17B6F7B145783611"
+	group: "214E188735C60BE0"
+	id: "17B6F7B145783611"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "菜还是矿？"
+}

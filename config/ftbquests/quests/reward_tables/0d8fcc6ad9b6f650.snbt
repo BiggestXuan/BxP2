@@ -1,0 +1,27 @@
+{
+	id: "0D8FCC6AD9B6F650"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 10, item: "vampirism:vampire_fang", weight: 45.0f }
+		{ count: 10, item: "vampirism:human_heart", weight: 45.0f }
+		{
+			item: {
+				Count: 1
+				id: "vampirism:vampire_book"
+				tag: {
+					author: "Unknown"
+					id: "report2"
+					title: "My prince"
+				}
+			}
+			weight: 3.0f
+		}
+		{ item: "vampirism:pure_blood_0", weight: 12.0f }
+		{ item: "vampirism:pure_blood_1", weight: 8.0f }
+		{ item: "vampirism:pure_blood_2", weight: 3.0f }
+		{ item: "vampirism:pure_blood_3" }
+		{ item: "vampirism:pure_blood_4", weight: 0.3f }
+	]
+	title: "血族传说随机奖励"
+}

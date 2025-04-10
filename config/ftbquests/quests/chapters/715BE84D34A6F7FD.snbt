@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "715BE84D34A6F7FD"
+	group: "3B03478F18523D29"
+	id: "715BE84D34A6F7FD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "异世界探索"
+}

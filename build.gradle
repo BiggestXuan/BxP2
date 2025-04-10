@@ -98,13 +98,14 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                "${mod_id}" {
+                bxp2 {
                     source sourceSets.main
                 }
             }
         }
 
         client {
+            //arg "-mixin.config=bxp.mixins.json"
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
         }
@@ -158,6 +159,16 @@ dependencies {
     implementation fg.deobf("curse.maven:kubejs-238086:5853326")
     implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
     implementation fg.deobf("curse.maven:multiblocked2-1104057:6381388")
+    implementation fg.deobf("curse.maven:jei-238222:6075247")
+    implementation fg.deobf("curse.maven:time-in-a-bottle-universal-895919:4744787")
+    implementation fg.deobf("curse.maven:rhino-416294:6186971")
+    implementation fg.deobf("curse.maven:ldlib-626676:6337779")
+    implementation fg.deobf("curse.maven:modern-ui-352491:6199942")
+    implementation fg.deobf("curse.maven:botania-225643:6366547")
+    implementation fg.deobf("curse.maven:curios-309927:6238756")
+    implementation fg.deobf("curse.maven:patchouli-306770:6164575")
+    implementation fg.deobf("curse.maven:hostile-neural-networks-552574:5895036")
+    implementation fg.deobf("curse.maven:powah-rearchitected-633483:6390490")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

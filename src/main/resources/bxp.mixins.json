@@ -5,7 +5,11 @@
   "minVersion": "0.7",
   "refmap": "bxp.refmap.json",
   "mixins": [
+    "AbstractTiabItemMixin",
+    "DataModelMixin",
     "EnergyFormattingUtilMixin",
+    "GaiaGuardianEntityMixin",
+    "PlayerMixin",
     "ToolStatsMixin"
   ]
 }
