@@ -3,9 +3,583 @@
 	default_quest_shape: ""
 	filename: "7EAAA5C22A9D5E81"
 	group: "5099321D8633CF57"
+	icon: "thermal:machine_frame"
 	id: "7EAAA5C22A9D5E81"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["3D199F0EE7ED64D3"]
+			id: "5EEB2AC9CF21A792"
+			tasks: [
+				{
+					count: 27L
+					id: "48E294453992206F"
+					item: { Count: 27, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "46FBC8C414DE4C2B"
+					item: { Count: 27, id: "immersiveengineering:cokebrick" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5EEB2AC9CF21A792"
+				"75EA5BE7219FFEE2"
+				"34B19250DCBCAC64"
+			]
+			dependency_requirement: "one_completed"
+			id: "465913FF0342AE77"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C9A2250631B9830"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				count: 16L
+				id: "48F68E7D765BBBD5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "16*steel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "3D199F0EE7ED64D3"
+			tasks: [{
+				id: "29291ABB1708D7C4"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			id: "5235E81D5DF42673"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19BD0B2CDF2E48AA"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "26AAD3510FB80AD9"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "75EA5BE7219FFEE2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "32532AB56F389BF2"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F161D2C30B185D8"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["41C0A8DABE2B0B67"]
+			id: "25D4B5220F58B0CE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3599CDA25A7D6477"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2E8D7671C6FC0F70"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"465913FF0342AE77"
+				"70A57219AF5F7500"
+			]
+			id: "41C0A8DABE2B0B67"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AB23DA2867AA7E5"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "00DD2483F8BCA6BF"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "365D6FC82E549BB3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7122ECBDEFC5D399"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4FB0F81E942CD4FA"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "03132D2D8C0260AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "706A9090CEACD667"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1FF9559F54B51911"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "170E0AC5141B3D21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4FF67EBAD18B0067"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "21697F8B482EFBD6"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "2A12B8C27F638B39"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DCBB81540B6320D"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3EABB88651D4EA47"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "26A2CDBEBCA2658B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "092BB9BC0FF82555"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "561926E48B399268"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "4BEA731FCE079CD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74F8223ED85F1951"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3623ACD3BAC43256"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "125C06BCA7657DAD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BE94D012732BA03"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5A6EE337E27C3632"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "0264E48E31D736FC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "623B307F41F014EE"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F5697DA6CE61D4B"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "6565359CE96CAE1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "67D286EC1D4FBBFB"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "57C1CBDD03FB50FA"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "0B6F6889E4C6B3E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27213BCE8FCEC941"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "016C59A1C03DAE31"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5235E81D5DF42673"]
+			id: "4EE66DA2585ECD28"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53FF4A7918F8792B"
+				table_id: 5083771371629009157L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3BBF61CB9AAE9520"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["41C0A8DABE2B0B67"]
+			id: "42999B6D45F7E886"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5713E9728CC9463A"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2866ADA8D454A192"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25D4B5220F58B0CE"]
+			id: "1599769AB6DEF97F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C9358AE719EDC81"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "0DD82DA133A38478"
+					item: "enderio:energetic_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "7F56494FB5646C1F"
+					item: "enderio:vibrant_alloy_ingot"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2A70C3D1EC08B5C0"
+				"25D4B5220F58B0CE"
+			]
+			id: "16091035F88CAA9C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "100F0D7CF40DE34C"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4E168A34072D71D1"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25D4B5220F58B0CE"]
+			id: "445A31C7C09D004D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F0C110C037E6A14"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2D770B36846CD0CF"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25D4B5220F58B0CE"]
+			id: "478BC7E44773AE84"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2588368CB301324D"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0D185B1043A58AA0"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "34B19250DCBCAC64"
+			tasks: [{
+				id: "2D8BFC77D4E5332B"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			id: "67D19A3B54DDFD89"
+			tasks: [{
+				id: "4EB82632034C7038"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67D19A3B54DDFD89"]
+			id: "70A57219AF5F7500"
+			tasks: [{
+				id: "0B8DB751F4626EBB"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42999B6D45F7E886"]
+			id: "2A70C3D1EC08B5C0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17DBB645D71FE601"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "22A59B7A9A954581"
+				item: { Count: 64, id: "enderio:silicon" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["445A31C7C09D004D"]
+			id: "0CB07BAB927D9618"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42CCEE0E42E469BB"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "36449B1E9A7BBAC6"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1599769AB6DEF97F"]
+			id: "664BE077C2F8ECD0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59E3575A90EE8914"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4E03B8FB65B60AB1"
+				item: "enderio:ender_fluid_conduit"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16091035F88CAA9C"]
+			id: "0A3A7B42B250291F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79B6E8A0811F33E1"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2787D91A29B48C63"
+				item: "enderio:redstone_conduit"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["478BC7E44773AE84"]
+			id: "65FBA12DA3A710D1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AF489E0DBE9882D"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "32E475C4C5D6BD51"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["478BC7E44773AE84"]
+			id: "3F28669AF3C4FC60"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FFE5D96F38A8D6C"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1385B15E8A1F9233"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["478BC7E44773AE84"]
+			id: "58EB79DE2B823217"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "795A04FD87D8D0A1"
+				table_id: 9032867955502319269L
+				type: "random"
+			}]
+			tasks: [{
+				id: "61BA2CE003B5E87E"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+	]
 	title: "基础科技"
 }

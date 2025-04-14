@@ -1,0 +1,17 @@
+{
+	icon: "powah:capacitor_blazing"
+	id: "7508224956A88329"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 10, item: "powah:capacitor_basic_tiny" }
+		{ count: 5, item: "powah:capacitor_basic" }
+		{ count: 3, item: "powah:capacitor_basic_large" }
+		{ count: 2, item: "powah:capacitor_hardened", weight: 0.4f }
+		{ item: "powah:capacitor_blazing", weight: 0.2f }
+		{ count: 32, item: "powah:dielectric_paste", weight: 2.0f }
+		{ count: 8, item: "powah:steel_energized", weight: 0.5f }
+		{ count: 4, item: "powah:crystal_blazing", weight: 0.15f }
+	]
+	title: "Powah基础奖励包"
+}

@@ -1,0 +1,10 @@
+{
+    "type": "botania:pure_daisy",
+    "input": {
+      "type": "block",
+      "block": "minecraft:white_wool"
+    },
+    "output": {
+      "name": "minecraft:quartz_block"
+    }
+  }

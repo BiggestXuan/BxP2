@@ -1,0 +1,16 @@
+{
+	icon: "thermalendergy:endergy_upgrade_3"
+	id: "468D2F20A53F5905"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "thermal:upgrade_augment_1" }
+		{ item: "thermalendergy:endergy_upgrade_3", weight: 0.001f }
+		{ item: "thermal:fluid_tank_augment" }
+		{ count: 4, item: "thermal:machine_speed_augment", weight: 1.5f }
+		{ count: 4, item: "thermal:machine_efficiency_augment", weight: 1.5f }
+		{ item: "thermal:machine_output_augment" }
+		{ item: "thermal:machine_catalyst_augment" }
+	]
+	title: "基础热力奖励包"
+}

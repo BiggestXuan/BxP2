@@ -4,6 +4,9 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.integration.thinker.Modifiers.DE.ScaleboundFuryModifier;
 import biggestxuan.bxp2.integration.thinker.Modifiers.DE.ChronodragonFuryModifier;
 import biggestxuan.bxp2.integration.thinker.Modifiers.DE.SorrowModifier;
+import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.DefenseBreaker;
+import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.FistOfAbsoluteJustice;
+import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.GuiSuoReckoning;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 
@@ -26,4 +29,8 @@ public class BxPModifiers {
     public static StaticModifier<EternalModifier> ETERNAL = REGISTER.register("eternal", EternalModifier::new);
     public static StaticModifier<ScaleboundFuryModifier> ScaleboundFuryModifier = REGISTER.register("scalebound_fury", ScaleboundFuryModifier::new);
     public static StaticModifier<ChronodragonFuryModifier> ChronodragonFuryModifier = REGISTER.register("chronodragon_fury", ChronodragonFuryModifier::new);
+    public static StaticModifier<GuiSuoReckoning> GuiSuoReckoning = REGISTER.register("guisuo_reckoning", GuiSuoReckoning::new);
+    public static StaticModifier<DefenseBreaker> DefenseBreaker = REGISTER.register("defense_breaker", DefenseBreaker::new);
+    public static StaticModifier<FistOfAbsoluteJustice> FistOfAbsoluteJustice = REGISTER.register("fist_of_absolute_justice", FistOfAbsoluteJustice::new);
+
 }

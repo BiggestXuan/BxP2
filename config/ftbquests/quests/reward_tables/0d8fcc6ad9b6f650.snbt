@@ -1,4 +1,5 @@
 {
+	icon: "vampirism:pure_blood_4"
 	id: "0D8FCC6AD9B6F650"
 	loot_size: 1
 	order_index: 0

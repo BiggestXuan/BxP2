@@ -117,7 +117,7 @@ public class LivingCombatEvent {
         if(mob.level() instanceof ServerLevel sl){
             if(Config.difficulty == 1){return;}
             ServerLevel world = sl.getServer().overworld();
-            int day = (int) (world.getDayTime() / 24000 * (Config.difficulty == 3 ? 4 : 1));
+            double day = 1d * world.getDayTime() / 24000 * (Config.difficulty == 3 ? 4 : 1);
             AttributeInstance health = mob.getAttribute(Attributes.MAX_HEALTH);
             AttributeInstance attack = mob.getAttribute(Attributes.ATTACK_DAMAGE);
             if(health != null){

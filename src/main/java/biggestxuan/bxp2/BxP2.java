@@ -1,5 +1,6 @@
 package biggestxuan.bxp2;
 
+import biggestxuan.bxp2.capability.IBxPCapability;
 import biggestxuan.bxp2.creativeTabs.BxPCreativeTabs;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.fluids.BxPFluids;
@@ -15,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,7 +37,7 @@ public class BxP2
 {
 
     public static final String MODID = "bxp2";
-    public static final String VERSION = "0.0.7";
+    public static final String VERSION = "0.0.13";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static boolean devMode = true;
@@ -46,6 +48,7 @@ public class BxP2
     {
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::registerCap);
         BLOCKS.register(modEventBus);
         BxPFluids.FLUIDS.register(modEventBus);
         BxPCreativeTabs.CREATIVE_TABS.register(modEventBus);
@@ -67,6 +70,11 @@ public class BxP2
     {
 
         // LOGGER.info("HELLO from server starting");
+    }
+
+    @SubscribeEvent
+    public void registerCap(RegisterCapabilitiesEvent event){
+        event.register(IBxPCapability.class);
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

@@ -3,9 +3,231 @@
 	default_quest_shape: ""
 	filename: "49A32356126836D2"
 	group: "3B03478F18523D29"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_3_rocket"
+		tag: { }
+	}
 	id: "49A32356126836D2"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6D6AF9710AF3952F"
+				"2E7D0160DFCFFF2A"
+				"5707F7D609E873F1"
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "0A70A297077DB65B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D24FD2C58FDD464"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "39453CF8590D8BD2"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1E989A6EF0D4FB9E"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "2E7D0160DFCFFF2A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31B12EFB2E5C02AF"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4571FF0F41B9FF5A"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572363E5BEA831A5"]
+			id: "6D6AF9710AF3952F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48B4D7D9A1DDCD02"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1520F84288068219"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "01C2F76368E16905"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F2E588DB8D4EA04"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "313A5CAB6748997E"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["01C2F76368E16905"]
+			icon: {
+				Count: 1
+				id: "ad_astra:space_suit"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5707F7D609E873F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E667739F3908097"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "523C72E48365A5B3"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F460E24A491D881"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66CF3D028236E0C2"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "580EC57C5950CB87"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "572363E5BEA831A5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DC33E89FB11041B"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1109FA208FBB5A7F"
+				item: "ad_astra:oil_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0A70A297077DB65B"]
+			id: "2EA74386B89D3123"
+			rewards: [
+				{
+					id: "391DBF94CC0015E1"
+					item: "ad_astra:launch_pad"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5DC303125DC478E9"
+					item: "ad_astra:fuel_bucket"
+					team_reward: true
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_stone"
+				id: "007A7F71D65EEC90"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EA74386B89D3123"]
+			id: "4DF19B4EE17C024F"
+			tasks: [{
+				id: "266407D86AFF23EA"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EA74386B89D3123"]
+			id: "6FF9CBBB853305BA"
+			tasks: [{
+				id: "775F97B55F59FCEC"
+				item: "ad_astra:ice_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+	]
 	title: "飞向太空"
 }

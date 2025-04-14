@@ -30,6 +30,7 @@ base {
     archivesName = "BxP2-"+new Date().format("yyyy-MM-dd-HHmm")
 }
 
+
 mixin {
     add sourceSets.main, "bxp.refmap.json"
     config "bxp.mixins.json"
@@ -169,6 +170,9 @@ dependencies {
     implementation fg.deobf("curse.maven:patchouli-306770:6164575")
     implementation fg.deobf("curse.maven:hostile-neural-networks-552574:5895036")
     implementation fg.deobf("curse.maven:powah-rearchitected-633483:6390490")
+    implementation fg.deobf("curse.maven:aether-255308:6134920")
+    implementation fg.deobf("curse.maven:placebo-283644:6274231")
+    implementation fg.deobf("curse.maven:cloth-config-348521:5729105")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

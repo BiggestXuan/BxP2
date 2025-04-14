@@ -66,8 +66,13 @@ public class BxPCatalystCategory implements IRecipeCategory<BxPCatalyst> {
     }
 
     @Override
-    public void draw(BxPCatalyst recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+    public void draw(BxPCatalyst r, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
         Font font = Minecraft.getInstance().font;
+        BxPCatalyst recipe = r.copy();
+        if(BxP2.devMode) {
+            //BxP2.LOGGER.info("{}",recipe.speedRate);
+            //BxP2.LOGGER.info("{}",f(recipe.speedRate));
+        }
         String speed = BxP2.tr("jei.bxp2.catalyst_speed").getString()+f(recipe.speedRate);
         String energy = BxP2.tr("jei.bxp2.catalyst_energy").getString()+f(recipe.energyRate);
         String inputFluid = BxP2.tr("jei.bxp2.catalyst_input_fluid").getString()+f(recipe.inputFluidRate);
@@ -84,7 +89,7 @@ public class BxPCatalystCategory implements IRecipeCategory<BxPCatalyst> {
     }
 
     private static String f(double d){
-        if((int) d == 0){
+        if(d == 0D){
             return "-";
         }
         if(d < 1){

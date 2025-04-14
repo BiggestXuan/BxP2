@@ -1,0 +1,24 @@
+{
+	icon: "minecraft:diamond"
+	id: "1E4F9FB111203853"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 16, item: "mekanism:ingot_osmium" }
+		{ count: 16, item: "minecraft:gold_ingot" }
+		{ count: 16, item: "thermal:nickel_ingot" }
+		{ count: 64, item: "minecraft:redstone" }
+		{ count: 4, item: "minecraft:diamond" }
+		{ count: 4, item: "minecraft:emerald" }
+		{ count: 4, item: "minecraft:ender_pearl" }
+		{ count: 64, item: "minecraft:coal" }
+		{ count: 32, item: "minecraft:lapis_lazuli" }
+		{ count: 32, item: "minecraft:iron_ingot" }
+		{ count: 32, item: "minecraft:copper_ingot" }
+		{ count: 16, item: "mekanism:ingot_uranium" }
+		{ count: 16, item: "thermal:tin_ingot" }
+		{ count: 16, item: "thermal:lead_ingot" }
+		{ count: 16, item: "thermal:silver_ingot" }
+	]
+	title: "基础资源奖励包"
+}

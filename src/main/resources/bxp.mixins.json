@@ -10,6 +10,8 @@
     "EnergyFormattingUtilMixin",
     "GaiaGuardianEntityMixin",
     "PlayerMixin",
+    "PowahWorldGenMixin",
+    "SunSpiritMixin",
     "ToolStatsMixin"
   ]
 }

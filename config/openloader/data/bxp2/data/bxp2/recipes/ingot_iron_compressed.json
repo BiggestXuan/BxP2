@@ -1,0 +1,18 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "item": "thermal:press_coin_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "pneumaticcraft:ingot_iron_compressed",
+      "count": 1
+    }
+  ],
+  "energy": 1200
+}

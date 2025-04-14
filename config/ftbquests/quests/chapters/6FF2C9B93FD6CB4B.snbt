@@ -3,46 +3,180 @@
 	default_quest_shape: ""
 	filename: "6FF2C9B93FD6CB4B"
 	group: "5099321D8633CF57"
+	icon: "ae2:controller"
 	id: "6FF2C9B93FD6CB4B"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "061AE50025EBFE59"
-		rewards: [
-			{
-				id: "05B07197F217107A"
-				item: "ae2:calculation_processor_press"
-				team_reward: true
+	quests: [
+		{
+			id: "061AE50025EBFE59"
+			rewards: [
+				{
+					id: "05B07197F217107A"
+					item: "ae2:calculation_processor_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "5E68A706B14C309F"
+					item: "ae2:engineering_processor_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "377C7A45B18B5006"
+					item: "ae2:logic_processor_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "3CC7300BCD498336"
+					item: "ae2:silicon_press"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D95667DDACAB84B"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+			]
+			subtitle: "四个压印版"
+			tasks: [{
+				id: "48664164761CCC82"
+				item: "ae2:sky_stone_block"
 				type: "item"
-			}
-			{
-				id: "5E68A706B14C309F"
-				item: "ae2:engineering_processor_press"
-				team_reward: true
+			}]
+			title: "准备好了用AE吗？"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			id: "008DD67EC07047D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5753A3C3B93FC0F4"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "711BBC5038C61542"
+				item: "toms_storage:ts.inventory_connector"
 				type: "item"
-			}
-			{
-				id: "377C7A45B18B5006"
-				item: "ae2:logic_processor_press"
-				team_reward: true
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["008DD67EC07047D4"]
+			id: "16D2FB4E5AAD1161"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "247536749D543A6B"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6F56E05C5489AEC9"
+				item: "toms_storage:ts.trim"
 				type: "item"
-			}
-			{
-				id: "3CC7300BCD498336"
-				item: "ae2:silicon_press"
-				team_reward: true
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["008DD67EC07047D4"]
+			id: "11E39001A1CE1D77"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04F7DC0A1CC1E40E"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3E9F018E0829AF51"
+				item: "toms_storage:ts.inventory_cable"
 				type: "item"
-			}
-		]
-		subtitle: "四个压印版"
-		tasks: [{
-			id: "11A5554D4562E9F0"
-			title: "我准备好啦"
-			type: "checkmark"
-		}]
-		title: "准备好了用AE吗？"
-		x: 1.0d
-		y: 0.5d
-	}]
-	title: "自动化"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "418104572511E23A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "22B5E2126BBADF89"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "162C5F45AB492280"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["008DD67EC07047D4"]
+			hide_dependent_lines: true
+			id: "3318C4278A9EDF43"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6134812D4E5C8258"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "23BA2A9DA1A35694"
+				item: "toms_storage:ts.wireless_terminal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["008DD67EC07047D4"]
+			id: "23C288C19BFA9C83"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "089EF637C403E466"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1BDE89E677F1AB9F"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3318C4278A9EDF43"
+				"008DD67EC07047D4"
+			]
+			id: "2D922B209D2C4313"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A739F63A3959CFA"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6B3166141BEB065E"
+				item: {
+					Count: 1
+					id: "toms_storage:ts.adv_wireless_terminal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+	]
+	title: "存储和自动化"
 }

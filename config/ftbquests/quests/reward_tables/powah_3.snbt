@@ -1,0 +1,17 @@
+{
+	icon: "powah:capacitor_nitro"
+	id: "298D79894D718F4C"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "powah:capacitor_nitro", weight: 0.75f }
+		{ count: 2, item: "powah:capacitor_nitro", weight: 0.5f }
+		{ count: 3, item: "powah:capacitor_nitro", weight: 0.25f }
+		{ count: 4, item: "powah:capacitor_nitro", weight: 0.125f }
+		{ count: 2, item: "powah:crystal_nitro" }
+		{ count: 4, item: "powah:crystal_nitro", weight: 0.8f }
+		{ count: 6, item: "powah:crystal_nitro", weight: 0.6f }
+		{ count: 8, item: "powah:crystal_nitro", weight: 0.4f }
+	]
+	title: "Powah终极奖励包"
+}

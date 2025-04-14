@@ -138,5 +138,30 @@
 
   "item.bxp2.difficulty_change": "Difficulty Switcher",
   "effect.bxp2.vulnerability": "Vulnerability",
-  "effect.bxp2.debilitated": "Debilitated"
+  "effect.bxp2.debilitated": "Debilitated",
+
+  "jei.bxp2.catalyst": "Catalyst",
+  "jei.bxp2.catalyst_speed": "Time Multiplier:",
+  "jei.bxp2.catalyst_energy": "Energy Consumption Multiplier:",
+  "jei.bxp2.catalyst_input_fluid": "Fluid Consumption Multiplier:",
+  "jei.bxp2.catalyst_output_fluid": "Fluid Production Multiplier:",
+  "jei.bxp2.catalyst_inputMana": "Mana Consumption Multiplier:",
+  "jei.bxp2.catalyst_outputMana": "Mana Production Multiplier:",
+  "jei.bxp2.catalyst_can_adapt": "Compatible With:",
+  "bxp2.catalyst.adapt_all": "All",
+  "bxp2.catalyst.adapt_unknown": "Unknown",
+  "block.mbd2.bx_unstable_furnace": "Unstable DaXuan Furnace",
+  "mbd2.bx_unstable_furnace": "Unstable DaXuan Furnace",
+
+  "modifier.bxp2.guisuo_reckoning": "Guisuo's Reckoning",
+  "modifier.bxp2.guisuo_reckoning.flavor": "Getting stronger!",
+  "modifier.bxp2.guisuo_reckoning.description": "Deals increasing damage with consecutive attacks on the same target",
+
+  "modifier.bxp2.defense_breaker": "Defense Breaker",
+  "modifier.bxp2.defense_breaker.flavor": "No fear of armor",
+  "modifier.bxp2.defense_breaker.description": "Deals bonus damage to armored targets",
+
+  "modifier.bxp2.fist_of_absolute_justice": "Fist of Absolute Justice",
+  "modifier.bxp2.fist_of_absolute_justice.flavor": "Take this punch!",
+  "modifier.bxp2.fist_of_absolute_justice.description": "Gain bonus damage when above 50% health, gain lifesteal when below 50% health"
 }

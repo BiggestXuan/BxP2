@@ -35,9 +35,9 @@ public class DifficultyScreen extends Screen {
         g.drawString(font,BxP2.tr(name+".title").getString(),a(width*0.45),a(height*0.03),111111);
         this.minecraft.getTextureManager().bindForSetup(bg);
         renderDirtBackground(g);
-        render(g,"easy",a(w * 0.04));
+        render(g,"easy",a(w * 0.02));
         render(g,"normal",a(w * 0.38));
-        render(g,"hard",a(w * 0.73));
+        render(g,"hard",a(w * 0.68));
         for(Button button : buttons){
             button.render(g,p_281550_,p_282878_,p_282465_);
         }

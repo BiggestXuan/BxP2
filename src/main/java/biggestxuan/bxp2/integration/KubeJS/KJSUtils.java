@@ -86,7 +86,7 @@ public class KJSUtils {
                         new ItemStack[]{
                                 BxP2.getStack("ad_astra:desh_ingot"),
                                 BxP2.getStack("thermal:invar_ingot"),
-                                BxP2.getStack("botania:manasteel_ingot")
+                                BxP2.getStack("ars_nouveau:source_gem")
                         },new ItemStack[]{BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance()}
                         , BxPCatalyst.ADAPT.BX_UNSTABLE_FURNACE,
                         1500,0,1000

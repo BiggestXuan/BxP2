@@ -1,0 +1,17 @@
+{
+	icon: "enderio:octadic_capacitor"
+	id: "7D5B318C1EB986A5"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 16, item: "enderio:energetic_alloy_ingot", weight: 0.8f }
+		{ count: 64, item: "enderio:conduit_binder", weight: 1.2f }
+		{ count: 16, item: "enderio:conductive_alloy_ingot", weight: 0.8f }
+		{ count: 16, item: "enderio:pulsating_alloy_ingot", weight: 0.8f }
+		{ count: 16, item: "enderio:vibrant_alloy_ingot", weight: 0.8f }
+		{ item: "enderio:octadic_capacitor", weight: 0.4f }
+		{ item: "enderio:double_layer_capacitor", weight: 0.8f }
+		{ item: "enderio:basic_capacitor", weight: 2.0f }
+	]
+	title: "末影接口奖励包"
+}

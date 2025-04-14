@@ -4,10 +4,13 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.utils.Utils;
+import com.blamejared.crafttweaker.api.ingredient.IIngredient;
 import dev.architectury.fluid.FluidStack;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.*;
 
@@ -80,6 +83,14 @@ public final class RecipeUtils {
         }
     }
 
+    public static ResourceLocation getRecipeNameByRL(ItemStack[] stack,String name){
+        return BxP2.MODRL(getRecipeName(stack,name));
+    }
+
+    public static ResourceLocation getRecipeNameByRL(ItemStack stack,String name){
+        return BxP2.MODRL(getRecipeName(stack,name));
+    }
+
     public static String getRecipeName(ItemStack item, String add){
         return "bxp2:recipes/" + getItemName(item) + "_" + add + item.getCount();
     }
@@ -89,8 +100,27 @@ public final class RecipeUtils {
         return "bxp2:recipes/" + rl.toString().split(":")[1] + "_" + add + fluidStack.getAmount();
     }
 
+    public static String getRecipeName(ItemStack[] items,String add){
+        StringBuilder builder = new StringBuilder();
+        builder.append("bxp2:recipes/");
+        for(ItemStack s : items){
+            builder.append(getItemName(s));
+            builder.append("_");
+        }
+        builder.append(add);
+        return builder.toString();
+    }
+
     public static String getItemName(ItemStack item){
         ResourceLocation rl = BuiltInRegistries.ITEM.getKey(item.getItem());
         return rl.toString().split(":")[0] + "_" +rl.toString().split(":")[1];
+    }
+
+    public static NonNullList<Ingredient> getIngredients(IIngredient[] input){
+        NonNullList<Ingredient> ingredients = NonNullList.create();
+        for(IIngredient ingredient : input){
+            ingredients.add(ingredient.asVanillaIngredient());
+        }
+        return ingredients;
     }
 }

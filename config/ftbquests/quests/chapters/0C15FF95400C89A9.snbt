@@ -3,9 +3,385 @@
 	default_quest_shape: ""
 	filename: "0C15FF95400C89A9"
 	group: "37BE985D0902014A"
+	icon: "botania:third_eye"
 	id: "0C15FF95400C89A9"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "405782BC42D195E2"
+			subtitle: "这些是有魔法的花"
+			tasks: [{
+				count: 16L
+				id: "0D983B636B6C607F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+				title: "任意神秘花"
+				type: "item"
+			}]
+			title: "采花贼"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["405782BC42D195E2"]
+			id: "257F996B20DBA64A"
+			subtitle: "装好你的花"
+			tasks: [{
+				id: "6FBFDCB54E194C07"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["405782BC42D195E2"]
+			id: "68BEAD4156E0F555"
+			tasks: [{
+				id: "7E6D575A7D74B376"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68BEAD4156E0F555"]
+			id: "2E3156B3D45C8681"
+			subtitle: "可惜不能生产白丝"
+			tasks: [{
+				id: "7A6802D08BE6A335"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68BEAD4156E0F555"]
+			id: "05C38125462153AD"
+			subtitle: "可能是你最早的魔力来源"
+			tasks: [{
+				id: "4EA37D0E3B19D43E"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E3156B3D45C8681"]
+			description: ["白雏菊周围摆放一圈石头"]
+			id: "1DF5B6A4692A38BF"
+			tasks: [{
+				id: "57EAF68B972296F0"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E3156B3D45C8681"]
+			description: ["白雏菊周围摆放一圈木头"]
+			id: "5D12B28C86EB3F77"
+			tasks: [{
+				id: "4D1370DA7133A39F"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1DF5B6A4692A38BF"]
+			id: "5074DDA791023078"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5299D73CAD86AE64"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [{
+				id: "07A8983965E7436D"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5074DDA791023078"
+				"05C38125462153AD"
+			]
+			id: "74F4A22F270F31A0"
+			tasks: [{
+				id: "2F8C3FD2A9026FA3"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5D12B28C86EB3F77"]
+			id: "6DDC913F82FA415C"
+			tasks: [{
+				id: "70B32FABA0A81E56"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74F4A22F270F31A0"]
+			id: "4A4CE05343B33F40"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B5AD2220BA96838"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "244E1E93990B12C1"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "1691FCE1AD30C062"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "2FCB42163472E1A5"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "6212E0D7ED5C5B74"
+					item: "botania:rune_air"
+					type: "item"
+				}
+			]
+			title: "四元素符文"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A4CE05343B33F40"]
+			id: "2A1CD883F267BDBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "50D50A28F2EDAC34"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "2D504F8B1247C644"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					id: "5D555D00A57FAC48"
+					item: "botania:rune_summer"
+					type: "item"
+				}
+				{
+					id: "0974A651EDBD6C21"
+					item: "botania:rune_autumn"
+					type: "item"
+				}
+				{
+					id: "69BA01AA507A8C56"
+					item: "botania:rune_winter"
+					type: "item"
+				}
+			]
+			title: "四季节符文"
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2A1CD883F267BDBE"]
+			id: "32C69371F7C8852A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AE959D8AC4EE4CB"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6D48D58C88444A85"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+				{
+					id: "6A210EA3BCBFA2DC"
+					item: "botania:rune_lust"
+					type: "item"
+				}
+				{
+					id: "4B6CEAE86507807F"
+					item: "botania:rune_gluttony"
+					type: "item"
+				}
+				{
+					id: "1CA6F412E15E0227"
+					item: "botania:rune_greed"
+					type: "item"
+				}
+				{
+					id: "5B969BCA8FAE536A"
+					item: "botania:rune_sloth"
+					type: "item"
+				}
+				{
+					id: "1D97C284BA511093"
+					item: "botania:rune_wrath"
+					type: "item"
+				}
+				{
+					id: "3BE086F0E3897AA1"
+					item: "botania:rune_envy"
+					type: "item"
+				}
+				{
+					id: "5040E3012ABDBAD5"
+					item: "botania:rune_pride"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5074DDA791023078"]
+			id: "2C38144CBF7AE332"
+			tasks: [{
+				count: 4L
+				id: "3A98E429CACD43BD"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5074DDA791023078"]
+			id: "7AAE335A9BA49FA1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44183685896D1103"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [{
+				count: 4L
+				id: "7BEFB946F5AD0877"
+				item: { Count: 4, id: "botania:mana_powder" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5074DDA791023078"]
+			id: "3863CC6CBCE884F6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7438D3F3F6FDB15D"
+				table_id: 660429164735414630L
+				type: "random"
+			}]
+			tasks: [{
+				count: 4L
+				id: "1917D72A26525937"
+				item: { Count: 4, id: "botania:mana_pearl" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			id: "1A7180B1F9CB700E"
+			tasks: [
+				{
+					id: "57CDE9330EF009E7"
+					item: "botania:fel_pumpkin"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "293C0AA582077C40"
+					item: { Count: 2, id: "minecraft:iron_bars" }
+					type: "item"
+				}
+			]
+			title: "召唤烈焰人！"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1A7180B1F9CB700E"]
+			id: "6C33C61D0BCBACFB"
+			tasks: [{
+				count: 5L
+				id: "69637A3C9F9C3F6C"
+				item: { Count: 5, id: "minecraft:blaze_powder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C33C61D0BCBACFB"]
+			id: "5F4B28C567F3DE6F"
+			tasks: [{
+				id: "0865144DBEBB7A01"
+				item: "minecraft:brewing_stand"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F4B28C567F3DE6F"]
+			id: "4332FCD22C4FA333"
+			tasks: [{
+				id: "3EE2833977AF9822"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4332FCD22C4FA333"]
+			id: "1BCAE1130362B393"
+			tasks: [{
+				count: 4L
+				id: "5341963BD0998F87"
+				item: { Count: 4, id: "minecraft:glowstone_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+	]
 	title: "大自然的魔法"
 }

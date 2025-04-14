@@ -3,9 +3,481 @@
 	default_quest_shape: ""
 	filename: "574F68519A575807"
 	group: "37BE985D0902014A"
+	icon: "bloodmagic:soulforge"
 	id: "574F68519A575807"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "6A0A1647D1D03297"
+			rewards: [{
+				count: 20
+				id: "6CE1201364964F40"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70F25378EBD8CB50"
+				item: {
+					Count: 1
+					id: "bloodmagic:sacrificialdagger"
+					tag: {
+						sacrifice: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "268B022A9AB1FED4"
+			rewards: [
+				{
+					id: "27BDA14364532821"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 20
+					id: "4A4C701E44567FF9"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "217AAE3CB03B67FB"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "75195FEE42C08EC2"
+			rewards: [{
+				count: 20
+				id: "70BCD46FCB4013AF"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BCAC5F3211D51C3"
+				item: "bloodmagic:incensealtar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "6CE115B5B59EC4D1"
+			rewards: [{
+				count: 20
+				id: "0841FE39FC2F7704"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "636595F64CC9FBFA"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CE115B5B59EC4D1"]
+			id: "5E01633356430A7E"
+			rewards: [{
+				count: 20
+				id: "514AC10760A3149B"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F8901C3F009185F"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E01633356430A7E"]
+			id: "7192985A5D7AAF05"
+			tasks: [{
+				id: "34071278386497E3"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7192985A5D7AAF05"]
+			id: "337E3340FFD5A3C1"
+			tasks: [{
+				id: "5E101B204D36CD12"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["337E3340FFD5A3C1"]
+			id: "148845EEEA29F0ED"
+			tasks: [{
+				id: "3F81B1B892E6D496"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "59D8CACE1C75AF99"
+			rewards: [{
+				count: 20
+				id: "3C76CCC99A6FD2A8"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18A2B7A69C7EEEA8"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["59D8CACE1C75AF99"]
+			id: "4E01AC31960AD896"
+			rewards: [{
+				count: 20
+				id: "10687330DA6B1C0A"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26BF3749FFF22CF2"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E01AC31960AD896"]
+			id: "5752FFA8500C73EC"
+			tasks: [{
+				id: "1B409FD7C3B0BC5A"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5752FFA8500C73EC"]
+			id: "2C3F65F925489698"
+			tasks: [{
+				id: "516DC8FC473EA3E3"
+				item: "bloodmagic:masterbloodorb"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			description: [
+				"你可以用血族传说的血液转化成血魔法的血液，但是会有一些损失。"
+				"血族传说的血液可以用食物获得，也许这是食物魔法……"
+			]
+			id: "770B38A277B35551"
+			tasks: [{
+				id: "4B5539DE641DE136"
+				item: "mbd2:blood_transposer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["721567D1FF84784A"]
+			id: "44DD43FBFF936D9E"
+			tasks: [{
+				id: "46B58B5B4968D0D6"
+				item: {
+					Count: 1
+					id: "bloodmagic:ritualdiviner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44DD43FBFF936D9E"]
+			id: "5298F9A60E5068AA"
+			tasks: [{
+				id: "27882B49A1942A11"
+				item: {
+					Count: 1
+					id: "bloodmagic:ritualdivinerdusk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "721567D1FF84784A"
+			rewards: [{
+				count: 20
+				id: "7FD358375D0E1013"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "658C67B6BE3837D2"
+					item: {
+						Count: 1
+						id: "bloodmagic:airscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BFB520BB4E7CF73"
+					item: {
+						Count: 1
+						id: "bloodmagic:firescribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78145F5AD6DB8DDA"
+					item: {
+						Count: 1
+						id: "bloodmagic:waterscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B5DA98EBE733385"
+					item: {
+						Count: 1
+						id: "bloodmagic:earthscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7192985A5D7AAF05"
+				"5752FFA8500C73EC"
+			]
+			id: "3158B40BA3AA1189"
+			tasks: [
+				{
+					id: "3493E077892A8247"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "30A1DF11FAD96EF1"
+					item: { Count: 16, id: "bloodmagic:ritualstone" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["59D8CACE1C75AF99"]
+			id: "55F4A0B8A87CED06"
+			rewards: [{
+				count: 20
+				id: "1950364DD782613D"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EDE3EB68AB248AB"
+				item: "bloodmagic:lavacrystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["55F4A0B8A87CED06"]
+			id: "43C5DDFC2C844846"
+			tasks: [{
+				id: "2608C113D1705A0F"
+				item: "bloodmagic:activationcrystalweak"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"44DD43FBFF936D9E"
+				"43C5DDFC2C844846"
+			]
+			id: "46A584CBAAB21F4F"
+			tasks: [{
+				dimension: "bloodmagic:dungeon"
+				id: "3FFA53910D0347B3"
+				type: "dimension"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46A584CBAAB21F4F"]
+			id: "7930C0F39A0AC01D"
+			tasks: [{
+				id: "49A4650D3C60A374"
+				item: "bloodmagic:strong_tau"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CE115B5B59EC4D1"]
+			id: "3BE3C31004D30109"
+			tasks: [{
+				id: "627FAB458E46593A"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3BE3C31004D30109"]
+			id: "4FC97D270737FE00"
+			tasks: [{
+				id: "7C048861351264BC"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgempetty"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4FC97D270737FE00"]
+			id: "2782D1CDC250FFC9"
+			tasks: [{
+				id: "554FA930ED43F12C"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemlesser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2782D1CDC250FFC9"]
+			id: "5A383E054AE1A213"
+			tasks: [{
+				id: "2A391CDCC8A3A609"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemcommon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5A383E054AE1A213"]
+			id: "3D379F15C8AB5610"
+			tasks: [{
+				id: "44491972040ECF38"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgemgreater"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6CE115B5B59EC4D1"]
+			id: "676A62FFC8EA2A9A"
+			tasks: [{
+				id: "08B0EAD03898E52D"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["268B022A9AB1FED4"]
+			id: "60A63AFFA231ECCD"
+			rewards: [{
+				count: 20
+				id: "52A41DA408260ECD"
+				item: "bloodmagic:slate_ampoule"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "12A9ADEAF9ADE4AF"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+	]
 	title: "血也有魔法？"
 }

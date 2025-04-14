@@ -1,0 +1,25 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 2,
+      "item": "minecraft:redstone_torch"
+    },
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 1,
+      "item": "bxp2:bx_unstable_ingot"
+    },
+    {
+      "item": "pneumaticcraft:plastic"
+    }
+  ],
+  "pressure": 1.5,
+  "results": [
+    {
+      "count": 3,
+      "item": "pneumaticcraft:empty_pcb"
+    }
+  ]
+}

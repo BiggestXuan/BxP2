@@ -3,9 +3,392 @@
 	default_quest_shape: ""
 	filename: "715BE84D34A6F7FD"
 	group: "3B03478F18523D29"
+	icon: "twilightforest:raven_feather"
 	id: "715BE84D34A6F7FD"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4332FCD22C4FA333"
+				"1BCAE1130362B393"
+			]
+			description: ["类似下界门的方式，使用萤石搭建外框，里面倒水即可。"]
+			icon: "minecraft:glowstone"
+			id: "135B5D57FADDD87A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "598885F254528C99"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "营销号快乐门"
+			tasks: [
+				{
+					count: 10L
+					id: "74FF0706390F4406"
+					item: { Count: 10, id: "minecraft:glowstone" }
+					type: "item"
+				}
+				{
+					id: "1E25276D6A30D111"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "这里是天堂！"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["152998D02AB61294"]
+			id: "38847BA5CB889F71"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "404A978265DFE763"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "和主世界没太大不同"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "19D9B17ED7F5955F"
+				type: "dimension"
+			}]
+			title: "欢迎来到暮色森林！"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["135B5D57FADDD87A"]
+			id: "2970080B47B53848"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75CBF1793D957AC3"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "镐击那个方块块"
+			tasks: [{
+				id: "5C4867AA80E49C3D"
+				item: "aether:bronze_dungeon_key"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2970080B47B53848"]
+			id: "5B0BBF5932032ECB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "064FBC23F3D72E1C"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "你先要证明自己！"
+			tasks: [{
+				count: 10L
+				id: "0E8C15DD6AE8724E"
+				item: { Count: 10, id: "aether:victory_medal" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5B0BBF5932032ECB"]
+			id: "26F4E7B8E8E3000E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19DA3490A0EBE3A2"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "也不过如此嘛"
+			tasks: [{
+				id: "4A00A52F1529AB4E"
+				item: "aether:silver_dungeon_key"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26F4E7B8E8E3000E"]
+			description: [
+				"整合包模式影响："
+				""
+				"休闲模式：烈阳巨灵将始终处于被冰冻状态。"
+				""
+				"进阶模式：当冰球击中烈阳巨灵后将始终被冰冻。"
+				""
+				"挑战模式：当冰球击中烈阳巨灵后仅有约10秒被冰冻。"
+			]
+			id: "61564359E11AD6F8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "060173DA30629DBA"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "烈阳巨灵冰冻机制修改"
+			tasks: [{
+				id: "2223C45F6F97A012"
+				item: "aether:gold_dungeon_key"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38847BA5CB889F71"]
+			id: "40E7F14DD95E0190"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65F624F791B877A3"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "也许会在洞穴找到"
+			tasks: [{
+				id: "77A44549D7932E12"
+				item: "twilightforest:torchberries"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38847BA5CB889F71"]
+			id: "073BF1581B885CC6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "583800243B8A7FD9"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "你怎么忍心的！"
+			tasks: [{
+				id: "46CE1819CFC4BAE1"
+				item: "twilightforest:raven_feather"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"40E7F14DD95E0190"
+				"073BF1581B885CC6"
+			]
+			description: ["根据地图分别找到BOSS，将他们击杀！"]
+			id: "46BE27609C95967D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "050AD2969296C212"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "统揽全局"
+			tasks: [{
+				id: "7AC2D52994AA60FA"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46BE27609C95967D"]
+			id: "03B98F1EE3CAE133"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31ED1A3FE710324A"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "其实也很可爱"
+			tasks: [{
+				id: "7894A20092A7F951"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03B98F1EE3CAE133"]
+			id: "62D71EE9BC67C5B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "583601C1FE475341"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "小法师而已"
+			tasks: [{
+				id: "77E92F7BA30F3ABD"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62D71EE9BC67C5B4"]
+			id: "4AC98A2A268ACC13"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29E36BD3807F3C97"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "蘑菇牛肉酱"
+			tasks: [{
+				id: "2806661173615E4F"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62D71EE9BC67C5B4"]
+			id: "2051F78A2D8B1402"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1624A78B455B9481"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "影流之主"
+			tasks: [{
+				id: "4AAA0ADFC0792D75"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62D71EE9BC67C5B4"]
+			id: "79273EA57ADEC6CB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E71CFD3145385BE"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "这么可爱！抱走！"
+			tasks: [{
+				id: "0B54D680AF9DAA2D"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2051F78A2D8B1402"]
+			id: "299A5B2590C560AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72D337F703B8D615"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "路易十六发来邀请"
+			tasks: [{
+				id: "3DFB317DE06B6123"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AC98A2A268ACC13"]
+			id: "58A5CDD9F394BE90"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EA96DE953F9E237"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "你别哭了！"
+			tasks: [{
+				id: "69D65ECC15975D34"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79273EA57ADEC6CB"]
+			id: "3198B173B7509158"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BC604C4E305D50E"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "这种呆傻的孩子都一个样"
+			tasks: [{
+				id: "07DE9798437B3FC6"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"299A5B2590C560AB"
+				"3198B173B7509158"
+				"58A5CDD9F394BE90"
+			]
+			id: "5A1348EA52FCE8E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A36721C48AB202D"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "星火燎原"
+			tasks: [{
+				id: "38BB034581DE52A4"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46BE27609C95967D"]
+			id: "1F0BBC38AD2B532D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05A4D3D74D9C4857"
+				table_id: 2184139927143331923L
+				type: "random"
+			}]
+			subtitle: "五彩斑斓！"
+			tasks: [{
+				id: "6D866EE72E0FD3A1"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+	]
 	title: "异世界探索"
 }

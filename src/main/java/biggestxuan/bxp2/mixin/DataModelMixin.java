@@ -23,7 +23,7 @@ public class DataModelMixin {
     public void __inject(CallbackInfoReturnable<Integer> cir){
         if(Config.difficulty >= 2){
             double cost = this.simCost;
-            cost = Math.pow(cost,1.75);
+            cost = Math.pow(cost,1.65);
             if(Config.difficulty == 3){
                 cost *= 1.3;
             }

@@ -1,7 +1,9 @@
 package biggestxuan.bxp2.events;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
+import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.utils.DifficultyUtils;
 import biggestxuan.bxp2.utils.ModUtils;
 import biggestxuan.bxp2.utils.Utils;
@@ -9,25 +11,41 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.player.Player;
+import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.List;
 
 /**
  * @Author Biggest_Xuan
  * 2025/4/4
  */
 @Mod.EventBusSubscriber(modid = BxP2.MODID)
-public class PlayerLoggedEvent {
+public class PlayerCommonEvent {
     @SubscribeEvent
     public static void playerLoggedEvent(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
         if(BxP2.devMode){
-            BxP2.LOGGER.info(ModUtils.getAllMods());
+            BxP2.LOGGER.info("AAA");
+            BxP2.LOGGER.info("{}",player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent());
+            player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
+                if(c.getPhase() == -1){
+                    c.setPhase(0);
+                }
+            });
+            //BxP2.LOGGER.info(ModUtils.getAllMods());
             BxP2.LOGGER.info("AAA");
             if(player instanceof ServerPlayer serverPlayer){
                 BxP2.LOGGER.info("{}", DifficultyData.getInstance(serverPlayer.level()).getDifficulty());
             }
+            List<BxPCatalyst> catalysts = BxPCatalyst.getAllCatalyst(BxPCatalyst.ADAPT.ALL);
+            catalysts.forEach(e -> {
+                BxP2.LOGGER.info("BBB");
+                BxP2.LOGGER.info(e.stack.toString());
+                BxP2.LOGGER.info(String.valueOf(e.energyRate));
+            });
         }
         if(player instanceof ServerPlayer serverPlayer){
             welcome(player);
@@ -37,6 +55,17 @@ public class PlayerLoggedEvent {
                 server.setDifficultyLocked(true);
                 server.setDifficulty(Difficulty.HARD,true);
                 server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),"gamerule keepInventory true");
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void travelDimensionEvent(EntityTravelToDimensionEvent event){
+        if(event.getEntity() instanceof ServerPlayer sp){
+            if(event.getDimension().location().toString().equals("minecraft:the_nether")){
+                sp.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
+                    c.setPhase(3);
+                });
             }
         }
     }

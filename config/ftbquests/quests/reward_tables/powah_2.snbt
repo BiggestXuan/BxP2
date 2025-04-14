@@ -1,0 +1,13 @@
+{
+	icon: "powah:capacitor_spirited"
+	id: "0E2B5E27D377A563"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 3, item: "powah:capacitor_niotic", random_bonus: 2, weight: 0.5f }
+		{ count: 2, item: "powah:capacitor_spirited", random_bonus: 2, weight: 0.4f }
+		{ count: 8, item: "powah:crystal_niotic" }
+		{ count: 6, item: "powah:crystal_spirited" }
+	]
+	title: "Powah进阶奖励包"
+}

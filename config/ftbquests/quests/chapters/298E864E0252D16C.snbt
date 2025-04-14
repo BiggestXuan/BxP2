@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4D84BCC4AEFF84F5"]
 			icon: "minecraft:oak_log"
 			id: "38024D3B1806219E"
 			rewards: [{
@@ -32,7 +33,7 @@
 				type: "item"
 			}]
 			title: "来一些木头吧"
-			x: 0.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -49,7 +50,7 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: -2.5d
 		}
 		{
@@ -73,12 +74,20 @@
 			can_repeat: false
 			dependencies: ["38024D3B1806219E"]
 			id: "1100D7D8A7A04EF7"
-			rewards: [{
-				count: 8
-				id: "563725A52246ED97"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "563725A52246ED97"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7247294D0FD0A5A9"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "34F6C3C3EB960779"
@@ -92,13 +101,21 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "152998D02AB61294"
-			rewards: [{
-				count: 4
-				id: "2A1DE7445D04B0D4"
-				item: "minecraft:diamond_ore"
-				random_bonus: 4
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2A1DE7445D04B0D4"
+					item: "minecraft:diamond_ore"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "419968D38BA96BB8"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+			]
 			subtitle: "你是想留着还是直接挖掉呢？"
 			tasks: [{
 				id: "2E94FE1C58B7D7B8"
@@ -116,7 +133,7 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -134,7 +151,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -152,7 +169,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -212,6 +229,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["4D84BCC4AEFF84F5"]
+			hide_dependency_lines: true
 			id: "4FCDB059856EC079"
 			tasks: [{
 				count: 16L
@@ -308,6 +327,7 @@
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "71B7631E58A90D2F"
 			tasks: [{
+				count: 16L
 				id: "66C1A48DB515FAFA"
 				item: "thermal:lead_ingot"
 				type: "item"
@@ -350,6 +370,37 @@
 			}]
 			x: 8.0d
 			y: 2.5d
+		}
+		{
+			description: [
+				"使用模式选择器来选择模式，只有创造模式或是服务器管理员才能选择模式。"
+				""
+				"如果你是单人游玩，具有作弊权限即可修改模式。"
+				""
+				"每个模式的说明可以右击模式选择器来查看。"
+				""
+				"模式选择器弄丢了也不要紧，可以在配置文件中修改。"
+				""
+				"你在任何时候都可以修改模式，如果你是多人一起玩别忽略了小伙伴们的模式哦～"
+				""
+				"选择模式后需要&4完全退出&r游戏重新进入，以确保内容更新。"
+			]
+			icon: "bxp2:difficulty_change"
+			id: "4D84BCC4AEFF84F5"
+			rewards: [{
+				id: "69900EFE21859747"
+				item: "bxp2:difficulty_change"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "别忘了选择模式"
+			tasks: [{
+				id: "098C585F5E675BAD"
+				title: "开始大轩之旅！"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "从这里开始吧！"

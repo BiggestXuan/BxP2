@@ -1,0 +1,14 @@
+{
+	icon: "botania:rune_fire"
+	id: "092A50D3835CC166"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ count: 6, item: "botania:rune_water" }
+		{ count: 6, item: "botania:rune_fire" }
+		{ count: 6, item: "botania:rune_earth" }
+		{ count: 6, item: "botania:rune_air" }
+		{ count: 3, item: "botania:black_lotus" }
+	]
+	title: "植物魔法初阶奖励包"
+}
