@@ -42,15 +42,15 @@
 					type: "random"
 				}
 			]
-			subtitle: "四个压印版"
+			subtitle: "免得你找那么多"
 			tasks: [{
 				id: "48664164761CCC82"
 				item: "ae2:sky_stone_block"
 				type: "item"
 			}]
 			title: "准备好了用AE吗？"
-			x: 2.5d
-			y: 0.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			id: "008DD67EC07047D4"
@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["008DD67EC07047D4"]
@@ -82,8 +82,8 @@
 				item: "toms_storage:ts.trim"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["008DD67EC07047D4"]
@@ -99,24 +99,8 @@
 				item: "toms_storage:ts.inventory_cable"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
-		}
-		{
-			id: "418104572511E23A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "22B5E2126BBADF89"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
-			tasks: [{
-				id: "162C5F45AB492280"
-				item: "toms_storage:ts.storage_terminal"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["008DD67EC07047D4"]
@@ -134,7 +118,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["008DD67EC07047D4"]
@@ -150,14 +134,15 @@
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -0.5d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"3318C4278A9EDF43"
 				"008DD67EC07047D4"
 			]
+			hide_dependency_lines: true
 			id: "2D922B209D2C4313"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -174,8 +159,68 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "6F41A4014A4212F6"
+			tasks: [{
+				id: "389B1CEB46A66579"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "198ED03950F394DD"
+			tasks: [{
+				id: "2DFBBA2037297040"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "44F1F060EAA87224"
+			tasks: [{
+				id: "7B7EF1E2F931BDD7"
+				item: "ae2:printed_logic_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "30A5A0D3C1BFE236"
+			tasks: [{
+				id: "40566C58620BE39B"
+				item: "ae2:printed_engineering_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			id: "5DF60AD23C96053E"
+			tasks: [{
+				id: "23498D00912EAB7C"
+				item: "ae2:printed_calculation_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			id: "2EE9B0549AD53330"
+			tasks: [{
+				id: "769D34B5CE811445"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
 		}
 	]
 	title: "存储和自动化"

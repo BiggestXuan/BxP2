@@ -1,9 +1,13 @@
 package biggestxuan.bxp2;
 
+import biggestxuan.bxp2.blocks.BxPBlocks;
 import biggestxuan.bxp2.capability.IBxPCapability;
 import biggestxuan.bxp2.creativeTabs.BxPCreativeTabs;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.fluids.BxPFluids;
+import biggestxuan.bxp2.integration.Mekanism.BxPGases;
+import biggestxuan.bxp2.integration.Mekanism.BxPInfuseTypes;
+import biggestxuan.bxp2.integration.Mekanism.BxPMekFluids;
 import biggestxuan.bxp2.integration.thinker.Modifiers.BxPModifiers;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.network.PacketHandler;
@@ -25,7 +29,6 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
@@ -37,24 +40,26 @@ public class BxP2
 {
 
     public static final String MODID = "bxp2";
-    public static final String VERSION = "0.0.13";
+    public static final String VERSION = "0.0.15";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static boolean devMode = true;
     public static final Logger LOGGER = LogUtils.getLogger();
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
     public BxP2(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerCap);
-        BLOCKS.register(modEventBus);
+        BxPBlocks.BLOCKS.register(modEventBus);
         BxPFluids.FLUIDS.register(modEventBus);
         BxPCreativeTabs.CREATIVE_TABS.register(modEventBus);
         BxPItems.ITEMS.register(modEventBus);
         BxPModifiers.REGISTER.register(modEventBus);
         BxPEffects.EFFECTS.register(modEventBus);
+        BxPInfuseTypes.INFUSE_TYPES.register(modEventBus);
+        BxPGases.GASES.register(modEventBus);
+        BxPMekFluids.FLUID.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -113,6 +118,11 @@ public class BxP2
     @Nullable
     public static Item getItem(ResourceLocation rl){
         return ForgeRegistries.ITEMS.getValue(rl);
+    }
+
+    @Nullable
+    public static Item getItem(String rl){
+        return getItem(MODRL(rl));
     }
 
     @Nullable

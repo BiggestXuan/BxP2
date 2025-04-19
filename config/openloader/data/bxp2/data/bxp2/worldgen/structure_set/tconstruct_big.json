@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "bxp2:tconstruct_big",
+      "weight": 3
+    },
+    {
+      "structure": "bxp2:tconstruct_small",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1744698702,
+    "spacing": 60,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

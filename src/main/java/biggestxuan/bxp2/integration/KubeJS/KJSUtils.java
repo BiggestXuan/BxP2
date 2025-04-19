@@ -7,18 +7,13 @@ import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.recipes.BXFurnaceRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
-import biggestxuan.bxp2.utils.Utils;
 import dev.architectury.fluid.FluidStack;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -98,12 +93,13 @@ public class KJSUtils {
         return RecipeUtils.getBXFurnaceRecipe(
             new BXFurnaceRecipe("bx_furnace",
                    new ItemStack[]{
-                           BxP2.getStack("minecraft:iron_ingot"),
-                           BxP2.getStack("minecraft:stone"),
-                           BxP2.getStack("minecraft:egg")
+                           BxP2.getStack("bxp2:bx_unstable_ingot"),
+                           BxP2.getStack("mekanism:hdpe_sheet"),
+                           BxP2.getStack("mekanism:alloy_reinforced"),
+                           BxP2.getStack("mekanism:dust_lithium"),
                    },new ItemStack[]{BxP2.getStack("bxp2:bx_ingot")}
                     , BxPCatalyst.ADAPT.BX_FURNACE,
-                    10000,10000000,0
+                    10000,100000000,0
             ).copy()
         );
     }

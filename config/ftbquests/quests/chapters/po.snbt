@@ -3,9 +3,1282 @@
 	default_quest_shape: ""
 	filename: "po"
 	group: "5099321D8633CF57"
+	icon: "mekanism:pellet_antimatter"
 	id: "025080422C099532"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["0F622A0E4EAADDEC"]
+			description: [
+				"欢迎来到通用机械！"
+				""
+				"通用机械作为本整合包的重点内容，整合包为其增加和修改了很多内容。"
+				""
+				"但是一些配方&4极为复杂&r，因此如果你是休闲模式，将会发现一些任务无法完成，这是正常现象。"
+				""
+				"如果你想体验这部分内容可以随时修改游戏模式后体验，你也可以随时修改回去。"
+				""
+				"此外，合成配方，发电数值，耗电数值在三个整合包模式下都不尽相同。"
+			]
+			id: "55E7292AE8483113"
+			rewards: [
+				{
+					count: 2
+					id: "7CF383661C49A2F4"
+					item: "bxp2:bx_unstable_ingot"
+					type: "item"
+				}
+				{
+					id: "13C9A34530EB80AE"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			subtitle: "治金灌注机"
+			tasks: [{
+				id: "63D401A81373AAB8"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55E7292AE8483113"]
+			id: "04A56C0512E5AC1F"
+			rewards: [{
+				count: 4
+				id: "52C329C845D106C3"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			subtitle: "甜甜的"
+			tasks: [{
+				id: "41179FB51340A185"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			title: "草莓味口香糖"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55E7292AE8483113"]
+			id: "268773A2C1470201"
+			rewards: [{
+				count: 4
+				id: "378886C8A57AAB5E"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4568D35849B00662"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["268773A2C1470201"]
+			id: "393B255CCB5C4A05"
+			rewards: [{
+				count: 2
+				id: "201CEBA2F2FDB0DB"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			subtitle: "非常划算"
+			tasks: [{
+				id: "0233BCC9078D685A"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0F622A0E4EAADDEC"
+				"393B255CCB5C4A05"
+			]
+			id: "1A74FF17B3C22046"
+			rewards: [{
+				count: 4
+				id: "43825CC445120D91"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			subtitle: "没有腹肌"
+			tasks: [{
+				id: "78BC954C27B10A78"
+				item: "bxp2:enriched_bx"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["393B255CCB5C4A05"]
+			id: "19A490AC36B8FF81"
+			rewards: [{
+				count: 4
+				id: "30C9EA04AB14CB54"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			subtitle: "小心硌牙"
+			tasks: [
+				{
+					id: "4184E11C4B7C952F"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					id: "4E1BD995E3B51104"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+				{
+					id: "5A427B26D3F3D361"
+					item: "mekanism:enriched_gold"
+					type: "item"
+				}
+				{
+					id: "49881B099ABD32AF"
+					item: "mekanism:enriched_tin"
+					type: "item"
+				}
+			]
+			title: "富集大杂烩"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"268773A2C1470201"
+				"04A56C0512E5AC1F"
+			]
+			id: "0CA45FE9FF8E1772"
+			rewards: [{
+				count: 16
+				id: "67692BA71D3EF902"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			subtitle: "它还只是个孩子"
+			tasks: [{
+				id: "5051E83FB80DEA15"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			description: ["末影接口和热力的最基本电线速率都比通用机械的要好！"]
+			hide_dependency_lines: true
+			id: "0A09F73AE0624584"
+			subtitle: "不够快！"
+			tasks: [{
+				id: "69BFC81BF5C7D5D9"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A09F73AE0624584"]
+			id: "2187BC3BF52F25A9"
+			tasks: [{
+				id: "1C38D42351EEC714"
+				item: "mekanism:advanced_universal_cable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2187BC3BF52F25A9"]
+			id: "4CC8C5262F4B1A51"
+			tasks: [{
+				id: "3D7F8721BFD11835"
+				item: "mekanism:elite_universal_cable"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4CC8C5262F4B1A51"]
+			id: "0C52369174FBA495"
+			tasks: [{
+				id: "5ECC3844BBA6FA4D"
+				item: "mekanism:ultimate_universal_cable"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "5BB3E82C6813BFF9"
+			tasks: [{
+				id: "526863530F0504B5"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5BB3E82C6813BFF9"]
+			id: "6E92BC90573F26FD"
+			tasks: [{
+				id: "1397D0EED63B1426"
+				item: "mekanism:advanced_mechanical_pipe"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6E92BC90573F26FD"]
+			id: "45251244910AA37F"
+			tasks: [{
+				id: "1AE5053B163BD18D"
+				item: "mekanism:elite_mechanical_pipe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["45251244910AA37F"]
+			id: "0295CB344416028C"
+			tasks: [{
+				id: "63AE8BE311773291"
+				item: "mekanism:ultimate_mechanical_pipe"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "37F6494E2EAE2FEB"
+			tasks: [{
+				id: "16D142ED13A02C43"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["37F6494E2EAE2FEB"]
+			id: "570317BC19B099E3"
+			tasks: [{
+				id: "1AF9650585136493"
+				item: "mekanism:advanced_pressurized_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["570317BC19B099E3"]
+			id: "7880CB845CB4EDC8"
+			tasks: [{
+				id: "176811F567439DF8"
+				item: "mekanism:elite_pressurized_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7880CB845CB4EDC8"]
+			id: "600AD42B8E248716"
+			tasks: [{
+				id: "65C4A451BC81B1FC"
+				item: "mekanism:ultimate_pressurized_tube"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "2349B42FBF43A0AB"
+			tasks: [{
+				id: "527DD57D9658654D"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2349B42FBF43A0AB"]
+			id: "4DB8FC3666B769D1"
+			tasks: [{
+				id: "4ED4AE92CC5E448C"
+				item: "mekanism:advanced_logistical_transporter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DB8FC3666B769D1"]
+			id: "05CAABD063C19B51"
+			tasks: [{
+				id: "6D9BAF54A44FEAD5"
+				item: "mekanism:elite_logistical_transporter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05CAABD063C19B51"]
+			id: "3C3D205E90DA7056"
+			tasks: [{
+				id: "0EAE4129691E9A58"
+				item: "mekanism:ultimate_logistical_transporter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0CA45FE9FF8E1772"]
+			id: "13FFC8FB8EFCF592"
+			rewards: [{
+				count: 64
+				id: "0F1B3D95AE417456"
+				item: "mekanism:structural_glass"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "堆高高"
+			tasks: [{
+				count: 16L
+				id: "0B72CD54C19CE40E"
+				item: "mekanism:thermal_evaporation_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["13FFC8FB8EFCF592"]
+			id: "4ED3DBEB6586F691"
+			rewards: [{
+				count: 8
+				id: "0E5513E7BBC85701"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			subtitle: "苏坡爱豆的笑容"
+			tasks: [
+				{
+					count: 4L
+					id: "214F0C67A590B49F"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+				{
+					id: "6AC01374A132492B"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+			]
+			title: "蒸馏塔能有蒸馏水吗？"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["393B255CCB5C4A05"]
+			id: "43334EC4C5780226"
+			rewards: [{
+				count: 8
+				id: "7008A6ADEB9B1971"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "听起来有电流？"
+			tasks: [{
+				id: "52D2C4E309CC6AE2"
+				item: "mekanism:enriched_diamond"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			id: "55A31EB06359CE5C"
+			rewards: [{
+				id: "5D7739C64CBE3B0B"
+				item: "mekanism:enriched_diamond"
+				type: "item"
+			}]
+			subtitle: "清新口气"
+			tasks: [{
+				id: "608819B420B48B11"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			title: "薄荷味口香糖"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0CA45FE9FF8E1772"
+				"55A31EB06359CE5C"
+			]
+			id: "5D28A96BBD032AE2"
+			rewards: [{
+				count: 2
+				id: "3F4AAA3D11C117C9"
+				item: "mekanism:elite_control_circuit"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "47C580769B4827D9"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			description: [
+				"为平衡整合包的数值，电解分离器的消耗增加800%，即为默认值的9倍。"
+				""
+				"同时，氢气的发电效率也提升800%。"
+				""
+				"无论如何，产生氢气耗电和氢气发电量是一样的，这意味着你获得氧气是不耗电的。"
+			]
+			id: "4A1EA10EDB274809"
+			rewards: [{
+				count: 4
+				id: "4901B4E67E78A906"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03CD128E0D5B5335"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			description: [
+				"在进阶和挑战模式中为了平衡游戏难度，对燃气发电机发电效率（除氢气）提升：75%/50%。"
+				""
+				"因此，燃气发电机左下角的数值为基础数值，实际发电还要加上这个效率。"
+				""
+				"你可以使用甲烷、乙烯、丙胺来进行发电，它们的发电量逐步递增，进阶模式下单台发电机最高可达&3716.8KFE/Tick&r，挑战模式为：&3614.4KFE/Tick&r"
+				""
+				"当制作完整的一套产线，且每台机器插满16个速度升级和16个能量升级，可带动约25台满载的燃气发电机，产线综合耗电量为&35.6MFE/Tick&r，综合发电量为&317.92MFE/Tick&r，挑战模式下为&315.36MFE/Tick&r。"
+				""
+				"你还可以增加效率低下的机器数量，从而有着更高的效率。"
+				""
+				"简要流程如下："
+				"1.加压反应室制作&b二氧化碳&r。"
+				"2.电解水制作&b氢气&r，和二氧化碳化学灌注合成&3甲烷&r。"
+				"3.通过回旋式气液转化机制作&3液态氧&r。"
+				"4.将你的食物使用粉碎机变成生物燃料，和液态氧、甲烷在加压反应式中合成&d乙烯&r。"
+				"5.制作空气压缩器，获取&5氮&r。制作&d液态乙烯&r，电解，获取&4乙炔&r，合成&2氢氰酸&r。"
+				"6.完成热力蒸馏结构，电解盐水获取&e氯气&r，和氢气合成&3氯化氢&r，利用此制作&6氯化铜&r。"
+				"7.液态乙烯在氯化铜作用下和氢氰酸合成&4丙烯腈&r，在氢气作用下合成&5丙胺&r。"
+				""
+				"此外，要实现真正意义上的全天候发电，你还需要保证木头和任意一种食物量产。"
+				""
+				"这是你当前能获取最高发电的产线了，如果你觉得过于复杂，你依旧可以只使用乙烯发电，也可以使用Powah或是大型反应堆的发电装置。"
+			]
+			id: "3C8E8160CC1ABCD1"
+			rewards: [{
+				count: 4
+				id: "32E229E1609EC577"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "全新的发电线路"
+			tasks: [{
+				id: "41CB198F563FA363"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			id: "794FED0DB098CBC0"
+			rewards: [{
+				count: 4
+				id: "1266E9BA26879E8A"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CE7877FAD8F6CA8"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			id: "2242BEB2FF37D028"
+			rewards: [{
+				count: 4
+				id: "1693F720EB0436C2"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A92D11F4E1D64C1"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			id: "2C41CEE4A27EF03E"
+			tasks: [{
+				id: "3BE9CE4827F192D2"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04A56C0512E5AC1F"]
+			id: "0F49E113DFC6BDDD"
+			tasks: [{
+				id: "2BAA0A3380D7EF13"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D28A96BBD032AE2"
+				"55A31EB06359CE5C"
+			]
+			description: ["你现在可以量产高级控制电路了"]
+			id: "028C0D0BD1159013"
+			subtitle: "量产电路"
+			tasks: [{
+				id: "5F5553C6CC8D835F"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D28A96BBD032AE2"
+				"55A31EB06359CE5C"
+			]
+			id: "79653AB3B299FF2B"
+			tasks: [{
+				id: "4ADBAB84E356231F"
+				item: "mekanismscience:adsorption_separator"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3080B7C1B2453B59"]
+			description: [
+				"制作不稳定的大轩锭只需要合成表中的前三个材料，后面的材料是可选的，在此简称为“催化剂”。"
+				""
+				"这些催化剂合成是会被消耗的，按照你添加的不同种类会有不同的时间减免和液体减免。"
+				""
+				"这些催化剂有一个单独的JEI页面，你可以看到对应信息。"
+				""
+				"当你解锁通用机械后，你就可以量产不稳定的大轩锭了。"
+			]
+			id: "0F622A0E4EAADDEC"
+			rewards: [
+				{
+					count: 4
+					id: "0FC6038C53255B9D"
+					item: "bxp2:bx_unstable_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D72F0DCF5069F22"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			size: 1.0d
+			subtitle: "通用机械第一步"
+			tasks: [{
+				id: "47E1A96D6245E052"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C6D8086753D27B3"]
+			id: "215228277B01DB36"
+			subtitle: "希望不会硌牙"
+			tasks: [{
+				id: "0C9E21231E7D7F36"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "蓝莓味口香糖"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C6D8086753D27B3"]
+			id: "2CE6D6EF6301BEDA"
+			tasks: [{
+				id: "23215DE887854190"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"215228277B01DB36"
+				"2CE6D6EF6301BEDA"
+			]
+			description: [
+				"一套完整的裂变应分为三个部分：裂变燃料制造、裂变产物处理、高级冷却液制作和冷却。"
+				""
+				"这里介绍大轩整合包2的裂变燃料制造部分。大轩整合包除了传统裂变外还提供一个简易裂变系统，它是绝对安全的，但是效率只有原始裂变的&325%/2%/0.3%&r。"
+				""
+				"简易裂变系统使用&e氧化铀&r即可工作，你只需要将&2铀锭&r在富集仓富集成&e铀黄饼&r，然后在化学氧化机中即可制作。"
+				""
+				"裂变燃料制作流程简要如下（仅做参考，部分无先后顺序，其他模组机器也许能帮上忙）："
+				"1.根据上述描述制作&e氧化铀&r。"
+				"2.制作空气压缩机，收集空气，进而收集&d氮&r，与&b氢气&r合成&d氨&r。和氧气合成&d一氧化氮&r、&d二氧化氮&r，然后和水蒸气合成&d硝酸&r。"
+				"3.氧化铀和硝酸合成&5硝酸铀&r，通过回旋式气液转化机变成&6硝酸铀酰溶液&r，在热力蒸馏塔中制作&6浓缩硝酸铀酰溶液&r。"
+				"4.将其转化为气态&6浓缩硝酸铀&r，在化学结晶室中制作&a浓缩铀饼&r。"
+				"5.使用硫粉在化学氧化机中制作&5二氧化硫&r，和氧气合成&5三氧化硫&r，和水蒸气合成&7硫酸&r。"
+				"6.将硫酸和氟石溶解，制作&7氢氟酸&r。"
+				"7.电解液态氢氟酸，制作&7氟气&r。"
+				"接下来有两条线路可选，取决于你是否愿意使用复杂线路获得更高产量："
+				"（1）便捷产线，产量较低（每次100mb）"
+				"8-1.使用氟气和浓缩铀饼在化学溶解室中合成&7四氟化铀&r。"
+				"（2）复杂产线，产量较高：（每次1200mb）"
+				"8-2.制作海水泵，从海洋生物群系抽取海水，在热力蒸馏塔中制作&a氯化钾&r。"
+				"9-2.电解液态氯化钾，制作&a氢氧化钾&r。将其转为液体，在热力蒸馏塔中制作&a无水氢氧化钾&r。"
+				"10-2.电解无水氢氧化钾，获得&5钾蒸汽&r，与氟气合成&5氟化钾&r。"
+				"11-2.使用氟化钾和浓缩铀饼在化学溶解室合成&7四氟化铀&r。"
+				"12.四氟化铀和氟气合成&2六氟化铀&r，在同位素离心机中制作&7裂变燃料&r。"
+			]
+			icon: "mekanismgenerators:fission_reactor_casing"
+			id: "38EF6679F01FD9F4"
+			rewards: [
+				{
+					count: 500
+					id: "0656D5F104A8E3B8"
+					item: "mekanismgenerators:fission_reactor_casing"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 1500
+					id: "1F94563DE93BED75"
+					item: "mekanismgenerators:reactor_glass"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E374A26B585FA2D"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			size: 3.0d
+			tasks: [{
+				id: "51DF135DBF50423F"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			title: "启动裂变！"
+			x: 19.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0CA45FE9FF8E1772"]
+			description: [
+				"涡轮的效率已经提升了700%，即为原先的八倍。"
+				""
+				"但由于锅炉的限制，你在启动裂变反应堆和聚变反应堆前无法获取蒸汽。"
+			]
+			id: "00A31F3673210745"
+			rewards: [{
+				count: 512
+				id: "6F75023A392F2995"
+				item: "mekanism:structural_glass"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 64L
+					id: "43CBB6DABA55F433"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6AB752D41BE424EF"
+					item: { Count: 64, id: "mekanismgenerators:turbine_vent" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7E25F3096D457ECB"
+					item: { Count: 32, id: "mekanismgenerators:saturating_condenser" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0DCF6A0C063A4AB2"
+					item: { Count: 32, id: "mekanism:pressure_disperser" }
+					type: "item"
+				}
+			]
+			title: "涡轮！"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00A31F3673210745"]
+			id: "51E6AD26A2013E90"
+			rewards: [{
+				count: 8
+				id: "50C2D13EAF7C6A69"
+				item: "mekanismgenerators:turbine_valve"
+				type: "item"
+			}]
+			subtitle: "小心刀片"
+			tasks: [
+				{
+					count: 18L
+					id: "2B8D0590D357EE1D"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "43AE91B408194E17"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "258B3A328F18AE18"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3F0B653476F3ED30"
+					item: { Count: 6, id: "mekanismgenerators:electromagnetic_coil" }
+					type: "item"
+				}
+			]
+			title: "大风车"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0CA45FE9FF8E1772"]
+			description: [
+				"整合包调整："
+				""
+				"锅炉中仅有水的时候无法工作，必须要含有任意一种过热气体才可工作。"
+				""
+				"休闲模式不受影响。"
+			]
+			id: "045097AD0D386B5E"
+			rewards: [{
+				count: 512
+				id: "4B3A2A0B9AFD78C6"
+				item: "mekanism:structural_glass"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "11FA4E60C4028A68"
+					item: "mekanism:boiler_casing"
+					type: "item"
+				}
+				{
+					id: "14B6A43A46FC970A"
+					item: "mekanism:boiler_valve"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "258126B4F3227972"
+					item: { Count: 16, id: "mekanism:superheating_element" }
+					type: "item"
+				}
+			]
+			title: "像是一次汗蒸"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["794FED0DB098CBC0"]
+			id: "73D1C8FC6FE95FE1"
+			rewards: [{
+				id: "156BE897CF44556F"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			subtitle: "小心中毒"
+			tasks: [{
+				id: "664040EA4A8502AC"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			title: "该吃药了"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73D1C8FC6FE95FE1"]
+			id: "3F1EB5EFB1F89D8D"
+			rewards: [{
+				count: 3
+				id: "1A6B5F8FE5C36FA3"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14C4012173815180"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38EF6679F01FD9F4"]
+			description: [
+				"裂变后产物简要流程-钚："
+				"1.将核废料和硝酸混合，合成&6硝酸混合废液&r。"
+				"2.和氢氟酸合成&6四氟化钚&r，太阳能中子活化器后即可合成钚。"
+			]
+			id: "7D691F62672E8AD9"
+			tasks: [{
+				id: "0D47A85C40910B47"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EF6679F01FD9F4"]
+			description: [
+				"裂变后产物简要流程-钋："
+				"1.将核废料和硝酸混合，合成&6硝酸混合废液&r。"
+				"2.和氢氧化钾合成&6二氧化钋&r，同位素离心机后即可合成钋。"
+			]
+			id: "1E4C6ED1B95C158A"
+			tasks: [{
+				id: "1009E85536E7B230"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E4C6ED1B95C158A"]
+			hide_dependent_lines: true
+			id: "3563AEE73B167787"
+			tasks: [{
+				id: "7C8CF58F40EBBB30"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D691F62672E8AD9"]
+			hide_dependent_lines: true
+			id: "2D70733A9B44481A"
+			tasks: [{
+				id: "2609A1B5E8A3B8AC"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E4C6ED1B95C158A"]
+			description: ["你可以理解为一个快速、量产放射性产物的东西，如果你能量产它，将大幅度提高游戏效率。"]
+			id: "33D46D6CFF2F6916"
+			rewards: [{
+				count: 8
+				id: "639449A66CF96F50"
+				item: "mekanismscience:pellet_neutron_source"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DE9291C93A2C52A"
+				item: "mekanismscience:pellet_neutron_source"
+				type: "item"
+			}]
+			title: "香蕉味口香糖！"
+			x: 22.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3563AEE73B167787"]
+			icon: "mekanism:mekasuit_bodyarmor"
+			id: "5CA386BEEC7B46AE"
+			rewards: [
+				{
+					count: 40
+					id: "62FA18774D2C5549"
+					item: "mekanism:module_energy_unit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55DFE4C15901881D"
+					item: "mekanism:module_attack_amplification_unit"
+					type: "item"
+				}
+				{
+					id: "584317CF7BD4603C"
+					item: "mekanism:module_gravitational_modulating_unit"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6D152521F370A718"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+				{
+					id: "645B7FC7CBE93538"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "23382EB006339F9A"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "3BC712C1B25D8D97"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "1D84E32556E2E879"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			title: "我是超人强"
+			x: 19.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2D70733A9B44481A"
+				"3563AEE73B167787"
+			]
+			id: "05E2C2520A248F50"
+			rewards: [{
+				count: 6
+				id: "0964C3514BE02D13"
+				item: "bxp2:bx_ingot"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7AC2DA9AC2B6F23B"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					id: "3FB7166DFC596B86"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2D70733A9B44481A"
+				"3563AEE73B167787"
+			]
+			id: "51C08C5CBEFBA044"
+			rewards: [{
+				count: 6
+				id: "539CA1B37B4960F6"
+				item: "bxp2:bx_ingot"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1A317A87BA85EAA3"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					id: "431910C34BD0B4AE"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"55A31EB06359CE5C"
+				"0DAE5B1FB45C1B3F"
+				"3F1EB5EFB1F89D8D"
+				"5D28A96BBD032AE2"
+			]
+			description: [
+				"和不稳定的大轩锭一样，配方只需要前四种即可，剩下的是会消耗的“催化剂”。"
+				""
+				"多方块结构可在JEI查看，你需要替换部分的末影块为输入/输出仓。"
+			]
+			icon: "bxp2:bx_ingot"
+			id: "1C6D8086753D27B3"
+			rewards: [{
+				count: 4
+				id: "66EBEE356E099C0E"
+				item: "bxp2:bx_ingot"
+				team_reward: true
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "726164B3EEDB875E"
+					item: "bxp2:bx_ingot"
+					type: "item"
+				}
+				{
+					id: "0DFC70E5EB8EF4BE"
+					item: "mbd2:bx_furnace"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4ED3DBEB6586F691"]
+			id: "0DAE5B1FB45C1B3F"
+			rewards: [{
+				count: 8
+				id: "32A7B4DF8BFD2E58"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36DC07DF71B47885"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"268773A2C1470201"
+				"04A56C0512E5AC1F"
+			]
+			id: "51CCF199EB3D3179"
+			rewards: [{
+				count: 4
+				id: "7BCCD3F3BF59BCC9"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "749D6EB73675697E"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["38EF6679F01FD9F4"]
+			description: [
+				"传统的钠蒸气效率实在是太低了，光是生产就要消耗不少时间，并且还不能达到裂变反应堆的最大效率。"
+				""
+				"在这里我们引入了新的冷却剂-&7氦&r，使用氦即可让裂变反应堆在1920速率下进行运作。"
+				""
+				"要让1920速率的裂变反应堆工作，你需要准备至少20M的氦，还需要搭建一个锅炉冷却氦，因为涡轮的效率大幅提高，你还可以搭建一台涡轮进行发电。（如果你不想的话可以找到多个超过20M/Tick抽水速率的办法）"
+				""
+				"六氟化铀可以变成锶，当然也可以使用中子源靶丸，这样会让效率提高50倍！然后抽取重水合成钇，即可合成氦。"
+				""
+				"如果你想休闲一点来玩，并不想跑满最大速率的裂变反应堆，在这里也送你8M的氦，无论是给现有小型裂变提速还是减少一点工作量，这都是很有必要的～"
+			]
+			icon: {
+				Count: 1
+				id: "mekanism:creative_chemical_tank"
+				tag: {
+					mekData: {
+						GasTanks: [{
+							Tank: 0b
+							stored: {
+								amount: 9223372036854775807L
+								gasName: "mekanismscience:helium"
+							}
+						}]
+					}
+				}
+			}
+			id: "4AF5186E52213798"
+			rewards: [{
+				id: "26C10B6D21EB7837"
+				item: {
+					Count: 1
+					id: "mekanism:ultimate_chemical_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 8192000L
+									gasName: "mekanismscience:helium"
+								}
+							}]
+							InfusionTanks: [ ]
+							Items: [ ]
+							PigmentTanks: [ ]
+							SlurryTanks: [ ]
+							componentConfig: {
+								config2: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config3: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config4: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config5: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config6: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								eject2: 1b
+								eject3: 1b
+								eject4: 1b
+								eject5: 1b
+								eject6: 0b
+							}
+							componentEjector: {
+								color0: -1
+								color1: -1
+								color2: -1
+								color3: -1
+								color4: -1
+								color5: -1
+								strictInput: 0b
+							}
+							controlType: 0
+							dumping: 0
+							owner: [I;
+								691178348
+								1862487994
+								-1808373877
+								1768852203
+							]
+							securityMode: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "04EFCA6F397B2668"
+				type: "checkmark"
+			}]
+			title: "更强的冷却剂！"
+			x: 19.5d
+			y: -3.0d
+		}
+	]
 	title: "通用机械"
 }

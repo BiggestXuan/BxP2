@@ -6,12 +6,20 @@ import biggestxuan.bxp2.data.DifficultyData;
 import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.utils.DifficultyUtils;
 import biggestxuan.bxp2.utils.ModUtils;
+import biggestxuan.bxp2.utils.UniteUtils;
 import biggestxuan.bxp2.utils.Utils;
+import dev.latvian.mods.kubejs.player.InventoryChangedEventJS;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Style;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
+import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -60,17 +68,50 @@ public class PlayerCommonEvent {
     }
 
     @SubscribeEvent
-    public static void travelDimensionEvent(EntityTravelToDimensionEvent event){
-        if(event.getEntity() instanceof ServerPlayer sp){
-            if(event.getDimension().location().toString().equals("minecraft:the_nether")){
-                sp.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
-                    c.setPhase(3);
-                });
+    public static void pickUpEvent(EntityItemPickupEvent event){
+        ItemEntity entity = event.getItem();
+        if(entity.level().isClientSide) return;
+        if(entity.getItem().getTags().findAny().isEmpty()){
+            return;
+        }
+        ItemStack u = UniteUtils.getUniteStack(entity);
+        if(u != null){
+            if(entity.getItem().getItem().equals(u.getItem())){
+                return;
             }
+            event.setCanceled(true);
+            ItemEntity newEntity = new ItemEntity(entity.level(),entity.getX(),entity.getY(),entity.getZ(),u);
+            entity.kill();
+            entity.level().addFreshEntity(newEntity);
+        }
+    }
+
+    @SubscribeEvent
+    public static void travelEvent(EntityTravelToDimensionEvent event){
+        if (!(event.getEntity() instanceof ServerPlayer player))
+            return;
+        if(event.getDimension().location().toString().equals("minecraft:the_nether")){
+            player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
+                if(!cap.canNether()){
+                    event.setCanceled(true);
+                    Utils.sendMessage(player,BxP2.tr("bxp2.message.cantnether").setStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
+                }
+            });
+        }
+        if(event.getDimension().location().toString().equals("minecraft:the_end")){
+            player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
+                if(!cap.canEnd()){
+                    event.setCanceled(true);
+                    Utils.sendMessage(player,BxP2.tr("bxp2.message.cantend").setStyle(Style.EMPTY.withColor(ChatFormatting.DARK_PURPLE)));
+                }
+            });
         }
     }
 
     private static void welcome(Player player){
+        if(BxP2.devMode){
+            Utils.sendMessage(player,BxP2.tr("bxp2.message.dev_warning").withStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
+        }
         Utils.sendMessage(player,BxP2.tr("bxp2.message.welcome1").append(BxP2.VERSION));
         Utils.sendMessage(player,BxP2.tr("bxp2.message.welcome2").append(DifficultyUtils.getDifficultyColor()));
         Utils.sendMessage(player,BxP2.tr("bxp2.message.welcome3"));

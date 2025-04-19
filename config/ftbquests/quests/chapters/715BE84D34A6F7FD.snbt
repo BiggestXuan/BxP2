@@ -5,7 +5,7 @@
 	group: "3B03478F18523D29"
 	icon: "twilightforest:raven_feather"
 	id: "715BE84D34A6F7FD"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -13,7 +13,11 @@
 				"4332FCD22C4FA333"
 				"1BCAE1130362B393"
 			]
-			description: ["类似下界门的方式，使用萤石搭建外框，里面倒水即可。"]
+			description: [
+				"看起来只有只用植物魔法才能获取萤石，但暮色森林的部分矿洞中也会生成萤石。"
+				""
+				"类似下界门的方式，使用萤石搭建外框，里面倒水即可。"
+			]
 			icon: "minecraft:glowstone"
 			id: "135B5D57FADDD87A"
 			rewards: [{

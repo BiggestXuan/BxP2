@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "A": {
+        "tag": "forge:gems/fluorite"
+      },
+      "C": {
+        "tag": "forge:circuits/elite"
+      },
+      "I": {
+        "tag": "forge:ingots/refined_obsidian"
+      },
+      "X": {
+        "item": "mekanism:steel_casing"
+      }
+    },
+    "pattern": [
+      "IAI",
+      "CXC",
+      "IAI"
+    ],
+    "result": {
+      "item": "mekanism:chemical_crystallizer"
+    }
+  }

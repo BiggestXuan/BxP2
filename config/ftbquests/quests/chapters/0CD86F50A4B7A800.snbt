@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["1EE2729C31EF9DDE"]
-			description: ["在村庄的吸血鬼猎人那里找到大蒜，在注射椅上完成阵容选择"]
+			description: ["在村庄的吸血鬼猎人那里找到大蒜，在注射椅上完成猎人职业选择"]
 			id: "2508832BEE0F56B7"
 			rewards: [{
 				count: 10
@@ -174,17 +174,11 @@
 		}
 		{
 			description: [
-				"成为猎人最高获得接近50%伤害增幅，吸血鬼最高获得200%左右伤害增幅～"
+				"成为猎人最高获得接近50%伤害增幅，吸血鬼最高获得200%左右伤害增幅～ \\n"
 				"吸血鬼白天无法行动，本整合包将不会提供防晒信标。"
 				"此外增加了吸血鬼和猎人专用的匠魂武器，可以按需使用。"
 			]
 			id: "1EE2729C31EF9DDE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1B0325CB567B4CEC"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
 			tasks: [{
 				id: "05681645855615CA"
 				title: "你想成为吸血鬼还是猎杀？"

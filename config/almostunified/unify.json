@@ -6,7 +6,10 @@
     "mekanism",
     "thermal",
 	  "enderio",
-    "immersiveengineering"
+    "immersiveengineering",
+    "alltheores",
+    "biggerreactors",
+    "electrodynamics"
   ],
   "stoneStrata": [
     "stone",
@@ -29,7 +32,8 @@
     "forge:wires/{material}",
     "forge:storage_blocks/{material}",
     "forge:storage_blocks/raw_{material}",
-    "forge:silicon"
+    "forge:silicon",
+    "forge:circuits/{material}"
   ],
   "materials": [
     "aeternium",
@@ -61,6 +65,7 @@
     "lapis",
     "lead",
     "lumium",
+    "lithium",
     "mithril",
     "netherite",
     "nickel",
@@ -78,7 +83,11 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc"
+    "zinc",
+    "basic",
+    "advanced",
+    "elite",
+    "ultimate"
   ],
   "priorityOverrides": {},
   "customTags": {},

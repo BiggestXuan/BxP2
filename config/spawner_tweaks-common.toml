@@ -1,0 +1,19 @@
+#Maximum number of nearby entities
+#Range: 1 ~ 100
+maxNearbyEntities = 6
+#Minimum spawn delay in ticks
+#Range: 1 ~ 1000
+minSpawnDelay = 200
+#Maximum spawn delay in ticks
+#Range: 1 ~ 2000
+maxSpawnDelay = 800
+#Required player range
+#Range: 1 ~ 100
+requiredPlayerRange = 16
+#Number of entities to spawn
+#Range: 1 ~ 50
+spawnCount = 4
+#Spawn radius
+#Range: 1 ~ 32
+spawnRange = 4
+

@@ -1,0 +1,28 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"bxp2:bx_unstable_ingot"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "value": [
+        {
+          "item": "minecraft:ender_pearl"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:pulsating_alloy_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 12000
+}

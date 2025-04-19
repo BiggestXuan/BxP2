@@ -1,0 +1,803 @@
+
+[Others]
+	#Special Day
+	"特殊日期" = true
+
+["Carved Faction"]
+	#Spawn Egg Carved Villager Has Armor
+	"刷怪蛋铜刻村民拥有盔甲" = false
+	#Carved Obligation
+	"铜刻佣兵团是否主动攻击僵尸类[Zombies]、袭击类生物[Raiders]以外[other than]的敌对生物" = true
+	#Carved Active Attack Creeper
+	"铜刻佣兵团主动攻击苦力怕[Creeper]" = false
+	#Carved Gonna Active Attack List
+	"铜刻佣兵团 会主动攻击生物" = ["minecraft:zombie"]
+	#Carved Never Gonna Active Attack List
+	"铜刻佣兵团 不会主动攻击生物" = ["minecraft:villager", "minecraft:iron_golem", "minecraft:wandering_trader"]
+	#Carved Can Not Attack List
+	"铜刻佣兵团 无法攻击生物" = ["minecraft:villager", "minecraft:wandering_trader"]
+	#Carved Hound Retire
+	"驯服后的铜刻猎犬不再主动协助村民、铜刻生物、信任玩家" = false
+	#Carved Villager Helmet Height As Villager
+	"铜刻村民的头盔类似村民一样" = false
+
+["Tamed Mob"]
+	#Tame Mob Hurt By Owner Has Reduce
+	"驯服生物对主人对自身造成的伤害拥有减伤" = true
+	#Tame Mob Attack Creeper And Ghast
+	"模组添加的驯服生物攻击苦力怕[Creeper]和恶魂[Ghast]" = false
+
+[Villager]
+	#New Profession Villager Give Custom Gift
+	"新职业村民给予自定义礼物（可能冲突）" = false
+
+["Meror Wanted"]
+	#Can Meror Locator be spawn at dimensions outside of the Second Round World
+	"莫厄定位器能否生成于二轮世界外的维度" = false
+	#Dimensions that can Meror Locator be spawn at
+	"莫厄定位器能生成的维度" = ["jerotesvillage:second_round_world"]
+	#Meror Wanted Chance Per Second
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"莫厄通缉每秒出现几率" = 5.0E-4
+	#All Creatures Can Be Wanted By Meror
+	"所有生物可被莫厄通缉" = false
+
+["Wicked Ridicule Night"]
+	#Wicked Ridicule Night Boss Bar Color
+	#Range: 0 ~ 6
+	"邪笑之夜Boss血条颜色" = 2
+	#Wicked Ridicule Night Boss Bar Name Color
+	#Range: > 0
+	"邪笑之夜Boss血条名字颜色" = 6816256
+	#Wicked Ridicule Night About Dimension
+	"邪笑之夜影响维度" = ["jerotesvillage:second_round_world"]
+	#Wicked Ridicule Night About All Dimension
+	"邪笑之夜影响全部维度" = false
+	#Wicked Ridicule Night Chance
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"邪笑之夜几率" = 0.05
+	#Wicked Ridicule Night BossBar
+	"邪笑之夜Boss血条" = true
+	#Wicked Ridicule Night Screen Overlay
+	"邪笑之夜屏幕覆盖" = true
+	#Wicked Ridicule Night Screen Overlay Level
+	#Range: 0.0 ~ 1.0
+	"邪笑之夜屏幕覆盖程度" = 0.5
+	#Wicked Ridicule Night Screen Overlay Color Choose
+	#Range: > 0
+	"邪笑之夜屏幕覆盖颜色选择" = 16711680
+	#Wicked Ridicule Night Fog
+	"邪笑之夜雾气" = true
+	#Wicked Ridicule Night Fog Color Choose
+	#Range: > 0
+	"邪笑之夜雾气颜色选择" = 16711680
+	#Wicked Ridicule Night Block Color
+	"邪笑之夜方块颜色" = false
+	#Wicked Ridicule Night Block Color Choose
+	#Range: > 0
+	"邪笑之夜方块颜色选择" = 16711680
+	#Wicked Ridicule Night Liquid Color
+	"邪笑之夜液体颜色" = true
+	#Wicked Ridicule Night Liquid Color Choose
+	#Range: > 0
+	"邪笑之夜液体颜色选择" = 16711680
+
+["Zsiein Affinity"]
+	#Zsiein Affinity About Dimension
+	"泽林亲和度影响维度" = ["jerotesvillage:second_round_world"]
+	#Zsiein Affinity About All Dimension
+	"泽林亲和度影响全部维度" = false
+	#Zsiein Affinity Max Need Level
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"泽林亲和度最大等级" = 1000.0
+	#Zsiein Extremely Infected Level
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"泽林极度感染需要等级" = 900.0
+
+[Other]
+	#Purple Sand Weather Chance Per Second
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"紫色沙漠雷电每秒出现几率" = 0.0085
+	#Purple Sand Eye Protection Mode
+	"紫色沙漠护眼模式" = true
+	#Screen Shake
+	"屏幕抖动" = true
+	#Shield Can Break Base In Game Rule
+	"基础游戏规则盾牌物品损坏" = true
+	#Armor Can Break Base In Game Rule
+	"基础游戏规则盔甲物品损坏" = false
+	#Melee Can Break Base In Game Rule
+	"基础游戏规则近战物品损坏" = false
+	#Range Can Break Base In Game Rule
+	"基础游戏规则远程物品损坏" = false
+	#Same Faction Avoid Damage
+	"同阵营生物避免误伤" = true
+	#Corrosive Stop Durability Value
+	#Range: > 0
+	"腐蚀中止耐久值" = 8
+	#Defector Must Attack
+	"背弃者强制迎战" = false
+	#Serpon Weakness In Non Hot Biomes
+	"蛇龙人在非炎热群系虚弱" = true
+	#Serpon Can Wear All Armor
+	"蛇龙人可穿戴任意装备" = false
+	#Wonderlin Can Wear All Armor
+	"奇灵可穿戴任意装备" = false
+	#Resurrect Coffin Sediment Guard Weight
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"复魂尸棺沉降守卫权重" = 90.0
+	#Resurrect Coffin Sediment Soul Stabilizer Weight
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"复魂尸棺沉降定灵人权重" = 5.0
+	#Resurrect Coffin Heavy Armored Sediment Guard Weight
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"复魂尸棺重装沉降守卫权重" = 5.0
+	#Resurrect Coffin Sediment Guard Weight After Ten Resurrections
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"十次复活后复魂尸棺沉降守卫权重" = 40.0
+	#Resurrect Coffin Sediment Soul Stabilizer Weight After Ten Resurrections
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"十次复活后复魂尸棺沉降定灵人权重" = 30.0
+	#Resurrect Coffin Heavy Armored Sediment Guard Weight After Ten Resurrections
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"十次复活后复魂尸棺重装沉降守卫权重" = 30.0
+	#Rust Beetle Find Iron About Is Item Crafted With Iron
+	"腐蚀步甲寻找铁质物品与可使用铁类合成相关" = false
+	#Meror Machine Meror Toughness
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"莫厄韧性" = 3.0
+	#Same Type Boss Only One
+	"同类型Boss仅同时存在一个" = true
+	#Boss Only One
+	"Boss仅同时存在一个" = false
+	#Boss Spawn Restriction Range
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Boss生成限制距离" = 256.0
+	#Same Type Elite Only One
+	"同类型精英仅同时存在一个" = true
+	#Elite Only One
+	"精英仅同时存在一个（×）" = false
+	#Elite Spawn Restriction Range
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"精英生成限制距离" = 128.0
+	#Elite And Boss Only One
+	"精英和Boss仅同时存在一个（×）" = false
+	#Mob Say Question Mark
+	"生物说问号" = true
+	#Mob Destroy Block
+	"生物破坏方块" = true
+	#Tamed Mob Destroy Block
+	"驯服生物破坏方块" = true
+	#Virtual Cave Cockroach Max Size
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"虚洞大蠊最大体型" = 45.0
+	#Wonderland Li Cat Max Wild
+	#Range: > 0
+	"仙境狸猫最大野性" = 10
+	#Virtual Cave Cockroach Cute
+	"虚洞大蠊可爱" = false
+
+	[Other.Raid]
+		#Raid Spawn Explorer
+		"探险者袭击中生成" = false
+		#Raid Spawn Explorer Count
+		"探险者袭击中生成数量" = [0, 0, 0, 1, 1, 2, 2, 3]
+		#Raid Spawn Executioner
+		"行刑者袭击中生成" = false
+		#Raid Spawn Executioner Count
+		"行刑者袭击中生成数量" = [0, 0, 0, 0, 1, 1, 1, 1]
+		#Raid Spawn Mapmaker
+		"绘图者袭击中生成" = false
+		#Raid Spawn Mapmaker Count
+		"绘图者袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Defector
+		"背叛者袭击中生成" = false
+		#Raid Spawn Defector Count
+		"背叛者袭击中生成数量" = [0, 1, 1, 2, 2, 2, 2, 3]
+		#Raid Spawn Banner Bearer
+		"执旗者袭击中生成" = false
+		#Raid Spawn Banner Bearer Count
+		"执旗者袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Blaster
+		"爆破者袭击中生成" = false
+		#Raid Spawn Blaster Count
+		"爆破者袭击中生成数量" = [0, 0, 0, 0, 1, 1, 1, 1]
+		#Raid Spawn Trumpeter
+		"吹号者袭击中生成" = false
+		#Raid Spawn Trumpeter Count
+		"吹号者袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Teleporter
+		"传送者袭击中生成" = false
+		#Raid Spawn Teleporter Count
+		"传送者袭击中生成数量" = [0, 0, 0, 0, 0, 0, 1, 1]
+		#Raid Spawn Cycloner
+		"旋风者袭击中生成" = false
+		#Raid Spawn Cycloner Count
+		"旋风者袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Javelin Thrower
+		"掷枪者袭击中生成" = false
+		#Raid Spawn Javelin Thrower Count
+		"掷枪者袭击中生成数量" = [0, 0, 0, 1, 1, 1, 2, 2]
+		#Raid Spawn Zombie Keeper
+		"养尸人袭击中生成" = false
+		#Raid Spawn Zombie Keeper Count
+		"养尸人袭击中生成数量" = [0, 0, 0, 0, 1, 1, 1, 1]
+		#Raid Spawn Bitter Cold Sorcerer
+		"苦寒术士袭击中生成" = false
+		#Raid Spawn Bitter Cold Sorcerer Count
+		"苦寒术士袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Fire Spitter
+		"吐火者袭击中生成" = false
+		#Raid Spawn Fire Spitter Count
+		"吐火者袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Wild Finder
+		"野探客袭击中生成" = false
+		#Raid Spawn Wild Finder Count
+		"野探客袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Submariner
+		"潜海者袭击中生成" = false
+		#Raid Spawn Submariner Count
+		"潜海者袭击中生成数量" = [0, 0, 0, 0, 1, 1, 1, 1]
+		#Raid Spawn Lamp Wizard
+		"灯术师袭击中生成" = false
+		#Raid Spawn Lamp Wizard Count
+		"灯术师袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Slavery Supervisor
+		"奴制监督者袭击中生成" = false
+		#Raid Spawn Slavery Supervisor Count
+		"奴制监督者袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Firepower Pourer
+		"火力倾泻者袭击中生成" = false
+		#Raid Spawn Firepower Pourer Count
+		"火力倾泻者袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Necromancy Warlock
+		"巫神汉袭击中生成" = false
+		#Raid Spawn Necromancy Warlock Count
+		"巫神汉袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Gaviler
+		"引力师袭击中生成" = false
+		#Raid Spawn Gaviler Count
+		"引力师袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Ax-Crazy
+		"斧头杀人狂袭击中生成" = false
+		#Raid Spawn Ax-Crazy Count
+		"斧头杀人狂袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Hag
+		"鬼婆袭击中生成" = false
+		#Raid Spawn Hag Count
+		"鬼婆袭击中生成数量" = [0, 0, 0, 0, 0, 0, 1, 1]
+		#Raid Spawn Witch Scholar
+		"女巫学者袭击中生成" = false
+		#Raid Spawn Witch Scholar Count
+		"女巫学者袭击中生成数量" = [0, 0, 0, 0, 1, 1, 1, 1]
+		#Raid Spawn Purple Sand Witch
+		"紫沙女巫袭击中生成" = false
+		#Raid Spawn Purple Sand Witch Count
+		"紫沙女巫袭击中生成数量" = [0, 0, 0, 0, 0, 1, 1, 1]
+		#Raid Spawn Spirve
+		"灵奴袭击中生成" = false
+		#Raid Spawn Spirve Count
+		"灵奴袭击中生成数量" = [0, 1, 1, 2, 2, 2, 2, 3]
+		#Raid Spawn Ominous Banner Projection
+		"灾厄旗帜投影袭击中生成" = false
+		#Raid Spawn Ominous Banner Projection Count
+		"灾厄旗帜投影袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+		#Raid Spawn Purple Sand Hag
+		"紫沙鬼婆袭击中生成" = false
+		#Raid Spawn Purple Sand Hag Count
+		"紫沙鬼婆袭击中生成数量" = [0, 0, 0, 0, 0, 0, 0, 1]
+
+	[Other.Attributes]
+
+		[Other.Attributes.Boss]
+			#Boss Base Attribute Can Use Config
+			"Boss基础属性可以被配置影响" = true
+			#Raid Boss Can Increase Summon Count Based On Player Count
+			"袭击类boss可以依靠玩家数量提升生成数量" = false
+			#Raid Boss Can Increase Summon Count Based On Player Count Find Reach
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"袭击类boss可以依靠玩家数量提升生成数量依照范围" = 128.0
+			#Raid Boss Can Increase Summon Count Based On Player Count Max Count
+			#Range: > 0
+			"袭击类boss可以依靠玩家数量提升生成数量最大数量" = 6
+			#Raid Boss Can Increase Summon Count Based On Player Count Contain All Boss
+			"袭击类boss可以依靠玩家数量提升生成数量包含所有boss" = true
+			#Raid Boss Can Increase Summon Count Based On Player Count Contain Boss
+			"袭击类boss可以依靠玩家数量提升生成数量包含boss" = ["jerotesvillage:serpon_combat_executer", "jerotesvillage:ominous_banner_projection"]
+
+			[Other.Attributes.Boss."Sediment Lord"]
+				#Sediment Lord Boss Bar Color
+				#Range: 0 ~ 6
+				"沉降领主Boss血条颜色" = 1
+				#Sediment Lord Boss Bar Name Color
+				#Range: > 0
+				"沉降领主Boss血条名字颜色" = 1122114
+				#[Boss] Max Health : 170.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Max Health" = 170.0
+				#[Boss] Melee Damage : 6.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Melee Damage" = 6.0
+				#[Boss] Armor : 3.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Armor" = 3.0
+				#[Boss] Movement Speed : 0.20
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Movement Speed" = 0.2
+				#[Boss] Attack Knockback : 0.4
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Attack Knockback" = 0.4
+				#[Boss] Knockback Resistance : 0.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Knockback Resistance" = 0.5
+				#[Boss] Lead Cooldown : 30.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Lead Cooldown" = 30.0
+				#[Boss] Drop Equipment Chance : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Sediment Lord Drop Equipment Chance" = 0.0
+
+			[Other.Attributes.Boss."Prosperous Envoy"]
+				#Prosperous Envoy Boss Bar Color
+				#Range: 0 ~ 6
+				"繁兴使者Boss血条颜色" = 3
+				#Prosperous Envoy Boss Bar Name Color
+				#Range: > 0
+				"繁兴使者Boss血条名字颜色" = 7571238
+				#[Boss] Max Health : 225.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Max Health" = 225.0
+				#[Boss] Melee Damage : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Melee Damage" = 12.0
+				#[Boss] Armor : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Armor" = 12.0
+				#[Boss] Movement Speed : 0.26
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Movement Speed" = 0.26
+				#[Boss] Attack Knockback : 1.4
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Attack Knockback" = 1.4
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Knockback Resistance" = 1.0
+				#[Boss] Hurt Cooldown : 0.75
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Hurt Cooldown" = 0.75
+				#[Boss] Break Hurt Cooldown Multiple : 3
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Break Hurt Cooldown Multiple" = 3.0
+				#[Boss] Melee Attack Cooldown : 1.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Melee Attack Cooldown" = 1.5
+				#[Boss] Prosperous Trample Chance : 0.15
+				#Range: 0.0 ~ 1.0
+				"Prosperous Envoy Prosperous Trample Chance" = 0.15
+				#[Boss] Prosperous Rush Time : 4.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Prosperous Rush Time" = 4.0
+				#[Boss] Prosperous Rush Cooldown : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Prosperous Rush Cooldown" = 12.0
+				#[Boss] Break Block Cooldown : 2.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Prosperous Envoy Break Block Cooldown" = 2.5
+
+			[Other.Attributes.Boss."Ominous Banner Projection"]
+				#Ominous Banner Projection Boss Bar Color
+				#Range: 0 ~ 6
+				"灾厄旗帜投影Boss血条颜色" = 2
+				#Ominous Banner Projection Boss Bar Name Color
+				#Range: > 0
+				"灾厄旗帜投影Boss血条名字颜色" = 2500134
+				#[Boss] Max Health : 200.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Max Health" = 200.0
+				#[Boss] Melee Damage : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Melee Damage" = 0.0
+				#[Boss] Armor : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Armor" = 0.0
+				#[Boss] Movement Speed : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Movement Speed" = 0.0
+				#[Boss] Attack Knockback : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Attack Knockback" = 0.0
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Knockback Resistance" = 1.0
+				#[Boss] Round Time Min : 60.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Round Time Min" = 60.0
+				#[Boss] Round Time Max : 270.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Round Time Max" = 270.0
+				#[Boss] Max Round : 7
+				#Range: > 0
+				"Ominous Banner Projection Max Round" = 7
+				#[Boss] Points Base : 20.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Points Base" = 20.0
+				#[Boss] Points Round Growth Multiple : 1.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Ominous Banner Projection Points Round Growth Multiple" = 1.5
+				#[Boss] AX-Crazy Can Appear : false
+				"Ominous Banner Projection AX-Crazy Can Appear" = false
+				#[Boss] Biome Illager Can Appear In Other Biome : false
+				"Ominous Banner Projection Biome Illager Can Appear In Other Biome" = false
+				#[Boss] Elite Count : 2
+				#Range: > 0
+				"Ominous Banner Projection Elite Count" = 2
+
+			[Other.Attributes.Boss."Bright Land Beast"]
+				#Tyrant of The Mountain Realm Boss Bar Color
+				#Range: 0 ~ 6
+				"镇山大王Boss血条颜色" = 2
+				#Tyrant of The Mountain Realm Boss Bar Name Color
+				#Range: > 0
+				"镇山大王Boss血条名字颜色" = 11496220
+				#[Boss] Max Health : 360.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Max Health" = 360.0
+				#[Boss] Melee Damage : 28.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Melee Damage" = 28.0
+				#[Boss] Armor : 26.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Armor" = 26.0
+				#[Boss] Movement Speed : 0.35
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Movement Speed" = 0.35
+				#[Boss] Attack Knockback : 1.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Attack Knockback" = 1.5
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Knockback Resistance" = 1.0
+				#[Boss] Melee Attack Cooldown : 1.15
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Melee Attack Cooldown" = 1.15
+				#[Boss] Spell Normal Level : 5
+				#Range: > 0
+				"yrant of The Mountain Realm Breath Normal Level" = 5
+				#[Boss] Break Block Cooldown : 1.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Tyrant of The Mountain Realm Break Block Cooldown" = 1.5
+				#Bright Land Beast Boss Bar Color
+				#Range: 0 ~ 6
+				"明路巨兽Boss血条颜色" = 2
+				#Bright Land Beast Boss Bar Name Color
+				#Range: > 0
+				"明路巨兽Boss血条名字颜色" = 802564
+				#[Boss] Max Health : 650.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Max Health" = 650.0
+				#[Boss] Melee Damage : 40.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Melee Damage" = 40.0
+				#[Boss] Armor : 4.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Armor" = 4.0
+				#[Boss] Movement Speed : 0.28
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Movement Speed" = 0.28
+				#[Boss] Attack Knockback : 4.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Attack Knockback" = 4.0
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Knockback Resistance" = 1.0
+				#[Boss] Hurt Cooldown : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Hurt Cooldown" = 1.0
+				#[Boss] Break Breath Cooldown Multiple : 3
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Break Hurt Cooldown Multiple" = 3.0
+				#[Boss] Melee Attack Cooldown : 2.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Melee Attack Cooldown" = 2.0
+				#[Boss] Quake Cooldown : 32.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Quake Cooldown" = 32.0
+				#[Boss] Break Block Cooldown : 1
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Bright Land Beast Break Block Cooldown" = 1.0
+
+			[Other.Attributes.Boss.Corrosiver]
+				#Corrosiver Boss Bar Color
+				#Range: 0 ~ 6
+				"蚀龙兽Boss血条颜色" = 6
+				#Corrosiver Boss Bar Name Color
+				#Range: > 0
+				"蚀龙兽Boss血条名字颜色" = 25166
+				#[Boss] Max Health : 185.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Max Health" = 185.0
+				#[Boss] Melee Damage : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Melee Damage" = 12.0
+				#[Boss] Armor : 5.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Armor" = 5.0
+				#[Boss] Movement Speed : 0.36
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Movement Speed" = 0.36
+				#[Boss] Attack Knockback : 0.6
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Attack Knockback" = 0.6
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Knockback Resistance" = 1.0
+				#[Boss] Hurt Cooldown : 2.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Hurt Cooldown" = 2.0
+				#[Boss] Break Hurt Cooldown Multiple : 3
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Break Hurt Cooldown Multiple" = 3.0
+				#[Boss] Spell Cooldown : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Spell Cooldown" = 12.0
+				#[Boss] Spell Normal Level : 3
+				#Range: > 0
+				"Corrosiver Breath Normal Level" = 3
+				#[Boss] Breath Count : 3
+				#Range: > 0
+				"Corrosiver Breath Count" = 3
+				#[Boss] Breath Count Wind : 5
+				#Range: > 0
+				"Corrosiver Breath Count Wind" = 5
+				#[Boss] Freeze Absorption Percentage : 100.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Freeze Absorption Percentage" = 100.0
+				#[Boss] Break Block Cooldown : 2.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Corrosiver Break Block Cooldown" = 2.5
+
+			[Other.Attributes.Boss."Purple Sand Hag"]
+				#Purple Sand Hag Boss Bar Color
+				#Range: 0 ~ 6
+				"紫沙鬼婆Boss血条颜色" = 5
+				#Purple Sand Hag Boss Bar Name Color
+				#Range: > 0
+				"紫沙鬼婆Boss血条名字颜色" = 1769530
+				#[Boss] Max Health : 165.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Max Health" = 165.0
+				#[Boss] Melee Damage : 13.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Melee Damage" = 13.0
+				#[Boss] Armor : 15.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Armor" = 15.0
+				#[Boss] Movement Speed : 0.4
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Movement Speed" = 0.4
+				#[Boss] Attack Knockback : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Attack Knockback" = 0.0
+				#[Boss] Knockback Resistance : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Knockback Resistance" = 0.0
+				#[Boss] Main Spell Cooldown : 6.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Main Spell Cooldown" = 6.0
+				#[Boss] Other Spell Cooldown : 6.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Purple Sand Hag Other Spell Cooldown" = 6.0
+				#[Boss] Spell Normal Level : 4
+				#Range: > 0
+				"Purple Sand Hag Spell Normal Level" = 4
+
+			[Other.Attributes.Boss."Gemstone Malignasaur"]
+				#Gemstone Malignasaur Boss Bar Color
+				#Range: 0 ~ 6
+				"宝石恶鳞Boss血条颜色" = 1
+				#Gemstone Malignasaur Boss Bar Name Color
+				#Range: > 0
+				"宝石恶鳞Boss血条名字颜色" = 168
+				#[Boss] Max Health : 348.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Max Health" = 348.0
+				#[Boss] Melee Damage : 14.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Melee Damage" = 14.0
+				#[Boss] Armor : 4.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Armor" = 4.0
+				#[Boss] Armor Gemstone Armor : 20.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Armor Gemstone Armor" = 20.0
+				#[Boss] Movement Speed : 1.3
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Movement Speed" = 1.3
+				#[Boss] Movement Speed Gemstone Armor : 1.4
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Movement Speed Gemstone Armor" = 1.4
+				#[Boss] Attack Knockback : 2.8
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Attack Knockback" = 2.8
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Knockback Resistance" = 1.0
+				#[Boss] Hurt Cooldown : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Hurt Cooldown" = 1.0
+				#[Boss] Break Hurt Cooldown Multiple : 3
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Break Hurt Cooldown Multiple" = 3.0
+				#[Boss] Jump Attack Level : 3
+				#Range: > 0
+				"Gemstone Malignasaur Jump Attack Level" = 3
+				#[Boss] Jump Attack Cooldown : 18
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Jump Attack Cooldown" = 18.0
+				#[Boss] Spell Normal Level : 3
+				#Range: > 0
+				"Gemstone Malignasaur Breath Normal Level" = 3
+				#[Boss] Breath Cooldown : 30.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Breath Cooldown" = 30.0
+				#[Boss] Control Cooldown : 60.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Control Cooldown" = 60.0
+				#[Boss] Angry Spell Cooldown : 120.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Angry Spell Cooldown" = 120.0
+				#[Boss] Damage Suffered Value : 30.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Damage Suffered Value" = 30.0
+				#[Boss] Break Damage Suffered Value : 315.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Break Damage Suffered Value" = 315.0
+				#[Boss] Break Block Cooldown : 1.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Gemstone Malignasaur Break Block Cooldown" = 1.5
+
+			[Other.Attributes.Boss."Serpon Combat Executer"]
+				#Serpon Combat Executer Boss Bar Color
+				#Range: 0 ~ 6
+				"蛇龙执战者Boss血条颜色" = 4
+				#Serpon Combat Executer Boss Bar Name Color
+				#Range: > 0
+				"蛇龙执战者Boss血条名字颜色" = 2889472
+				#[Boss] Max Health : 270.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Max Health" = 270.0
+				#[Boss] Melee Damage : 8.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Melee Damage" = 8.0
+				#[Boss] Melee Damage Fury : 13.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Melee Damage Fury" = 12.0
+				#[Boss] Armor : 5.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Armor" = 5.0
+				#[Boss] Armor Fury : 18.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Armor Fury" = 18.0
+				#[Boss] Movement Speed : 0.40
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Movement Speed" = 0.4
+				#[Boss] Flying Speed : 0.50
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Flying Speed" = 0.5
+				#[Boss] Attack Knockback : 0.5
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Attack Knockback" = 0.5
+				#[Boss] Knockback Resistance : 0.8
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Knockback Resistance" = 0.8
+				#[Boss] Knockback Resistance Fury : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Knockback Resistance Fury" = 1.0
+				#[Boss] Drop Equipment Chance : 0.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Drop Equipment Chance" = 0.0
+				#[Boss] Round Time Min : 90.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Round Time Min" = 90.0
+				#[Boss] Round Time Max : 420.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Round Time Max" = 420.0
+				#[Boss] Flame Slash Chance : 0.1
+				#Range: 0.0 ~ 1.0
+				"Serpon Combat Executer Flame Slash Chance" = 0.1
+				#[Boss] Whirlwind Slash Chance : 0.1
+				#Range: 0.0 ~ 1.0
+				"Serpon Combat Executer Whirlwind Slash Chance" = 0.1
+				#[Boss] Fire Absorption Percentage : 100.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Fire Absorption Percentage" = 100.0
+				#[Boss] Spell Normal Level : 5
+				#Range: > 0
+				"Serpon Combat Executer Spell Level" = 5
+				#[Boss] Spell Cooldown : 12.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Serpon Combat Executer Spell Cooldown" = 12.0
+
+			[Other.Attributes.Boss."Second Rounder Golem"]
+				#Second Rounder Golem Boss Bar Color
+				#Range: 0 ~ 6
+				"二轮傀儡Boss血条颜色" = 0
+				#Second Rounder Golem Boss Bar Name Color
+				#Range: > 0
+				"二轮傀儡Boss血条名字颜色" = 8459533
+				#[Boss] Max Health : 436.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Max Health" = 436.0
+				#[Boss] Melee Damage : 36.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Melee Damage" = 36.0
+				#[Boss] Melee Damage Use Sword : 48.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Melee Damage Use Sword" = 48.0
+				#[Boss] Armor : 20.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Armor" = 20.0
+				#[Boss] Movement Speed : 0.30
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Movement Speed" = 0.28
+				#[Boss] Movement Speed Use Sword : 0.30
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Movement Speed Use Sword" = 0.28
+				#[Boss] Attack Knockback : 3.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Attack Knockback" = 3.0
+				#[Boss] Knockback Resistance : 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Knockback Resistance" = 1.0
+				#[Boss] Armor Use Sword : 26.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Armor Use Sword" = 26.0
+				#[Boss] Attack Percentage : 8.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Attack Percentage" = 8.0
+				#[Boss] Sword Attack Percentage : 15.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Sword Attack Percentage" = 15.0
+				#[Boss] Spell Normal Level : 5
+				#Range: > 0
+				"Second Rounder Golem Breath Normal Level" = 5
+				#[Boss] Breath Cooldown : 24.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Breath Cool down" = 24.0
+				#[Boss] Breath Count : 6
+				#Range: > 0
+				"Second Rounder Golem Breath Count" = 6
+				#[Boss] Intense Bombing Cooldown : 60.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Intense Bombing Cooldown" = 60.0
+				#[Boss] Fire Absorption Percentage : 100.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Fire Absorption Percentage" = 100.0
+				#[Boss] Not Attacked Start Heal Cooldown : 20.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Not Attacked Start Heal Cooldown" = 20.0
+				#[Boss] Normal Meror Toughness Non Magical : 4.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Normal Meror Toughness Non Magical" = 4.0
+				#[Boss] Normal Meror Toughness Magical : 6.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Normal Meror Toughness Magical" = 6.0
+				#[Boss] Poison Fire Cloak Time : 18
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Poison Fire Cloak Time" = 18.0
+				#[Boss] Poison Fire Cloak Fire Time : 12
+				#Range: > 0
+				"Second Rounder Golem Poison Fire Cloak Fire Time" = 12
+				#[Boss] Poison Fire Cloak Potion Level : 3
+				#Range: > 0
+				"Second Rounder Golem Poison Fire Cloak Potion Level" = 3
+				#[Boss] Sages Cooldown : 24
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Sages Cooldown" = 24.0
+				#[Boss] Damage Suffered Value : 40
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Damage Suffered Value" = 40.0
+				#[Boss] Break Block Cooldown : 2
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Second Rounder Golem Break Block Cooldown" = 2.0
+

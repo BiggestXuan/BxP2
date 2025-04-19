@@ -1,0 +1,4 @@
+#This modifies the distance a special multiblock renderer is visible from Default is 2.5
+#Range: 0.0 ~ 1.7976931348623157E308
+multiblockSpecialRenderDistanceModifier = 2.5
+

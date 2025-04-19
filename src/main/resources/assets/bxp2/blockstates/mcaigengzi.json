@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=east": {
+			"model": "bxp2:block/mcaigengzi",
+			"y": 90
+		},
+		"facing=north": {
+			"model": "bxp2:block/mcaigengzi"
+		},
+		"facing=south": {
+			"model": "bxp2:block/mcaigengzi",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "bxp2:block/mcaigengzi",
+			"y": 270
+		}
+	}
+}

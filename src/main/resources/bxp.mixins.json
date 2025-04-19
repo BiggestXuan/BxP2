@@ -6,12 +6,16 @@
   "refmap": "bxp.refmap.json",
   "mixins": [
     "AbstractTiabItemMixin",
+    "BoilerMultiblockDataMixin",
     "DataModelMixin",
     "EnergyFormattingUtilMixin",
     "GaiaGuardianEntityMixin",
+    "ItemEntityMixin",
     "PlayerMixin",
     "PowahWorldGenMixin",
     "SunSpiritMixin",
+    "TileEntityBioMixin",
+    "TileEntityGasMixin",
     "ToolStatsMixin"
   ]
 }

@@ -1,0 +1,13 @@
+{
+    "ModSettings": {
+        "highlight_foused_items": {
+            "value": false
+        },
+        "first_run": false
+    },
+    "GuiSettings": {
+        "show_continuous_crafting_checkbox": {
+            "value": false
+        }
+    }
+}

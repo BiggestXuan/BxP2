@@ -12,6 +12,7 @@ public class BxPCapability implements IBxPCapability{
     private boolean canNether = false;
     private boolean canEnd = false;
     private float deathLoss = 0F;
+    private boolean canFly = false;
 
     @Override
     public void setPhase(int phase) {
@@ -53,12 +54,23 @@ public class BxPCapability implements IBxPCapability{
         this.deathLoss = deathLoss;
     }
 
+    @Override
+    public boolean canFly() {
+        return this.canFly;
+    }
+
+    @Override
+    public void setFly() {
+        this.canFly = true;
+    }
+
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();
         tag.putInt("phase", phase);
         tag.putBoolean("canNether", canNether);
         tag.putBoolean("canEnd", canEnd);
         tag.putFloat("deathLoss", deathLoss);
+        tag.putBoolean("fly", canFly);
         return tag;
     }
 
@@ -67,5 +79,6 @@ public class BxPCapability implements IBxPCapability{
         canNether = tag.getBoolean("canNether");
         canEnd = tag.getBoolean("canEnd");
         deathLoss = tag.getFloat("deathLoss");
+        canFly = tag.getBoolean("fly");
     }
 }

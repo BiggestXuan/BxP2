@@ -1,0 +1,17 @@
+{
+	icon: "bxp2:biggest_xuan"
+	id: "231EC599FA151A7C"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ item: "bxp2:yunxi" }
+		{ item: "bxp2:biggest_xuan" }
+		{ item: "bxp2:dctor_0415" }
+		{ item: "bxp2:tulye" }
+		{ item: "bxp2:jaoxaono" }
+		{ item: "bxp2:lamb_kisara" }
+		{ item: "bxp2:sdxhop" }
+		{ item: "bxp2:mcaigengzi" }
+	]
+	title: "随机玩家玩偶"
+}

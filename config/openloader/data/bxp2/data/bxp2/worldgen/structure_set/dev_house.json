@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bxp2:dev_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1744698702,
+    "spacing": 85,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

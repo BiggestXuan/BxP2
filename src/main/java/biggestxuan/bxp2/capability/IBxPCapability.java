@@ -18,4 +18,6 @@ public interface IBxPCapability extends INBTSerializable<CompoundTag> {
     void setEnd(boolean end);
     float deathLoss();
     void setDeathLoss(float deathLoss);
+    boolean canFly();
+    void setFly();
 }

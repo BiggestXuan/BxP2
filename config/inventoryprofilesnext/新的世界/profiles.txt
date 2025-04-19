@@ -1,0 +1,18 @@
+
+
+
+
+profile Saved activate HOT7
+	HOT1
+		"extendedcrafting:recipe_maker"
+	HOT2
+		"minecraft:flint_and_steel"
+	HOT3
+		"extendedcrafting:ultimate_table"
+	HOT4
+		"ad_astra:launch_pad"
+	HOT5
+		"ad_astra:tier_4_rocket"
+	HOT6
+		"ad_astra:fuel_refinery"
+

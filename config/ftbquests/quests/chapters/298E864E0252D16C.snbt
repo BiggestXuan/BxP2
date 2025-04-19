@@ -384,6 +384,10 @@
 				"你在任何时候都可以修改模式，如果你是多人一起玩别忽略了小伙伴们的模式哦～"
 				""
 				"选择模式后需要&4完全退出&r游戏重新进入，以确保内容更新。"
+				""
+				"对于会影响世界生成的模式，即便修改后也不会在现有区块生效，只会在新区块生效。"
+				""
+				"整合包有多条线路，这些线路大多都是并行的，你可以先挑你熟悉的模组来玩，即使任务还没解锁，但你先完成了任务，当任务前置完成后你依然可以领取奖励。"
 			]
 			icon: "bxp2:difficulty_change"
 			id: "4D84BCC4AEFF84F5"
@@ -401,6 +405,33 @@
 			}]
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["63C2AE01F3D4C943"]
+			id: "3080B7C1B2453B59"
+			subtitle: "不会爆炸的"
+			tasks: [{
+				id: "5369A2E6B4B52810"
+				item: "mbd2:bx_unstable_furnace"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["152998D02AB61294"]
+			id: "561487253E2F5F4B"
+			tasks: [{
+				id: "2224290C6BE87AE5"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
 		}
 	]
 	title: "从这里开始吧！"

@@ -17,6 +17,7 @@
 		passive: 4000
 	}
 	pause_game: false
-	progression_mode: "linear"
+	progression_mode: "flexible"
+	title: "大轩整合包2"
 	version: 13
 }

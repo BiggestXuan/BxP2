@@ -37,7 +37,7 @@ public class BxPCatalyst{
     }
 
     public BxPCatalyst(ItemStack stack, double speedRate, double energyRate,boolean isBXBase){
-        this(stack,speedRate,energyRate,1,1,1,1,new ADAPT[]{ADAPT.BX_FURNACE});
+        this(stack,speedRate,energyRate,0,0,0,0,new ADAPT[]{ADAPT.BX_FURNACE});
     }
 
     public BxPCatalyst copy(){
@@ -113,9 +113,12 @@ public class BxPCatalyst{
 
     public enum Catalysts{
         //NONE(new BxPCatalyst(ItemStack.EMPTY,0,0,0,0,0,0,new ADAPT[]{ADAPT.NONE})),
-        NETHER_STAR(new BxPCatalyst(BxP2.getStack("minecraft:nether_star"),0.5,0.8,true)),
+        HELL_INGOT(new BxPCatalyst(BxP2.getStack("bloodmagic:ingot_hellforged"),0.75,0.8,true)),
+        AE_CELL_64(new BxPCatalyst(BxP2.getStack("ae2:cell_component_64k"),0.64,0.66,true)),
+        ESS_5(new BxPCatalyst(BxP2.getStack("mysticalagriculture:supremium_essence"),0.69,0.71,true)),
+        ESS_4(new BxPCatalyst(BxP2.getStack("mysticalagriculture:imperium_essence"),0.52,0.57,true)),
         ENCH_GOLDEN_APPLE(new BxPCatalyst(BxP2.getStack("minecraft:enchanted_golden_apple"),0.45,0.6,true)),
-        REFINED_OBSIDIAN(new BxPCatalyst(BxP2.getStack("mekanism:ingot_refined_obsidian"),0.75,0.82,true)),
+        //REFINED_OBSIDIAN(new BxPCatalyst(BxP2.getStack("mekanism:ingot_refined_obsidian"),0.75,0.82,true)),
         DIAMOND(new BxPCatalyst(BxP2.getStack("minecraft:diamond"),0.75,0,0.8,0,0,0,new ADAPT[]{ADAPT.BX_UNSTABLE_FURNACE})),
         EMERALD(new BxPCatalyst(BxP2.getStack("minecraft:emerald"),0.75,0,0.8,0,0,0,new ADAPT[]{ADAPT.BX_UNSTABLE_FURNACE})),
         SLATE(new BxPCatalyst(BxP2.getStack("bloodmagic:infusedslate"),0.58,0,0.55,0,0,0,new ADAPT[]{ADAPT.BX_UNSTABLE_FURNACE})),

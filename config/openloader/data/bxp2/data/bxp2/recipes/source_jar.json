@@ -1,0 +1,19 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "ars_nouveau:source_jar"
+    },
+    {
+      "fluid": "tconstruct:molten_amethyst",
+      "amount": 500
+    }
+  ],
+  "result": [
+    {
+      "item": "ars_nouveau:source_jar",
+      "nbt":{
+        "BlockEntityTag": {"Items": [], "source": 1000, "id": "ars_nouveau:source_jar"}}
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"mekanism:alloy_infused"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "value": [
+        {
+          "item": "mekanism:basic_control_circuit"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "mekanism:advanced_control_circuit",
+      "count": 1
+    }
+  ],
+  "energy": 12000
+}

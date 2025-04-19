@@ -102,12 +102,22 @@
 		{
 			dependencies: ["1DF5B6A4692A38BF"]
 			id: "5074DDA791023078"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5299D73CAD86AE64"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5299D73CAD86AE64"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "290B58B99BF0820D"
+					item: "botania:blacker_lotus"
+					team_reward: true
+					type: "item"
+				}
+			]
+			subtitle: "接受魔源输入"
 			tasks: [{
 				id: "07A8983965E7436D"
 				item: "botania:mana_pool"
@@ -266,11 +276,12 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 0.0d
+			x: 15.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5074DDA791023078"]
+			hide_dependent_lines: true
 			id: "2C38144CBF7AE332"
 			tasks: [{
 				count: 4L
@@ -278,7 +289,7 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -296,11 +307,12 @@
 				item: { Count: 4, id: "botania:mana_powder" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5074DDA791023078"]
+			hide_dependent_lines: true
 			id: "3863CC6CBCE884F6"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -381,6 +393,546 @@
 			}]
 			x: 7.5d
 			y: 5.0d
+		}
+		{
+			id: "199B01668D6CA650"
+			rewards: [
+				{
+					id: "38C47C7BB0FE282E"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "16AA6DB0973C3DCA"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "504A1981E9D6CF61"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "3C6059E58BBDC704"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "175E02D40EE26F21"
+					item: "ars_nouveau:worn_notebook"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "18DE22ACE8B98E63"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "bxp2:ars_mission_log"
+					}
+				}
+				title: "Any #bxp2:ars_mission_log"
+				type: "item"
+			}]
+			title: "开始新生魔艺吧！"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2A727457E99FAF9B"]
+			id: "44B57F0A5546E2C9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2015380EDA90C91D"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "0F11D6B76FC20385"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["199B01668D6CA650"]
+			id: "155503138FAA9B3D"
+			rewards: [{
+				id: "48040E9D885C2703"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14735C091E01CC8A"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"155503138FAA9B3D"
+				"56F616143F682338"
+			]
+			description: [
+				"因为一些原因，你在制作第一个魔源宝石也需要消耗魔源，因此你可以通过以下方式获得魔源："
+				""
+				"1.将植物魔法的魔力发射器对准魔源罐即可转化魔力为魔源。"
+				""
+				"2.制作熔融紫水晶，将其通过匠魂浇筑或是热力罐装，仅限空魔源罐。"
+			]
+			id: "2A727457E99FAF9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53411C213D156932"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "13FA60667D337A7A"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44B57F0A5546E2C9"]
+			id: "0761D8FFC87C073F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "392827F8DACE2FD9"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "59ED9256BF735466"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "4F351134D3ED510D"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5E0DE3ECAEA7747B"
+					item: { Count: 8, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2A727457E99FAF9B"
+				"15A2F2735846A4A0"
+			]
+			description: ["你也可以使用植物魔法的魔力转化为魔源，反之亦然"]
+			id: "03C39484E8E2D6AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16306373A6D7572A"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "3C17C38DB6B3DD11"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "bxp2:ars_mission_sourcelink"
+					}
+				}
+				title: "Any #bxp2:ars_mission_sourcelink"
+				type: "item"
+			}]
+			title: "该产生魔源啦"
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			id: "214D0E124DB7B5BF"
+			rewards: [{
+				count: 8
+				id: "0ACD340E44B3571D"
+				item: "ars_nouveau:source_berry_pie"
+				type: "item"
+			}]
+			subtitle: "美滋滋"
+			tasks: [{
+				id: "51FC2CF6777FFB41"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["199B01668D6CA650"]
+			id: "258237F1FDD28E98"
+			tasks: [{
+				id: "036EF2BD6CAA6931"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			id: "061384A4DE633507"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53973525DDDD6AA6"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "650D38E38302C252"
+				item: {
+					Count: 1
+					id: "ars_nouveau:novice_spell_book"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["061384A4DE633507"]
+			id: "318E80807C4B5784"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77562929F64DCF7E"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "428C11973BF401DC"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["318E80807C4B5784"]
+			id: "199BB44603CBA160"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77E0276D65C6BC16"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "25C2AAD7946D61B5"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["44B57F0A5546E2C9"]
+			id: "09A516F0FF1A7D16"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43918326A54E5498"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "4787313745F1A14D"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0761D8FFC87C073F"]
+			icon: "ars_nouveau:drygmy_charm"
+			id: "0707B70F910AE5AD"
+			rewards: [
+				{
+					id: "42D6ACA00BBD8990"
+					item: "ars_nouveau:ritual_containment"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6099B070E9DEF601"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+			]
+			tasks: [
+				{
+					id: "4385FE9F10528F44"
+					item: "ars_nouveau:drygmy_charm"
+					type: "item"
+				}
+				{
+					id: "00043912EC8722FF"
+					item: "ars_nouveau:mob_jar"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0761D8FFC87C073F"]
+			id: "17953DCC291BF365"
+			rewards: [
+				{
+					id: "5D9BA4CE6ABD2C66"
+					item: "ars_nouveau:orange_sbed"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23036EE261E5D1C9"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "70EE80FF6EE71D76"
+				item: {
+					Count: 1
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0761D8FFC87C073F"]
+			id: "48C2A1AE36CCEBCF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49B8C6CE70CD89E5"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "43052BA47AC56C47"
+				item: "ars_nouveau:whirlisprig_charm"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.5d
+		}
+		{
+			id: "15A2F2735846A4A0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E449BB889E3F918"
+				table_id: 8626470336341221864L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "543FA2077C0DCF9F"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					id: "61994DF045B4999E"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dominion_wand"
+						tag: {
+							an_dominion_wand: {
+								entityID: -1
+								mode: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["199B01668D6CA650"]
+			id: "56F616143F682338"
+			tasks: [{
+				id: "73970F7DE18F7521"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7DE362C29748C4FD"
+				"3863CC6CBCE884F6"
+				"49C6CCE2BDF5C4C7"
+				"2C38144CBF7AE332"
+			]
+			id: "100BC159D744411A"
+			tasks: [{
+				id: "58BA1ACABEC36E38"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5074DDA791023078"]
+			id: "7DE362C29748C4FD"
+			tasks: [{
+				id: "76025DCA6FD6C88C"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5074DDA791023078"]
+			hide_dependent_lines: true
+			id: "49C6CCE2BDF5C4C7"
+			tasks: [{
+				id: "6EBED670DD57F3A2"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100BC159D744411A"]
+			icon: "botania:natura_pylon"
+			id: "173A10A099D67100"
+			tasks: [
+				{
+					count: 2L
+					id: "68A70128C6640EFE"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "045FF67AAA39F2F5"
+					item: { Count: 3, id: "botania:glimmering_livingwood" }
+					type: "item"
+				}
+				{
+					id: "6C36BEEF44845F6B"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F622A0E4EAADDEC"]
+			id: "3D7F5EC6BE05F077"
+			tasks: [{
+				id: "2AE2BAA1CD541248"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["173A10A099D67100"]
+			id: "157ED8F0F4E56312"
+			tasks: [{
+				id: "39FC676DD4214261"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["173A10A099D67100"]
+			id: "7CE5E0C514618E52"
+			tasks: [{
+				id: "0BB9E7EAA278F6AD"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["173A10A099D67100"]
+			id: "2A435310BC236872"
+			tasks: [{
+				id: "5CD09CD61F595399"
+				item: "botania:dragonstone"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3D7F5EC6BE05F077"
+				"100BC159D744411A"
+			]
+			id: "45893ECE3F582A45"
+			tasks: [{
+				id: "48B388B4519AB530"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"45893ECE3F582A45"
+				"100BC159D744411A"
+			]
+			id: "39F8FBB0B502E637"
+			tasks: [{
+				id: "69FCACC3E6B196D7"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45893ECE3F582A45"]
+			id: "6ED4641CFE8BDC4F"
+			subtitle: "如果你不想刷的话"
+			tasks: [{
+				id: "68EA8102B4DD65BC"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:gaia"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.5d
 		}
 	]
 	title: "大自然的魔法"

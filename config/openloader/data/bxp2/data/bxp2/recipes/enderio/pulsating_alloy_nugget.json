@@ -1,0 +1,13 @@
+{
+    "type": "bloodmagic:altar",
+    "altarSyphon": 150,
+    "consumptionRate": 8,
+    "drainRate": 5,
+    "input": {
+      "item": "mekanism:nugget_steel"
+    },
+    "output": {
+      "item": "enderio:pulsating_alloy_nugget"
+    },
+    "upgradeLevel": 1
+  }

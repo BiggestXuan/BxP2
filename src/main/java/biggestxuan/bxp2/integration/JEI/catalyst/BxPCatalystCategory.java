@@ -82,10 +82,10 @@ public class BxPCatalystCategory implements IRecipeCategory<BxPCatalyst> {
         String[] arr = new String[]{speed,energy,inputFluid,outputFluid,inputMana,outputMana};
         int h = 5;
         for (String s : arr) {
-            guiGraphics.drawString(font, s, 45, h, 0x808080);
+            guiGraphics.drawString(font, s, 45, h, 0xFCFCFC);
             h += 12;
         }
-        guiGraphics.drawString(font, BxP2.tr("jei.bxp2.catalyst_can_adapt").getString()+BxPCatalyst.getAdaptNames(recipe.adapt), 45, h, 0x808080);
+        guiGraphics.drawString(font, BxP2.tr("jei.bxp2.catalyst_can_adapt").getString()+BxPCatalyst.getAdaptNames(recipe.adapt), 45, h, 0xFCFCFC);
     }
 
     private static String f(double d){

@@ -1,0 +1,22 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 2,
+      "item": "mekanism:alloy_infused"
+    },
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 1,
+      "item": "mekanism:basic_control_circuit"
+    }
+  ],
+  "pressure": 3.5,
+  "results": [
+    {
+      "count": 1,
+      "item": "mekanism:advanced_control_circuit"
+    }
+  ]
+}

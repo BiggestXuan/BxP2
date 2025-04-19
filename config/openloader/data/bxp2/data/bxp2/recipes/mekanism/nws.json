@@ -1,0 +1,19 @@
+{
+    "type": "mekanism:rotary",
+    "fluidInput": {
+      "fluid": "bxp2:nws",
+      "amount": 1
+    },
+    "gasOutput": {
+      "gas": "bxp2:nws",
+      "amount": 1
+    },
+    "gasInput": {
+      "gas": "bxp2:nws",
+      "amount": 1
+    },
+    "fluidOutput": {
+      "fluid": "bxp2:nws",
+      "amount": 1
+    }
+}

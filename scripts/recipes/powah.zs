@@ -68,4 +68,4 @@ addPowahRecipe([ms,ur],<item:powah:uraninite_ore_poor>,10000);
 addPowahRecipe([ms,ur,ur],<item:powah:uraninite_ore>,30000);
 addPowahRecipe([ms,ur,ur,ur,ur],<item:powah:uraninite_ore_dense>,60000);
 
-CrTManager.registerCoolant("tinkers_advanced:molten_blizz_enderium",-1);
+CrTManager.registerCoolant("tinkers_advanced:molten_blizz_enderium",10);

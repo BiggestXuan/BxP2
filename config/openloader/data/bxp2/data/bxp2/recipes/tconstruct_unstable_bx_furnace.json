@@ -1,0 +1,15 @@
+{
+    "type": "tconstruct:casting_table",
+    "cast": {
+      "item": "minecraft:furnace"
+    },
+    "cast_consumed":true,
+    "cooling_time": 240,
+    "fluid": {
+      "amount": 1620,
+      "tag": "tconstruct:molten_silver"
+    },
+    "result": {
+      "item": "mbd2:bx_unstable_furnace"
+    }
+  }

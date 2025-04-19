@@ -25,7 +25,7 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -6.5d
 			y: -2.5d
 		}
 		{
@@ -438,6 +438,7 @@
 		}
 		{
 			id: "67D19A3B54DDFD89"
+			subtitle: "鸡岩粉"
 			tasks: [{
 				id: "4EB82632034C7038"
 				item: "enderio:grains_of_infinity"
@@ -454,7 +455,7 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
@@ -466,6 +467,7 @@
 				table_id: 2184139927143331923L
 				type: "random"
 			}]
+			subtitle: "哇"
 			tasks: [{
 				id: "22A59B7A9A954581"
 				item: { Count: 64, id: "enderio:silicon" }
@@ -517,6 +519,7 @@
 				table_id: 9032867955502319269L
 				type: "random"
 			}]
+			subtitle: "超快速度"
 			tasks: [{
 				id: "2787D91A29B48C63"
 				item: "enderio:redstone_conduit"

@@ -9,7 +9,7 @@
 		tag: { }
 	}
 	id: "49A32356126836D2"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -30,6 +30,7 @@
 				table_id: 2184139927143331923L
 				type: "random"
 			}]
+			subtitle: "对不起，我要起飞"
 			tasks: [
 				{
 					id: "39453CF8590D8BD2"
@@ -74,6 +75,7 @@
 				table_id: 2184139927143331923L
 				type: "random"
 			}]
+			subtitle: "动力来源"
 			tasks: [{
 				id: "1520F84288068219"
 				item: "ad_astra:fuel_refinery"
@@ -114,6 +116,7 @@
 				table_id: 2184139927143331923L
 				type: "random"
 			}]
+			subtitle: "打扮的白白胖胖的"
 			tasks: [
 				{
 					id: "523C72E48365A5B3"
@@ -171,6 +174,7 @@
 				table_id: 2184139927143331923L
 				type: "random"
 			}]
+			subtitle: "黑芝麻糊"
 			tasks: [{
 				id: "1109FA208FBB5A7F"
 				item: "ad_astra:oil_bucket"
@@ -197,12 +201,15 @@
 					type: "item"
 				}
 			]
+			subtitle: "我怕你回不去了"
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_stone"
 				id: "007A7F71D65EEC90"
+				title: "到达月球"
 				type: "dimension"
 			}]
+			title: "月球之旅"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -211,10 +218,10 @@
 			id: "4DF19B4EE17C024F"
 			tasks: [{
 				id: "266407D86AFF23EA"
-				item: "ad_astra:raw_desh"
+				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 3.0d
 		}
 		{
@@ -226,7 +233,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 5.5d
 		}
 	]
 	title: "飞向太空"

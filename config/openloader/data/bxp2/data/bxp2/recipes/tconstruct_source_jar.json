@@ -1,0 +1,17 @@
+{
+    "type": "tconstruct:casting_table",
+    "cast": {
+      "item": "ars_nouveau:source_jar"
+    },
+    "cast_consumed":true,
+    "cooling_time": 65,
+    "fluid": {
+      "amount": 500,
+      "tag": "tconstruct:molten_amethyst"
+    },
+    "result": {
+      "item": "ars_nouveau:source_jar",
+      "nbt":{
+        "BlockEntityTag": {"Items": [], "source": 1000, "id": "ars_nouveau:source_jar"}}
+    }
+  }

@@ -44,6 +44,7 @@ public class DifficultyScreen extends Screen {
     }
 
     public void renderDirtBackground(GuiGraphics p_281950_) {
+        super.renderDirtBackground(p_281950_);
         p_281950_.blit(bg, 0, 0, 0, 0.0F, 0.0F, this.width, this.height, this.width, this.height);
     }
 

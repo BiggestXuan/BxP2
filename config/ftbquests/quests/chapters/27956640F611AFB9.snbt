@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "27956640F611AFB9"
 	group: "5099321D8633CF57"
+	icon: "industrialforegoing:machine_frame_supreme"
 	id: "27956640F611AFB9"
 	order_index: 3
 	quest_links: [ ]
@@ -48,6 +49,7 @@
 		}
 		{
 			dependencies: ["38EB179B10EE3CC7"]
+			hide_dependent_lines: true
 			id: "0B4E319904D3D3F9"
 			rewards: [
 				{
@@ -127,7 +129,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["03DECA529D167C42"]
+			dependencies: [
+				"03DECA529D167C42"
+				"663D2CE0DA83F4EC"
+				"0B4E319904D3D3F9"
+			]
+			dependency_requirement: "one_completed"
 			id: "4E91D6F7460AC8BC"
 			tasks: [{
 				id: "53553615D0B70553"
@@ -190,13 +197,20 @@
 				"036BC59C6CEAE414"
 			]
 			id: "0218B6A75449557B"
-			tasks: [{
-				id: "2C2C3AC851B9B7A9"
-				item: "pneumaticcraft:unassembled_pcb"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
+			tasks: [
+				{
+					id: "2C2C3AC851B9B7A9"
+					item: "pneumaticcraft:unassembled_pcb"
+					type: "item"
+				}
+				{
+					id: "7ADC2CE663C96881"
+					item: "pneumaticcraft:printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["38EB179B10EE3CC7"]
@@ -210,7 +224,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["03DECA529D167C42"]
+			dependencies: [
+				"03DECA529D167C42"
+				"663D2CE0DA83F4EC"
+			]
+			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			id: "508B7BBBBB8F0444"
 			tasks: [{
@@ -231,6 +249,231 @@
 			}]
 			x: 3.0d
 			y: 0.0d
+		}
+		{
+			id: "72920C07C44D3AF0"
+			tasks: [{
+				id: "773B496B8378F684"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["72920C07C44D3AF0"]
+			id: "39A852E9C3DFF90A"
+			tasks: [{
+				id: "7B00BC0622F5BB11"
+				item: "industrialforegoing:mob_slaughter_factory"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["72920C07C44D3AF0"]
+			id: "2B583183801D08AF"
+			tasks: [{
+				id: "4238DD1EF609D0B5"
+				item: "industrialforegoing:latex_processing_unit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["72920C07C44D3AF0"]
+			id: "4F8033D45A35838E"
+			tasks: [{
+				id: "00B833F07E24D783"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["2B583183801D08AF"]
+			hide_dependent_lines: true
+			id: "663D2CE0DA83F4EC"
+			tasks: [{
+				id: "128016256B3415D1"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["72920C07C44D3AF0"]
+			id: "710F4F52CEB02DF4"
+			tasks: [{
+				id: "400517EFEC59B9F6"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4F8033D45A35838E"]
+			hide_dependent_lines: true
+			id: "063646F5DDFD25D4"
+			tasks: [{
+				id: "344B9E1E5E573A46"
+				item: "industrialforegoing:latex_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"063646F5DDFD25D4"
+				"710F4F52CEB02DF4"
+				"663D2CE0DA83F4EC"
+			]
+			id: "7BB2237D48ABB1AD"
+			tasks: [{
+				id: "6B30FA78E0D5A8B1"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0218B6A75449557B"]
+			id: "5015D6F488B7C6BE"
+			tasks: [{
+				id: "614B68FF95567C5E"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7BB2237D48ABB1AD"]
+			id: "5A3E785E6EA8C1C2"
+			tasks: [{
+				id: "33971B903274F5FB"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5A3E785E6EA8C1C2"]
+			id: "4FEA9CAA20C326AF"
+			tasks: [{
+				id: "31F36C834F8BE8AA"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4FEA9CAA20C326AF"]
+			id: "3FF612FBF8A49EF9"
+			tasks: [{
+				id: "58DC8D47F065E242"
+				item: "ifeu:ultimate_machine_frame"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7BB2237D48ABB1AD"]
+			id: "08D831F23B386D14"
+			tasks: [{
+				id: "5268ED5C7E04CF49"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7BB2237D48ABB1AD"]
+			id: "6AEAA389E4284595"
+			tasks: [{
+				id: "51AE28CBF0E7F8E3"
+				item: "industrialforegoing:hydroponic_bed"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5A3E785E6EA8C1C2"]
+			id: "29EB87BF2549429B"
+			tasks: [{
+				id: "3EC9950EF4CC915E"
+				item: "industrialforegoing:ore_laser_base"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5A3E785E6EA8C1C2"]
+			id: "2A0BC025EE9BFB39"
+			tasks: [{
+				id: "68F3E58F14F284A1"
+				item: "industrialforegoing:fluid_laser_base"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5A3E785E6EA8C1C2"]
+			id: "732B98BA9B25FF01"
+			tasks: [{
+				id: "04773DBB21C15848"
+				item: "industrialforegoing:mob_crusher"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5A3E785E6EA8C1C2"]
+			id: "572D2BB439761F91"
+			tasks: [{
+				id: "623735B91E5E97CA"
+				item: "industrialforegoing:material_stonework_factory"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4FEA9CAA20C326AF"]
+			id: "3A0DE82774E37447"
+			tasks: [{
+				id: "7C887EB2E7967A96"
+				item: "industrialforegoing:supreme_black_hole_tank"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4FEA9CAA20C326AF"]
+			id: "28EDFBCFE13DB76E"
+			tasks: [{
+				id: "512C1171416CA8CF"
+				item: "industrialforegoing:supreme_black_hole_unit"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
 		}
 	]
 	title: "进阶科技"

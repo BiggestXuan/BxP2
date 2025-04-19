@@ -5,8 +5,8 @@ import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.items.IBXItem;
 import biggestxuan.bxp2.recipes.RecipeUtils;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
-import com.blamejared.crafttweaker.api.fluid.IFluidStack;
 import com.blamejared.crafttweaker.api.item.IItemStack;
+import mekanism.api.chemical.gas.GasStack;
 import net.minecraft.world.item.Item;
 import org.openzen.zencode.java.ZenCodeType;
 import owmii.powah.api.PowahAPI;
@@ -52,6 +52,12 @@ public class CrTUtils {
     @ZenCodeType.Method
     public static String getRecipeName(IItemStack stack,String name){
         String n = RecipeUtils.getRecipeName(stack.getInternal(),name);
+        return n.replace(':','_');
+    }
+
+    @ZenCodeType.Method
+    public static String getGasRecipeName(GasStack stack,String name){
+        String n = RecipeUtils.getRecipeName(stack,name);
         return n.replace(':','_');
     }
 

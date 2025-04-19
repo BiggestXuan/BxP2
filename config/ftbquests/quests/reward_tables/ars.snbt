@@ -1,0 +1,46 @@
+{
+	icon: "ars_nouveau:glyph_touch"
+	id: "77B76110DF1021E8"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "ars"
+	}
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ item: "ars_nouveau:glyph_wind_shear" }
+		{ item: "ars_nouveau:glyph_ender_inventory" }
+		{ item: "ars_nouveau:glyph_slowfall" }
+		{ item: "ars_nouveau:glyph_cold_snap" }
+		{ item: "ars_nouveau:glyph_sense_magic" }
+		{ item: "ars_nouveau:glyph_animate_block" }
+		{ item: "ars_nouveau:glyph_heal" }
+		{ item: "ars_nouveau:glyph_infuse" }
+		{ item: "ars_nouveau:glyph_firework" }
+		{ item: "ars_nouveau:glyph_smelt" }
+		{ item: "ars_nouveau:glyph_decelerate" }
+		{ item: "ars_nouveau:glyph_accelerate" }
+		{ item: "ars_nouveau:glyph_fortune" }
+		{ item: "ars_nouveau:glyph_extend_time" }
+		{ item: "ars_nouveau:glyph_exchange" }
+		{ item: "ars_nouveau:glyph_gravity" }
+		{ item: "ars_nouveau:glyph_flare" }
+		{ item: "ars_nouveau:glyph_explosion" }
+		{ item: "ars_nouveau:glyph_dampen" }
+		{ item: "ars_nouveau:glyph_extract" }
+		{ item: "ars_nouveau:glyph_pierce" }
+		{ item: "ars_nouveau:glyph_duration_down" }
+		{ item: "ars_nouveau:glyph_conjure_water" }
+		{ item: "ars_nouveau:glyph_invisibility" }
+		{ item: "ars_nouveau:glyph_crush" }
+		{ item: "ars_nouveau:glyph_grow" }
+		{ item: "ars_nouveau:glyph_aoe" }
+		{ item: "ars_nouveau:glyph_name" }
+	]
+	title: "新生魔艺奖励包"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "bxp2:tconstruct_big",
+  "size": 2,
+  "max_distance_from_center": 20,
+  "spawn_overrides": {},
+  "biomes": "#minecraft:has_structure/stronghold",
+  "step": "surface_structures",
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "use_expansion_hack": false
+}

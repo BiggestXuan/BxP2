@@ -1,0 +1,13 @@
+{
+    "type": "bloodmagic:altar",
+    "altarSyphon": 1000,
+    "consumptionRate": 50,
+    "drainRate": 20,
+    "input": {
+      "item": "mekanism:ingot_steel"
+    },
+    "output": {
+      "item": "enderio:pulsating_alloy_ingot"
+    },
+    "upgradeLevel": 1
+  }

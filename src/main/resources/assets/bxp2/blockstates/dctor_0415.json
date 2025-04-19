@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=east": {
+			"model": "bxp2:block/dctor_0415",
+			"y": 90
+		},
+		"facing=north": {
+			"model": "bxp2:block/dctor_0415"
+		},
+		"facing=south": {
+			"model": "bxp2:block/dctor_0415",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "bxp2:block/dctor_0415",
+			"y": 270
+		}
+	}
+}

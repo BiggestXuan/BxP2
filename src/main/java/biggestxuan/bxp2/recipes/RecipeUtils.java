@@ -6,6 +6,7 @@ import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.utils.Utils;
 import com.blamejared.crafttweaker.api.ingredient.IIngredient;
 import dev.architectury.fluid.FluidStack;
+import mekanism.api.chemical.gas.GasStack;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -89,6 +90,10 @@ public final class RecipeUtils {
 
     public static ResourceLocation getRecipeNameByRL(ItemStack stack,String name){
         return BxP2.MODRL(getRecipeName(stack,name));
+    }
+
+    public static String getRecipeName(GasStack gas,String add){
+        return "bxp2:recipes/" + gas.getType().getName() + add + "_" + gas.getAmount();
     }
 
     public static String getRecipeName(ItemStack item, String add){
