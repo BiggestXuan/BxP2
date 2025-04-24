@@ -13,7 +13,7 @@
 	#Range: 1 ~ 600
 	recastdelay = 20
 	#Does nothing currently
-	autoreplace = true
+	autoreplace = false
 	#Sets the default status of the Auto Fish feature
 	autofish = true
 	#Sets the interval for checking if the rod is thrown (in ticks).

@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "49A32356126836D2"
-	group: "3B03478F18523D29"
+	group: "455ED0AB8CCEDEB5"
 	icon: {
 		Count: 1
 		id: "ad_astra:tier_3_rocket"
 		tag: { }
 	}
 	id: "49A32356126836D2"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,12 +24,25 @@
 				tag: { }
 			}
 			id: "0A70A297077DB65B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6D24FD2C58FDD464"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6D24FD2C58FDD464"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "1050133DFFC51F82"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "对不起，我要起飞"
 			tasks: [
 				{
@@ -52,12 +65,25 @@
 		}
 		{
 			id: "2E7D0160DFCFFF2A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "31B12EFB2E5C02AF"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31B12EFB2E5C02AF"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "0D39D796893A2AC1"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4571FF0F41B9FF5A"
 				item: "ad_astra:nasa_workbench"
@@ -69,12 +95,25 @@
 		{
 			dependencies: ["572363E5BEA831A5"]
 			id: "6D6AF9710AF3952F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "48B4D7D9A1DDCD02"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48B4D7D9A1DDCD02"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "4BF83BA93B94D786"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "动力来源"
 			tasks: [{
 				id: "1520F84288068219"
@@ -86,12 +125,25 @@
 		}
 		{
 			id: "01C2F76368E16905"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2F2E588DB8D4EA04"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F2E588DB8D4EA04"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "04F696E1100EB094"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "313A5CAB6748997E"
 				item: "ad_astra:oxygen_loader"
@@ -110,12 +162,25 @@
 				}
 			}
 			id: "5707F7D609E873F1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6E667739F3908097"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E667739F3908097"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "2B8974F31252E963"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "打扮的白白胖胖的"
 			tasks: [
 				{
@@ -168,12 +233,25 @@
 		}
 		{
 			id: "572363E5BEA831A5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5DC33E89FB11041B"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5DC33E89FB11041B"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "1512EECCF83A450D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "黑芝麻糊"
 			tasks: [{
 				id: "1109FA208FBB5A7F"
@@ -200,6 +278,17 @@
 					team_reward: true
 					type: "item"
 				}
+				{
+					id: "32C6C36262AA6EA7"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "我怕你回不去了"
 			tasks: [{
@@ -216,24 +305,282 @@
 		{
 			dependencies: ["2EA74386B89D3123"]
 			id: "4DF19B4EE17C024F"
+			rewards: [{
+				id: "473AFA7FDD674241"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "266407D86AFF23EA"
 				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2EA74386B89D3123"]
+			id: "6FF9CBBB853305BA"
+			rewards: [{
+				id: "04704B57E412BED9"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "775F97B55F59FCEC"
+				item: "ad_astra:ice_shard"
 				type: "item"
 			}]
 			x: -3.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["2EA74386B89D3123"]
-			id: "6FF9CBBB853305BA"
-			tasks: [{
-				id: "775F97B55F59FCEC"
-				item: "ad_astra:ice_shard"
+			dependencies: ["0A70A297077DB65B"]
+			id: "5A4117D7BD0DD958"
+			rewards: [{
+				id: "200A8B0A84A03148"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.5d
+			tasks: [{
+				id: "04C74AB61D01CE62"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A4117D7BD0DD958"]
+			id: "71CCD97FFE1F240E"
+			rewards: [{
+				id: "57F39BF52347356F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3252542CA6F664EE"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71CCD97FFE1F240E"]
+			id: "6A9B386B4DB9AC96"
+			rewards: [{
+				id: "1E6ED238AD0B28C6"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F04B34DF5782160"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A4117D7BD0DD958"]
+			id: "70055E2010E7F0D8"
+			rewards: [{
+				id: "4E0FCD33C4CCBA75"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_sand"
+				id: "2F105230AB54A534"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70055E2010E7F0D8"]
+			id: "126726CC1BCD1958"
+			rewards: [{
+				id: "715B2D26B797CA3B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "08F0060F60FB1BDE"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["71CCD97FFE1F240E"]
+			id: "648E3735E967E66E"
+			rewards: [{
+				id: "4F1D5EDE7DD9C94A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_sandstone"
+				id: "7ACB64436182CEC1"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["71CCD97FFE1F240E"]
+			id: "2E0A4D0C2521C8D4"
+			rewards: [{
+				id: "51F71D8C3FC338C4"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_stone"
+				id: "5BF1F416514D4E5C"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6A9B386B4DB9AC96"]
+			id: "3A53C433A6043B60"
+			rewards: [{
+				id: "081DFF20FA14E78F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				icon: "ad_astra:glacio_stone"
+				id: "0D563ED6A88B31BC"
+				type: "dimension"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["648E3735E967E66E"]
+			id: "2B4C962739C092C8"
+			rewards: [{
+				id: "1FB4561851FFE9C6"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C609F44781684ED"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3A53C433A6043B60"]
+			id: "2CA74DFC52FF167C"
+			rewards: [{
+				id: "019A47268A8773C8"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DFA872C0439BBA0"
+				item: "ad_astra:glacian_fur"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
 		}
 	]
 	title: "飞向太空"

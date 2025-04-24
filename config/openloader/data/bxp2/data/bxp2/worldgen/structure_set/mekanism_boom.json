@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "bxp2:mekanism_boom",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 1744698703,
+      "spacing": 32,
+      "separation": 8,
+      "type": "minecraft:random_spread"
+    }
+  }

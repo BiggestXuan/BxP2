@@ -21,4 +21,5 @@ public class BxPBlocks {
     public static RegistryObject<Block> JAOXAONO = BLOCKS.register("jaoxaono",PlayerModelBlock::new);
     public static RegistryObject<Block> LAMB_KISARA = BLOCKS.register("lamb_kisara",PlayerModelBlock::new);
     public static RegistryObject<Block> CAIGENGZI = BLOCKS.register("mcaigengzi",PlayerModelBlock::new);
+    public static RegistryObject<Block> YULUO_1 = BLOCKS.register("yuluo_1",PlayerModelBlock::new);
 }

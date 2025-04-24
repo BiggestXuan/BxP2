@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.thinker.Modifiers;
+package biggestxuan.bxp2.integration.Thinker.Modifiers;
 
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;

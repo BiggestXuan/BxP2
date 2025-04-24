@@ -4,10 +4,7 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
 import biggestxuan.bxp2.items.BxPCatalyst;
-import biggestxuan.bxp2.utils.DifficultyUtils;
-import biggestxuan.bxp2.utils.ModUtils;
-import biggestxuan.bxp2.utils.UniteUtils;
-import biggestxuan.bxp2.utils.Utils;
+import biggestxuan.bxp2.utils.*;
 import dev.latvian.mods.kubejs.player.InventoryChangedEventJS;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
@@ -19,6 +16,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -40,8 +38,9 @@ public class PlayerCommonEvent {
             BxP2.LOGGER.info("{}",player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent());
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
                 if(c.getPhase() == -1){
-                    c.setPhase(0);
+                    //c.setPhase(0);
                 }
+                //c.setMoney(600);
             });
             //BxP2.LOGGER.info(ModUtils.getAllMods());
             BxP2.LOGGER.info("AAA");
@@ -56,6 +55,10 @@ public class PlayerCommonEvent {
             });
         }
         if(player instanceof ServerPlayer serverPlayer){
+            player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
+                if(c.getPhase() == -1){
+                    c.setPhase(0);
+                }});
             welcome(player);
             MinecraftServer server = serverPlayer.getServer();
             if(server != null){
@@ -105,6 +108,17 @@ public class PlayerCommonEvent {
                     Utils.sendMessage(player,BxP2.tr("bxp2.message.cantend").setStyle(Style.EMPTY.withColor(ChatFormatting.DARK_PURPLE)));
                 }
             });
+        }
+    }
+
+    @SubscribeEvent
+    public static void playerDeath(LivingDeathEvent event){
+        if(event.getEntity() instanceof Player player && !event.getEntity().level().isClientSide){
+            ItemStack stack = ShopUtils.dropMoney(player);
+            if(stack != null){
+                ItemEntity entity = new ItemEntity(player.level(),player.getX(),player.getY(),player.getZ(),stack);
+                player.level().addFreshEntity(entity);
+            }
         }
     }
 

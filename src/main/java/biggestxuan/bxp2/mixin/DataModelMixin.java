@@ -23,9 +23,9 @@ public class DataModelMixin {
     public void __inject(CallbackInfoReturnable<Integer> cir){
         if(Config.difficulty >= 2){
             double cost = this.simCost;
-            cost = Math.pow(cost,1.65);
+            cost = Math.pow(cost,1.75);
             if(Config.difficulty == 3){
-                cost *= 1.3;
+                cost *= 1.15;
             }
             cir.setReturnValue((int) cost);
         }

@@ -3,11 +3,8 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.items.BxPItems;
-import biggestxuan.bxp2.utils.Utils;
-import net.minecraft.ChatFormatting;
-import net.minecraft.Util;
-import net.minecraft.network.chat.Style;
-import net.minecraft.world.entity.player.Abilities;
+import biggestxuan.bxp2.utils.PhaseUtils;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
@@ -25,8 +22,17 @@ public class PlayerTickEvent {
     public static void playerTickEvent(TickEvent.PlayerTickEvent event) {
         var player = event.player;
         Level world = player.level();
-        if(world.isClientSide) return;
-        if(!player.isCreative() && !player.isSpectator()){
+        if(world.isClientSide){
+            if(player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent()){
+                var cap = player.getCapability(BxPCapabilityProvider.CAPABILITY).orElseThrow(NullPointerException::new);
+                if(BxP2.devMode){
+                   // BxP2.LOGGER.info("{}",cap.getPhase());
+                    // BxP2.LOGGER.info("{}",cap.getMoney());
+                }
+            }
+            return;
+        }
+        /*if(!player.isCreative() && !player.isSpectator()){
             if(player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent()){
                 var cap = player.getCapability(BxPCapabilityProvider.CAPABILITY).orElseThrow(NullPointerException::new);
                 Abilities abilities = player.getAbilities();
@@ -36,8 +42,9 @@ public class PlayerTickEvent {
                     Utils.sendMessage(player,BxP2.tr("bxp2.message.cantfly").setStyle(Style.EMPTY.withColor(ChatFormatting.GOLD)));
                 }
             }
-        }
+        }*/
         if(world.getDayTime() % 100 == 0){
+            PhaseUtils.setPlayerPhase((ServerPlayer) player);
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
                 for(ItemStack stack : player.getInventory().items){
                     if(!cap.canEnd() && stack.getItem().equals(BxPItems.BX_ENCH_INGOT.get())){
@@ -46,9 +53,9 @@ public class PlayerTickEvent {
                     if(!cap.canNether() && stack.getItem().equals(BxPItems.BX_INGOT.get())){
                         cap.setNether(true);
                     }
-                    if(!cap.canFly() && stack.getItem().equals(BxP2.getItem("draconicevolution:awakened_core"))){
+                    /*if(!cap.canFly() && stack.getItem().equals(BxP2.getItem("draconicevolution:awakened_core"))){
                         cap.setFly();
-                    }
+                    }*/
                 }
             });
         }

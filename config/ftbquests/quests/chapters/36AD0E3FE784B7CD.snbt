@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "36AD0E3FE784B7CD"
+	group: "455ED0AB8CCEDEB5"
+	icon: "hostilenetworks:prediction_matrix"
+	id: "36AD0E3FE784B7CD"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "43A83C7886AB123C"
+			rewards: [{
+				id: "6B9C0FED1592D61E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A001442948C855A"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "596829C84C1FCE5B"
+			rewards: [{
+				id: "79369F800CC1F2F5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FF7DB9E71A8932F"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "6138CFB321D8EA36"
+			rewards: [{
+				id: "687898A6903772F9"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58D2AA96343B48ED"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "77D264FE2F2C7481"
+			rewards: [{
+				id: "06CBB63738170DF3"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "52826DCDD3D4963C"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "12D9E4CB7B173C38"
+			rewards: [{
+				id: "2F558A6FD0C82C5E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FBA62DE9F2D78FC"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"整合包对敌对神经网络（深度怪物学习）进行了一些数值上的更改，&4大幅&r增加了模拟室的耗电量。"
+				""
+				"同时增加了一些新的模型，例如末影龙、盖亚守卫者、混沌守卫这些BOSS生物，可以用电的消耗简化战利品的获取。"
+				""
+				"作为支线内容，没有什么战利品或是预测产物会参与主线的合成，你可以使用这个模组简化主线的部分内容。"
+				""
+				"任务提供了一些常用的模型，如果你产能跟得上的话不妨试试。"
+				""
+				"但无论如何，因配方需要下界合金锭，你至少需要获取大轩锭后才能制作这些。"
+			]
+			icon: "hostilenetworks:prediction_matrix"
+			id: "6BAF27504F562C0B"
+			size: 2.0d
+			tasks: [{
+				id: "7933BAFD30F25378"
+				title: "简要说明"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "345D1ACBF1E3255A"
+			rewards: [{
+				id: "45A5207ED1B52451"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C792454656C7CD3"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:wither"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "38556057D9AC8759"
+			rewards: [{
+				id: "5168B6912C6C6BA5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "44DF510BAD1F87CD"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:gaia"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "2F726720F9F63627"
+			rewards: [{
+				id: "2DF712A76B1F115D"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FA21A9F493CE2CA"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:draconic_dragon"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "7A1A8856222FB7FD"
+			rewards: [{
+				id: "2FA7155D013B6213"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6810F4FEC773C8C1"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:warden"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "77355E1FE434B1A6"
+			rewards: [{
+				id: "4DEB767B92DB012F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C3EB729040E09A8"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:blaze"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "235A8602286B9688"
+			rewards: [{
+				id: "3FD4F63354C95D8F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "112B8C7B41D7B751"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:ender_dragon"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "1971A48BD8CAE0D9"
+			rewards: [{
+				id: "364E7DD066E62153"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "677C8380E1F3A88E"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:enderman"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BAF27504F562C0B"]
+			id: "59671DE85625DD3A"
+			rewards: [{
+				id: "1D8BEEED22AEA9C1"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "14D507B93B667FF8"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:shulker"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.0d
+		}
+	]
+	title: "深度怪物学习"
+}

@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.CraftTweaker;
+package biggestxuan.bxp2.integration.Powah;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.recipes.RecipeUtils;

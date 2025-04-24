@@ -2,16 +2,20 @@
   "structures": [
     {
       "structure": "bxp2:tconstruct_big",
-      "weight": 3
+      "weight": 1
     },
     {
       "structure": "bxp2:tconstruct_small",
+      "weight": 1
+    },
+    {
+      "structure": "bxp2:broken_botania",
       "weight": 1
     }
   ],
   "placement": {
     "salt": 1744698702,
-    "spacing": 60,
+    "spacing": 40,
     "separation": 10,
     "type": "minecraft:random_spread"
   }

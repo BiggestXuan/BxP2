@@ -8,7 +8,8 @@ import biggestxuan.bxp2.fluids.BxPFluids;
 import biggestxuan.bxp2.integration.Mekanism.BxPGases;
 import biggestxuan.bxp2.integration.Mekanism.BxPInfuseTypes;
 import biggestxuan.bxp2.integration.Mekanism.BxPMekFluids;
-import biggestxuan.bxp2.integration.thinker.Modifiers.BxPModifiers;
+import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.BxPModifiers;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.network.PacketHandler;
 import com.mojang.logging.LogUtils;
@@ -17,6 +18,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,7 +42,7 @@ public class BxP2
 {
 
     public static final String MODID = "bxp2";
-    public static final String VERSION = "0.0.15";
+    public static final String VERSION = "0.0.23";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static boolean devMode = true;
@@ -51,6 +53,7 @@ public class BxP2
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerCap);
+        MinecraftForge.EVENT_BUS.register(this);
         BxPBlocks.BLOCKS.register(modEventBus);
         BxPFluids.FLUIDS.register(modEventBus);
         BxPCreativeTabs.CREATIVE_TABS.register(modEventBus);
@@ -60,8 +63,7 @@ public class BxP2
         BxPInfuseTypes.INFUSE_TYPES.register(modEventBus);
         BxPGases.GASES.register(modEventBus);
         BxPMekFluids.FLUID.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(this);
-
+        BxPModules.MODULES.register(modEventBus);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
@@ -111,6 +113,10 @@ public class BxP2
         return Component.translatable(text);
     }
 
+    public static MutableComponent tr(String text,Object ... objects){
+        return Component.translatable(text,objects);
+    }
+
     public static String makeDescriptionId(String type, String name) {
         return type + "." + MODID + "." + name;
     }
@@ -135,14 +141,32 @@ public class BxP2
         return getBlock(ResourceLocation.tryParse(rl));
     }
 
+
+    @Nullable
+    public static ItemStack getStack(ResourceLocation rl,int count){
+        Item item = getItem(rl);
+        ItemStack stack = item.getDefaultInstance();
+        stack.setCount(count);
+        return stack;
+    }
+
+    @Nullable
+    public static ItemStack getStack(String name,int count){
+        return getStack(MODRL(name),count);
+    }
+
     @Nullable
     public static ItemStack getStack(ResourceLocation rl){
         Item item = getItem(rl);
-        return item == null ? null : new ItemStack(item);
+        return item == null ? null : item.getDefaultInstance();
     }
 
     @Nullable
     public static ItemStack getStack(String name){
         return getStack(MODRL(name));
+    }
+
+    public static Ingredient getIngredient(String name){
+        return Ingredient.of(getStack(name));
     }
 }

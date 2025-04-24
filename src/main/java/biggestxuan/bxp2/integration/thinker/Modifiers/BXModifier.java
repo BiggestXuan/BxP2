@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.thinker.Modifiers;
+package biggestxuan.bxp2.integration.Thinker.Modifiers;
 
 import biggestxuan.bxp2.utils.BXUtils;
 import net.minecraft.world.entity.player.Player;

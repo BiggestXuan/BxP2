@@ -2,6 +2,9 @@ package biggestxuan.bxp2.items;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.blocks.BxPBlocks;
+import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
+import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.ChaosProtectItem;
+import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.SunProtectItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -25,9 +28,10 @@ public class BxPItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BxP2.MODID);
     public static final RegistryObject<Item> CAIGENGZI = ITEMS.register("caigengzi",() -> new BxPItem.BxPFoodItem(2,0.2F));
     public static final RegistryObject<Item> BX_UNSTABLE_INGOT = ITEMS.register("bx_unstable_ingot",() -> new BxPItem(1));
-    public static final RegistryObject<Item> BX_INGOT = ITEMS.register("bx_ingot",() -> new BxPItem(Rarity.UNCOMMON){
-        public int getBXValue(ItemStack stack) {
-            return 25;
+    public static final RegistryObject<Item> BX_INGOT = ITEMS.register("bx_ingot", () -> new BXCycleBaseItem(){
+        @Override
+        public int getBXValue(ItemStack stack){
+            return 40;
         }
     });
     public static final RegistryObject<Item> BX_ENCH_INGOT = ITEMS.register("bx_ench_ingot",() -> new BxPItem(Rarity.RARE){
@@ -46,6 +50,11 @@ public class BxPItems {
     public static final RegistryObject<Item> COPPER_CHLORIDE = ITEMS.register("copper_chloride", BxPItem::new);
     public static final RegistryObject<Item> CONDENSE_URANIUM = ITEMS.register("condense_uranium", BxPItem::new);
     public static final RegistryObject<Item> POTASSIUM = ITEMS.register("potassium", BxPItem::new);
+    public static final RegistryObject<Item> SUN_PROTECT_MODULE = ITEMS.register("sun_protect_module", () -> new SunProtectItem(BxPModules.SUN_PROTECT));
+    public static final RegistryObject<Item> CHAOS_PROTECT_MODULE = ITEMS.register("chaos_protect_module", () -> new ChaosProtectItem(BxPModules.CHAOS_PROTECT));
+    public static final RegistryObject<Item> MONEY = ITEMS.register("money", MoneyItem::new);
+    public static final RegistryObject<Item> MEANING_LESS = ITEMS.register("meaning_less", BxPItem::new);
+    public static final RegistryObject<Item> DISCOUNT_CARD = ITEMS.register("discount_card", () -> new DiscountCardItem(0.7F));
 
     public static final RegistryObject<Item> YUNXI = registryPlayerModelBlock("yunxi", BxPBlocks.YUNXI);
     public static final RegistryObject<Item> BIGGEST_XUAN = registryPlayerModelBlock("biggest_xuan", BxPBlocks.BIGGEST_XUAN);
@@ -55,6 +64,7 @@ public class BxPItems {
     public static final RegistryObject<Item> LAMB_KISARA = registryPlayerModelBlock("lamb_kisara", BxPBlocks.LAMB_KISARA);
     public static final RegistryObject<Item> SDXHOP = registryPlayerModelBlock("sdxhop", BxPBlocks.SDXHOP);
     public static final RegistryObject<Item> MCAIGENGZI = registryPlayerModelBlock("mcaigengzi", BxPBlocks.CAIGENGZI);
+    public static final RegistryObject<Item> YULUO_1 = registryPlayerModelBlock("yuluo_1", BxPBlocks.YULUO_1);
 
     private static RegistryObject<Item> registryBlock(String name, RegistryObject<Block> block){
         return ITEMS.register(name,() -> new BlockItem(block.get(),new Item.Properties()));

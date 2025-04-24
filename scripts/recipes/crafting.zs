@@ -1,3 +1,5 @@
+#priority 20
+
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.recipe.replacement.Replacer;
@@ -49,3 +51,5 @@ addCraftRecipe([
 Replacer.create()
     .replace<IIngredient>(<recipecomponent:crafttweaker:input/ingredients>,<item:pneumaticcraft:plastic>,<tag:items:forge:plastic>)
     .execute();
+
+furnaceRecipe(<item:ad_astra:desh_ingot>,<item:enderio:energetic_alloy_ingot>);

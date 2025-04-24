@@ -10,8 +10,10 @@ import mekanism.api.chemical.gas.GasStack;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.*;
 
@@ -127,5 +129,52 @@ public final class RecipeUtils {
             ingredients.add(ingredient.asVanillaIngredient());
         }
         return ingredients;
+    }
+
+    public static List<ItemStack> removeRepeatIngredient(Ingredient[] ingredients){
+        Set<ItemStack> uniqueStacks = new HashSet<>() {
+            @Override
+            public boolean add(ItemStack stack) {
+                if (stack.isEmpty()) return false;
+
+                ItemStack normalized = stack.copy();
+                normalized.setCount(1);
+
+                for (ItemStack existing : this) {
+                    if (ItemStack.isSameItemSameTags(existing, normalized)) {
+                        return false;
+                    }
+                }
+
+                return super.add(normalized);
+            }
+        };
+
+        for (Ingredient ingredient : ingredients) {
+            if (ingredient != null) {
+                for (ItemStack stack : ingredient.getItems()) {
+                    if (!stack.isEmpty()) {
+                        uniqueStacks.add(stack.copy());
+                    }
+                }
+            }
+        }
+
+        return new ArrayList<>(uniqueStacks);
+    }
+
+    public static List<Item> getItemsFromModContaining(String modId, String keyword) {
+        List<Item> result = new ArrayList<>();
+
+        for (Item item : ForgeRegistries.ITEMS) {
+            ResourceLocation registryName = ForgeRegistries.ITEMS.getKey(item);
+            if (registryName != null
+                    && registryName.getNamespace().equals(modId)
+                    && registryName.getPath().contains(keyword)) {
+                result.add(item);
+            }
+        }
+
+        return result;
     }
 }

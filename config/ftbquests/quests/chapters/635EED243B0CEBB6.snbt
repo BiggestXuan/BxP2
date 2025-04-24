@@ -1,0 +1,168 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "635EED243B0CEBB6"
+	group: "55836255C5635985"
+	icon: "bxp2:bx_super_ingot"
+	id: "635EED243B0CEBB6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"719D3EF4AA0D5E54"
+				"0A4E65C670C2D868"
+				"21ABA302597C6CB0"
+				"040F3B8B86AFC843"
+				"76DE62EF9B40F79B"
+				"3AF1BBDAE085DC84"
+				"6EB6E4F4A890EEBF"
+				"23F8CD8249AD7499"
+			]
+			description: [
+				"和我结婚吧，这是彩礼和礼花。"
+				""
+				"&8&o在合成创造物品的时候不会被消耗。&r&r"
+			]
+			id: "20B3A02ED4CF62CF"
+			rewards: [
+				{
+					id: "56CD5F2F5578105D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 5201314.0f
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E3A17EA0A355438"
+					item: {
+						Count: 1
+						id: "industrialforegoing:infinity_nuke"
+						tag: {
+							CanCharge: 1b
+							Energy: 9223372036854775807L
+							Fluid: {
+								Amount: 1000000
+								FluidName: "biofuel"
+							}
+							Selected: "ARTIFACT"
+							Special: 1b
+						}
+					}
+					team_reward: true
+					title: "礼花"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "6522086CB573C4C4"
+				item: "bxp2:bx_super_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "21ABA302597C6CB0"
+			size: 2.0d
+			tasks: [{
+				id: "618448AEED93F680"
+				item: "megacells:cell_component_256m"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "719D3EF4AA0D5E54"
+			size: 2.0d
+			tasks: [{
+				count: 20L
+				id: "36EEC285B42D60BD"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "0A4E65C670C2D868"
+			size: 2.0d
+			tasks: [{
+				count: 8L
+				id: "6BBBDEC6D8A1A1A3"
+				item: { Count: 8, id: "mekanism_extras:infinite_control_circuit" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "76DE62EF9B40F79B"
+			size: 2.0d
+			tasks: [{
+				count: 12L
+				id: "785191C3C134F572"
+				item: { Count: 12, id: "mysticalagradditions:insanium_block" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "6EB6E4F4A890EEBF"
+			size: 2.0d
+			tasks: [{
+				count: 8L
+				id: "66467E5AB137CD70"
+				item: { Count: 8, id: "draconicevolution:chaotic_core" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			id: "3AF1BBDAE085DC84"
+			size: 2.0d
+			tasks: [{
+				count: 12L
+				id: "099D7402328BD51A"
+				item: { Count: 12, id: "extendedcrafting:ultimate_singularity" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "040F3B8B86AFC843"
+			size: 2.0d
+			tasks: [{
+				count: 8L
+				id: "72E59D8ADDB63D2A"
+				item: "bxp2:bx_ench_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			id: "23F8CD8249AD7499"
+			size: 2.0d
+			tasks: [{
+				count: 9L
+				id: "260A55D8F14949AC"
+				item: { Count: 9, id: "extendedcrafting:the_ultimate_ingot" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+	]
+	title: "毕业任务"
+}

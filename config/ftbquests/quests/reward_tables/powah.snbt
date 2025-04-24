@@ -12,6 +12,7 @@
 		{ count: 32, item: "powah:dielectric_paste", weight: 2.0f }
 		{ count: 8, item: "powah:steel_energized", weight: 0.5f }
 		{ count: 4, item: "powah:crystal_blazing", weight: 0.15f }
+		{ item: "bxp2:discount_card", weight: 0.2f }
 	]
 	title: "Powah基础奖励包"
 }

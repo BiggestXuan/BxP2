@@ -3,7 +3,9 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.effects.BxPEffects;
+import biggestxuan.bxp2.integration.Mekanism.MekUtils;
 import biggestxuan.bxp2.utils.Utils;
+import com.brandon3055.draconicevolution.init.DEDamage;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.server.level.ServerLevel;
@@ -15,6 +17,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -59,7 +62,7 @@ public class LivingCombatEvent {
                     warden.heal(amount * 0.4F);
                 }
             }
-            double r = BxP2.devMode ? 1 : 0.05;
+            double r = BxP2.devMode ? 1 : 0.03;
             if(attacker instanceof Player){
                 if(Config.difficulty == 1){
                     if(Utils.isRandom(r)){
@@ -67,11 +70,24 @@ public class LivingCombatEvent {
                     }
                 }
             }
-            if(entity instanceof Player){
+            if(entity instanceof Player player){
                 if(Config.difficulty == 3){
                     if(Utils.isRandom(r)){
                         entity.addEffect(new MobEffectInstance(BxPEffects.Vulnerability.get()));
                         entity.addEffect(new MobEffectInstance(BxPEffects.Debilitated.get()));
+                    }
+                }
+                if(sources.is(DEDamage.CHAOTIC_ARROW) || sources.is(DEDamage.CHAOTIC_ARROW_SPOOF) || sources.is(DEDamage.CHAOS_IMPLOSION) || sources.is(DEDamage.GUARDIAN) || sources.is(DEDamage.GUARDIAN_LASER) || sources.is(DEDamage.GUARDIAN_PROJECTILE)){
+                    int count = MekUtils.getPlayerChaosProtectAmount(player);
+                    if(count >= 1){
+                        float rate = 1;
+                        switch (count){
+                            case 1 -> rate = 0.75F;
+                            case 2 -> rate = 0.45F;
+                            case 3 -> rate = 0.3F;
+                            case 4 -> rate = 0.05F;
+                        }
+                        amount *= rate;
                     }
                 }
             }
@@ -116,8 +132,9 @@ public class LivingCombatEvent {
         if(event.getLevel().isClientSide()) return;
         if(mob.level() instanceof ServerLevel sl){
             if(Config.difficulty == 1){return;}
+            if(mob instanceof WitherBoss) return;
             ServerLevel world = sl.getServer().overworld();
-            double day = 1d * world.getDayTime() / 24000 * (Config.difficulty == 3 ? 4 : 1);
+            double day = 1d * world.getDayTime() / 24000 * (Config.difficulty == 3 ? 2.5 : 1);
             AttributeInstance health = mob.getAttribute(Attributes.MAX_HEALTH);
             AttributeInstance attack = mob.getAttribute(Attributes.ATTACK_DAMAGE);
             if(health != null){

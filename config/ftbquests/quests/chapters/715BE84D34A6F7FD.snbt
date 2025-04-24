@@ -5,7 +5,7 @@
 	group: "3B03478F18523D29"
 	icon: "twilightforest:raven_feather"
 	id: "715BE84D34A6F7FD"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,12 +20,25 @@
 			]
 			icon: "minecraft:glowstone"
 			id: "135B5D57FADDD87A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "598885F254528C99"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "598885F254528C99"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "691E185B7D80900E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "营销号快乐门"
 			tasks: [
 				{
@@ -47,12 +60,25 @@
 		{
 			dependencies: ["152998D02AB61294"]
 			id: "38847BA5CB889F71"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "404A978265DFE763"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "404A978265DFE763"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "446BDCD1D4C9BC10"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "和主世界没太大不同"
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
@@ -66,12 +92,25 @@
 		{
 			dependencies: ["135B5D57FADDD87A"]
 			id: "2970080B47B53848"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "75CBF1793D957AC3"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75CBF1793D957AC3"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "237949F9AAEDDD1E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "镐击那个方块块"
 			tasks: [{
 				id: "5C4867AA80E49C3D"
@@ -84,12 +123,25 @@
 		{
 			dependencies: ["2970080B47B53848"]
 			id: "5B0BBF5932032ECB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "064FBC23F3D72E1C"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "064FBC23F3D72E1C"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "3E3D67E505D3501D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你先要证明自己！"
 			tasks: [{
 				count: 10L
@@ -103,12 +155,25 @@
 		{
 			dependencies: ["5B0BBF5932032ECB"]
 			id: "26F4E7B8E8E3000E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "19DA3490A0EBE3A2"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19DA3490A0EBE3A2"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "69B7834ADCB6C88E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "也不过如此嘛"
 			tasks: [{
 				id: "4A00A52F1529AB4E"
@@ -130,12 +195,25 @@
 				"挑战模式：当冰球击中烈阳巨灵后仅有约10秒被冰冻。"
 			]
 			id: "61564359E11AD6F8"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "060173DA30629DBA"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "060173DA30629DBA"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "0D1E585D36C03225"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "烈阳巨灵冰冻机制修改"
 			tasks: [{
 				id: "2223C45F6F97A012"
@@ -148,12 +226,25 @@
 		{
 			dependencies: ["38847BA5CB889F71"]
 			id: "40E7F14DD95E0190"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "65F624F791B877A3"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65F624F791B877A3"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "0CAF45E155EF5C48"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "也许会在洞穴找到"
 			tasks: [{
 				id: "77A44549D7932E12"
@@ -166,12 +257,25 @@
 		{
 			dependencies: ["38847BA5CB889F71"]
 			id: "073BF1581B885CC6"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "583800243B8A7FD9"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "583800243B8A7FD9"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "59093B4DF448A829"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你怎么忍心的！"
 			tasks: [{
 				id: "46CE1819CFC4BAE1"
@@ -188,12 +292,25 @@
 			]
 			description: ["根据地图分别找到BOSS，将他们击杀！"]
 			id: "46BE27609C95967D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "050AD2969296C212"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "050AD2969296C212"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "1BB1C71B19DFBF07"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "统揽全局"
 			tasks: [{
 				id: "7AC2D52994AA60FA"
@@ -206,12 +323,25 @@
 		{
 			dependencies: ["46BE27609C95967D"]
 			id: "03B98F1EE3CAE133"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "31ED1A3FE710324A"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31ED1A3FE710324A"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "2946BA084EC8FEAC"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "其实也很可爱"
 			tasks: [{
 				id: "7894A20092A7F951"
@@ -224,12 +354,25 @@
 		{
 			dependencies: ["03B98F1EE3CAE133"]
 			id: "62D71EE9BC67C5B4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "583601C1FE475341"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "583601C1FE475341"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "54D699D2433ACA05"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "小法师而已"
 			tasks: [{
 				id: "77E92F7BA30F3ABD"
@@ -242,12 +385,25 @@
 		{
 			dependencies: ["62D71EE9BC67C5B4"]
 			id: "4AC98A2A268ACC13"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "29E36BD3807F3C97"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "29E36BD3807F3C97"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "131CB1A97D5C4CD6"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "蘑菇牛肉酱"
 			tasks: [{
 				id: "2806661173615E4F"
@@ -260,12 +416,25 @@
 		{
 			dependencies: ["62D71EE9BC67C5B4"]
 			id: "2051F78A2D8B1402"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1624A78B455B9481"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1624A78B455B9481"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "1ABC92E34611324E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "影流之主"
 			tasks: [{
 				id: "4AAA0ADFC0792D75"
@@ -278,12 +447,25 @@
 		{
 			dependencies: ["62D71EE9BC67C5B4"]
 			id: "79273EA57ADEC6CB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3E71CFD3145385BE"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E71CFD3145385BE"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "4BD2C01EAEB705A9"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "这么可爱！抱走！"
 			tasks: [{
 				id: "0B54D680AF9DAA2D"
@@ -296,12 +478,25 @@
 		{
 			dependencies: ["2051F78A2D8B1402"]
 			id: "299A5B2590C560AB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "72D337F703B8D615"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "72D337F703B8D615"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "13E6AF5124FF2804"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "路易十六发来邀请"
 			tasks: [{
 				id: "3DFB317DE06B6123"
@@ -314,12 +509,25 @@
 		{
 			dependencies: ["4AC98A2A268ACC13"]
 			id: "58A5CDD9F394BE90"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3EA96DE953F9E237"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EA96DE953F9E237"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "5A17C16A00A8858D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你别哭了！"
 			tasks: [{
 				id: "69D65ECC15975D34"
@@ -332,12 +540,25 @@
 		{
 			dependencies: ["79273EA57ADEC6CB"]
 			id: "3198B173B7509158"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6BC604C4E305D50E"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6BC604C4E305D50E"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "26E5DA3293C23F27"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "这种呆傻的孩子都一个样"
 			tasks: [{
 				id: "07DE9798437B3FC6"
@@ -354,12 +575,25 @@
 				"58A5CDD9F394BE90"
 			]
 			id: "5A1348EA52FCE8E4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1A36721C48AB202D"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A36721C48AB202D"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "733709A8B834C5C7"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "星火燎原"
 			tasks: [{
 				id: "38BB034581DE52A4"
@@ -378,12 +612,25 @@
 		{
 			dependencies: ["46BE27609C95967D"]
 			id: "1F0BBC38AD2B532D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "05A4D3D74D9C4857"
-				table_id: 2184139927143331923L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05A4D3D74D9C4857"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "4A56B8B903314BE1"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "五彩斑斓！"
 			tasks: [{
 				id: "6D866EE72E0FD3A1"
@@ -392,6 +639,282 @@
 			}]
 			x: 5.0d
 			y: 4.0d
+		}
+		{
+			id: "5C8DFA299A1B3132"
+			rewards: [{
+				id: "7D8BB95A91A4BD81"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "10EE7B5901D3832F"
+				item: "jerotesvillage:villager_metal_base"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5C8DFA299A1B3132"]
+			id: "63D653C09D785BCA"
+			rewards: [{
+				id: "13D68E2E3712C5EA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "32C622027B0BE070"
+				item: "jerotesvillage:villager_metal_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["63D653C09D785BCA"]
+			description: ["用二轮世界钥匙点击村民金属块变成传送门框架，搭建下界门样式后在内部点击传送门框架即可。"]
+			id: "50EDFA3CF8BFFEC6"
+			rewards: [{
+				id: "7C738D79983CE0FA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5C25B6246A2DCD2A"
+					item: {
+						Count: 1
+						id: "jerotesvillage:second_round_world_key"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14F953447637CE06"
+					item: "jerotesvillage:villager_metal_block"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["50EDFA3CF8BFFEC6"]
+			id: "3B04256FAB50BC4E"
+			rewards: [{
+				id: "6EC0562924B8B283"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "jerotesvillage:second_round_world"
+				id: "3F5411AFCF2D78BB"
+				type: "dimension"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3B04256FAB50BC4E"]
+			description: [
+				"通过挖掘的效率很低，可以使用以下方式："
+				""
+				"1.自然掉落的装备进行熔炼。"
+				"2.与莫厄商人交易。"
+				"3.鬼婆置换。"
+				"4.在大轩商店购买。"
+			]
+			id: "7D03343C9C30E3A0"
+			rewards: [{
+				id: "00CC88DADA2E9FDB"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5042F184E25E7772"
+				item: "jerotesvillage:meror_metal_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3B04256FAB50BC4E"]
+			description: [
+				"（摘自MCMOD百科）"
+				""
+				"通过崭新的鬼婆之锅对闪晶沙进行鬼婆置换有10%的概率获得1个。"
+				""
+				"宝石沙砾概率掉落。"
+				""
+				"底栖虫掉落1个。"
+			]
+			id: "6F29349CC65D4BB0"
+			rewards: [{
+				id: "1EFEDD3B288D1046"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "085F1E62C9785DD5"
+				item: "jerotesvillage:ocean_gemstone"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6F29349CC65D4BB0"
+				"7D03343C9C30E3A0"
+			]
+			id: "39B26232991BB0F6"
+			rewards: [{
+				id: "78FCC684BE8480E3"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70198369780C9B06"
+				item: "jerotesvillage:refine_meror_metal_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3B04256FAB50BC4E"]
+			description: ["击杀获得。"]
+			id: "10861A091444A9A2"
+			rewards: [{
+				id: "2FF6A6E6FA12F480"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "214F131EA2F99251"
+				item: "jerotesvillage:serpon_alloy_nugget"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["10861A091444A9A2"]
+			id: "6040A99EFFADE91F"
+			rewards: [{
+				id: "60C1343E35F35181"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "62918CBB2C42C047"
+				item: "jerotesvillage:serpon_alloy_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3B04256FAB50BC4E"]
+			id: "004894ACFBB3AE85"
+			rewards: [{
+				id: "043494D4D46002B7"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A6E02BB1CD34710"
+				item: "jerotesvillage:qoaiku_metal_nugget"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["004894ACFBB3AE85"]
+			id: "2531E8BC88F0ABC5"
+			rewards: [{
+				id: "059FC6A7C34E980A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "04DD62208B79D4C2"
+				item: "jerotesvillage:qoaiku_metal_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.5d
 		}
 	]
 	title: "异世界探索"

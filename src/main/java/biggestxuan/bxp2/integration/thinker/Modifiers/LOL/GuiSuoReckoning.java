@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.thinker.Modifiers.LOL;
+package biggestxuan.bxp2.integration.Thinker.Modifiers.LOL;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;

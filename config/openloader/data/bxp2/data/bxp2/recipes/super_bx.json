@@ -1,0 +1,43 @@
+{
+    "type": "extendedcrafting:shaped_table",
+    "pattern": [
+      "AAAHHHAAA",
+      "ACDGGGDCA",
+      "ADCEEECDA",
+      "HGEFFFEGH",
+      "HGEFBFEGH",
+      "HGEFFFEGH",
+      "ADCEEECDA",
+      "ACDGGGDCA",
+      "AAAHHHAAA"
+    ],
+    "key": {
+      "A": {
+        "item": "mekanism:pellet_antimatter"
+      },
+      "B": {
+        "item": "megacells:cell_component_256m"
+      },
+      "C": {
+        "item": "mekanism_extras:infinite_control_circuit"
+      },
+      "D": {
+        "item": "draconicevolution:chaotic_core"
+      },
+      "E": {
+        "item": "extendedcrafting:ultimate_singularity"
+      },
+      "F": {
+        "item": "bxp2:bx_ench_ingot"
+      },
+      "G":{
+        "item":"mysticalagradditions:insanium_block"
+      },
+      "H":{
+        "item":"extendedcrafting:the_ultimate_ingot"
+      }
+    },
+    "result": {
+      "item": "bxp2:bx_super_ingot"
+    }
+  }

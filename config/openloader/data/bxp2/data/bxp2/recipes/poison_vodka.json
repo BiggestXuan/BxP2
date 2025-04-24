@@ -1,0 +1,17 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "fluid": "immersiveengineering:ethanol",
+      "amount": 100
+    }
+  ],
+  "result": [
+    {
+      "item": "crossroads:poison_vodka"
+    }
+  ]
+}

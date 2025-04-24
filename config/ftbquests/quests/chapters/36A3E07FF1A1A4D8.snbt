@@ -2,10 +2,391 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "36A3E07FF1A1A4D8"
-	group: "214E188735C60BE0"
+	group: "455ED0AB8CCEDEB5"
+	icon: "brewery:beer_wheat"
 	id: "36A3E07FF1A1A4D8"
-	order_index: 1
+	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
-	title: "事已至此，先喝酒吧"
+	quests: [
+		{
+			id: "202C2CF0340F4972"
+			rewards: [{
+				id: "09A8D2EE33085D48"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "43EF173EAE63EFD7"
+				item: "thermal:hops_seeds"
+				type: "item"
+			}]
+			title: "种瓜得瓜"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["202C2CF0340F4972"]
+			id: "53B38981DA91ADE3"
+			rewards: [{
+				id: "35973978E3895DE7"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0486B40D3D09DF95"
+				item: "thermal:hops"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "19FDC6F01DDAD71E"
+			rewards: [{
+				id: "7A2B0DBDEE1A3185"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "759035C46D502087"
+				item: "brewery:wooden_brewingstation"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19FDC6F01DDAD71E"]
+			id: "47160AFB0F7F009F"
+			rewards: [{
+				id: "0A914A56D320BDDD"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29CB6F69FD342906"
+				item: "brewery:copper_brewingstation"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47160AFB0F7F009F"]
+			id: "7CC2877557A71AEB"
+			rewards: [{
+				id: "0066FB5113904192"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BC81BFA71B10FB6"
+				item: "brewery:netherite_brewingstation"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			id: "233314015D1E3779"
+			rewards: [{
+				id: "0DE77686246CCC21"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "25B106875940936D"
+				item: "farm_and_charm:silo_wood"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["233314015D1E3779"]
+			id: "32DAB87665DC567F"
+			rewards: [{
+				id: "16EA96C03606DD86"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70852F12CED730F2"
+				item: "farm_and_charm:silo_copper"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "3F95C3D942C93105"
+			rewards: [{
+				id: "5C48210132D4E184"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "05B9CE49591EEF8F"
+				item: "farm_and_charm:cooking_pot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["233314015D1E3779"]
+			id: "0B26AE27910227F4"
+			rewards: [{
+				id: "51ACE8059BF3540C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FCA2A462AF88A13"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "bxp2:wine_dried"
+					}
+				}
+				title: "烘干食材"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			id: "08408ADF60F9FE59"
+			rewards: [{
+				id: "348C284DF9C0B8D0"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "57EA06CCD8BA7890"
+				item: "brewery:beer_mug"
+				type: "item"
+			}]
+			title: "干杯！"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F95C3D942C93105"]
+			id: "740ECA6979790620"
+			rewards: [{
+				id: "00B93BD1966F391C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DEFAA6E598781CD"
+				item: "farm_and_charm:yeast"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"53B38981DA91ADE3"
+				"0B26AE27910227F4"
+				"740ECA6979790620"
+				"19FDC6F01DDAD71E"
+			]
+			id: "6702A7C3FCEB8E28"
+			rewards: [{
+				id: "0B2407B9C40E871E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "不要喝醉了哦"
+			tasks: [{
+				id: "093E4FF0BA637DE3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "brewery:beer"
+					}
+				}
+				title: "随便什么啤酒"
+				type: "item"
+			}]
+			title: "Come on!"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			id: "7E3E1F84FE7058E1"
+			rewards: [{
+				id: "7E82CB1947706AAB"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5066D43B853310C6"
+				item: "brewinandchewin:tankard"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "4E9BA8DD14CFC85D"
+			rewards: [{
+				id: "6254A3D0555666C6"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "52956903CF1110FF"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4E9BA8DD14CFC85D"
+				"7E3E1F84FE7058E1"
+			]
+			id: "13BA9A9325D97195"
+			rewards: [{
+				id: "24D8956039A9E46C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E11D36EBDC89DF1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "brewinandchewin:fermented_drinks"
+					}
+				}
+				title: "少喝一点为好"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			id: "2E3BDC8178D59528"
+			rewards: [{
+				id: "4A01B006A326E6FC"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 0.4f
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "你真来啊"
+			tasks: [{
+				id: "1A1C0F3C99B63E9F"
+				item: "crossroads:poison_vodka"
+				type: "item"
+			}]
+			title: "这不对吧"
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	title: "未成年请勿饮酒"
 }

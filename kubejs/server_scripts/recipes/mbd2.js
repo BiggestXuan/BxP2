@@ -58,8 +58,8 @@ BxP2.getBXIngotRecipe().forEach((a,b) => {
 
 ServerEvents.recipes((event) => {
     BxP2.getAllBXItems().forEach((k,v) => {
-        addSimplePowerRecipe(event,k,Math.round(v * 125 * BxP2.getSimpleMachineDifficultyRate()),BxP2.getRecipeName(k,"bx_simple_power"))
-        addSimpleManaRecipe(event,k,Math.round(v * 8 * BxP2.getSimpleMachineDifficultyRate()),BxP2.getRecipeName(k,"bx_simple_mana"))
+        addSimplePowerRecipe(event,k,Math.round(v * 450 * BxP2.getSimpleMachineDifficultyRate()),BxP2.getRecipeName(k,"bx_simple_power"))
+        addSimpleManaRecipe(event,k,Math.round(v * 36 * BxP2.getSimpleMachineDifficultyRate()),BxP2.getRecipeName(k,"bx_simple_mana"))
     })
     BxP2.getAllFoods().forEach((k,v) => {
         addCommonFoodToBloodRecipe(event,k,getFoodBlood(v[0],v[1]),BxP2.getRecipeName(k,"common_food_to_blood"))
@@ -74,8 +74,9 @@ ServerEvents.recipes((event) => {
     BxP2.getBXIngotRecipe().forEach((a,b) => {
         b.forEach((k,v) => {
             k.forEach((q,z) => {
-                addBXFuranceRecipe(event,q,v,z,a)
+                //addBXFuranceRecipe(event,q,Item.of('bxp2:bx_ingot', 3, '{bxp_cycle:{f:0,l:0}}'),z,a)
             })
         })
     })
+    addBXFuranceRecipe(event,['thermal:gold_gear', 'thermal:copper_gear', 'thermal:tin_gear', 'thermal:lead_gear', 'thermal:silver_gear', 'thermal:nickel_gear', 'thermal:steel_gear', 'thermal:rose_gold_gear', 'thermal:bronze_gear', 'thermal:electrum_gear', 'thermal:invar_gear', 'thermal:constantan_gear', 'thermal:signalum_gear', 'thermal:lumium_gear', 'thermal:diamond_gear', 'thermal:emerald_gear'],'bxp2:meaning_less',[6666666,1024,1],"test")
 })

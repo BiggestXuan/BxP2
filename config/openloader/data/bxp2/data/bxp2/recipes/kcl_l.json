@@ -1,0 +1,24 @@
+{
+    "type": "electrodynamics:mineral_washer_recipe",
+    "experience": 0.0,
+    "fluidinputs": {
+      "0": {
+        "amount": 500,
+        "fluid": "mekanism:hydrogen_chloride"
+      },
+      "count": 1
+    },
+    "iteminputs": {
+      "0": {
+        "count": 1,
+        "item": "electrodynamics:crystalpotassiumchloride"
+      },
+      "count": 1
+    },
+    "output": {
+      "amount": 500,
+      "fluid": "mekanismscience:potassium_hydroxide"
+    },
+    "ticks": 200,
+    "usagepertick": 400.0
+}

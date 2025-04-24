@@ -12,12 +12,25 @@
 			dependencies: ["1EE2729C31EF9DDE"]
 			description: ["在村庄的吸血鬼猎人那里找到大蒜，在注射椅上完成猎人职业选择"]
 			id: "2508832BEE0F56B7"
-			rewards: [{
-				count: 10
-				id: "7446657458466527"
-				item: "vampirism:item_garlic"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "7446657458466527"
+					item: "vampirism:item_garlic"
+					type: "item"
+				}
+				{
+					id: "21C9780D3104259E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3CDBBDC3D2A944CF"
 				item: "vampirism:injection_garlic"
@@ -30,12 +43,25 @@
 			dependencies: ["1EE2729C31EF9DDE"]
 			description: ["用牙齿咬一下自己"]
 			id: "0DC485395002C69A"
-			rewards: [{
-				count: 4
-				id: "035650EA755A1F59"
-				item: "vampirism:human_heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "035650EA755A1F59"
+					item: "vampirism:human_heart"
+					type: "item"
+				}
+				{
+					id: "247FD78F2028E695"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1E8182B558BFED18"
 				item: "vampirism:vampire_fang"
@@ -47,12 +73,25 @@
 		{
 			dependencies: ["0DC485395002C69A"]
 			id: "4EFAFBACBC7F8D80"
-			rewards: [{
-				count: 6
-				id: "4A76F6346F0C68F4"
-				item: "vampirism:human_heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "4A76F6346F0C68F4"
+					item: "vampirism:human_heart"
+					type: "item"
+				}
+				{
+					id: "534CD9DF23708DDE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你需不断升级～"
 			tasks: [{
 				id: "70A429D59997A94B"
@@ -65,12 +104,25 @@
 		{
 			dependencies: ["6997DC21178DBD88"]
 			id: "547C1C265AA5A611"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "613DE3FE0C8E3222"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "613DE3FE0C8E3222"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "7A10C53C1D45BFEC"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "25B838B5FB27F207"
 				item: {
@@ -90,11 +142,24 @@
 				"按照正常饱食度计算会有折损。"
 			]
 			id: "519DF578108F5E88"
-			rewards: [{
-				id: "3DA26DDC26E01510"
-				item: "vampirism:blood_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3DA26DDC26E01510"
+					item: "vampirism:blood_bucket"
+					type: "item"
+				}
+				{
+					id: "5636E641A0C72C73"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你想吃素吗？"
 			tasks: [{
 				id: "4A3618375915FB65"
@@ -108,12 +173,25 @@
 			dependencies: ["2508832BEE0F56B7"]
 			description: ["找到村庄里的吸血鬼猎人教官，他会告诉你怎么做"]
 			id: "10E8AD025DB88608"
-			rewards: [{
-				count: 6
-				id: "185159FEA8A3827C"
-				item: "vampirism:vampire_fang"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "185159FEA8A3827C"
+					item: "vampirism:vampire_fang"
+					type: "item"
+				}
+				{
+					id: "4B719DED904C4F96"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2BBB09F8481014E0"
 				title: "吸血鬼猎人！"
@@ -125,12 +203,25 @@
 		{
 			dependencies: ["10E8AD025DB88608"]
 			id: "1775AC8CCF8CE5FC"
-			rewards: [{
-				count: 10
-				id: "21E01ECBEBAD0662"
-				item: "vampirism:vampire_fang"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "21E01ECBEBAD0662"
+					item: "vampirism:vampire_fang"
+					type: "item"
+				}
+				{
+					id: "049AB8AE2981175F"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "提升最高等级！"
 			tasks: [{
 				id: "5DEBC445348C9AED"
@@ -144,12 +235,25 @@
 			dependencies: ["4EFAFBACBC7F8D80"]
 			description: ["制作多方块结构填充物品，消耗对应材料进行升级"]
 			id: "3CFDA314E5FE8AA9"
-			rewards: [{
-				count: 10
-				id: "3438980989D786A2"
-				item: "vampirism:human_heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "3438980989D786A2"
+					item: "vampirism:human_heart"
+					type: "item"
+				}
+				{
+					id: "7CC40BE750BC1538"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "制作多方块结构"
 			tasks: [
 				{
@@ -175,10 +279,21 @@
 		{
 			description: [
 				"成为猎人最高获得接近50%伤害增幅，吸血鬼最高获得200%左右伤害增幅～ \\n"
-				"吸血鬼白天无法行动，本整合包将不会提供防晒信标。"
+				"吸血鬼白天无法行动，整合包在前期不会提供防晒。\\n"
 				"此外增加了吸血鬼和猎人专用的匠魂武器，可以按需使用。"
 			]
 			id: "1EE2729C31EF9DDE"
+			rewards: [{
+				id: "7FDD6C4BEBC48CAE"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "05681645855615CA"
 				title: "你想成为吸血鬼还是猎杀？"
@@ -190,12 +305,25 @@
 		{
 			dependencies: ["3CFDA314E5FE8AA9"]
 			id: "2A2614F4A8A94FC1"
-			rewards: [{
-				count: 10
-				id: "2EC9629D5C38DF84"
-				item: "vampirism:human_heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "2EC9629D5C38DF84"
+					item: "vampirism:human_heart"
+					type: "item"
+				}
+				{
+					id: "1D7D6867F5792786"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "试试全塞金块吧！"
 			tasks: [{
 				count: 18L
@@ -210,12 +338,25 @@
 		{
 			dependencies: ["1775AC8CCF8CE5FC"]
 			id: "300F3290458AE377"
-			rewards: [{
-				count: 10
-				id: "1F58142BC971A461"
-				item: "vampirism:vampire_fang"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "1F58142BC971A461"
+					item: "vampirism:vampire_fang"
+					type: "item"
+				}
+				{
+					id: "4538878542A3B8E6"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "将这些东西放在桌旁"
 			tasks: [
 				{
@@ -244,12 +385,25 @@
 				"不同纯净度的血液将按照周围玩家阵营等级确定。"
 			]
 			id: "6997DC21178DBD88"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6F3C530A957F9272"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6F3C530A957F9272"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "600493F8974CBF30"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				biome: "vampirism:vampire_forest"
 				icon: "vampirism:vampire_fang"
@@ -263,12 +417,25 @@
 		{
 			dependencies: ["6997DC21178DBD88"]
 			id: "19613DBD372778EA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1096298B010DCB19"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1096298B010DCB19"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "61F5C15D61DA2DE5"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "553805ACB0ADBF83"
 				item: "vampirism:pure_blood_0"
@@ -280,12 +447,25 @@
 		{
 			dependencies: ["19613DBD372778EA"]
 			id: "1EDCD6F700F216E1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5A45F476548920CD"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A45F476548920CD"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "7487A37CC38259A9"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "55B9B5A5127C614F"
 				item: "vampirism:pure_blood_1"
@@ -297,12 +477,25 @@
 		{
 			dependencies: ["1EDCD6F700F216E1"]
 			id: "03341E6B7582250C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7DF0B19F54347A6D"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DF0B19F54347A6D"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "1B68069F69C6B409"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "00CD05F7CBE36707"
 				item: "vampirism:pure_blood_2"
@@ -314,12 +507,25 @@
 		{
 			dependencies: ["03341E6B7582250C"]
 			id: "2265C3FF3E8E3195"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "63DF2D88EFB4D5BC"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "63DF2D88EFB4D5BC"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "0C257CA06673BC9B"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "63F4DB04649D03C8"
 				item: "vampirism:pure_blood_3"
@@ -331,12 +537,25 @@
 		{
 			dependencies: ["2265C3FF3E8E3195"]
 			id: "7374CDA6053ADE6D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "48E09E745F7B1EB0"
-				table_id: 977224403453933136L
-				type: "loot"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48E09E745F7B1EB0"
+					table_id: 977224403453933136L
+					type: "loot"
+				}
+				{
+					id: "7B1C17A27064DFFB"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0BAF77B1828B2A8C"
 				item: "vampirism:pure_blood_4"
@@ -351,12 +570,25 @@
 				"6B04535AFED5E6FD"
 			]
 			id: "14CA094EA9E9CF53"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1DE801099B3FC8D7"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1DE801099B3FC8D7"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "75AD53D2E629148E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "03C7F997E0039C62"
 				item: "vampirismtinker:hunter_metal"
@@ -368,12 +600,25 @@
 		{
 			dependencies: ["14CA094EA9E9CF53"]
 			id: "51ECC325E44302E9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "68EC798C8E0C0689"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68EC798C8E0C0689"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "248CF1B2349117B4"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "19FC2C3C4EFEB976"
 				item: "vampirismtinker:holy_hunter_metal"
@@ -388,12 +633,25 @@
 				"6B04535AFED5E6FD"
 			]
 			id: "1390CE025F372EEE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "475CF7AACF791837"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "475CF7AACF791837"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "5554D74566C88208"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2221C3D48439D2FF"
 				item: "vampirism:blood_infused_iron_ingot"
@@ -405,18 +663,63 @@
 		{
 			dependencies: ["1390CE025F372EEE"]
 			id: "14543AA418E2AED9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3A9DEC52CC81CFE4"
-				table_id: 977224403453933136L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A9DEC52CC81CFE4"
+					table_id: 977224403453933136L
+					type: "random"
+				}
+				{
+					id: "69BFB92EB88EB400"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0FA2C4F0BAA4C8D4"
 				item: "vampirism:blood_infused_enhanced_iron_ingot"
 				type: "item"
 			}]
 			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1EE2729C31EF9DDE"]
+			description: ["你只能通过大轩商店花费50购买。"]
+			id: "78647DE720066141"
+			rewards: [
+				{
+					id: "45FBE7C113316F39"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "60655B8AB17ABED2"
+					item: "bxp2:discount_card"
+					type: "item"
+				}
+			]
+			subtitle: "终于不怕被氧化啦"
+			tasks: [{
+				id: "574F620299C381A5"
+				item: "bxp2:sun_protect_module"
+				type: "item"
+			}]
+			title: "吸血鬼的福音"
+			x: -2.5d
 			y: 3.5d
 		}
 	]

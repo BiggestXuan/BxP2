@@ -258,7 +258,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["72920C07C44D3AF0"]
@@ -269,7 +269,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["72920C07C44D3AF0"]
@@ -280,7 +280,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["72920C07C44D3AF0"]
@@ -291,7 +291,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 13.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2B583183801D08AF"]
@@ -303,7 +303,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["72920C07C44D3AF0"]
@@ -314,7 +314,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["4F8033D45A35838E"]
@@ -326,7 +326,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 13.5d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -341,7 +341,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0218B6A75449557B"]
@@ -363,7 +363,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5A3E785E6EA8C1C2"]
@@ -374,18 +374,24 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["4FEA9CAA20C326AF"]
 			id: "3FF612FBF8A49EF9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41CF00884789ED05"
+				table_id: 2530677305745152636L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "58DC8D47F065E242"
 				item: "ifeu:ultimate_machine_frame"
 				type: "item"
 			}]
 			x: 12.0d
-			y: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["7BB2237D48ABB1AD"]
@@ -396,7 +402,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 13.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7BB2237D48ABB1AD"]
@@ -407,7 +413,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5A3E785E6EA8C1C2"]
@@ -418,7 +424,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 13.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["5A3E785E6EA8C1C2"]
@@ -429,7 +435,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 13.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["5A3E785E6EA8C1C2"]
@@ -440,7 +446,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5A3E785E6EA8C1C2"]
@@ -451,7 +457,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4FEA9CAA20C326AF"]
@@ -462,7 +468,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 10.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4FEA9CAA20C326AF"]
@@ -473,7 +479,652 @@
 				type: "item"
 			}]
 			x: 10.5d
+			y: 18.0d
+		}
+		{
+			id: "6A94983FEE0FC317"
+			rewards: [{
+				id: "6FD55CC12C538635"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4759EBEFCC419191"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1C6D8086753D27B3"]
+			description: ["因为下界过于炎热，在你获取大轩锭前是不可进入的。"]
+			id: "235759151B9CD7C5"
+			rewards: [{
+				id: "043F00138352B545"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "43C880DE1A8699D8"
+				type: "dimension"
+			}]
+			title: "下界！"
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"6A94983FEE0FC317"
+				"1C6D8086753D27B3"
+			]
+			id: "43AE7F13E2BE50F8"
+			rewards: [{
+				id: "3A08747EFFDB782B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F3B9DF39B4CA402"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["235759151B9CD7C5"]
+			description: ["你可以在商店购买更多。"]
+			id: "73EAD4DF4264108D"
+			rewards: [{
+				id: "49F4567E595B303C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "745F6224CCC40BB2"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["73EAD4DF4264108D"]
+			description: [
+				"在整合包中，凋灵将随着玩家的击杀而逐步增强（休闲模式除外），凋灵的强度取决周围64格玩家的难度&3之和&r。"
+				""
+				"每次击杀会使得凋灵的生命值提高[20/37.5]，每次击杀会使凋灵额外掉落[3/4.5]（四舍五入）个下界之星精华。"
+				""
+				"值得注意的是，这个提高会和游戏天数带来的增益叠加。"
+				""
+				"只有玩家击杀才会计数，使用机器或其他生物击杀将不会统计击杀次数。"
+				""
+				"另外，凋灵将按照最大生命值百分比恢复生命值，每秒恢复量为[0.3%/0.5%]。"
+			]
+			id: "4BB2981C2EE1B6F2"
+			rewards: [
+				{
+					id: "55C57433E0C4E0D1"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "622ADE125FA0871B"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "7BA57F6E2D5F5696"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"43AE7F13E2BE50F8"
+				"53354384A0446576"
+			]
+			id: "1D36EE2D5D457238"
+			rewards: [{
+				id: "73F5A7C6D77CB458"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "507D8C806F7D3DBB"
+					item: "draconicevolution:basic_crafting_injector"
+					type: "item"
+				}
+				{
+					id: "7371A647ED375811"
+					item: "draconicevolution:crafting_core"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"43AE7F13E2BE50F8"
+				"4BB2981C2EE1B6F2"
+			]
+			id: "0B628713AFDA7137"
+			rewards: [{
+				id: "23E1380BD6AE0933"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3387E28F49532398"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B628713AFDA7137"]
+			id: "53354384A0446576"
+			rewards: [{
+				id: "3C492B8DE38DB5AB"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "48E026C13934C5B8"
+				item: "draconicevolution:wyvern_crafting_injector"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0B628713AFDA7137"
+				"4BB2981C2EE1B6F2"
+			]
+			description: [
+				"因为你在到达下界之前是无法集齐这些的，同时即便你前面收集了也会有进度的，于是就把任务放这里了。"
+				""
+				"当你制作附魔大轩锭后，如果你有收集不到的眼睛，可以在商店购买。"
+			]
+			icon: "minecraft:ender_eye"
+			id: "4354A684F2E8F887"
+			rewards: [{
+				id: "0B6D3B0A06E573AA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "097AF7E4FA5844D8"
+					item: {
+						Count: 1
+						id: "endrem:black_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D3EAD6994BFCE71"
+					item: {
+						Count: 1
+						id: "endrem:cold_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "046055A29E6C2F26"
+					item: {
+						Count: 1
+						id: "endrem:corrupted_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E5F2B3A6613D486"
+					item: {
+						Count: 1
+						id: "endrem:lost_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04B0880634124007"
+					item: {
+						Count: 1
+						id: "endrem:nether_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1610C66EA342B530"
+					item: {
+						Count: 1
+						id: "endrem:old_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1287ABAB8BA21EDF"
+					item: {
+						Count: 1
+						id: "endrem:cursed_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5368A176AD3DAE07"
+					item: {
+						Count: 1
+						id: "endrem:rogue_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "184B691CE7050CA2"
+					item: {
+						Count: 1
+						id: "endrem:evil_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7262FBA30D0E3920"
+					item: {
+						Count: 1
+						id: "endrem:guardian_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D632EE996030F80"
+					item: {
+						Count: 1
+						id: "endrem:magical_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F27AB0655EAB900"
+					item: {
+						Count: 1
+						id: "endrem:wither_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AE11C1F91C621F9"
+					item: {
+						Count: 1
+						id: "endrem:witch_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "562D57BB10897151"
+					item: {
+						Count: 1
+						id: "endrem:undead_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5387B765FC41C785"
+					item: {
+						Count: 1
+						id: "endrem:exotic_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "095DD3D45A98A66E"
+					item: {
+						Count: 1
+						id: "endrem:cryptic_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "好多眼睛"
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4354A684F2E8F887"]
+			description: [""]
+			id: "0C241B344FFDCD72"
+			rewards: [{
+				id: "7688D9D51BDDABDA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "01FF1CEAF6938D37"
+				type: "dimension"
+			}]
+			title: "欢迎来到末地！"
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0C241B344FFDCD72"]
+			id: "1407B96F559A20C8"
+			rewards: [
+				{
+					id: "3DCCBF97028EAA10"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14053B67630864AC"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "59EF1C6C27D6E1D2"
+				item: "draconicevolution:dragon_heart"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1407B96F559A20C8"]
+			id: "75FA90494DC83EF6"
+			rewards: [{
+				id: "2FA0E0EEEAB379E3"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23B612C75196EB87"
+				item: "draconicevolution:awakened_draconium_block"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"53354384A0446576"
+				"75FA90494DC83EF6"
+			]
+			id: "2D5FD1605621BCF9"
+			rewards: [{
+				id: "282EBDECECF0FCF2"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26936F1982635D62"
+				item: "draconicevolution:awakened_crafting_injector"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["75FA90494DC83EF6"]
+			id: "384B8497F55343E6"
+			rewards: [{
+				id: "34A53F4D23D0CAED"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 10
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "09A6C9D039CBA6A5"
+				item: "draconicevolution:chaos_shard"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["384B8497F55343E6"]
+			id: "2818CC5BCF5A2791"
+			rewards: [
+				{
+					id: "3FD1E2DF8D85D19E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 33
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47E7FD8524BACE0C"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "1F82D25742522310"
+				item: "draconicevolution:chaotic_core"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "0EA92A798195484C"
+			rewards: [{
+				id: "615DC194DE34DE7B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E18E8AFF536413A"
+				item: "draconicevolution:chaotic_crafting_injector"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["75FA90494DC83EF6"]
+			id: "7047858D48C86805"
+			rewards: [{
+				id: "7FD64D908E2D9416"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "090FDEBA0F45C957"
+				item: "bxp2:chaos_protect_module"
+				type: "item"
+			}]
+			x: 12.0d
 			y: 13.5d
+		}
+		{
+			dependencies: ["75FA90494DC83EF6"]
+			id: "11C79539543F9B2E"
+			rewards: [
+				{
+					id: "012F94192E8070C5"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 5
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E795D826C961C29"
+					table_id: 2530677305745152636L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "5D86F54305A1CF3D"
+				item: "draconicevolution:awakened_core"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.0d
 		}
 	]
 	title: "进阶科技"

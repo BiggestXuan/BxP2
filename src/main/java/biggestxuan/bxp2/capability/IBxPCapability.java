@@ -20,4 +20,10 @@ public interface IBxPCapability extends INBTSerializable<CompoundTag> {
     void setDeathLoss(float deathLoss);
     boolean canFly();
     void setFly();
+    int getWitherCount();
+    void addWitherCount();
+    int getDragonCount();
+    void addDragonCount();
+    float getMoney();
+    void setMoney(float money);
 }

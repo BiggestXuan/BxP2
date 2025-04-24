@@ -3,9 +3,191 @@
 	default_quest_shape: ""
 	filename: "17B6F7B145783611"
 	group: "214E188735C60BE0"
+	icon: "mysticalagradditions:insanium_essence"
 	id: "17B6F7B145783611"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "47C537A5281CCDA0"
+			rewards: [{
+				id: "5E01B149DB77653A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "049BD7D378C63D00"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47C537A5281CCDA0"]
+			id: "37DE829A61EB3182"
+			rewards: [{
+				id: "69783C7C41C4E6C6"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED532D87590374F"
+				item: "mysticalagriculture:prudentium_essence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37DE829A61EB3182"]
+			id: "2DF2DEFF79D6C028"
+			rewards: [{
+				id: "3339801EA15DE9C8"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "20992F47C2F13BB1"
+				item: "mysticalagriculture:tertium_essence"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DF2DEFF79D6C028"]
+			id: "4743D755A8768B6E"
+			rewards: [{
+				id: "2C2050F89FE94957"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A414330FD6602CE"
+				item: "mysticalagriculture:imperium_essence"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4743D755A8768B6E"]
+			id: "42D4D2BF3997972A"
+			rewards: [{
+				id: "48ED48EDC0E07673"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "44419D290C3152D8"
+				item: "mysticalagriculture:supremium_essence"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42D4D2BF3997972A"]
+			id: "61726B2DE148DE68"
+			rewards: [{
+				id: "35C2926CB87663B9"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "69E22DD2C384D14F"
+				item: "mysticalagradditions:insanium_essence"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			id: "21BA5D1CAB86108A"
+			rewards: [{
+				id: "04C311A9492ABE22"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "097466FB01092539"
+				item: "mysticalagriculture:prosperity_seed_base"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "08E8EEB59DF5AE30"
+			rewards: [{
+				id: "66B47D9F0461A6B5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1F37A1DE63E3491D"
+					item: "mysticalagriculture:infusion_pedestal"
+					type: "item"
+				}
+				{
+					id: "67EE0B6096BBDE5A"
+					item: "mysticalagriculture:infusion_altar"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
 	title: "菜还是矿？"
 }

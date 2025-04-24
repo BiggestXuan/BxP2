@@ -9,13 +9,17 @@
     "BoilerMultiblockDataMixin",
     "DataModelMixin",
     "EnergyFormattingUtilMixin",
+    "ExtraItemTierInstallerMixin",
     "GaiaGuardianEntityMixin",
     "ItemEntityMixin",
+    "ItemTierInstallerMixin",
+    "ModuleHelperMixin",
     "PlayerMixin",
     "PowahWorldGenMixin",
     "SunSpiritMixin",
     "TileEntityBioMixin",
     "TileEntityGasMixin",
-    "ToolStatsMixin"
+    "ToolStatsMixin",
+    "WitherMixin"
   ]
 }

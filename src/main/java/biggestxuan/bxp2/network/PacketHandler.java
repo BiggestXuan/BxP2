@@ -1,6 +1,9 @@
 package biggestxuan.bxp2.network;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import biggestxuan.bxp2.network.toClient.CapabilityPacket;
+import biggestxuan.bxp2.network.toServer.BuyGoodsPacket;
 import biggestxuan.bxp2.network.toServer.ChangeDifficultyPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkRegistry;
@@ -24,12 +27,27 @@ public class PacketHandler {
 
         int id = 0;
         HANDLER.registerMessage(
-                id++,
+                ++id,
                 ChangeDifficultyPacket.class,
                 ChangeDifficultyPacket::encode,
                 ChangeDifficultyPacket::decode,
                 ChangeDifficultyPacket::handle
         );
+
+        HANDLER.registerMessage(
+                ++id,
+                BuyGoodsPacket.class,
+                BuyGoodsPacket::encode,
+                BuyGoodsPacket::decode,
+                BuyGoodsPacket::handle
+        );
+
+        HANDLER.messageBuilder(CapabilityPacket.class,++id)
+                .encoder(CapabilityPacket::encode)
+                .decoder(CapabilityPacket::new)
+                .consumerNetworkThread(CapabilityPacket::handle)
+                .add();
+
     }
 
     public static <T> void sendToServer(T msg){
@@ -38,5 +56,12 @@ public class PacketHandler {
 
     public static <T> void sendToClient(T msg, ServerPlayer player){
         HANDLER.send(PacketDistributor.PLAYER.with(()->player),msg);
+    }
+
+    public static void syncPlayerCapability(ServerPlayer player){
+        player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
+            CapabilityPacket packet = new CapabilityPacket(cap.getPhase(),cap.getMoney());
+            PacketHandler.sendToClient(packet,player);
+        });
     }
 }

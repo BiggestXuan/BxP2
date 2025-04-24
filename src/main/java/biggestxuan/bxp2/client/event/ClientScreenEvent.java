@@ -24,7 +24,7 @@ public class ClientScreenEvent {
         if(screen instanceof TitleScreen){
             Screen PCLScreen = new PCLWarningScreen(screen);
             if(isPCL() && !isShowPCL){
-                Minecraft.getInstance().setScreen(new PCLWarningScreen(screen));
+                Minecraft.getInstance().setScreen(new PCLWarningScreen(PCLScreen));
                 isShowPCL = true;
             }
         }

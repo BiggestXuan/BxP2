@@ -89,7 +89,7 @@ public class BxPCatalyst{
                     a.outputManaRate *= a.outputManaRate;
                 }
                 if(Config.difficulty == 3){
-                    a.speedRate = Math.sqrt(a.speedRate);
+                    //a.speedRate = Math.sqrt(a.speedRate);
                     a.energyRate = Math.sqrt(a.energyRate);
                     a.inputFluidRate = Math.sqrt(a.inputFluidRate);
                     a.outputFluidRate = Math.sqrt(a.outputFluidRate);

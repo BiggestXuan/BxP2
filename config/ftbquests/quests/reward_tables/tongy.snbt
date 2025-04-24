@@ -19,6 +19,7 @@
 		{ count: 16, item: "thermal:tin_ingot" }
 		{ count: 16, item: "thermal:lead_ingot" }
 		{ count: 16, item: "thermal:silver_ingot" }
+		{ item: "bxp2:discount_card", weight: 0.23f }
 	]
 	title: "基础资源奖励包"
 }

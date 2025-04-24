@@ -3,11 +3,13 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapability;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import biggestxuan.bxp2.network.PacketHandler;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -22,8 +24,16 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = BxP2.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CapabilityEvent {
     @SubscribeEvent
+    public static void sendPacketToClient(TickEvent.PlayerTickEvent event){
+        if(event.player instanceof ServerPlayer player && event.phase == TickEvent.Phase.START){
+            if(player.level().getDayTime() % 10 == 0){
+                PacketHandler.syncPlayerCapability(player);
+            }
+        }
+    }
+    @SubscribeEvent
     public static void attachCap(AttachCapabilitiesEvent<Entity> event) {
-        if (event.getObject() instanceof ServerPlayer) {
+        if (event.getObject() instanceof Player) {
             event.addCapability(BxP2.RL("capability"), new BxPCapabilityProvider());
         }
     }

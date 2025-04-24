@@ -10,6 +10,17 @@
 	quests: [
 		{
 			id: "405782BC42D195E2"
+			rewards: [{
+				id: "28AAE31F9F0ABA20"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "这些是有魔法的花"
 			tasks: [{
 				count: 16L
@@ -31,6 +42,17 @@
 		{
 			dependencies: ["405782BC42D195E2"]
 			id: "257F996B20DBA64A"
+			rewards: [{
+				id: "7894FEA8BF4026AB"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "装好你的花"
 			tasks: [{
 				id: "6FBFDCB54E194C07"
@@ -43,6 +65,17 @@
 		{
 			dependencies: ["405782BC42D195E2"]
 			id: "68BEAD4156E0F555"
+			rewards: [{
+				id: "7B3749F268B967EE"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E6D575A7D74B376"
 				item: "botania:apothecary_default"
@@ -54,6 +87,17 @@
 		{
 			dependencies: ["68BEAD4156E0F555"]
 			id: "2E3156B3D45C8681"
+			rewards: [{
+				id: "0336E4DC690D4ECC"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "可惜不能生产白丝"
 			tasks: [{
 				id: "7A6802D08BE6A335"
@@ -66,6 +110,17 @@
 		{
 			dependencies: ["68BEAD4156E0F555"]
 			id: "05C38125462153AD"
+			rewards: [{
+				id: "4ECA61561C977558"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "可能是你最早的魔力来源"
 			tasks: [{
 				id: "4EA37D0E3B19D43E"
@@ -79,6 +134,17 @@
 			dependencies: ["2E3156B3D45C8681"]
 			description: ["白雏菊周围摆放一圈石头"]
 			id: "1DF5B6A4692A38BF"
+			rewards: [{
+				id: "49B77C0F53FDC5B9"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "57EAF68B972296F0"
 				item: "botania:livingrock"
@@ -91,6 +157,17 @@
 			dependencies: ["2E3156B3D45C8681"]
 			description: ["白雏菊周围摆放一圈木头"]
 			id: "5D12B28C86EB3F77"
+			rewards: [{
+				id: "4B05D66B5FDAE69F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4D1370DA7133A39F"
 				item: "botania:livingwood_log"
@@ -116,6 +193,17 @@
 					team_reward: true
 					type: "item"
 				}
+				{
+					id: "396CD16F57BD9B1E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "接受魔源输入"
 			tasks: [{
@@ -132,6 +220,17 @@
 				"05C38125462153AD"
 			]
 			id: "74F4A22F270F31A0"
+			rewards: [{
+				id: "7FF918DDF5A9F532"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F8C3FD2A9026FA3"
 				item: "botania:runic_altar"
@@ -143,6 +242,17 @@
 		{
 			dependencies: ["5D12B28C86EB3F77"]
 			id: "6DDC913F82FA415C"
+			rewards: [{
+				id: "7CD61B6D26015258"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "70B32FABA0A81E56"
 				item: {
@@ -158,12 +268,25 @@
 		{
 			dependencies: ["74F4A22F270F31A0"]
 			id: "4A4CE05343B33F40"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0B5AD2220BA96838"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0B5AD2220BA96838"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					id: "078CBAC8D9528403"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "244E1E93990B12C1"
@@ -193,12 +316,25 @@
 		{
 			dependencies: ["4A4CE05343B33F40"]
 			id: "2A1CD883F267BDBE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "50D50A28F2EDAC34"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50D50A28F2EDAC34"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					id: "32B90532B4A54EFA"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "2D504F8B1247C644"
@@ -228,12 +364,25 @@
 		{
 			dependencies: ["2A1CD883F267BDBE"]
 			id: "32C69371F7C8852A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4AE959D8AC4EE4CB"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4AE959D8AC4EE4CB"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					id: "4142508243D4A014"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6D48D58C88444A85"
@@ -283,6 +432,17 @@
 			dependencies: ["5074DDA791023078"]
 			hide_dependent_lines: true
 			id: "2C38144CBF7AE332"
+			rewards: [{
+				id: "6155D03CF9D6BEDA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "3A98E429CACD43BD"
@@ -295,12 +455,25 @@
 		{
 			dependencies: ["5074DDA791023078"]
 			id: "7AAE335A9BA49FA1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "44183685896D1103"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "44183685896D1103"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					id: "5DB6C3F964C9155E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "7BEFB946F5AD0877"
@@ -314,12 +487,25 @@
 			dependencies: ["5074DDA791023078"]
 			hide_dependent_lines: true
 			id: "3863CC6CBCE884F6"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7438D3F3F6FDB15D"
-				table_id: 660429164735414630L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7438D3F3F6FDB15D"
+					table_id: 660429164735414630L
+					type: "random"
+				}
+				{
+					id: "0248E69642FFBAD0"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "1917D72A26525937"
@@ -331,6 +517,17 @@
 		}
 		{
 			id: "1A7180B1F9CB700E"
+			rewards: [{
+				id: "6D2CEABD625DBB6D"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "57CDE9330EF009E7"
@@ -351,6 +548,17 @@
 		{
 			dependencies: ["1A7180B1F9CB700E"]
 			id: "6C33C61D0BCBACFB"
+			rewards: [{
+				id: "2343109A2A219A14"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 5L
 				id: "69637A3C9F9C3F6C"
@@ -363,6 +571,17 @@
 		{
 			dependencies: ["6C33C61D0BCBACFB"]
 			id: "5F4B28C567F3DE6F"
+			rewards: [{
+				id: "29E91F3287556268"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0865144DBEBB7A01"
 				item: "minecraft:brewing_stand"
@@ -374,6 +593,17 @@
 		{
 			dependencies: ["5F4B28C567F3DE6F"]
 			id: "4332FCD22C4FA333"
+			rewards: [{
+				id: "02715682E0D3578D"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3EE2833977AF9822"
 				item: "botania:alchemy_catalyst"
@@ -385,6 +615,17 @@
 		{
 			dependencies: ["4332FCD22C4FA333"]
 			id: "1BCAE1130362B393"
+			rewards: [{
+				id: "29856AD3ADAB51CC"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "5341963BD0998F87"
@@ -422,6 +663,17 @@
 					item: "ars_nouveau:worn_notebook"
 					type: "item"
 				}
+				{
+					id: "647ED574A0013665"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "18DE22ACE8B98E63"
@@ -442,12 +694,25 @@
 		{
 			dependencies: ["2A727457E99FAF9B"]
 			id: "44B57F0A5546E2C9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2015380EDA90C91D"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2015380EDA90C91D"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "65292E0416CFEA14"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0F11D6B76FC20385"
 				item: "ars_nouveau:sourcestone"
@@ -459,11 +724,24 @@
 		{
 			dependencies: ["199B01668D6CA650"]
 			id: "155503138FAA9B3D"
-			rewards: [{
-				id: "48040E9D885C2703"
-				item: "minecraft:amethyst_block"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "48040E9D885C2703"
+					item: "minecraft:amethyst_block"
+					type: "item"
+				}
+				{
+					id: "5C36AD67D1BF9F4F"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "14735C091E01CC8A"
 				item: "ars_nouveau:imbuement_chamber"
@@ -485,12 +763,25 @@
 				"2.制作熔融紫水晶，将其通过匠魂浇筑或是热力罐装，仅限空魔源罐。"
 			]
 			id: "2A727457E99FAF9B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "53411C213D156932"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53411C213D156932"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "714AE1BC4CFD591E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "13FA60667D337A7A"
 				item: "ars_nouveau:source_gem"
@@ -502,12 +793,25 @@
 		{
 			dependencies: ["44B57F0A5546E2C9"]
 			id: "0761D8FFC87C073F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "392827F8DACE2FD9"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "392827F8DACE2FD9"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "4BADEE598F3BA66D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "59ED9256BF735466"
@@ -536,12 +840,25 @@
 			]
 			description: ["你也可以使用植物魔法的魔力转化为魔源，反之亦然"]
 			id: "03C39484E8E2D6AE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "16306373A6D7572A"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "16306373A6D7572A"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "56820A1182144330"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3C17C38DB6B3DD11"
 				item: {
@@ -560,12 +877,25 @@
 		}
 		{
 			id: "214D0E124DB7B5BF"
-			rewards: [{
-				count: 8
-				id: "0ACD340E44B3571D"
-				item: "ars_nouveau:source_berry_pie"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "0ACD340E44B3571D"
+					item: "ars_nouveau:source_berry_pie"
+					type: "item"
+				}
+				{
+					id: "651CEEFEF2FAB18F"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "美滋滋"
 			tasks: [{
 				id: "51FC2CF6777FFB41"
@@ -578,6 +908,17 @@
 		{
 			dependencies: ["199B01668D6CA650"]
 			id: "258237F1FDD28E98"
+			rewards: [{
+				id: "5809A645664FA4CA"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "036EF2BD6CAA6931"
 				item: "ars_nouveau:scribes_table"
@@ -588,12 +929,25 @@
 		}
 		{
 			id: "061384A4DE633507"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "53973525DDDD6AA6"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53973525DDDD6AA6"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "0E1763EE53CBF2CE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "650D38E38302C252"
 				item: {
@@ -609,12 +963,25 @@
 		{
 			dependencies: ["061384A4DE633507"]
 			id: "318E80807C4B5784"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "77562929F64DCF7E"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77562929F64DCF7E"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "5D16A014D4F04517"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "428C11973BF401DC"
 				item: "ars_nouveau:apprentice_spell_book"
@@ -626,12 +993,25 @@
 		{
 			dependencies: ["318E80807C4B5784"]
 			id: "199BB44603CBA160"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "77E0276D65C6BC16"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77E0276D65C6BC16"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "0ADE7E384021A34D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "25C2AAD7946D61B5"
 				item: "ars_nouveau:archmage_spell_book"
@@ -643,12 +1023,25 @@
 		{
 			dependencies: ["44B57F0A5546E2C9"]
 			id: "09A516F0FF1A7D16"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "43918326A54E5498"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43918326A54E5498"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "0CD7E93C950E873E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4787313745F1A14D"
 				item: "ars_nouveau:ritual_brazier"
@@ -672,6 +1065,17 @@
 					id: "6099B070E9DEF601"
 					table_id: 8626470336341221864L
 					type: "choice"
+				}
+				{
+					id: "42234795BFFBD110"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -704,6 +1108,17 @@
 					table_id: 8626470336341221864L
 					type: "choice"
 				}
+				{
+					id: "30447246F71C850E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "70EE80FF6EE71D76"
@@ -720,12 +1135,25 @@
 		{
 			dependencies: ["0761D8FFC87C073F"]
 			id: "48C2A1AE36CCEBCF"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "49B8C6CE70CD89E5"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "49B8C6CE70CD89E5"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "15B5AF767BBA418B"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "43052BA47AC56C47"
 				item: "ars_nouveau:whirlisprig_charm"
@@ -736,12 +1164,25 @@
 		}
 		{
 			id: "15A2F2735846A4A0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7E449BB889E3F918"
-				table_id: 8626470336341221864L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E449BB889E3F918"
+					table_id: 8626470336341221864L
+					type: "choice"
+				}
+				{
+					id: "1E40914FCD7D1DBE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "543FA2077C0DCF9F"
@@ -769,6 +1210,17 @@
 		{
 			dependencies: ["199B01668D6CA650"]
 			id: "56F616143F682338"
+			rewards: [{
+				id: "3F13A3638234BE5E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "73970F7DE18F7521"
 				item: "ars_nouveau:source_jar"
@@ -785,6 +1237,17 @@
 				"2C38144CBF7AE332"
 			]
 			id: "100BC159D744411A"
+			rewards: [{
+				id: "723881F983BAFB8B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "58BA1ACABEC36E38"
 				item: "botania:terrasteel_ingot"
@@ -796,6 +1259,17 @@
 		{
 			dependencies: ["5074DDA791023078"]
 			id: "7DE362C29748C4FD"
+			rewards: [{
+				id: "1DE8D0EB8754BA54"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "76025DCA6FD6C88C"
 				item: "botania:terra_plate"
@@ -808,6 +1282,17 @@
 			dependencies: ["5074DDA791023078"]
 			hide_dependent_lines: true
 			id: "49C6CCE2BDF5C4C7"
+			rewards: [{
+				id: "7C390A5334FC5365"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6EBED670DD57F3A2"
 				item: "botania:mana_diamond"
@@ -820,6 +1305,17 @@
 			dependencies: ["100BC159D744411A"]
 			icon: "botania:natura_pylon"
 			id: "173A10A099D67100"
+			rewards: [{
+				id: "5F2CD929030B084A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 2L
@@ -845,6 +1341,17 @@
 		{
 			dependencies: ["0F622A0E4EAADDEC"]
 			id: "3D7F5EC6BE05F077"
+			rewards: [{
+				id: "001D8AC7FCF4DE68"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2AE2BAA1CD541248"
 				item: "minecraft:beacon"
@@ -856,6 +1363,17 @@
 		{
 			dependencies: ["173A10A099D67100"]
 			id: "157ED8F0F4E56312"
+			rewards: [{
+				id: "0A7AA4F3285BCA43"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "39FC676DD4214261"
 				item: "botania:elementium_ingot"
@@ -867,6 +1385,17 @@
 		{
 			dependencies: ["173A10A099D67100"]
 			id: "7CE5E0C514618E52"
+			rewards: [{
+				id: "481A6A7656D5D332"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0BB9E7EAA278F6AD"
 				item: "botania:pixie_dust"
@@ -878,6 +1407,17 @@
 		{
 			dependencies: ["173A10A099D67100"]
 			id: "2A435310BC236872"
+			rewards: [{
+				id: "49A5E874F2B1E563"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5CD09CD61F595399"
 				item: "botania:dragonstone"
@@ -892,6 +1432,17 @@
 				"100BC159D744411A"
 			]
 			id: "45893ECE3F582A45"
+			rewards: [{
+				id: "15F012647F86307A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "48B388B4519AB530"
 				item: "botania:life_essence"
@@ -906,6 +1457,17 @@
 				"100BC159D744411A"
 			]
 			id: "39F8FBB0B502E637"
+			rewards: [{
+				id: "679952E01C75117F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "69FCACC3E6B196D7"
 				item: "botania:gaia_ingot"
@@ -913,26 +1475,6 @@
 			}]
 			x: 22.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["45893ECE3F582A45"]
-			id: "6ED4641CFE8BDC4F"
-			subtitle: "如果你不想刷的话"
-			tasks: [{
-				id: "68EA8102B4DD65BC"
-				item: {
-					Count: 1
-					id: "hostilenetworks:data_model"
-					tag: {
-						data_model: {
-							id: "hostilenetworks:gaia"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 22.5d
-			y: -2.5d
 		}
 	]
 	title: "大自然的魔法"

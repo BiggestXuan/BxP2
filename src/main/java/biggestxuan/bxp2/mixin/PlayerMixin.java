@@ -1,10 +1,12 @@
 package biggestxuan.bxp2.mixin;
 
 import biggestxuan.bxp2.Config;
+import biggestxuan.bxp2.utils.ShopUtils;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ItemSteerable;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -33,6 +35,7 @@ public abstract class PlayerMixin extends LivingEntity {
     @Inject(method = "dropEquipment",at = @At("HEAD"),cancellable = true)
     public void __inject(CallbackInfo ci){
         Player player = (Player)(Object)this;
+
         if(Config.difficulty == 3){
             for (int i = 9; i < inventory.items.size(); i++) {
                 player.drop(inventory.items.get(i),true,false);

@@ -12,6 +12,7 @@
 		{ count: 4, item: "powah:crystal_nitro", weight: 0.8f }
 		{ count: 6, item: "powah:crystal_nitro", weight: 0.6f }
 		{ count: 8, item: "powah:crystal_nitro", weight: 0.4f }
+		{ item: "bxp2:discount_card" }
 	]
 	title: "Powah终极奖励包"
 }

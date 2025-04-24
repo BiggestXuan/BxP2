@@ -8,6 +8,7 @@ import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.recipes.BXFurnaceRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
 import dev.architectury.fluid.FluidStack;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -79,7 +80,7 @@ public class KJSUtils {
                 new BXFurnaceRecipe(
                         "bx_unstable_furnace",
                         new ItemStack[]{
-                                BxP2.getStack("ad_astra:desh_ingot"),
+                                BxP2.getStack("enderio:energetic_alloy_ingot"),
                                 BxP2.getStack("thermal:invar_ingot"),
                                 BxP2.getStack("ars_nouveau:source_gem")
                         },new ItemStack[]{BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance()}
@@ -90,6 +91,12 @@ public class KJSUtils {
     }
 
     public static Map<String, Map<Map<ItemStack[],int[]>,ItemStack[]>> getBXIngotRecipe(){
+        ItemStack stack = BxP2.getStack("bxp2:bx_ingot");
+        CompoundTag tag = stack.getOrCreateTag();
+        CompoundTag tag1 = new CompoundTag();
+        tag1.putInt("f",0);
+        tag1.putInt("l",0);
+        tag.put("bxp_cycle",tag1);
         return RecipeUtils.getBXFurnaceRecipe(
             new BXFurnaceRecipe("bx_furnace",
                    new ItemStack[]{
@@ -97,7 +104,7 @@ public class KJSUtils {
                            BxP2.getStack("mekanism:hdpe_sheet"),
                            BxP2.getStack("mekanism:alloy_reinforced"),
                            BxP2.getStack("mekanism:dust_lithium"),
-                   },new ItemStack[]{BxP2.getStack("bxp2:bx_ingot")}
+                   },new ItemStack[]{stack}
                     , BxPCatalyst.ADAPT.BX_FURNACE,
                     10000,100000000,0
             ).copy()

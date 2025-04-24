@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "574F68519A575807"
-	group: "37BE985D0902014A"
+	group: "455ED0AB8CCEDEB5"
 	icon: "bloodmagic:soulforge"
 	id: "574F68519A575807"
 	order_index: 1
@@ -11,12 +11,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "6A0A1647D1D03297"
-			rewards: [{
-				count: 20
-				id: "6CE1201364964F40"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "6CE1201364964F40"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "2D755EB622C92246"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "70F25378EBD8CB50"
 				item: {
@@ -51,6 +64,17 @@
 					item: "bloodmagic:slate_ampoule"
 					type: "item"
 				}
+				{
+					id: "461680705A5E846B"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "217AAE3CB03B67FB"
@@ -63,12 +87,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "75195FEE42C08EC2"
-			rewards: [{
-				count: 20
-				id: "70BCD46FCB4013AF"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "70BCD46FCB4013AF"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "05D5A079E1537A33"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5BCAC5F3211D51C3"
 				item: "bloodmagic:incensealtar"
@@ -80,12 +117,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "6CE115B5B59EC4D1"
-			rewards: [{
-				count: 20
-				id: "0841FE39FC2F7704"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "0841FE39FC2F7704"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "2E77F999A790EB93"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "636595F64CC9FBFA"
 				item: "bloodmagic:blankslate"
@@ -97,12 +147,25 @@
 		{
 			dependencies: ["6CE115B5B59EC4D1"]
 			id: "5E01633356430A7E"
-			rewards: [{
-				count: 20
-				id: "514AC10760A3149B"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "514AC10760A3149B"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "2B402A6BEA54C998"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4F8901C3F009185F"
 				item: "bloodmagic:reinforcedslate"
@@ -114,6 +177,17 @@
 		{
 			dependencies: ["5E01633356430A7E"]
 			id: "7192985A5D7AAF05"
+			rewards: [{
+				id: "7EC6781E792A435E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "34071278386497E3"
 				item: "bloodmagic:infusedslate"
@@ -125,6 +199,17 @@
 		{
 			dependencies: ["7192985A5D7AAF05"]
 			id: "337E3340FFD5A3C1"
+			rewards: [{
+				id: "4C8071763128C11C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E101B204D36CD12"
 				item: "bloodmagic:demonslate"
@@ -136,6 +221,17 @@
 		{
 			dependencies: ["337E3340FFD5A3C1"]
 			id: "148845EEEA29F0ED"
+			rewards: [{
+				id: "7782340BCE8F094C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3F81B1B892E6D496"
 				item: "bloodmagic:etherealslate"
@@ -147,12 +243,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "59D8CACE1C75AF99"
-			rewards: [{
-				count: 20
-				id: "3C76CCC99A6FD2A8"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "3C76CCC99A6FD2A8"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "4D91F23FCDC8BEBA"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "18A2B7A69C7EEEA8"
 				item: "bloodmagic:weakbloodorb"
@@ -164,12 +273,25 @@
 		{
 			dependencies: ["59D8CACE1C75AF99"]
 			id: "4E01AC31960AD896"
-			rewards: [{
-				count: 20
-				id: "10687330DA6B1C0A"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "10687330DA6B1C0A"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "002B8E9AD490A7B7"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "26BF3749FFF22CF2"
 				item: "bloodmagic:apprenticebloodorb"
@@ -181,6 +303,17 @@
 		{
 			dependencies: ["4E01AC31960AD896"]
 			id: "5752FFA8500C73EC"
+			rewards: [{
+				id: "10E5AE0A442B88ED"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B409FD7C3B0BC5A"
 				item: "bloodmagic:magicianbloodorb"
@@ -192,6 +325,17 @@
 		{
 			dependencies: ["5752FFA8500C73EC"]
 			id: "2C3F65F925489698"
+			rewards: [{
+				id: "3A565351A246AB09"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "516DC8FC473EA3E3"
 				item: "bloodmagic:masterbloodorb"
@@ -207,6 +351,17 @@
 				"血族传说的血液可以用食物获得，也许这是食物魔法……"
 			]
 			id: "770B38A277B35551"
+			rewards: [{
+				id: "1844B3BB7C996DF3"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B5539DE641DE136"
 				item: "mbd2:blood_transposer"
@@ -218,6 +373,17 @@
 		{
 			dependencies: ["721567D1FF84784A"]
 			id: "44DD43FBFF936D9E"
+			rewards: [{
+				id: "54951CE10D28FB43"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "46B58B5B4968D0D6"
 				item: {
@@ -233,6 +399,17 @@
 		{
 			dependencies: ["44DD43FBFF936D9E"]
 			id: "5298F9A60E5068AA"
+			rewards: [{
+				id: "497081680B411CE7"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "27882B49A1942A11"
 				item: {
@@ -248,12 +425,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "721567D1FF84784A"
-			rewards: [{
-				count: 20
-				id: "7FD358375D0E1013"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "7FD358375D0E1013"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "6608DE95B2848540"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "658C67B6BE3837D2"
@@ -309,6 +499,17 @@
 				"5752FFA8500C73EC"
 			]
 			id: "3158B40BA3AA1189"
+			rewards: [{
+				id: "41F60058C14A9BCE"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3493E077892A8247"
@@ -328,12 +529,25 @@
 		{
 			dependencies: ["59D8CACE1C75AF99"]
 			id: "55F4A0B8A87CED06"
-			rewards: [{
-				count: 20
-				id: "1950364DD782613D"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "1950364DD782613D"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "59A6E76433A692AF"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0EDE3EB68AB248AB"
 				item: "bloodmagic:lavacrystal"
@@ -345,6 +559,17 @@
 		{
 			dependencies: ["55F4A0B8A87CED06"]
 			id: "43C5DDFC2C844846"
+			rewards: [{
+				id: "55948B5944987794"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2608C113D1705A0F"
 				item: "bloodmagic:activationcrystalweak"
@@ -359,6 +584,17 @@
 				"43C5DDFC2C844846"
 			]
 			id: "46A584CBAAB21F4F"
+			rewards: [{
+				id: "262C04928F91965B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				dimension: "bloodmagic:dungeon"
 				id: "3FFA53910D0347B3"
@@ -370,6 +606,17 @@
 		{
 			dependencies: ["46A584CBAAB21F4F"]
 			id: "7930C0F39A0AC01D"
+			rewards: [{
+				id: "16B8CBB071B8C00E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "49A4650D3C60A374"
 				item: "bloodmagic:strong_tau"
@@ -381,6 +628,17 @@
 		{
 			dependencies: ["6CE115B5B59EC4D1"]
 			id: "3BE3C31004D30109"
+			rewards: [{
+				id: "0E8B2DCF9AC15F5E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "627FAB458E46593A"
 				item: "bloodmagic:soulforge"
@@ -392,6 +650,17 @@
 		{
 			dependencies: ["3BE3C31004D30109"]
 			id: "4FC97D270737FE00"
+			rewards: [{
+				id: "149C7B72BAF719EE"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C048861351264BC"
 				item: {
@@ -407,6 +676,17 @@
 		{
 			dependencies: ["4FC97D270737FE00"]
 			id: "2782D1CDC250FFC9"
+			rewards: [{
+				id: "60AA2EBE603E7FCF"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "554FA930ED43F12C"
 				item: {
@@ -422,6 +702,17 @@
 		{
 			dependencies: ["2782D1CDC250FFC9"]
 			id: "5A383E054AE1A213"
+			rewards: [{
+				id: "5BA4D8533EB1353F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2A391CDCC8A3A609"
 				item: {
@@ -437,6 +728,17 @@
 		{
 			dependencies: ["5A383E054AE1A213"]
 			id: "3D379F15C8AB5610"
+			rewards: [{
+				id: "4E8EB0A0E1F3D4D2"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "44491972040ECF38"
 				item: {
@@ -452,6 +754,17 @@
 		{
 			dependencies: ["6CE115B5B59EC4D1"]
 			id: "676A62FFC8EA2A9A"
+			rewards: [{
+				id: "7E024723879E5CA5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "08B0EAD03898E52D"
 				item: "bloodmagic:alchemytable"
@@ -463,12 +776,25 @@
 		{
 			dependencies: ["268B022A9AB1FED4"]
 			id: "60A63AFFA231ECCD"
-			rewards: [{
-				count: 20
-				id: "52A41DA408260ECD"
-				item: "bloodmagic:slate_ampoule"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 20
+					id: "52A41DA408260ECD"
+					item: "bloodmagic:slate_ampoule"
+					type: "item"
+				}
+				{
+					id: "74E4791DFEE3366D"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 8L
 				id: "12A9ADEAF9ADE4AF"

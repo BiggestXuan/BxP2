@@ -1,0 +1,328 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "474C124C58BAE43F"
+	group: "55836255C5635985"
+	icon: "bxp2:biggest_xuan"
+	id: "474C124C58BAE43F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["这里的任务可能比较难，但这是你可以大量获取大轩券的地方"]
+			id: "7790F17C67A0FF65"
+			size: 2.0d
+			tasks: [{
+				id: "5B542D5910262144"
+				type: "checkmark"
+			}]
+			title: "挑战任务！"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3C8E8160CC1ABCD1"
+				"7790F17C67A0FF65"
+			]
+			id: "110390D7A36A8805"
+			rewards: [{
+				id: "5BB3FDCF28748041"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 44.55f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "5EBF9D3DF115F6BF"
+				item: {
+					Count: 1
+					id: "mekanism:ultimate_chemical_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 8192000L
+									gasName: "bxp2:propylamine"
+								}
+							}]
+							InfusionTanks: [ ]
+							Items: [ ]
+							PigmentTanks: [ ]
+							SlurryTanks: [ ]
+							componentConfig: {
+								config2: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config3: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config4: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config5: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								config6: {
+									side0: 4
+									side1: 1
+									side2: 1
+									side3: 1
+									side4: 1
+									side5: 1
+								}
+								eject2: 1b
+								eject3: 1b
+								eject4: 1b
+								eject5: 1b
+								eject6: 0b
+							}
+							componentEjector: {
+								color0: -1
+								color1: -1
+								color2: -1
+								color3: -1
+								color4: -1
+								color5: -1
+								strictInput: 0b
+							}
+							controlType: 0
+							dumping: 0
+							owner: [I;
+								691178348
+								1862487994
+								-1808373877
+								1768852203
+							]
+							securityMode: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			id: "106A5B859349498F"
+			rewards: [{
+				id: "1665F9940452689A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 15
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "其实就10G"
+			tasks: [{
+				id: "543A5CB0F556D8EE"
+				max_input: 1000L
+				type: "forge_energy"
+				value: 10000000000L
+			}]
+			title: "100亿而已"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			id: "6827DA3D9E3A23EC"
+			rewards: [{
+				id: "77F51C0620EE6EEF"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 66.66f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "791FEA59AE3128E3"
+				type: "kill"
+				value: 150L
+			}]
+			title: "好多头头"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			id: "71BCE9AE0AD65823"
+			rewards: [{
+				id: "62491ED12A91613E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 666.66d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "34A379E205B00CCF"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "将大局逆转吧"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			id: "5689C0736326EDA4"
+			rewards: [{
+				id: "186EA3A8D2FB8F06"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 66.66d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 6L
+					id: "1A0C591A4B22D97D"
+					item: { Count: 6, id: "bxp2:yunxi" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5DA20BA1BDE0DAE6"
+					item: { Count: 6, id: "bxp2:biggest_xuan" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "14F869F1676C0030"
+					item: { Count: 6, id: "bxp2:dctor_0415" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "29F4A4FA0C314419"
+					item: { Count: 6, id: "bxp2:tulye" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2597AE5CEAC4747B"
+					item: { Count: 6, id: "bxp2:jaoxaono" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4029523D541696BE"
+					item: { Count: 6, id: "bxp2:lamb_kisara" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1F6994F9670FA99D"
+					item: { Count: 6, id: "bxp2:sdxhop" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "79A90EF7133ED285"
+					item: { Count: 6, id: "bxp2:mcaigengzi" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "57EFF8490C9E2C03"
+					item: { Count: 6, id: "bxp2:yuluo_1" }
+					type: "item"
+				}
+			]
+			title: "一些小玩偶"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			id: "57B6625B13CA1C32"
+			rewards: [{
+				id: "771B6307074BCF32"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 66.66f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "286B0959697F6491"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7790F17C67A0FF65"]
+			description: ["你耐心也是很足的。"]
+			id: "6CD86480FEE897C1"
+			rewards: [{
+				id: "03F6F95E535A49F8"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 111.11f
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "27D661DBCE1AAC31"
+				item: "bxp2:meaning_less"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+	]
+	title: "挑战任务"
+}

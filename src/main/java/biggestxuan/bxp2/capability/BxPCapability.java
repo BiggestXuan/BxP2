@@ -13,6 +13,9 @@ public class BxPCapability implements IBxPCapability{
     private boolean canEnd = false;
     private float deathLoss = 0F;
     private boolean canFly = false;
+    private int witherCount = 0;
+    private int dragonCount = 0;
+    private float money = 0;
 
     @Override
     public void setPhase(int phase) {
@@ -64,6 +67,36 @@ public class BxPCapability implements IBxPCapability{
         this.canFly = true;
     }
 
+    @Override
+    public int getWitherCount() {
+        return witherCount;
+    }
+
+    @Override
+    public void addWitherCount() {
+        witherCount++;
+    }
+
+    @Override
+    public int getDragonCount() {
+        return dragonCount;
+    }
+
+    @Override
+    public void addDragonCount() {
+        dragonCount++;
+    }
+
+    @Override
+    public float getMoney() {
+        return money;
+    }
+
+    @Override
+    public void setMoney(float money) {
+        this.money = money;
+    }
+
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();
         tag.putInt("phase", phase);
@@ -71,6 +104,9 @@ public class BxPCapability implements IBxPCapability{
         tag.putBoolean("canEnd", canEnd);
         tag.putFloat("deathLoss", deathLoss);
         tag.putBoolean("fly", canFly);
+        tag.putInt("witherCount",witherCount);
+        tag.putInt("dragonCount",dragonCount);
+        tag.putFloat("money",money);
         return tag;
     }
 
@@ -80,5 +116,8 @@ public class BxPCapability implements IBxPCapability{
         canEnd = tag.getBoolean("canEnd");
         deathLoss = tag.getFloat("deathLoss");
         canFly = tag.getBoolean("fly");
+        witherCount = tag.getInt("witherCount");
+        dragonCount = tag.getInt("dragonCount");
+        money = tag.getFloat("money");
     }
 }

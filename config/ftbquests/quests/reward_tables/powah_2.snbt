@@ -8,6 +8,7 @@
 		{ count: 2, item: "powah:capacitor_spirited", random_bonus: 2, weight: 0.4f }
 		{ count: 8, item: "powah:crystal_niotic" }
 		{ count: 6, item: "powah:crystal_spirited" }
+		{ item: "bxp2:discount_card", weight: 0.5f }
 	]
 	title: "Powah进阶奖励包"
 }

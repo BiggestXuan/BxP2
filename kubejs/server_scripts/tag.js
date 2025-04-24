@@ -16,6 +16,10 @@ ServerEvents.tags('item',event => {
     event.add('forge:plastic','rats:raw_plastic')
     var c = ['minecraft:stone', 'minecraft:cobblestone', 'minecraft:mossy_cobblestone', 'minecraft:granite', 'minecraft:diorite', 'minecraft:andesite', 'minecraft:deepslate', 'minecraft:cobbled_deepslate']
     c.forEach(item => event.add('minecraft:base_stone_overworld',item))
+    var d = ['mekanism:pellet_polonium', 'mekanism:pellet_plutonium', 'mekanismscience:pellet_neutron_source']
+    d.forEach(item => event.add('bxp2:radiation_pellet',item))
+    var e = ['brewery:dried_wheat','brewery:dried_barley','brewery:dried_corn'];
+    e.forEach(item => event.add("bxp2:wine_dried",item)) 
 })
 
 ServerEvents.tags('fluid',event => {

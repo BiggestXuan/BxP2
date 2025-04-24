@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.thinker.Modifiers.DE;
+package biggestxuan.bxp2.integration.Thinker.Modifiers.DE;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.utils.Utils;

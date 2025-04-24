@@ -12,12 +12,25 @@
 			dependencies: ["4D84BCC4AEFF84F5"]
 			icon: "minecraft:oak_log"
 			id: "38024D3B1806219E"
-			rewards: [{
-				count: 16
-				id: "2B79F7518DE2E211"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "2B79F7518DE2E211"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "38E05EEECACFD18C"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				icon: "minecraft:oak_log"
@@ -39,12 +52,25 @@
 		{
 			dependencies: ["38024D3B1806219E"]
 			id: "01CD1FE9964B19C1"
-			rewards: [{
-				count: 16
-				id: "61667FA54E60D6BC"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "61667FA54E60D6BC"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "710FCB27EC347DE3"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7BBCA0FB4622A8D2"
 				item: "minecraft:crafting_table"
@@ -56,12 +82,25 @@
 		{
 			dependencies: ["01CD1FE9964B19C1"]
 			id: "78846269B9FDE8F3"
-			rewards: [{
-				count: 16
-				id: "3570F572C3203C63"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "3570F572C3203C63"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "4C4EE374C3B7A805"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3AAC511DB65D15FF"
 				item: "extendedcrafting:handheld_table"
@@ -86,6 +125,17 @@
 					id: "7247294D0FD0A5A9"
 					table_id: 2184139927143331923L
 					type: "random"
+				}
+				{
+					id: "672E3DC08979FE11"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -115,6 +165,17 @@
 					table_id: 2184139927143331923L
 					type: "random"
 				}
+				{
+					id: "4A13D7D894474DAF"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "你是想留着还是直接挖掉呢？"
 			tasks: [{
@@ -128,6 +189,17 @@
 		{
 			dependencies: ["38024D3B1806219E"]
 			id: "02386D8BD969F2E7"
+			rewards: [{
+				id: "345BA41CDDAA11B1"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "72207CB7C1DBF18E"
 				item: "tconstruct:pattern"
@@ -139,6 +211,17 @@
 		{
 			dependencies: ["02386D8BD969F2E7"]
 			id: "5A65229A1C902A43"
+			rewards: [{
+				id: "3FE32FE14B3D606E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "19B67AE833A40792"
@@ -157,6 +240,17 @@
 		{
 			dependencies: ["02386D8BD969F2E7"]
 			id: "4925B6F2552C20FF"
+			rewards: [{
+				id: "0E7C855E7CCBF52E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "62C33882EEC4233F"
@@ -175,12 +269,25 @@
 		{
 			dependencies: ["38024D3B1806219E"]
 			id: "423E8C03CC52D43E"
-			rewards: [{
-				count: 16
-				id: "39F58C7EEA97B9B8"
-				item: "minecraft:coal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "39F58C7EEA97B9B8"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "788F8694E3C09E18"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 8L
 				id: "1576307D9D07087B"
@@ -197,6 +304,17 @@
 				"4FCDB059856EC079"
 			]
 			id: "6B04535AFED5E6FD"
+			rewards: [{
+				id: "7EBEEFA8A8FD71ED"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "05B3E5E46A6A218B"
@@ -232,6 +350,17 @@
 			dependencies: ["4D84BCC4AEFF84F5"]
 			hide_dependency_lines: true
 			id: "4FCDB059856EC079"
+			rewards: [{
+				id: "505A21660D3E91F7"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "2980E37D3F5D99C2"
@@ -259,6 +388,17 @@
 					count: 16
 					id: "7331286BBDE8DBAE"
 					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "02370ED70B4EF41F"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
 					type: "item"
 				}
 			]
@@ -290,6 +430,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "227FE5C5D9CC443C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C7F6F754E38DA47"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "748E3F1BDEE80239"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "4E9F8CE59FF2BCBA"
@@ -302,6 +461,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "45B54ECD5CB7F385"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "702A51A3101B8244"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "179B7A3A8446CBB7"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "2E95F5E8685B36D7"
@@ -314,6 +492,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "4666837B4F0E53B1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3732546E5A734D9B"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "0110647640CCB735"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "3EA94AAEA2C8F2F1"
@@ -326,6 +523,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "71B7631E58A90D2F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DBFA79A21BCB1EA"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "01D9EE49486C6264"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "66C1A48DB515FAFA"
@@ -338,6 +554,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "2F8402A95EB36759"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4A36E2F96B98FFF0"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "44FE0291869F48F9"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "332FD51DF13C0852"
@@ -350,6 +585,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "61922F92D8FEC00E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C18B00DBA64B5E2"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "48B227592C5B244A"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "63C6F0EA0DDD47B7"
@@ -362,6 +616,25 @@
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
 			id: "11DF45B9D5C2039C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4431A5C98254B883"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+				{
+					id: "7DAF6B9B7E9919C1"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 16L
 				id: "55215F83155DBB6D"
@@ -387,15 +660,36 @@
 				""
 				"对于会影响世界生成的模式，即便修改后也不会在现有区块生效，只会在新区块生效。"
 				""
+				"此外，整合包有经济系统，如果你没有选择休闲模式，当你死亡的时候将会掉落你[10~30%]/[20~50%]的余额（随推进增加）在你的死亡地。如果你想购买东西，右击任何含有&3\"轩\"和\"锭\"&r的物品即可打开商店页面。"
+				""
 				"整合包有多条线路，这些线路大多都是并行的，你可以先挑你熟悉的模组来玩，即使任务还没解锁，但你先完成了任务，当任务前置完成后你依然可以领取奖励。"
 			]
 			icon: "bxp2:difficulty_change"
 			id: "4D84BCC4AEFF84F5"
-			rewards: [{
-				id: "69900EFE21859747"
-				item: "bxp2:difficulty_change"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "69900EFE21859747"
+					item: "bxp2:difficulty_change"
+					type: "item"
+				}
+				{
+					id: "45120E56D5824EF1"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 5
+						}
+					}
+					title: "你的启动资金"
+					type: "item"
+				}
+				{
+					id: "71BDF9A362FFD4CD"
+					item: "bxp2:discount_card"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "别忘了选择模式"
 			tasks: [{
@@ -409,6 +703,17 @@
 		{
 			dependencies: ["63C2AE01F3D4C943"]
 			id: "3080B7C1B2453B59"
+			rewards: [{
+				id: "214B0C0538B2B750"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "不会爆炸的"
 			tasks: [{
 				id: "5369A2E6B4B52810"
@@ -421,6 +726,17 @@
 		{
 			dependencies: ["152998D02AB61294"]
 			id: "561487253E2F5F4B"
+			rewards: [{
+				id: "2E4B2842FAD5551F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2224290C6BE87AE5"
 				item: {
@@ -432,6 +748,38 @@
 			}]
 			x: 10.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["152998D02AB61294"]
+			id: "7AE4E7485185FB8B"
+			rewards: [
+				{
+					count: 3
+					id: "7CF9AEC9BF12301C"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "5C463F10CFEE7E7A"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "也许是有巨物恐惧症"
+			tasks: [{
+				id: "0521CE1358CE1F67"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			title: "安静区域"
+			x: 10.5d
+			y: -2.5d
 		}
 	]
 	title: "从这里开始吧！"

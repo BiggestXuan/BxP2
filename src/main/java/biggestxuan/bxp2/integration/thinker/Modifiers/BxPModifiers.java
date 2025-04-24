@@ -1,12 +1,12 @@
-package biggestxuan.bxp2.integration.thinker.Modifiers;
+package biggestxuan.bxp2.integration.Thinker.Modifiers;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.integration.thinker.Modifiers.DE.ScaleboundFuryModifier;
-import biggestxuan.bxp2.integration.thinker.Modifiers.DE.ChronodragonFuryModifier;
-import biggestxuan.bxp2.integration.thinker.Modifiers.DE.SorrowModifier;
-import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.DefenseBreaker;
-import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.FistOfAbsoluteJustice;
-import biggestxuan.bxp2.integration.thinker.Modifiers.LOL.GuiSuoReckoning;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.DE.ScaleboundFuryModifier;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.DE.ChronodragonFuryModifier;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.DE.SorrowModifier;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.LOL.DefenseBreaker;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.LOL.FistOfAbsoluteJustice;
+import biggestxuan.bxp2.integration.Thinker.Modifiers.LOL.GuiSuoReckoning;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 
