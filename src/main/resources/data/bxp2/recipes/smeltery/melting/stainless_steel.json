@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:stainless_steel_ingot"
+  },
+  "temperature": 1000,
+  "time": 200,
+  "result":
+  {
+    "fluid": "bxp2:molten_stainless_steel",
+    "amount": 90
+  }
+}

@@ -1,13 +1,17 @@
 package biggestxuan.bxp2.items;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import dev.ftb.mods.ftbteams.api.FTBTeamsAPI;
+import dev.ftb.mods.ftbteams.api.Team;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +21,7 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @Author Biggest_Xuan
@@ -36,9 +41,17 @@ public class MoneyItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
-        super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+    public void appendHoverText(ItemStack p_41421_, @Nullable Level level, List<Component> p_41423_, TooltipFlag p_41424_) {
+        super.appendHoverText(p_41421_, level, p_41423_, p_41424_);
         p_41423_.add(BxP2.tr("desc.bxp2.money"));
+        if(level != null && level.isClientSide){
+            Team team = FTBTeamsAPI.api().getClientManager().selfTeam();
+            if(team.isValid()){
+                int size = team.getMembers().size();
+                float money = getTeamMoney(getMoney(p_41421_),size);
+                p_41423_.add(BxP2.tr("desc.bxp2.money_get",size,String.format("%.2f",money)));
+            }
+        }
     }
 
     @Override
@@ -75,9 +88,32 @@ public class MoneyItem extends Item {
         float money = getMoney(stack);
         if(money > 0 && p instanceof ServerPlayer player){
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
-                cap.setMoney(cap.getMoney() + money);
+                Optional<Team> team = FTBTeamsAPI.api().getManager().getTeamForPlayer(player);
+                float m = money;
+                if(team.isPresent()){
+                    m = getTeamMoney(m,team.get().getMembers().size());
+                }
+                cap.setMoney(cap.getMoney() + m);
                 stack.shrink(1);
             });
         }
+    }
+
+    private static float getTeamMoney(float value,int amount){
+        if(amount <= 1) return value;
+        double rate = 1;
+        switch (Config.difficulty){
+            case 1 -> rate = Config.EASY_TEAM_MONEY_RATE;
+            case 2 -> rate = Config.NORMAL_TEAM_MONEY_RATE;
+            case 3 -> rate = Config.HARD_TEAM_MONEY_RATE;
+        }
+        return (float) (value * Math.pow(rate,amount - 1));
+    }
+
+    public static void dropMoney(Entity entity,float money){
+        ItemStack stack = BxPItems.MONEY.get().getDefaultInstance();
+        CompoundTag tag = stack.getOrCreateTag();
+        tag.putFloat("money",money);
+        entity.level().addFreshEntity(new ItemEntity(entity.level(),entity.getX(),entity.getY(),entity.getZ(),stack));
     }
 }

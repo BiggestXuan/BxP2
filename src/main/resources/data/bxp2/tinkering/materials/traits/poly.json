@@ -1,0 +1,22 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:money_devourer"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "tconstruct:featherweight"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "tconstruct:featherweight"
+      }
+    ]
+  }
+}

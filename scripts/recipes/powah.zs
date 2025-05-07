@@ -1,7 +1,7 @@
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
 
-import BxP2.CrTManager;
+import mods.bxp2.CrTManager;
 
 public function addPowahRecipe(inputs as IIngredient[],output as IItemStack,energy as long) as void{
     var d = difficulty();
@@ -61,11 +61,12 @@ if(difficulty() >= 2){
     }
 }
 
-var ms = <item:ad_astra:moon_stone>;
+var ms = <item:minecraft:deepslate>;
 var ur = <tag:items:forge:ingots/uranium>;
 
 addPowahRecipe([ms,ur],<item:powah:uraninite_ore_poor>,10000);
 addPowahRecipe([ms,ur,ur],<item:powah:uraninite_ore>,30000);
 addPowahRecipe([ms,ur,ur,ur,ur],<item:powah:uraninite_ore_dense>,60000);
+addPowahRecipe([<item:botania:blaze_block>],<item:powah:blazing_crystal_block>,800000);
 
 CrTManager.registerCoolant("tinkers_advanced:molten_blizz_enderium",10);

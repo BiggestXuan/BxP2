@@ -60,7 +60,7 @@ public class PacketHandler {
 
     public static void syncPlayerCapability(ServerPlayer player){
         player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
-            CapabilityPacket packet = new CapabilityPacket(cap.getPhase(),cap.getMoney());
+            CapabilityPacket packet = new CapabilityPacket(cap.getPhase(),cap.getMoney(),cap.getBuyCreativeCount());
             PacketHandler.sendToClient(packet,player);
         });
     }

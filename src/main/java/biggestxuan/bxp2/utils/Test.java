@@ -1,6 +1,6 @@
 package biggestxuan.bxp2.utils;
 
-import biggestxuan.bxp2.items.BxPCatalyst;
+import biggestxuan.bxp2.recipes.BxPCatalyst;
 
 import java.util.List;
 

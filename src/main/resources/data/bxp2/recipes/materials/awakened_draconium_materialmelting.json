@@ -1,6 +1,6 @@
 {
   "type":"tconstruct:material_melting",
-  "input": "draconicevolution:awakened_draconium_ingot",
+  "input": "bxp2:draconium_ingot",
   "temperature": 1000,
   "result":{
     "fluid": "bxp2:molten_awakened_draconium",

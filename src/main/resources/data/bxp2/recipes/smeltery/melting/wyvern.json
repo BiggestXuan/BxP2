@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:wyvern_ingot"
+  },
+  "temperature": 1000,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_wyvern_draconium",
+    "amount": 90
+  }
+}

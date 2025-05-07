@@ -695,212 +695,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"0B628713AFDA7137"
-				"4BB2981C2EE1B6F2"
-			]
-			description: [
-				"因为你在到达下界之前是无法集齐这些的，同时即便你前面收集了也会有进度的，于是就把任务放这里了。"
-				""
-				"当你制作附魔大轩锭后，如果你有收集不到的眼睛，可以在商店购买。"
-			]
-			icon: "minecraft:ender_eye"
-			id: "4354A684F2E8F887"
-			rewards: [{
-				id: "0B6D3B0A06E573AA"
-				item: {
-					Count: 1
-					id: "bxp2:money"
-					tag: {
-						money: 2
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "097AF7E4FA5844D8"
-					item: {
-						Count: 1
-						id: "endrem:black_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0D3EAD6994BFCE71"
-					item: {
-						Count: 1
-						id: "endrem:cold_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "046055A29E6C2F26"
-					item: {
-						Count: 1
-						id: "endrem:corrupted_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6E5F2B3A6613D486"
-					item: {
-						Count: 1
-						id: "endrem:lost_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "04B0880634124007"
-					item: {
-						Count: 1
-						id: "endrem:nether_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1610C66EA342B530"
-					item: {
-						Count: 1
-						id: "endrem:old_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1287ABAB8BA21EDF"
-					item: {
-						Count: 1
-						id: "endrem:cursed_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5368A176AD3DAE07"
-					item: {
-						Count: 1
-						id: "endrem:rogue_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "184B691CE7050CA2"
-					item: {
-						Count: 1
-						id: "endrem:evil_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7262FBA30D0E3920"
-					item: {
-						Count: 1
-						id: "endrem:guardian_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2D632EE996030F80"
-					item: {
-						Count: 1
-						id: "endrem:magical_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5F27AB0655EAB900"
-					item: {
-						Count: 1
-						id: "endrem:wither_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6AE11C1F91C621F9"
-					item: {
-						Count: 1
-						id: "endrem:witch_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "562D57BB10897151"
-					item: {
-						Count: 1
-						id: "endrem:undead_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5387B765FC41C785"
-					item: {
-						Count: 1
-						id: "endrem:exotic_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "095DD3D45A98A66E"
-					item: {
-						Count: 1
-						id: "endrem:cryptic_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "好多眼睛"
-			x: 3.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["4354A684F2E8F887"]
+			dependencies: ["4CEF86AE25957FEF"]
 			description: [""]
 			id: "0C241B344FFDCD72"
 			rewards: [{
@@ -1124,6 +919,352 @@
 				type: "item"
 			}]
 			x: 15.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["43AE7F13E2BE50F8"]
+			hide_dependency_lines: true
+			id: "40AB3EEE6C66F4F4"
+			rewards: [{
+				id: "32D34222AECABF4E"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.25d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "54FC9AAB6F3362E8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1000802253
+									-979678024
+									-1263823746
+									-729025854
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["40AB3EEE6C66F4F4"]
+			id: "151D7A0ED33202F3"
+			rewards: [{
+				id: "5BFA1D80A9C3984D"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.25d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4EA7C8156D8EC381"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-532459008
+									-10664698
+									-1112616409
+									-1271311626
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["151D7A0ED33202F3"]
+			id: "00265FC9530CE190"
+			rewards: [{
+				id: "4658DFB69838A1D1"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1.25d
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29CD3AB930F45723"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1440631416
+									419448180
+									-2121323387
+									-1631230218
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "4889A3493CD2414F"
+			rewards: [
+				{
+					id: "301C20D2933F6DE8"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "1F2CA9A223EE2A17"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "23C24D42B97A4CA9"
+				item: "draconicevolution:item_draconic_damage"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "1023D339D71F6030"
+			rewards: [
+				{
+					id: "5EA07873A39B1D29"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "563B2E1EF791F716"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4C52F192173B64E3"
+				item: "draconicevolution:item_draconic_energy"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "2CE41432A4144425"
+			rewards: [
+				{
+					id: "05F9F03E7B153CCC"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "23AE048B8760E407"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6A6FE1BF4FCD3958"
+				item: "draconicevolution:item_draconic_large_shield_capacity"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "59FDFF23F65C2509"
+			rewards: [
+				{
+					id: "50D41B0670183ACC"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "08355FE63D70740F"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5F66FB7EB7C960DD"
+				item: "draconicevolution:item_draconic_shield_capacity"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "4ED419AE22E92845"
+			rewards: [
+				{
+					id: "39D39B3C5CA13B3B"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "1D5A0D2056775798"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "761D1BB0AE6781C2"
+				item: "draconicevolution:item_draconic_shield_control"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D5FD1605621BCF9"]
+			id: "31897AC8AE197FC4"
+			rewards: [
+				{
+					id: "6449D332E40105F2"
+					item: "bxp2:chaos_crystal_scroll"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "4702508FCB5EEF03"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1.25d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F5A81912C9578EA"
+				item: "draconicevolution:item_draconic_shield_recovery"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0B628713AFDA7137"
+				"4BB2981C2EE1B6F2"
+			]
+			description: [
+				"你只用找到其中的12个即可，你在任务解锁前找到的也算数。"
+				""
+				"如果你有一些实在找不到，可以到大轩商店购买。"
+			]
+			id: "4CEF86AE25957FEF"
+			rewards: [{
+				id: "6BC22C355930FB40"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "2733BA8134996C96"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "bxp2:ender_eyes"
+					}
+				}
+				title: "12只眼睛"
+				type: "item"
+			}]
+			title: "一些眼睛"
+			x: 3.0d
 			y: 11.0d
 		}
 	]

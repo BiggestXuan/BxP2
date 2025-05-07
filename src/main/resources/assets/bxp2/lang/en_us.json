@@ -164,4 +164,59 @@
   "modifier.bxp2.fist_of_absolute_justice": "Fist of Absolute Justice",
   "modifier.bxp2.fist_of_absolute_justice.flavor": "Take this punch!",
   "modifier.bxp2.fist_of_absolute_justice.description": "Gain bonus damage when above 50% health, gain lifesteal when below 50% health"
+,
+  "material.bxp2.poly": "Poly",
+  "fluid.bxp2.molten_poly": "MoltenPoly",
+  "item.bxp2.molten_poly_bucket": "Molten Poly Bucket",
+  "block.bxp2.molten_poly_fluid": "Molten Poly "
+,
+  "material.bxp2.umbra_amethyst_brass": "Umbra Amethyst Brass",
+  "fluid.bxp2.molten_umbra_amethyst_brass": "MoltenUmbra Amethyst Brass",
+  "item.bxp2.molten_umbra_amethyst_brass_bucket": "Molten Umbra Amethyst Brass Bucket",
+  "block.bxp2.molten_umbra_amethyst_brass_fluid": "Molten Umbra Amethyst Brass "
+,
+  "material.bxp2.stainless_steel": "Stainless Steel",
+  "fluid.bxp2.molten_stainless_steel": "MoltenStainless Steel",
+  "item.bxp2.molten_stainless_steel_bucket": "Molten Stainless Steel Bucket",
+  "block.bxp2.molten_stainless_steel_fluid": "Molten Stainless Steel "
+,
+  "material.bxp2.seismite": "Seismite",
+  "fluid.bxp2.molten_seismite": "MoltenSeismite",
+  "item.bxp2.molten_seismite_bucket": "Molten Seismite Bucket",
+  "block.bxp2.molten_seismite_fluid": "Molten Seismite "
+,
+  "material.bxp2.necrosilver": "Necrosilver",
+  "fluid.bxp2.molten_necrosilver": "MoltenNecrosilver",
+  "item.bxp2.molten_necrosilver_bucket": "Molten Necrosilver Bucket",
+  "block.bxp2.molten_necrosilver_fluid": "Molten Necrosilver "
+,
+  "material.bxp2.mana_steel": "Manasteel",
+  "fluid.bxp2.molten_mana_steel": "MoltenManasteel",
+  "item.bxp2.molten_mana_steel_bucket": "Molten Manasteel Bucket",
+  "block.bxp2.molten_mana_steel_fluid": "Molten Manasteel "
+,
+  "material.bxp2.terra_steel": "Terrasteel",
+  "fluid.bxp2.molten_terra_steel": "MoltenTerrasteel",
+  "item.bxp2.molten_terra_steel_bucket": "Molten Terrasteel Bucket",
+  "block.bxp2.molten_terra_steel_fluid": "Molten Terrasteel "
+,
+  "material.bxp2.elementium_steel": "ElementiumSteel",
+  "fluid.bxp2.molten_elementium_steel": "MoltenElementiumSteel",
+  "item.bxp2.molten_elementium_steel_bucket": "Molten ElementiumSteel Bucket",
+  "block.bxp2.molten_elementium_steel_fluid": "Molten ElementiumSteel "
+,
+  "material.bxp2.awakened_draconium": "Awakened Draconium",
+  "fluid.bxp2.molten_awakened_draconium": "MoltenAwakened Draconium",
+  "item.bxp2.molten_awakened_draconium_bucket": "Molten Awakened Draconium Bucket",
+  "block.bxp2.molten_awakened_draconium_fluid": "Molten Awakened Draconium "
+,
+  "material.bxp2.wyvern": "Wyvern",
+  "fluid.bxp2.molten_wyvern_draconium": "MoltenWyvern",
+  "item.bxp2.molten_wyvern_draconium_bucket": "Molten Wyvern Bucket",
+  "block.bxp2.molten_wyvern_draconium_fluid": "Molten Wyvern "
+,
+  "material.bxp2.chaotic": "Chaotic",
+  "fluid.bxp2.molten_chaotic_draconium": "MoltenChaotic",
+  "item.bxp2.molten_chaotic_draconium_bucket": "Molten Chaotic Bucket",
+  "block.bxp2.molten_chaotic_draconium_fluid": "Molten Chaotic "
 }

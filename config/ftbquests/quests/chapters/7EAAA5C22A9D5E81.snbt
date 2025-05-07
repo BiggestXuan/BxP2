@@ -1002,6 +1002,203 @@
 			x: 4.0d
 			y: -2.5d
 		}
+		{
+			id: "7B87C5BDFCDC97C2"
+			rewards: [{
+				id: "1C16CA705C733F74"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26E6731B4B45A257"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7B87C5BDFCDC97C2"]
+			id: "5F37E0419E9A5C95"
+			rewards: [{
+				id: "569DD269A1FE736C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4096E9F2F6242CBA"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5F37E0419E9A5C95"]
+			id: "495DED5590F13EDD"
+			rewards: [{
+				id: "358232906223B62F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "68CCD36777B0008F"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["495DED5590F13EDD"]
+			id: "465B4936471F0EE0"
+			rewards: [{
+				id: "41A2F30843EED090"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6181993331AD5DFD"
+				item: "thermalendergy:endergy_upgrade_1"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["465B4936471F0EE0"]
+			id: "25DDED39DA0E5690"
+			rewards: [{
+				id: "1727D217ED84547F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C235FB0CE048B6E"
+				item: "thermalendergy:endergy_upgrade_2"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["25DDED39DA0E5690"]
+			id: "6360991687F1453E"
+			rewards: [{
+				id: "19A6000E81B64D33"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "33145A37208559DF"
+				item: "thermalendergy:endergy_upgrade_3"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6360991687F1453E"]
+			id: "6AC8F61414B5F1A2"
+			rewards: [{
+				id: "291E0F6DB2236447"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2483343051F6C47D"
+				item: "bxp2:oumang_upgrade"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6AC8F61414B5F1A2"]
+			id: "09BA9DF1FBA1280B"
+			rewards: [{
+				id: "49E8D9C7C2D930DC"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7112CC2FA6CDD55D"
+				item: "bxp2:ou_gold_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["09BA9DF1FBA1280B"]
+			id: "46781D191A3C8C0C"
+			rewards: [{
+				id: "62113B2D56357F08"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "40AD2E846D6968FB"
+				item: "bxp2:ouhuang_upgrade"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.5d
+		}
 	]
 	title: "基础科技"
 }

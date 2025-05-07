@@ -4,7 +4,7 @@
     "item":"draconicevolution:draconium_ingot"
   },
   "temperature": 1000,
-  "time": 5,
+  "time": 100,
   "result":
   {
     "fluid": "bxp2:molten_draconium",

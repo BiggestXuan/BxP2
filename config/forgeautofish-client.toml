@@ -23,7 +23,7 @@
 
 	[forgeautofish.filter]
 		#Toggles the entire item filter
-		all = false
+		all = true
 		#Sets item filter
 		items = ["minecraft:rotten_flesh"]
 		#Puts these items to top of filter.

@@ -1,0 +1,5 @@
+{
+  "color": "202020",
+  "flowing": "tconstruct:fluid/liquid/flowing",
+  "still": "tconstruct:fluid/liquid/still"
+}

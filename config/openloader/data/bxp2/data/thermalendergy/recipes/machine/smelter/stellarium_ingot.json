@@ -1,0 +1,26 @@
+{
+    "type": "thermal:smelter",
+    "ingredients": [
+      {
+        "item":"mekanism:elite_control_circuit"
+      },
+      {
+        "item":"botania:terrasteel_ingot"
+      },
+      {
+        "value": [
+          {
+            "item": "minecraft:clay_ball"
+          }
+        ],
+        "count": 4
+      }
+    ],
+    "result": [
+      {
+        "item": "thermalendergy:stellarium_ingot",
+        "count": 4
+      }
+    ],
+    "energy": 64000
+  }

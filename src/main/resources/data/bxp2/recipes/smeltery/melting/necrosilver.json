@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:necrosilver_ingot"
+  },
+  "temperature": 1000,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_necrosilver",
+    "amount": 90
+  }
+}

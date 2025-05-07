@@ -12,6 +12,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -27,7 +28,7 @@ public class AbstractTiabItemMixin {
     @Inject(method = "useOn",at = @At("HEAD"),cancellable = true)
     public void __inject(UseOnContext context, CallbackInfoReturnable<InteractionResult> cir){
         Level level = context.getLevel();
-        if(!level.isClientSide && Config.difficulty > 1){
+        if(!level.isClientSide && canUse()){
             Player player = context.getPlayer();
             BlockPos pos = context.getClickedPos();
             BlockState blockState = level.getBlockState(pos);
@@ -36,5 +37,15 @@ public class AbstractTiabItemMixin {
                 Utils.sendMessage((ServerPlayer) player,"bxp2.message.tib_pass");
             }
         }
+    }
+
+    @Unique
+    private static boolean canUse(){
+        return switch (Config.difficulty){
+            case 1 -> Config.EASY_TIB_NOLIMIT;
+            case 2 -> Config.NORMAL_TIB_NOLIMIT;
+            case 3 -> Config.HARD_TIB_NOLIMIT;
+            default -> true;
+        };
     }
 }

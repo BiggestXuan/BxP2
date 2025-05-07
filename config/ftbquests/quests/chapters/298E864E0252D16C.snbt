@@ -10,6 +10,11 @@
 	quests: [
 		{
 			dependencies: ["4D84BCC4AEFF84F5"]
+			description: [
+				"整合包强制匠魂生存，你无法使用原版或者其他模组的装备和武器（通用机械、龙之研究除外）"
+				""
+				"如果需要取消这一限制，可以在整合包配置文件中修改。"
+			]
 			icon: "minecraft:oak_log"
 			id: "38024D3B1806219E"
 			rewards: [
@@ -46,7 +51,7 @@
 				type: "item"
 			}]
 			title: "来一些木头吧"
-			x: 2.5d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -76,8 +81,8 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01CD1FE9964B19C1"]
@@ -106,12 +111,12 @@
 				item: "extendedcrafting:handheld_table"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			can_repeat: false
-			dependencies: ["38024D3B1806219E"]
+			dependencies: ["5A65229A1C902A43"]
 			id: "1100D7D8A7A04EF7"
 			rewards: [
 				{
@@ -145,8 +150,8 @@
 				type: "item"
 			}]
 			title: "基础物资！"
-			x: 6.0d
-			y: 0.0d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -183,8 +188,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38024D3B1806219E"]
@@ -206,7 +211,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["02386D8BD969F2E7"]
@@ -234,8 +239,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 4.5d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["02386D8BD969F2E7"]
@@ -263,11 +268,11 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 4.5d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["38024D3B1806219E"]
+			dependencies: ["5A65229A1C902A43"]
 			id: "423E8C03CC52D43E"
 			rewards: [
 				{
@@ -295,8 +300,8 @@
 				type: "item"
 			}]
 			title: "作为燃料非常有用！"
-			x: -3.0d
-			y: 0.0d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -343,8 +348,8 @@
 				}
 			]
 			title: "开始你的第一台炉子吧！"
-			x: -6.0d
-			y: 0.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4D84BCC4AEFF84F5"]
@@ -368,8 +373,8 @@
 				type: "item"
 			}]
 			title: "烧砖"
-			x: -6.0d
-			y: 2.5d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B04535AFED5E6FD"]
@@ -424,8 +429,8 @@
 				}
 			]
 			title: "这里迟早是千层饼"
-			x: -6.0d
-			y: -2.5d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -455,8 +460,8 @@
 				item: { Count: 16, id: "minecraft:copper_ingot" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: -2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -486,8 +491,8 @@
 				item: { Count: 16, id: "minecraft:gold_ingot" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -517,8 +522,8 @@
 				item: { Count: 16, id: "thermal:tin_ingot" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.5d
+			x: 1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -548,8 +553,8 @@
 				item: "thermal:lead_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: -0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -579,8 +584,8 @@
 				item: { Count: 16, id: "thermal:nickel_ingot" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -610,8 +615,8 @@
 				item: { Count: 16, id: "mekanism:ingot_osmium" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.5d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1100D7D8A7A04EF7"]
@@ -641,8 +646,8 @@
 				item: "thermal:silver_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			description: [
@@ -660,7 +665,7 @@
 				""
 				"对于会影响世界生成的模式，即便修改后也不会在现有区块生效，只会在新区块生效。"
 				""
-				"此外，整合包有经济系统，如果你没有选择休闲模式，当你死亡的时候将会掉落你[10~30%]/[20~50%]的余额（随推进增加）在你的死亡地。如果你想购买东西，右击任何含有&3\"轩\"和\"锭\"&r的物品即可打开商店页面。"
+				"此外，整合包有经济系统，如果你没有选择休闲模式，当你死亡的时候将会掉落你[10~30%]/[20~50%]的余额（随推进增加）在你的死亡地。如果你想购买东西，右击任何&3可以在大轩简易能源器中工作的物品&r即可打开商店页面。"
 				""
 				"整合包有多条线路，这些线路大多都是并行的，你可以先挑你熟悉的模组来玩，即使任务还没解锁，但你先完成了任务，当任务前置完成后你依然可以领取奖励。"
 			]
@@ -689,6 +694,20 @@
 					item: "bxp2:discount_card"
 					type: "item"
 				}
+				{
+					id: "175ABD217F0040C4"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					id: "3792D6E08ABBCDDC"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			size: 2.0d
 			subtitle: "别忘了选择模式"
@@ -697,8 +716,8 @@
 				title: "开始大轩之旅！"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["63C2AE01F3D4C943"]
@@ -720,8 +739,8 @@
 				item: "mbd2:bx_unstable_furnace"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["152998D02AB61294"]
@@ -746,8 +765,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.5d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["152998D02AB61294"]
@@ -778,8 +797,56 @@
 				type: "item"
 			}]
 			title: "安静区域"
-			x: 10.5d
-			y: -2.5d
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45B54ECD5CB7F385"]
+			id: "34F3E6028AD4BF2C"
+			tasks: [{
+				id: "6C0AA8B07AD483F7"
+				item: "bxp2:bx_gold_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63C2AE01F3D4C943"]
+			id: "143D68252930C16F"
+			rewards: [{
+				id: "5557B6C14DAFE454"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "40A81368549097CD"
+				item: "bxp2:poly_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["63C2AE01F3D4C943"]
+			id: "0794D4E162A7DB4A"
+			tasks: [{
+				id: "7A9634FB6DC0FC87"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
 		}
 	]
 	title: "从这里开始吧！"

@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material",
   "ingredient": {
-    "item": "draconicevolution:awakened_draconium_ingot"
+    "item": "bxp2:draconium_ingot"
   },
   "value": 1,
   "needed": 1,

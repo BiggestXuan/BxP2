@@ -212,7 +212,7 @@
 					Count: 1
 					id: "bxp2:money"
 					tag: {
-						money: 66.66d
+						money: 6.66d
 					}
 				}
 				type: "item"
@@ -270,6 +270,18 @@
 					count: 6L
 					id: "57EFF8490C9E2C03"
 					item: { Count: 6, id: "bxp2:yuluo_1" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1BEBC6B9BB83F2A7"
+					item: { Count: 6, id: "bxp2:abunana" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5759D0719C8D09BC"
+					item: { Count: 6, id: "bxp2:klpzm" }
 					type: "item"
 				}
 			]

@@ -1,0 +1,19 @@
+{
+  "stats":  {
+      "tconstruct:head": {
+        "durability": 1100,
+        "mining_speed": 7.5,
+        "mining_tier": "allthemodium:allthemodium",
+        "melee_attack": 5.3
+      },
+      "tconstruct:handle": {
+        "durability": 0.2,
+        "mining_speed": 0.1,
+        "melee_speed": 0.1,
+        "melee_damage": 0.12
+      },
+      "tconstruct:extra": {
+        "durability": 1000
+      }
+    }
+}

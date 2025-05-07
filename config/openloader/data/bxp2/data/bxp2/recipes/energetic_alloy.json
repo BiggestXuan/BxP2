@@ -1,0 +1,36 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"minecraft:gold_ingot"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "item": "minecraft:glowstone_dust"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:energetic_alloy_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 3500
+}

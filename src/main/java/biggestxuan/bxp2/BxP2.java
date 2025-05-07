@@ -10,9 +10,13 @@ import biggestxuan.bxp2.integration.Mekanism.BxPInfuseTypes;
 import biggestxuan.bxp2.integration.Mekanism.BxPMekFluids;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
 import biggestxuan.bxp2.integration.Thinker.Modifiers.BxPModifiers;
+import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.network.PacketHandler;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -40,13 +44,15 @@ import javax.annotation.Nullable;
 @Mod(BxP2.MODID)
 public class BxP2
 {
-
+    public static boolean devMode = false;
+    @SuppressWarnings("all")
+    public static String TITLE = "BxP2 - " + BxP2.VERSION + (devMode ? "-DevMode" : "");
     public static final String MODID = "bxp2";
-    public static final String VERSION = "0.0.23";
+    public static final String VERSION = "Beta-0.4.0";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
-    public static boolean devMode = true;
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static boolean enableCycleRecipe = false;
 
     public BxP2(FMLJavaModLoadingContext context)
     {
@@ -70,6 +76,7 @@ public class BxP2
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(PacketHandler::init);
+        TinkersSurvival.init();
     }
 
     @SubscribeEvent
@@ -90,8 +97,12 @@ public class BxP2
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // LOGGER.info("HELLO FROM CLIENT SETUP");
-            // LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            Minecraft.getInstance().execute(() -> {
+                Minecraft.getInstance().getWindow().setTitle(TITLE);
+            });
+            //event.enqueueWork(() -> {
+            //    ItemProperties.register(BxPItems.ENCH_SDBZ.get(), MODRL("glint"), (stack, level, entity, seed) -> 1.0f);
+            //});
         }
     }
 
@@ -164,6 +175,13 @@ public class BxP2
     @Nullable
     public static ItemStack getStack(String name){
         return getStack(MODRL(name));
+    }
+
+    public static ItemStack getTconstructCreative(String s){
+        ItemStack stack = getStack("tconstruct:creative_slot");
+        CompoundTag tag = stack.getOrCreateTag();
+        tag.putString("slot",s);
+        return stack;
     }
 
     public static Ingredient getIngredient(String name){

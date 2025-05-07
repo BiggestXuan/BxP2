@@ -1,5 +1,5 @@
-import BxP2.CrTManager;
-import BxP2.CycleRecipe;
+import mods.bxp2.CrTManager;
+import mods.bxp2.CycleRecipe;
 
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
@@ -44,6 +44,10 @@ public function removeInfusionRecipe(name as string) as void{
 
 public function removeNuclearRecipe(name as string) as void{
     <recipetype:mekanism:nucleosynthesizing>.removeByName(name);
+}
+
+public function nuclearRecipe(input as IIngredient,output as IItemStack,antimatter as int,time as int) as void{
+    <recipetype:mekanism:nucleosynthesizing>.addRecipe(CrTManager.getRecipeName(output,"bxp2"),ItemStackIngredient.from(input), (<gas:mekanism:antimatter> * antimatter),output,time);
 }
 
 public function reactionRecipe(fluid as IFluidStack,gas as GasStack,item as IIngredient,output as IItemStack,outGas as GasStack,time as int) as void {
@@ -141,7 +145,7 @@ public function nuclearRecipeModify() as void{
 public function mekBasicEnergy() as void{
     removeReactionRecipe("mekanism:reaction/substrate/water_hydrogen");
     reactionRecipe(<fluid:minecraft:water> * 1000,<gas:mekanism:oxygen> * 1000,<item:minecraft:paper>,<item:mekanism:substrate>,<gas:bxp2:carbon_dioxide> * 500,10);
-    chemicalInfusionRecipe(<gas:bxp2:carbon_dioxide>,<gas:mekanism:hydrogen> * 4,<gas:bxp2:methane>);
+    chemicalInfusionRecipe(<gas:bxp2:carbon_dioxide>,<gas:mekanism:hydrogen> * 2,<gas:bxp2:methane>);
     reactionRecipe(<fluid:mekanism:oxygen> * 100,<gas:bxp2:methane> * 200,<item:mekanism:bio_fuel>*2,<item:mekanism:substrate>*2,<gas:mekanism:ethene> * 200,15);
     separatingRecipe(<fluid:mekanism:ethene>,<gas:bxp2:acetylene>,<gas:mekanism:hydrogen>);
     chemicalInfusionRecipe(<gas:bxp2:acetylene>,<gas:mekanismscience:nitrogen>,<gas:bxp2:hydrogen_cyanide> * 2);
@@ -149,6 +153,11 @@ public function mekBasicEnergy() as void{
     purifyingRecipe(<item:minecraft:raw_copper>,<gas:mekanism:hydrogen_chloride>*5,<item:bxp2:copper_chloride>);
     chemicalInfusionRecipe(<gas:bxp2:acrylonitrile>,<gas:mekanism:hydrogen> * 4,<gas:bxp2:propylamine>);
 }
+
+public function easyEnergy() as void{
+    chemicalInfusionRecipe(<gas:bxp2:acetylene>,<gas:mekanism:hydrogen> * 2,<gas:bxp2:propylamine>);
+}
+
 
 public function diamondInfusionModify() as void{
     removeInfusionConversion("diamond/from_dust");
@@ -202,10 +211,20 @@ if(difficulty() != 1){
     addShaplessRecipe([cc3,<item:bxp2:bx_ingot>],cc3*mekCount(24),"mek");
 }
 
+var rd = [
+    <item:mekanism:pellet_polonium>, <item:mekanism:pellet_plutonium>, <item:mekanismscience:pellet_neutron_source>
+];
+
+for i in 0 .. rd.length{
+    <tag:items:bxp2:radiation_pellet>.add(rd[i]);
+}
+
 if(difficulty() == 1){
     furnaceRecipe(<item:biggerreactors:blutonium_ingot>,<item:mekanism:pellet_plutonium>);
     furnaceRecipe(<item:biggerreactors:cyanite_ingot>,<item:mekanism:pellet_polonium>);
+    evaporatingRecipe(<fluid:mekanism:uranium_oxide>,<fluid:bxp2:condense_uns>,"bxp2");
 }
+
 if(CrTManager.isDevMode()){
     //combineCycleRecipe(<item:minecraft:diamond>,[<item:minecraft:stone>,<item:minecraft:dirt>,<item:minecraft:iron_ingot>,<item:minecraft:bedrock>,<item:minecraft:obsidian>],<item:minecraft:emerald>,2,"test");
     //combineCycleRecipe(<item:minecraft:diamond>,[<item:minecraft:dirt>,<item:minecraft:stone>,<item:minecraft:iron_ingot>,<item:minecraft:obsidian>,<item:minecraft:bedrock>],<item:minecraft:nether_star>,2,"test2");
@@ -219,7 +238,7 @@ removeCompressRecipe("mekanism_extras:processing/dust_radiance/from_glowstone");
 reactionRecipe(<fluid:tconstruct:molten_netherite> * 90,<gas:mekanism:antimatter>,<tag:items:bxp2:radiation_pellet>,<item:mekanism:reprocessed_fissile_fragment>,<gas:mekanism_extras:molten_thermonuclear> * 600,10);
 
 compressRecipe(<item:mekanism_extras:enriched_radiance>,<gas:mekanism_extras:molten_thermonuclear>,<item:mekanism_extras:enriched_thermonuclear>);
-compressRecipe(<item:minecraft:glowstone_dust>,<gas:bxp2:condense_uns>,<item:mekanism_extras:dust_radiance>);
+compressRecipe(<item:bxp2:oumang_ingot>,<gas:bxp2:condense_uns>,<item:mekanism_extras:dust_radiance>);
 
 enrichRecipe(bsi,<item:bxp2:enriched_bx>);
 enrichRecipe(<item:minecraft:ender_pearl>,<item:enderio:pulsating_alloy_nugget> * mekCount(6));
@@ -235,6 +254,7 @@ infusionRecipe(<item:mekanism:ingot_osmium>,<infuse_type:bxp2:bx> * 10,cc1);
 infusionRecipe(<item:mekanism:ingot_steel>,<infuse_type:mekanism:redstone> * 10,al1);
 crushRecipe(<item:minecraft:nether_star>,<item:mysticalagradditions:nether_star_shard>*3);
 <recipetype:mekanism:combining>.addRecipe(CrTManager.getRecipeName(al3,"manual_recipe_mek"),al2 * mekCount(24),<item:bxp2:bx_ingot>,al3 * mekCount(24));
+nuclearRecipe(<item:bxp2:oumang_ingot>,<item:bxp2:ou_gold_ingot>,30,600);
 
 modifyCraftRecipe([
     [iron,rs,iron],
@@ -273,16 +293,14 @@ addCraftRecipe([
     [bsi,et,bsi]
 ],<item:mbd2:bx_furnace>,"mek");
 
-
-
 for i in CrTManager.getAllCycleRecipe(){
-    combineCycleRecipe(i);
+    //combineCycleRecipe(i);
 }
 
 for i in CrTManager.getAllMekFactory(){
     removeCraftRecipe(i);
 }
-
+/*
 public function combineCycleRecipe(recipe as CycleRecipe) as void{
     var name = recipe.getName();
     var input = recipe.getInput();
@@ -306,13 +324,15 @@ public function combineCycleRecipe(recipe as CycleRecipe) as void{
         }
     }
 }
+*/
 var eoutput = <item:bxp2:bx_ingot> * 9;
+var sx = <item:bxp2:sx_ingot>;
 
-mods.extendedcrafting.TableCrafting.addShaped("a0ed275c-c5e8-4a54-8cfb-27b29f996ed7", 0, eoutput.withTag({bxp_cycle:{l:0,f:0}}), [
+mods.extendedcrafting.TableCrafting.addShaped("a0ed275c-c5e8-4a54-8cfb-27b29f996ed7", 0, eoutput, [
 	[<item:mekanism:dust_lithium>, <item:mekanism:alloy_reinforced>, <item:mekanism:hdpe_sheet>, <item:mekanism:alloy_reinforced>, <item:mekanism:dust_lithium>], 
-	[<item:mekanism:elite_control_circuit>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:mekanism:elite_control_circuit>], 
-	[<item:mekanism:hdpe_sheet>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:mekanism:hdpe_sheet>], 
-	[<item:mekanism:elite_control_circuit>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:bxp2:bx_unstable_ingot>, <item:mekanism:elite_control_circuit>], 
+	[<item:mekanism:elite_control_circuit>, sx,sx,sx, <item:mekanism:elite_control_circuit>], 
+	[<item:mekanism:hdpe_sheet>, sx,<item:bxp2:poly_ingot>,sx, <item:mekanism:hdpe_sheet>], 
+	[<item:mekanism:elite_control_circuit>, sx,sx,sx, <item:mekanism:elite_control_circuit>], 
 	[<item:mekanism:dust_lithium>, <item:mekanism:alloy_reinforced>, <item:mekanism:hdpe_sheet>, <item:mekanism:alloy_reinforced>, <item:mekanism:dust_lithium>]
 ]);
 
@@ -372,3 +392,5 @@ for i in 0 .. installer.length{
         );
     }
 }
+
+reactionRecipe(<fluid:minecraft:water> * 100,<gas:bxp2:propylamine> * 100,<item:minecraft:nether_star>,<item:bxp2:oumang_ingot>,<gas:mekanism:ethene>*100,10);

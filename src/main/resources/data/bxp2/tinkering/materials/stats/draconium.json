@@ -25,8 +25,8 @@
     "tconstruct:head": {
       "durability": 775,
       "mining_speed": 4.5,
-      "mining_tier": "minecraft:iron",
-      "melee_attack": 4.2
+      "mining_tier": "minecraft:diamond",
+      "melee_attack": 4.0
     },
     "tconstruct:plating_helmet": {
       "armor": 3.5,

@@ -21,7 +21,7 @@
         "tag": "forge:gems/diamond"
       },
       {
-        "tag": "bxp2:radiation_pellet"
+        "item": "mekanism:ultimate_control_circuit"
       }
     ],
     "result": {

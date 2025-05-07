@@ -8,6 +8,6 @@
     "fluid": "bxp2:molten_awakened_draconium",
     "amount": 90
   },
-  "result": "draconicevolution:awakened_draconium_ingot",
+  "result": "bxp2:draconium_ingot",
   "cooling_time": 60
 }

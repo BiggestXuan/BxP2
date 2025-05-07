@@ -26,9 +26,9 @@
 		},
 		// List of heat source blocks used under Thermo Generator.
 		"heat_blocks": {
-			"minecraft:magma_block": 800,
+			"minecraft:lava": 1000,
 			"powah:blazing_crystal_block": 2800,
-			"minecraft:lava": 1000
+			"minecraft:magma_block": 800
 		},
 		// Energy produced per fuel tick in the Furnator.
 		"energy_per_fuel_tick": 30,
@@ -100,31 +100,31 @@
 		},
 		"reactors": {
 			"capacities": {
-				"starter": 250000,
-				"basic": 1000000,
-				"hardened": 2500000,
-				"blazing": 10000000,
-				"niotic": 25000000,
-				"spirited": 100000000,
-				"nitro": 500000000
+				"starter": 500000,
+				"basic": 1500000,
+				"hardened": 4000000,
+				"blazing": 15000000,
+				"niotic": 30000000,
+				"spirited": 200000000,
+				"nitro": 1000000000
 			},
 			"transfer_rates": {
-				"starter": 1000,
-				"basic": 4000,
-				"hardened": 10000,
-				"blazing": 40000,
-				"niotic": 100000,
-				"spirited": 400000,
-				"nitro": 2000000
+				"starter": 3000,
+				"basic": 10000,
+				"hardened": 25000,
+				"blazing": 70000,
+				"niotic": 250000,
+				"spirited": 600000,
+				"nitro": 5000000
 			},
 			"generation_rates": {
-				"starter": 250,
-				"basic": 1000,
-				"hardened": 2500,
-				"blazing": 10000,
-				"niotic": 25000,
-				"spirited": 100000,
-				"nitro": 500000
+				"starter": 450,
+				"basic": 1750,
+				"hardened": 3500,
+				"blazing": 15000,
+				"niotic": 40000,
+				"spirited": 150000,
+				"nitro": 1000000
 			}
 		},
 		"solar_panels": {

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "botania:elementium_ingot"
+  },
+  "value": 1,
+  "needed": 1,
+  "material":"bxp2:elementium_steel"
+}

@@ -1,0 +1,46 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      },
+      {
+        "leval": 1,
+        "name": "bxp2:evolution"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:chronodragon_fury"
+      },
+      {
+        "level": 1,
+        "name": "tinkers_advanced:thermal_slash"
+      },
+      {
+        "level": 1,
+        "name": "tinkers_advanced:annihilate"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      },
+      {
+        "leval": 1,
+        "name": "bxp2:evolution"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      },
+      {
+        "leval": 1,
+        "name": "bxp2:evolution"
+      }
+    ]
+  }
+}

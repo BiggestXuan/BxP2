@@ -1,0 +1,28 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"minecraft:redstone_block"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "item": "expatternprovider:silicon_block"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "enderio:redstone_alloy_block",
+      "count": 1
+    }
+  ],
+  "energy": 80000
+}

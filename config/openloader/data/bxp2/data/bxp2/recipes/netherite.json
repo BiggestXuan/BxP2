@@ -1,0 +1,13 @@
+{
+  "type": "thermal:crucible",
+  "ingredient": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": [
+    {
+      "fluid": "tconstruct:molten_netherite",
+      "amount": 90
+    }
+  ],
+  "energy": 50000
+}

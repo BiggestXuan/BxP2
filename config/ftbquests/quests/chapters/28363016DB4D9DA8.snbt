@@ -1,0 +1,278 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "28363016DB4D9DA8"
+	group: "455ED0AB8CCEDEB5"
+	icon: "brewinandchewin:flaxen_cheese_wedge"
+	id: "28363016DB4D9DA8"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "07ED883741FBF571"
+			tasks: [{
+				id: "35139378310D3FC8"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "6A591D68A0EDB124"
+			tasks: [{
+				id: "5758FCFED02D8D43"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"07ED883741FBF571"
+				"6A591D68A0EDB124"
+			]
+			id: "1D26D561CCF33C05"
+			tasks: [{
+				id: "676A6F631221300B"
+				item: "rats:cheese"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1D26D561CCF33C05"]
+			id: "18468DE7BFC97AF3"
+			tasks: [{
+				advancement: "rats:tame_rat"
+				criterion: ""
+				id: "0C6E73AECAE7220D"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18468DE7BFC97AF3"]
+			id: "56DFB5C6D93E7CD0"
+			tasks: [{
+				id: "74159A733AF2F98F"
+				item: "rats:rat_upgrade_basic"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56DFB5C6D93E7CD0"]
+			id: "2CC76D1A1A2A4F76"
+			tasks: [{
+				id: "2D8054130789F799"
+				item: "rats:rat_upgrade_warrior"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["56DFB5C6D93E7CD0"]
+			id: "0EFE1A3794145016"
+			tasks: [{
+				id: "6AB9C00D793189C0"
+				item: "rats:rat_upgrade_remedy"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56DFB5C6D93E7CD0"]
+			id: "45DAC8511A0309D2"
+			tasks: [{
+				id: "20A5A3EEC7BE6F6A"
+				item: "rats:rat_upgrade_tick_accelerator"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45DAC8511A0309D2"]
+			description: ["何尝不是加速火把？"]
+			id: "5D98A0CA3E197A24"
+			tasks: [{
+				id: "13DB5127DE982B89"
+				item: "rats:rat_upgrade_time_manipulator"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51880249A3AB7081"]
+			id: "477467DA569736E0"
+			tasks: [{
+				id: "029F9EA8A6198E0C"
+				item: "rats:rat_upgrade_nonbeliever"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2CC76D1A1A2A4F76"]
+			id: "51880249A3AB7081"
+			tasks: [{
+				id: "75B7315F969F31C2"
+				item: "rats:rat_upgrade_god"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			description: ["瘟疫医生被雷击后，或使用瘟疫古卷生成黑死神。"]
+			id: "166164F1DD53FAEC"
+			tasks: [{
+				id: "2C887C7AB8C396D0"
+				item: {
+					Count: 1
+					id: "rats:plague_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			id: "04C35B796E4EE5B3"
+			tasks: [{
+				id: "1AA56AF8621E5C06"
+				item: "rats:trash_can"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04C35B796E4EE5B3"]
+			description: ["右击一下老鼠也许会有神奇的事情发生。"]
+			id: "626F04AA1D77CA48"
+			tasks: [{
+				id: "308405AFEDCB4809"
+				item: "rats:filth_corruption"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"626F04AA1D77CA48"
+				"166164F1DD53FAEC"
+			]
+			dependency_requirement: "one_completed"
+			description: ["进入鼠西洲的世界吧！"]
+			id: "62DB227C75A54957"
+			tasks: [{
+				count: 9L
+				id: "21081AD6D749C05C"
+				item: { Count: 9, id: "rats:token_piece" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62DB227C75A54957"]
+			description: ["类似铁傀儡摆放方式，只是中间的方块为战机核心，其他用大理石块即可。"]
+			icon: "rats:marbled_cheese_rat_head"
+			id: "7A20CF4C63531C89"
+			tasks: [
+				{
+					id: "40CED1D21914FEAA"
+					item: "rats:arcane_technology"
+					type: "item"
+				}
+				{
+					id: "47E28967577255BA"
+					item: "rats:marbled_cheese_golem_core"
+					type: "item"
+				}
+				{
+					id: "70DEF558177CDDA3"
+					item: "rats:marbled_cheese_rat_head"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["62DB227C75A54957"]
+			description: ["对野生老鼠丢出这个瓶子！"]
+			icon: "rats:psionic_rat_brain"
+			id: "57C7F84BBB535301"
+			tasks: [
+				{
+					id: "483C358591F93E91"
+					item: "rats:psionic_rat_brain"
+					type: "item"
+				}
+				{
+					id: "7516E6743CF27550"
+					item: "rats:vial_of_sentience"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62DB227C75A54957"]
+			description: ["拉响警报！"]
+			id: "5798484D611F43EE"
+			tasks: [{
+				id: "544D805A614F35FF"
+				item: "rats:biplane_wing"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["62DB227C75A54957"]
+			description: ["找到天空的那艘幽灵船。"]
+			id: "5496F23535223B73"
+			tasks: [{
+				id: "78BA5A8D7F43E7B9"
+				item: "rats:dutchrat_wheel"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5496F23535223B73"
+				"5798484D611F43EE"
+				"7A20CF4C63531C89"
+				"57C7F84BBB535301"
+			]
+			id: "2B45FB41FBADF019"
+			tasks: [{
+				id: "52E916B5B284C9B9"
+				item: "rats:idol_of_ratlantis"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+	]
+	title: "鼠鼠我呀"
+}

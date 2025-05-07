@@ -1982,6 +1982,27 @@
 			x: -3.0d
 			y: -0.5d
 		}
+		{
+			id: "6CA04E7CC0E33248"
+			rewards: [{
+				id: "6CDC7C3ECA88BE50"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "60476F9190F7F20C"
+				item: "mbd2:bx_simple_power"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
 	]
 	title: "产能必备"
 }

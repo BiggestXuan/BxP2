@@ -28,7 +28,7 @@ public class LivingTickEvent {
             if(instance != null && world.getDayTime() % 100 == 0){
                 living.hurt(world.damageSources().outOfBorder(),living.getMaxHealth() * (1 + instance.getAmplifier()) * 0.02F);
             }
-            if(world.getDayTime() % 80 == 0){
+            if(world.getDayTime() % 40 == 0){
                 int guisuo_count = living.getPersistentData().getInt("guisuo_count");
                 if(guisuo_count > 0){
                     living.getPersistentData().putInt("guisuo_count", guisuo_count - 1);

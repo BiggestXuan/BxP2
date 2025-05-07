@@ -1,0 +1,25 @@
+{
+    "type": "botania:runic_altar",
+    "ingredients": [
+      {
+        "tag": "botania:mana_dusts"
+      },
+      {
+        "tag": "botania:manasteel_ingots"
+      },
+      {
+        "item": "minecraft:magma_block"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "minecraft:torch"
+      }
+    ],
+    "mana": 5200,
+    "output": {
+      "count": 2,
+      "item": "botania:rune_fire"
+    }
+  }

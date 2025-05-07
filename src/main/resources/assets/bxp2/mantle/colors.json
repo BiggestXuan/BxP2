@@ -12,15 +12,32 @@
     "chronodragon_fury": "#F2C223",
     "guisuo_reckoning": "#E16E0A",
     "defense_breaker": "#5156E1",
-    "fist_of_absolute_justice": "#FCA469"
-
+    "fist_of_absolute_justice": "#FCA469",
+    "money_devourer": "#00FA9A",
+    "mana_repair": "#4A7BB7",
+    "terra": "#69E561",
+    "evolution": "#F40B5D",
+    "dragon_damage": "#1D428F",
+    "wyvern_damage": "#36134A",
+    "awakened_damage": "#B12400",
+    "chaotic_damage": "#140808"
   },
   "material.bxp2": {
     "bx_unstable": "#5AE4E6",
     "bx": "#AEC936",
     "ench_bx": "#00994C",
     "super_bx": "#3C52E2",
-    "draconium": "#8D16D2",
-    "awakened_draconium": "#E99A33"
+    "draconium": "#3560B9",
+    "awakened_draconium": "#E99A33",
+    "poly": "#FFC770",
+    "umbra_amethyst_brass": "#5E3A6B",
+    "stainless_steel": "#202020",
+    "seismite": "#3A5F8A",
+    "necrosilver": "#7FFFD4",
+    "mana_steel": "#4A7BB7",
+    "terra_steel": "#69E561",
+    "elementium_steel": "#C342A6",
+    "wyvern": "#7612B0",
+    "chaotic": "#120430"
   }
 }

@@ -26,4 +26,6 @@ public interface IBxPCapability extends INBTSerializable<CompoundTag> {
     void addDragonCount();
     float getMoney();
     void setMoney(float money);
+    int getBuyCreativeCount();
+    void setBuyCreativeCount(int count);
 }

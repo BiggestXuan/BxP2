@@ -2,9 +2,13 @@ package biggestxuan.bxp2.items;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.blocks.BxPBlocks;
+import biggestxuan.bxp2.integration.DraconicEvolution.BreakShieldItem;
+import biggestxuan.bxp2.integration.DraconicEvolution.DamageItem;
+import biggestxuan.bxp2.integration.DraconicEvolution.KillCrystalItem;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.ChaosProtectItem;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.SunProtectItem;
+import biggestxuan.bxp2.integration.Thermal.UpgradeItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -27,24 +31,53 @@ import java.util.List;
 public class BxPItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BxP2.MODID);
     public static final RegistryObject<Item> CAIGENGZI = ITEMS.register("caigengzi",() -> new BxPItem.BxPFoodItem(2,0.2F));
-    public static final RegistryObject<Item> BX_UNSTABLE_INGOT = ITEMS.register("bx_unstable_ingot",() -> new BxPItem(1));
+    public static final RegistryObject<Item> BX_UNSTABLE_INGOT = ITEMS.register("bx_unstable_ingot",() -> new BxPItem(4));
     public static final RegistryObject<Item> BX_INGOT = ITEMS.register("bx_ingot", () -> new BXCycleBaseItem(){
         @Override
         public int getBXValue(ItemStack stack){
-            return 40;
+            return 75;
         }
     });
     public static final RegistryObject<Item> BX_ENCH_INGOT = ITEMS.register("bx_ench_ingot",() -> new BxPItem(Rarity.RARE){
         public int getBXValue(ItemStack stack) {
-            return 450;
+            return 900;
         }
     });
     public static final RegistryObject<Item> BX_SUPER_INGOT = ITEMS.register("bx_super_ingot",() -> new BxPItem(Rarity.EPIC){
         public int getBXValue(ItemStack stack) {
-            return 5000;
+            return 30000;
         }
     });
-    public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(8));
+    public static final RegistryObject<Item> SX_INGOT = ITEMS.register("sx_ingot",() -> new BxPItem(25));
+    public static final RegistryObject<Item> SDBZ = ITEMS.register("sdbz",() -> new BxPItem(160));
+    public static final RegistryObject<Item> ENCH_SDBZ = ITEMS.register("ench_sdbz",() -> new BxPItem(1500){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
+    public static final RegistryObject<Item> OUMANG_INGOT = ITEMS.register("oumang_ingot",() -> new BxPItem(42));
+    public static final RegistryObject<Item> OUHUANG_INGOT = ITEMS.register("ouhuang_ingot",() -> new BxPItem(400){
+    @Override
+    public boolean isFoil(ItemStack stack) {
+        return true;
+    }
+    });
+    public static final RegistryObject<Item> OU_GOLD_INGOT = ITEMS.register("ou_gold_ingot",() -> new BxPItem(100));
+    public static final RegistryObject<Item> CAI_SEED = ITEMS.register("cai_seed",() -> new BxPItem(5));
+    public static final RegistryObject<Item> ENCH_CAI_SEED = ITEMS.register("ench_cai_seed",() -> new BxPItem(330){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
+    public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(1){
+        @Override
+        public void appendHoverText(ItemStack p_41421_, @org.jetbrains.annotations.Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
+            super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+            p_41423_.add(BxP2.tr("tooltip.bx_gold_ingot"));
+        }
+    });
     public static final RegistryObject<Item> DIFFICULTY_CHANGE = ITEMS.register("difficulty_change",DifficultyChangeItem::new);
     public static final RegistryObject<Item> ENRICHED_BX = ITEMS.register("enriched_bx",BxPItem::new);
     public static final RegistryObject<Item> COPPER_CHLORIDE = ITEMS.register("copper_chloride", BxPItem::new);
@@ -55,6 +88,30 @@ public class BxPItems {
     public static final RegistryObject<Item> MONEY = ITEMS.register("money", MoneyItem::new);
     public static final RegistryObject<Item> MEANING_LESS = ITEMS.register("meaning_less", BxPItem::new);
     public static final RegistryObject<Item> DISCOUNT_CARD = ITEMS.register("discount_card", () -> new DiscountCardItem(0.7F));
+    public static final RegistryObject<Item> SHIELD_SCROLL = ITEMS.register("chaos_shield_scroll", BreakShieldItem::new);
+    public static final RegistryObject<Item> DRACONIC_HEALTH_SCROLL = ITEMS.register("chaos_health_scroll", DamageItem::new);
+    public static final RegistryObject<Item> CRYSTAL_SCROLL = ITEMS.register("chaos_crystal_scroll", KillCrystalItem::new);
+    public static final RegistryObject<Item> OUMANG_UPGRADE = ITEMS.register("oumang_upgrade",() -> new UpgradeItem(32f));
+    public static final RegistryObject<Item> OU_GOLD_UPGRADE = ITEMS.register("ou_gold_upgrade",() -> new UpgradeItem(48f));
+    public static final RegistryObject<Item> OU_HUANG_UPGRADE = ITEMS.register("ouhuang_upgrade",() -> new UpgradeItem(128f));
+    public static final RegistryObject<Item> POLY_INGOT = ITEMS.register("poly_ingot",() -> new BxPItem(37){
+        @Override
+        public Rarity getRarity(ItemStack p_41461_) {
+            return Rarity.UNCOMMON;
+        }
+    });
+    public static final RegistryObject<Item> UmbraAmethystBrass = ITEMS.register("umbra_amethyst_brass_ingot",() -> new BxPItem(20));
+    public static final RegistryObject<Item> STAINLESS_STEEL_INGOT = ITEMS.register("stainless_steel_ingot",() -> new BxPItem(9));
+    public static final RegistryObject<Item> Seismite_INGOT = ITEMS.register("seismite_ingot",() -> new BxPItem(26));
+    public static final RegistryObject<Item> Necrosilver_INGOT = ITEMS.register("necrosilver_ingot",() -> new BxPItem(7));
+    public static final RegistryObject<Item> WYVERN_INGOT = ITEMS.register("wyvern_ingot",BxPItem::new);
+    public static final RegistryObject<Item> DRACONIUM_INGOT = ITEMS.register("draconium_ingot",BxPItem::new);
+    public static final RegistryObject<Item> CHAOTIC_INGOT = ITEMS.register("chaotic_ingot",() -> new BxPItem(){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
 
     public static final RegistryObject<Item> YUNXI = registryPlayerModelBlock("yunxi", BxPBlocks.YUNXI);
     public static final RegistryObject<Item> BIGGEST_XUAN = registryPlayerModelBlock("biggest_xuan", BxPBlocks.BIGGEST_XUAN);
@@ -65,6 +122,9 @@ public class BxPItems {
     public static final RegistryObject<Item> SDXHOP = registryPlayerModelBlock("sdxhop", BxPBlocks.SDXHOP);
     public static final RegistryObject<Item> MCAIGENGZI = registryPlayerModelBlock("mcaigengzi", BxPBlocks.CAIGENGZI);
     public static final RegistryObject<Item> YULUO_1 = registryPlayerModelBlock("yuluo_1", BxPBlocks.YULUO_1);
+    public static final RegistryObject<Item> ABUNANA = registryPlayerModelBlock("abunana", BxPBlocks.ABUNANA);
+    public static final RegistryObject<Item> KLPZM = registryPlayerModelBlock("klpzm", BxPBlocks.KLPZM);
+   // public static final RegistryObject<Item> CLSHERLOCK = registryPlayerModelBlock("clsherlock", BxPBlocks.CLSHERLOCK);
 
     private static RegistryObject<Item> registryBlock(String name, RegistryObject<Block> block){
         return ITEMS.register(name,() -> new BlockItem(block.get(),new Item.Properties()));

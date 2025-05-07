@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"botania:terrasteel_ingot"
+  },
+  "temperature": 1000,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_terra_steel",
+    "amount": 90
+  }
+}

@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.utils;
 
 import biggestxuan.bxp2.api.OnlyDev;
+import vazkii.botania.common.item.equipment.tool.elementium.ElementiumSwordItem;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,12 +17,12 @@ import java.util.List;
 
 @OnlyDev
 public class GenTinkerFile {
-    public static final String ID = "awakened_draconium"; //
-    public static final String ITEM = "draconicevolution:awakened_draconium_ingot";
-    public static final String FLUID = "bxp2:molten_awakened_draconium";
-    public static final String CN = "神龙"; //
-    public static final String EN = "Awakened Draconium"; //
-    public static final String COLOR = "E99A33";
+    public static final String ID = "chaotic"; //
+    public static final String ITEM = "bxp2:chaotic_ingot";
+    public static final String FLUID = "bxp2:molten_chaotic_draconium";
+    public static final String CN = "混沌"; //
+    public static final String EN = "Chaotic"; //
+    public static final String COLOR = "120430";
     public static final String path1 = "src/main/resources/data/bxp2/tinkering/materials/";
     public static final String path2 = "src/main/resources/data/bxp2/recipes/materials/";
     public static final String path3 = "src/main/resources/data/bxp2/recipes/smeltery/";
@@ -136,7 +137,7 @@ public class GenTinkerFile {
                 "    \"item\":\""+ITEM+"\"\n" +
                 "  },\n" +
                 "  \"temperature\": 1000,\n" +
-                "  \"time\": 5,\n" +
+                "  \"time\": 150,\n" +
                 "  \"result\":\n" +
                 "  {\n" +
                 "    \"fluid\": \""+FLUID+"\",\n" +

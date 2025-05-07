@@ -155,9 +155,9 @@
 			id: "23F8CD8249AD7499"
 			size: 2.0d
 			tasks: [{
-				count: 9L
+				count: 12L
 				id: "260A55D8F14949AC"
-				item: { Count: 9, id: "extendedcrafting:the_ultimate_ingot" }
+				item: "extendedcrafting:the_ultimate_ingot"
 				type: "item"
 			}]
 			x: -6.0d

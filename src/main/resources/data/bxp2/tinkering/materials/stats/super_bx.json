@@ -25,7 +25,7 @@
     "tconstruct:head": {
       "durability": 8888,
       "mining_speed": 8.88,
-      "mining_tier": "minecraft:netherite",
+      "mining_tier": "allthemodium:unobtainium",
       "melee_attack": 88.8
     },
     "tconstruct:plating_helmet": {

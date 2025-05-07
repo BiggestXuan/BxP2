@@ -19,6 +19,7 @@ public class ClientPacketHandler {
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
                 cap.setMoney(packet.getMoney());
                 cap.setPhase(packet.getPhase());
+                cap.setBuyCreativeCount(packet.getCreativeCount());
             });
         }
     }

@@ -16,6 +16,7 @@ public class BxPCapability implements IBxPCapability{
     private int witherCount = 0;
     private int dragonCount = 0;
     private float money = 0;
+    private int creativeCount = 0;
 
     @Override
     public void setPhase(int phase) {
@@ -97,6 +98,16 @@ public class BxPCapability implements IBxPCapability{
         this.money = money;
     }
 
+    @Override
+    public int getBuyCreativeCount() {
+        return creativeCount;
+    }
+
+    @Override
+    public void setBuyCreativeCount(int count) {
+        creativeCount = count;
+    }
+
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();
         tag.putInt("phase", phase);
@@ -107,6 +118,7 @@ public class BxPCapability implements IBxPCapability{
         tag.putInt("witherCount",witherCount);
         tag.putInt("dragonCount",dragonCount);
         tag.putFloat("money",money);
+        tag.putInt("creativeCount",creativeCount);
         return tag;
     }
 
@@ -119,5 +131,6 @@ public class BxPCapability implements IBxPCapability{
         witherCount = tag.getInt("witherCount");
         dragonCount = tag.getInt("dragonCount");
         money = tag.getFloat("money");
+        creativeCount = tag.getInt("creativeCount");
     }
 }

@@ -4,7 +4,7 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.api.recipes.ICycleRecipe;
 import biggestxuan.bxp2.integration.JEI.catalyst.BxPCatalystCategory;
 import biggestxuan.bxp2.integration.JEI.cycle.BxPCombineCycleCategory;
-import biggestxuan.bxp2.items.BxPCatalyst;
+import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.recipes.CombineCycleRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
@@ -63,6 +63,6 @@ public class JEIPlugin implements IModPlugin {
         List<BxPCatalyst> catalysts = BxPCatalyst.getAllCatalyst(BxPCatalyst.ADAPT.ALL);
         registry.addRecipes(BxPCatalystCategory.TYPE,catalysts);
         List<ICycleRecipe> recipes = Arrays.asList(CombineCycleRecipe.values());
-        registry.addRecipes(BxPCombineCycleCategory.type,recipes);
+       // registry.addRecipes(BxPCombineCycleCategory.type,recipes);
     }
 }

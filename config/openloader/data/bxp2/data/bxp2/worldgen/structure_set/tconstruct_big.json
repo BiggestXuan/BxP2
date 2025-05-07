@@ -6,11 +6,11 @@
     },
     {
       "structure": "bxp2:tconstruct_small",
-      "weight": 1
+      "weight": 7
     },
     {
       "structure": "bxp2:broken_botania",
-      "weight": 1
+      "weight": 3
     }
   ],
   "placement": {

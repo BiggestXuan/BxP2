@@ -1,0 +1,34 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:evolution"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:chronodragon_fury"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:giant_killer"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "bxp2:eternal"
+      }
+    ]
+  }
+}

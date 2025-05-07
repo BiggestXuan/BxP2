@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:awakened_damage",
+  "text": [
+    {
+      "text": "仅限龙材料为顶端的武器强化，每级+36伤害。"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "最高3级",
+    "每级需要1个能力槽"
+  ]
+}

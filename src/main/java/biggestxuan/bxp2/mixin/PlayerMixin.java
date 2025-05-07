@@ -36,7 +36,7 @@ public abstract class PlayerMixin extends LivingEntity {
     public void __inject(CallbackInfo ci){
         Player player = (Player)(Object)this;
 
-        if(Config.difficulty == 3){
+        if(Config.difficulty == 3 && Config.DEATH_DROP){
             for (int i = 9; i < inventory.items.size(); i++) {
                 player.drop(inventory.items.get(i),true,false);
                 inventory.items.set(i,ItemStack.EMPTY);

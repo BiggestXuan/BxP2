@@ -84,7 +84,7 @@ var il = [
 <item:minecraft:gold_ingot>,
 <item:minecraft:netherite_ingot>,
 <item:bxp2:bx_unstable_ingot>,
-<item:bxp2:bx_ingot>.withTag({bxp_cycle: {l: 0, f: 0}}),
+<item:bxp2:bx_ingot>,
 <item:bxp2:bx_ench_ingot>,
 <item:tconstruct:cobalt_ingot>,
 <item:tconstruct:slimesteel_ingot>,

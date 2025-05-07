@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"botania:manasteel_ingot"
+  },
+  "temperature": 1000,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_mana_steel",
+    "amount": 90
+  }
+}

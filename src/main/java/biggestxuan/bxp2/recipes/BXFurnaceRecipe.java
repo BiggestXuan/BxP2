@@ -1,6 +1,5 @@
 package biggestxuan.bxp2.recipes;
 
-import biggestxuan.bxp2.items.BxPCatalyst;
 import net.minecraft.world.item.ItemStack;
 
 /**

@@ -1,5 +1,6 @@
 package biggestxuan.bxp2.items;
 
+import biggestxuan.bxp2.BxP2;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +15,7 @@ public class BXCycleBaseItem extends BxPItem{
     @Override
     public void inventoryTick(ItemStack p_41404_, Level p_41405_, Entity p_41406_, int p_41407_, boolean p_41408_) {
         super.inventoryTick(p_41404_, p_41405_, p_41406_, p_41407_, p_41408_);
+        if(!BxP2.enableCycleRecipe) return;
         if(!p_41405_.isClientSide){
             if(p_41404_.hasTag()){
                 return;
@@ -29,6 +31,9 @@ public class BXCycleBaseItem extends BxPItem{
     @Override
     public @NotNull ItemStack getDefaultInstance() {
         ItemStack stack =  super.getDefaultInstance();
+        if(!BxP2.enableCycleRecipe){
+            return stack;
+        }
         CompoundTag tag = stack.getOrCreateTag();
         CompoundTag tag1 = new CompoundTag();
         tag1.putInt("f",0);

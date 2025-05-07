@@ -166,6 +166,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.0d
@@ -196,6 +197,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 0.5d
@@ -226,6 +228,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
@@ -256,6 +259,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.5d
@@ -286,6 +290,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d
@@ -316,6 +321,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 6.5d
@@ -346,6 +352,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 8.0d
@@ -376,6 +383,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 9.5d

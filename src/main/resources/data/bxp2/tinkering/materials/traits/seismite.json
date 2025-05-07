@@ -1,0 +1,26 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "tconstruct:pierce"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:sorrow"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "tconstruct:pierce"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "tconstruct:pierce"
+      }
+    ]
+  }
+}

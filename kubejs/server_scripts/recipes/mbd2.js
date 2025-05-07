@@ -50,6 +50,15 @@ function addBXUnstableFurnaceRecipe(event,inputs,outputs,data,name){
     .outputItems(outputs)
 }
 
+function addEasyFissionRecipe(event,data){
+    event.recipes.mbd2.easy_fission()
+    .id("easy_fission"+data[0]+"_"+data[1])
+    .duration(data[1])
+    .inputGases(data[0]+"x mekanism:uranium_oxide")
+    .outputGases(data[0]+"x mekanism:fissile_fuel")
+    .perTick(builder => builder.inputFE(1000000))
+}
+
 BxP2.getBXIngotRecipe().forEach((a,b) => {
     b.forEach((k,v) => {
         k.forEach(i => console.log(i))
@@ -71,10 +80,18 @@ ServerEvents.recipes((event) => {
             })
         })
     })
+    addEasyFissionRecipe(event,BxP2.getEasyFissionData())
     BxP2.getBXIngotRecipe().forEach((a,b) => {
         b.forEach((k,v) => {
             k.forEach((q,z) => {
-                //addBXFuranceRecipe(event,q,Item.of('bxp2:bx_ingot', 3, '{bxp_cycle:{f:0,l:0}}'),z,a)
+                addBXFuranceRecipe(event,q,v,z,a)
+            })
+        })
+    })
+    BxP2.getEnchSeedRecipe().forEach((a,b) => {
+        b.forEach((k,v) => {
+            k.forEach((q,z) => {
+                addBXFuranceRecipe(event,q,v,z,a)
             })
         })
     })

@@ -2,6 +2,10 @@
   "perStat": {
     "tconstruct:head": [
       {
+        "leval": 1,
+        "name": "bxp2:evolution"
+      },
+      {
         "level": 1,
         "name": "bxp2:eternal"
       },
@@ -18,12 +22,20 @@
       {
         "level": 1,
         "name": "bxp2:eternal"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:defense_breaker"
       }
     ],
     "tconstruct:grip": [
       {
         "level": 1,
         "name": "bxp2:eternal"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:money_devourer"
       }
     ]
   }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "bxp2:copper_ore",
+  "step": "underground_ores"
+}

@@ -15,15 +15,18 @@ import java.util.function.Supplier;
 public class CapabilityPacket {
     private final int phase;
     private final float money;
+    private final int creativeCount;
 
-    public CapabilityPacket(int phase,float money){
+    public CapabilityPacket(int phase,float money,int creativeCount){
         this.money = money;
         this.phase = phase;
+        this.creativeCount = creativeCount;
     }
 
     public void encode(FriendlyByteBuf buf){
         buf.writeInt(phase);
         buf.writeFloat(money);
+        buf.writeInt(creativeCount);
     }
 
     public void handle(Supplier<NetworkEvent.Context> context){
@@ -35,6 +38,7 @@ public class CapabilityPacket {
     public CapabilityPacket(FriendlyByteBuf buf){
         this.phase = buf.readInt();
         this.money = buf.readFloat();
+        this.creativeCount = buf.readInt();
     }
 
     public float getMoney() {
@@ -43,5 +47,9 @@ public class CapabilityPacket {
 
     public int getPhase() {
         return phase;
+    }
+
+    public int getCreativeCount(){
+        return creativeCount;
     }
 }

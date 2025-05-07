@@ -54,6 +54,9 @@
     "machine": true,
     "tunnel": true
   },
+  "entangled": {
+    "entangled_block_component": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -129,10 +132,6 @@
     "tesseract": true,
     "remove_default": true
   },
-  "bakeries": {
-    "baysalt_frame": true,
-    "oven": true
-  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
@@ -154,6 +153,14 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "preservation_chamber": true,
+    "milk_jar": true,
+    "toaster": true
   },
   "mysticalagriculture": {
     "infused_farmland": true,

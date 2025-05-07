@@ -4,7 +4,7 @@
     "item":"bxp2:bx_unstable_ingot"
   },
   "temperature": 1000,
-  "time": 5,
+  "time": 100,
   "result":
   {
     "fluid": "bxp2:molten_unstable_bx",

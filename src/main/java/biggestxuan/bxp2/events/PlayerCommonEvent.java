@@ -3,12 +3,11 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
-import biggestxuan.bxp2.items.BxPCatalyst;
+import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
+import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.utils.*;
-import dev.latvian.mods.kubejs.player.InventoryChangedEventJS;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
-import net.minecraft.network.chat.TextColor;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
@@ -19,10 +18,14 @@ import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import vazkii.botania.common.item.equipment.tool.terrasteel.TerraBladeItem;
 
 import java.util.List;
+
+import static net.minecraft.world.level.GameRules.RULE_KEEPINVENTORY;
 
 /**
  * @Author Biggest_Xuan
@@ -35,6 +38,7 @@ public class PlayerCommonEvent {
         Player player = event.getEntity();
         if(BxP2.devMode){
             BxP2.LOGGER.info("AAA");
+            BxP2.LOGGER.info("{}", TinkersSurvival.BLACKLISTED_ITEMS);
             BxP2.LOGGER.info("{}",player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent());
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
                 if(c.getPhase() == -1){
@@ -62,10 +66,12 @@ public class PlayerCommonEvent {
             welcome(player);
             MinecraftServer server = serverPlayer.getServer();
             if(server != null){
-                server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),"gamerule sendCommandFeedback "+BxP2.devMode);
+                //server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),"gamerule sendCommandFeedback "+BxP2.devMode);
                 server.setDifficultyLocked(true);
                 server.setDifficulty(Difficulty.HARD,true);
-                server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),"gamerule keepInventory true");
+                if(!server.getGameRules().getRule(RULE_KEEPINVENTORY).get()){
+                    server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),"gamerule keepInventory true");
+                }
             }
         }
     }

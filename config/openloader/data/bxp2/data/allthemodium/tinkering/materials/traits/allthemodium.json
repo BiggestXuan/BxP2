@@ -1,0 +1,21 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:heavy",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:momentum",
+      "level": 1
+    }
+  ],
+  "perStat":{
+    "tconstruct:head": [
+      {
+        "level" : 1,
+        "name": "bxp2:fist_of_absolute_justice"
+      }
+    ]
+  }
+
+}

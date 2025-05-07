@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "fluid": "bxp2:molten_elementium_steel",
+    "amount": 90
+  },
+  "result": "botania:elementium_ingot",
+  "cooling_time": 60
+}

@@ -2,10 +2,8 @@ package biggestxuan.bxp2.recipes;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
-import biggestxuan.bxp2.items.BxPCatalyst;
 import biggestxuan.bxp2.utils.Utils;
 import com.blamejared.crafttweaker.api.ingredient.IIngredient;
-import dev.architectury.fluid.FluidStack;
 import mekanism.api.chemical.gas.GasStack;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -13,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.*;
@@ -176,5 +175,20 @@ public final class RecipeUtils {
         }
 
         return result;
+    }
+
+    public static int[] getEasyFissionData(){
+        switch (Config.difficulty){
+            case 1 -> {
+                return new int[]{477,1};
+            }
+            case 2 -> {
+                return new int[]{1,10};
+            }
+            case 3 -> {
+                return new int[]{1,100};
+            }
+        }
+        throw new IllegalStateException("Difficulty must be in [1,2,3]");
     }
 }

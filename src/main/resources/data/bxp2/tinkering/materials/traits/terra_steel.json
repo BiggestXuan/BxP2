@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 2,
+      "name": "bxp2:mana_repair"
+    }
+  ],
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level" :1,
+        "name": "bxp2:terra"
+      },
+      {
+        "level": 2,
+        "name": "bxp2:mana_repair"
+      }
+    ]
+  }
+}

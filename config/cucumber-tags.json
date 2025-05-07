@@ -5,6 +5,6 @@
   "forge:ingots/chrome": "null",
   "forge:ingots/mithril": "null",
   "forge:dusts/saltpeter": "electrodynamics:dustniter",
-  "forge:ingots/titanium": "immersivegeology:ingot_titanium",
-  "forge:ingots/tungsten": "immersivegeology:ingot_tungsten"
+  "forge:ingots/titanium": "electrodynamics:ingottitanium",
+  "forge:ingots/tungsten": "null"
 }

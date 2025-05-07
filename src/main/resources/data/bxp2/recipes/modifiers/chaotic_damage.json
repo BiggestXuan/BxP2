@@ -1,0 +1,25 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "draconicevolution:item_chaotic_damage"
+    },
+    {
+      "item": "draconicevolution:item_chaotic_damage"
+    },
+    {
+      "item": "draconicevolution:item_chaotic_damage"
+    },
+    {
+      "item": "draconicevolution:item_chaotic_damage"
+    }
+  ],
+  "result": "bxp2:chaotic_damage",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/melee/weapon"
+  }
+}

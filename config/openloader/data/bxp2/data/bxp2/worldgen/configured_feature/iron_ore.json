@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 24,
+    "targets": [
+      {
+        "state": {
+          "Name": "minecraft:iron_ore"
+        },
+        "target": {
+          "tag": "minecraft:ore_replaceables",
+          "predicate_type": "minecraft:tag_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "target": {
+          "tag": "minecraft:deepslate_ore_replaceables",
+          "predicate_type": "minecraft:tag_match"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:random_block_match",
+          "block": "minecraft:deepslate",
+          "probability": 0.02
+        },
+        "state": {
+          "Name": "minecraft:raw_iron_block"
+        }
+      }
+    ]
+  }
+}

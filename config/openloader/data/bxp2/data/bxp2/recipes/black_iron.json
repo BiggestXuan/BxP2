@@ -1,0 +1,28 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"minecraft:iron_ingot"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "tag": "minecraft:coals"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "extendedcrafting:black_iron_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 12000
+}

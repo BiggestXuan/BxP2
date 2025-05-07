@@ -11,7 +11,7 @@ import org.openzen.zencode.java.ZenCodeType;
  */
 
 @ZenRegister
-@ZenCodeType.Name("BxP2.CycleRecipe")
+@ZenCodeType.Name("mods.bxp2.CycleRecipe")
 public class CrTCombineCycleRecipe {
     private final IItemStack input;
     private final IIngredient[] cala;

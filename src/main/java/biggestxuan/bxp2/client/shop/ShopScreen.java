@@ -2,8 +2,10 @@ package biggestxuan.bxp2.client.shop;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import biggestxuan.bxp2.capability.IBxPCapability;
 import biggestxuan.bxp2.network.PacketHandler;
 import biggestxuan.bxp2.network.toServer.BuyGoodsPacket;
+import biggestxuan.bxp2.recipes.RecipeUtils;
 import biggestxuan.bxp2.recipes.ShopGoods;
 import biggestxuan.bxp2.utils.PhaseUtils;
 import biggestxuan.bxp2.utils.ShopUtils;
@@ -14,6 +16,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -109,6 +112,15 @@ public class ShopScreen extends Screen {
         for (int i = 0; i < priceButtons.size(); i++) {
             ShopButton btn = priceButtons.get(i);
             btn.setMessage(BxP2.tr("screen.shop.buy").append(Component.literal(" -" + String.format("%.2f", ShopUtils.getGoodsPrice(btn.getShopGoods(), getMinecraft().player)))));
+            ShopGoods item = btn.getShopGoods();
+            if(!btn.playerCanBuy()){
+                btn.active = false;
+                btn.setTooltip(Tooltip.create(BxP2.tr("screen.shop.no_money", PhaseUtils.getName(item.getPhase()))));
+            }
+            if (minecraft.player != null && getPlayerPhase() < item.getPhase()) {
+                btn.active = false;
+                btn.setTooltip(Tooltip.create(BxP2.tr("screen.shop.phase_limit", PhaseUtils.getName(item.getPhase()))));
+            }
         }
     }
 
@@ -149,6 +161,9 @@ public class ShopScreen extends Screen {
         if(player != null && !player.isDeadOrDying() && player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent()){
             var cap = player.getCapability(BxPCapabilityProvider.CAPABILITY).orElseThrow(NullPointerException::new);
             guiGraphics.drawCenteredString(this.font, BxP2.tr("screen.shop.money",String.format("%.2f",cap.getMoney())), this.width / 4, 30, 0xFFFFFF);
+            if(cap.getMoney() < 0){
+                guiGraphics.drawString(this.font, BxP2.tr("screen.shop.multi"), this.width / 8, 10, 0xFF0000);
+            }
         }
         guiGraphics.drawCenteredString(this.font, (currentPage + 1) + "/" + totalPages, this.width / 2, 40, 0xFFFFFF);
         super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -198,6 +213,15 @@ class ShopButton extends Button{
 
     protected ShopGoods getShopGoods(){
         return sg;
+    }
+
+    boolean playerCanBuy(){
+        LocalPlayer player = Minecraft.getInstance().player;
+        if(player != null && player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent()){
+            IBxPCapability cap = player.getCapability(BxPCapabilityProvider.CAPABILITY).orElseThrow(NullPointerException::new);
+            return cap.getMoney() >= ShopUtils.getGoodsPrice(sg,player);
+        }
+        return false;
     }
 }
 

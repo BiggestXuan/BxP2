@@ -3,15 +3,13 @@ package biggestxuan.bxp2.integration.CraftTweaker;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.items.IBXItem;
+import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
 import biggestxuan.bxp2.recipes.CombineCycleRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker.api.item.IItemStack;
 import mekanism.api.chemical.gas.GasStack;
-import mekanism.common.registries.MekanismBlocks;
-import mekanism.common.registries.MekanismItems;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.openzen.zencode.java.ZenCodeType;
 import owmii.powah.api.PowahAPI;
 
@@ -24,7 +22,7 @@ import java.util.List;
  */
 
 @ZenRegister
-@ZenCodeType.Name("BxP2.CrTManager")
+@ZenCodeType.Name("mods.bxp2.CrTManager")
 @SuppressWarnings("unused")
 public class CrTUtils {
     @ZenCodeType.Method
@@ -92,5 +90,17 @@ public class CrTUtils {
             stacks.add(IItemStack.of(item.getDefaultInstance()));
         }
         return stacks;
+    }
+
+    @ZenCodeType.Method
+    public static IItemStack[] getMCToolsRecipe(){
+        if(Config.TinkersSurvival){
+            IItemStack[] arr = new IItemStack[TinkersSurvival.BLACKLISTED_ITEMS.size()];
+            for (int i = 0; i < TinkersSurvival.BLACKLISTED_ITEMS.size(); i++) {
+                arr[i] = IItemStack.of(TinkersSurvival.BLACKLISTED_ITEMS.get(i).getDefaultInstance());
+            }
+            return arr;
+        }
+        return new IItemStack[]{};
     }
 }

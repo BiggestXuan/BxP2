@@ -3,12 +3,11 @@ package biggestxuan.bxp2.integration.KubeJS;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.items.IBXItem;
-import biggestxuan.bxp2.items.BxPCatalyst;
+import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.recipes.BXFurnaceRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
 import dev.architectury.fluid.FluidStack;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -25,6 +24,10 @@ import java.util.Map;
 public class KJSUtils {
     public static int getDifficulty(){
         return Config.difficulty;
+    }
+
+    public static int[] getEasyFissionData(){
+        return RecipeUtils.getEasyFissionData();
     }
 
     public static Map<ItemStack,Integer> getAllBXItems(){
@@ -58,10 +61,6 @@ public class KJSUtils {
         return RecipeUtils.getRecipeName(item,add);
     }
 
-    public static String getRecipeName(FluidStack fluidStack, String add){
-        return RecipeUtils.getRecipeName(fluidStack,add);
-    }
-
     public static String getItemName(ItemStack item){
         return RecipeUtils.getItemName(item);
     }
@@ -82,7 +81,7 @@ public class KJSUtils {
                         new ItemStack[]{
                                 BxP2.getStack("enderio:energetic_alloy_ingot"),
                                 BxP2.getStack("thermal:invar_ingot"),
-                                BxP2.getStack("ars_nouveau:source_gem")
+                                BxPItems.BX_GOLD_INGOT.get().getDefaultInstance()
                         },new ItemStack[]{BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance()}
                         , BxPCatalyst.ADAPT.BX_UNSTABLE_FURNACE,
                         1500,0,1000
@@ -92,11 +91,6 @@ public class KJSUtils {
 
     public static Map<String, Map<Map<ItemStack[],int[]>,ItemStack[]>> getBXIngotRecipe(){
         ItemStack stack = BxP2.getStack("bxp2:bx_ingot");
-        CompoundTag tag = stack.getOrCreateTag();
-        CompoundTag tag1 = new CompoundTag();
-        tag1.putInt("f",0);
-        tag1.putInt("l",0);
-        tag.put("bxp_cycle",tag1);
         return RecipeUtils.getBXFurnaceRecipe(
             new BXFurnaceRecipe("bx_furnace",
                    new ItemStack[]{
@@ -104,10 +98,24 @@ public class KJSUtils {
                            BxP2.getStack("mekanism:hdpe_sheet"),
                            BxP2.getStack("mekanism:alloy_reinforced"),
                            BxP2.getStack("mekanism:dust_lithium"),
+                           BxP2.getStack("bxp2:sx_ingot"),
+                           BxP2.getStack("bxp2:poly_ingot")
                    },new ItemStack[]{stack}
                     , BxPCatalyst.ADAPT.BX_FURNACE,
                     10000,100000000,0
             ).copy()
+        );
+    }
+
+    public static Map<String, Map<Map<ItemStack[],int[]>,ItemStack[]>> getEnchSeedRecipe(){
+        return RecipeUtils.getBXFurnaceRecipe(
+                new BXFurnaceRecipe("bx_furnace",
+                        new ItemStack[]{
+                                BxP2.getStack("bxp2:cai_seed"),
+                                BxP2.getStack("bxp2:ou_gold_ingot"),
+                                BxP2.getStack("mekanism_extras:alloy_thermonuclear")
+                        },new ItemStack[]{BxP2.getStack("bxp2:ench_cai_seed")}, BxPCatalyst.ADAPT.CAISEED,
+                        22500,330000000,0).copy()
         );
     }
 }

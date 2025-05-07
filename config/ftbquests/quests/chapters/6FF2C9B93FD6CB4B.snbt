@@ -252,10 +252,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"198ED03950F394DD"
-				"061AE50025EBFE59"
-			]
+			dependencies: ["061AE50025EBFE59"]
 			id: "6F41A4014A4212F6"
 			rewards: [{
 				id: "1EAFFC85C9CF2923"
@@ -271,27 +268,6 @@
 			tasks: [{
 				id: "389B1CEB46A66579"
 				item: "ae2:inscriber"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
-			id: "198ED03950F394DD"
-			rewards: [{
-				id: "15F812657AD091E9"
-				item: {
-					Count: 1
-					id: "bxp2:money"
-					tag: {
-						money: 1
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2DFBBA2037297040"
-				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
 			x: 6.0d
@@ -489,7 +465,7 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["198ED03950F394DD"]
+			dependencies: ["6F41A4014A4212F6"]
 			id: "479607B575644E5E"
 			rewards: [{
 				id: "719C909DFF168D87"
@@ -1049,7 +1025,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["756E99712A6F02BF"]

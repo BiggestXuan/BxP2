@@ -1,0 +1,20 @@
+{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 1,
+      "item": "bxp2:bx_unstable_ingot"
+    },
+    {
+      "tag": "forge:plastic"
+    }
+  ],
+  "pressure": 1.5,
+  "results": [
+    {
+      "count": 2,
+      "item": "bxp2:sx_ingot"
+    }
+  ]
+}

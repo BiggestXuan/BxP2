@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "fluid": "bxp2:molten_terra_steel",
+    "amount": 90
+  },
+  "result": "botania:terrasteel_ingot",
+  "cooling_time": 60
+}

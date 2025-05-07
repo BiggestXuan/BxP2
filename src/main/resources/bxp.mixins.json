@@ -11,15 +11,26 @@
     "EnergyFormattingUtilMixin",
     "ExtraItemTierInstallerMixin",
     "GaiaGuardianEntityMixin",
+    "ItemDaggerOfSacrificeMixin",
     "ItemEntityMixin",
+    "ItemStackIngredientCreatorMixin",
     "ItemTierInstallerMixin",
+    "ManaBurstEntityMixin",
     "ModuleHelperMixin",
     "PlayerMixin",
     "PowahWorldGenMixin",
+    "RitualFlightMixin",
     "SunSpiritMixin",
+    "TerraBladeItemMixin",
     "TileEntityBioMixin",
     "TileEntityGasMixin",
     "ToolStatsMixin",
+    "WandJobMixin",
     "WitherMixin"
+  ],
+  "client": [
+    "LoadingOverlayMixin",
+    "MinecraftMixin",
+    "WindowMixin"
   ]
 }

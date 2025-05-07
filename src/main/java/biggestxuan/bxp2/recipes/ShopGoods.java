@@ -27,7 +27,7 @@ public enum ShopGoods {
     ad(BxP2.getStack("mekanism:ingot_osmium",16),1),
     af(BxP2.getStack("mekanism:ingot_uranium",16),2,2),
     ada(BxP2.getStack("mekanism:ingot_lead",16),2,2),
-    adta(BxP2.getStack("ae2:wireless_crafting_terminal"),2,15.5f),
+    adta(BxP2.getStack("ae2wtlib:wireless_universal_terminal"),2,30f),
     adhta(BxP2.getStack("ae2:cell_component_64k"),2,21),
     ahdta(BxP2.getStack("ae2:fluix_glass_cable",64),2,6),
     ahta(BxP2.getStack("ae2:fluix_smart_cable",48),2,8),
@@ -50,8 +50,8 @@ public enum ShopGoods {
     gruta(BxP2.getStack("minecraft:wither_skeleton_skull",3),3,4.5f),
     grttta(BxP2.getStack("bloodmagic:demonslate"),3,9),
     grrtta(BxP2.getStack("bloodmagic:etherealslate"),3,15),
-    gra(BxP2.getStack("botania:terrasteel_ingot"),3,33),
-    grta(BxP2.getStack("botania:life_essence",4),3,45),
+    gra(BxP2.getStack("botania:terrasteel_ingot"),3,15.5f),
+    grta(BxP2.getStack("botania:life_essence",4),3,18.5f),
     gua(BxP2.getStack("mekanism:ultimate_control_circuit"),4,50),
     guka(BxP2.getStack("aeinfinitybooster:infinity_card"),4,25),
     g1ua(BxP2.getStack("aeinfinitybooster:dimension_card"),4,35),
@@ -78,7 +78,7 @@ public enum ShopGoods {
     aaw(BxP2.getStack("minecraft:netherite_ingot"),7,16),
     qw(BxP2.getStack("minecraft:nether_star"),7,24),
     afqw(BxP2.getStack("draconicevolution:draconium_core"),7,3),
-    aqfw(BxP2.getStack("draconicevolution:wyvern_core"),7,33),
+    aqfw(BxP2.getStack("draconicevolution:wyvern_core"),7,22f),
     aaqfw(BxP2.getStack("draconicevolution:wyvern_core",2),8,15),
     aqhfw(BxP2.getStack("draconicevolution:wyvern_core",3),9,8),
     afqfw(BxP2.getStack("draconicevolution:wyvern_core",4),10,5),
@@ -122,25 +122,47 @@ public enum ShopGoods {
     q655(BxP2.getStack("thermalendergy:endergy_upgrade_3"),3,13f),
     ahw(BxP2.getStack("botania:blacker_lotus"),2,6f),
     ah2w(BxP2.getStack("mekanismgenerators:wind_generator"),2,4.5f),
-    ikahf(BxP2.getStack("jerotesvillage:meror_metal_ingot",3),2,7.5f)
+    ikahf(BxP2.getStack("jerotesvillage:meror_metal_ingot",3),2,7.5f),
+    ikqahf(BxP2.getStack("ae2things:disk_drive_64k"),2,40f),
+    ikqaf(BxP2.getStack("ae2:wireless_access_point"),1,2.5f),
+    kqahf(BxP2.getStack("allthemodium:teleport_pad"),9.5f),
+    kqaf(BxP2.getStack("ironfurnaces:million_furnace"),2,30f),
+    kq1af(BxP2.getStack("fluxnetworks:flux_dust",32),1,7f),
+    ejuni(BxP2.getStack("minecraft:ghast_tear"),3,5f),
+    aowii(BxP2.getStack("bxp2:chaos_shield_scroll"),10,35f),
+    fa3(BxP2.getStack("bxp2:chaos_health_scroll"),10,35f),
+    qqb(BxP2.getStack("bxp2:chaos_crystal_scroll"),10,25f),
+    iahf(BxP2.getStack("bxp2:oumang_upgrade"),5,15f),
+    ioaw(BxP2.getStack("bxp2:ou_gold_upgrade"),5,18f),
+    iawur(BxP2.getStack("bxp2:ouhuang_upgrade"),6,25f),
+    //ihhy(BxP2.getTconstructCreative("upgrades"),0,10f,true),
+    //ihhay(BxP2.getTconstructCreative("defense"),0,10f,true),
+   // iahhy(BxP2.getTconstructCreative("abilities"),0,15f,true),
+   // aihhay(BxP2.getTconstructCreative("souls"),0,12.5f,true),
     ;
 
     private final ItemStack stack;
     private final int phase;
     private final float price;
+    private final boolean isCreative;
 
-    ShopGoods(ItemStack stack, int phase, float price){
+    ShopGoods(ItemStack stack, int phase, float price,boolean isCreative){
         this.stack = stack;
         this.phase = phase;
         this.price = price;
+        this.isCreative = isCreative;
+    }
+
+    ShopGoods(ItemStack stack, int phase, float price){
+        this(stack,phase,price,false);
     }
 
     ShopGoods(ItemStack stack, int count,int phase, float price){
-        this(stack,phase,price);
+        this(stack,phase,price,false);
     }
 
     ShopGoods(Item item, int phase, float price){
-        this(item.getDefaultInstance(),phase,price);
+        this(item.getDefaultInstance(),phase,price,false);
     }
 
     ShopGoods(Item item, float price){
@@ -148,11 +170,11 @@ public enum ShopGoods {
     }
 
     ShopGoods(ItemStack item, float price){
-        this(item,-1,price);
+        this(item,-1,price,false);
     }
 
     ShopGoods(String rl, int phase, float price){
-        this(BxP2.getStack(rl),phase,price);
+        this(BxP2.getStack(rl),phase,price,false);
     }
 
     /*
@@ -192,6 +214,9 @@ public enum ShopGoods {
         return list;
     }
 
+    public boolean isCreative(){
+        return isCreative;
+    }
 
     @Override
     public String toString() {

@@ -24,7 +24,7 @@ public class GiantKillerModifier extends Modifier implements MeleeDamageModifier
         var player = toolAttackContext.getPlayerAttacker();
         var target = toolAttackContext.getLivingTarget();
         if(target == null || player == null) {return v1;}
-        float rate = Math.max(1,target.getHealth() / player.getHealth());
+        float rate = Math.max(1,0.15F * target.getHealth() / player.getHealth());
         rate *= 0.9F + 0.1F * modifierEntry.getLevel();
         return v1 * (1 + rate / 3F);
     }

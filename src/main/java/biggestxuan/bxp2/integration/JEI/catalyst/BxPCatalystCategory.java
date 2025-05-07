@@ -1,7 +1,7 @@
 package biggestxuan.bxp2.integration.JEI.catalyst;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.items.BxPCatalyst;
+import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.builder.IRecipeSlotBuilder;

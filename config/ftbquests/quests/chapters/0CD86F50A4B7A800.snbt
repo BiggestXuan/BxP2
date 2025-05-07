@@ -166,8 +166,8 @@
 				item: "mbd2:common_food_to_blood"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2508832BEE0F56B7"]
@@ -569,69 +569,6 @@
 				"1EE2729C31EF9DDE"
 				"6B04535AFED5E6FD"
 			]
-			id: "14CA094EA9E9CF53"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1DE801099B3FC8D7"
-					table_id: 977224403453933136L
-					type: "random"
-				}
-				{
-					id: "75AD53D2E629148E"
-					item: {
-						Count: 1
-						id: "bxp2:money"
-						tag: {
-							money: 1
-						}
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "03C7F997E0039C62"
-				item: "vampirismtinker:hunter_metal"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["14CA094EA9E9CF53"]
-			id: "51ECC325E44302E9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "68EC798C8E0C0689"
-					table_id: 977224403453933136L
-					type: "random"
-				}
-				{
-					id: "248CF1B2349117B4"
-					item: {
-						Count: 1
-						id: "bxp2:money"
-						tag: {
-							money: 1
-						}
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "19FC2C3C4EFEB976"
-				item: "vampirismtinker:holy_hunter_metal"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"1EE2729C31EF9DDE"
-				"6B04535AFED5E6FD"
-			]
 			id: "1390CE025F372EEE"
 			rewards: [
 				{
@@ -658,7 +595,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1390CE025F372EEE"]
@@ -687,7 +624,7 @@
 				item: "vampirism:blood_infused_enhanced_iron_ingot"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -5.0d
 			y: 3.5d
 		}
 		{
@@ -720,7 +657,7 @@
 			}]
 			title: "吸血鬼的福音"
 			x: -2.5d
-			y: 3.5d
+			y: -1.5d
 		}
 	]
 	title: "选择你的阵营！"

@@ -6,6 +6,7 @@ import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.integration.Mekanism.MekUtils;
 import biggestxuan.bxp2.utils.Utils;
 import com.brandon3055.draconicevolution.init.DEDamage;
+import com.jerotes.jerotesvillage.entity.Animal.DeepBatEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.server.level.ServerLevel;
@@ -107,10 +108,13 @@ public class LivingCombatEvent {
         float amount = event.getAmount();
         if(entity instanceof Player player){
             if(Config.difficulty == 1){
-                amount *= 2;
+                amount *= (float) Config.EASY_HEALTH_RATE;
+            }
+            if(Config.difficulty == 2){
+                amount *= (float) Config.NORMAL_HEALTH_RATE;
             }
             if(Config.difficulty == 3){
-                amount /= 2;
+                amount *= (float) Config.HARD_HEALTH_RATE;
             }
         }
         MobEffectInstance instance = entity.getEffect(BxPEffects.Debilitated.get());
@@ -133,8 +137,17 @@ public class LivingCombatEvent {
         if(mob.level() instanceof ServerLevel sl){
             if(Config.difficulty == 1){return;}
             if(mob instanceof WitherBoss) return;
+            if(mob instanceof DeepBatEntity bat){
+                bat.setNoAi(true);
+            }
             ServerLevel world = sl.getServer().overworld();
-            double day = 1d * world.getDayTime() / 24000 * (Config.difficulty == 3 ? 2.5 : 1);
+            double rate = 0;
+            switch (Config.difficulty){
+                case 1 -> rate = Config.EASY_ENHANCEMENT_RATE;
+                case 2 -> rate = Config.NORMAL_ENHANCEMENT_RATE;
+                case 3 -> rate = Config.HARD_ENHANCEMENT_RATE;
+            }
+            double day = 1d * world.getDayTime() / 24000 * rate;
             AttributeInstance health = mob.getAttribute(Attributes.MAX_HEALTH);
             AttributeInstance attack = mob.getAttribute(Attributes.ATTACK_DAMAGE);
             if(health != null){
