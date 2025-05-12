@@ -191,4 +191,22 @@ public final class RecipeUtils {
         }
         throw new IllegalStateException("Difficulty must be in [1,2,3]");
     }
+
+    public static List<int[]> getCuriumRecipeData(){
+        int[] max = new int[]{24,32};
+        List<int[]> list = new ArrayList<>();
+        int index = max[0] * max[1];
+        for (int i = 1; i <= max[0]; i++) { //energy
+            for (int j = 1; j <= max[1]; j++) { //time
+                float energy = 100000000;
+                float time = 1200;
+                energy = (float) Math.pow(0.98,i) * energy;
+                time = (float) Math.pow(0.89,j) * time;
+                int[] out = new int[]{i,j,(int) (energy/time),(int) (Math.max(1,time)),index};
+                index --;
+                list.add(out);
+            }
+        }
+        return list;
+    }
 }

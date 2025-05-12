@@ -132,7 +132,6 @@ public function nuclearRecipeModify() as void{
     dissolutionRecipe(<item:bxp2:condense_uranium>,<gas:bxp2:fluorine>,<gas:bxp2:uranium_tetrafluoride> * 100);
     dissolutionRecipe(<item:bxp2:condense_uranium>,<gas:bxp2:potassium_fluoride>,<gas:bxp2:uranium_tetrafluoride> * 1200);
     chemicalInfusionRecipe(<gas:bxp2:uranium_tetrafluoride>,<gas:bxp2:fluorine>,<gas:mekanism:uranium_hexafluoride>);
-
     removeActivatingRecipe(late+"polonium");
     removeCentrifugingRecipe(late+"plutonium");
     chemicalInfusionRecipe(<gas:mekanism:nuclear_waste>,<gas:mekanismscience:nitric_acid>,<gas:bxp2:nws> * 2);
@@ -147,7 +146,6 @@ public function mekBasicEnergy() as void{
     reactionRecipe(<fluid:minecraft:water> * 1000,<gas:mekanism:oxygen> * 1000,<item:minecraft:paper>,<item:mekanism:substrate>,<gas:bxp2:carbon_dioxide> * 500,10);
     chemicalInfusionRecipe(<gas:bxp2:carbon_dioxide>,<gas:mekanism:hydrogen> * 2,<gas:bxp2:methane>);
     reactionRecipe(<fluid:mekanism:oxygen> * 100,<gas:bxp2:methane> * 200,<item:mekanism:bio_fuel>*2,<item:mekanism:substrate>*2,<gas:mekanism:ethene> * 200,15);
-    separatingRecipe(<fluid:mekanism:ethene>,<gas:bxp2:acetylene>,<gas:mekanism:hydrogen>);
     chemicalInfusionRecipe(<gas:bxp2:acetylene>,<gas:mekanismscience:nitrogen>,<gas:bxp2:hydrogen_cyanide> * 2);
     reactionRecipe(<fluid:mekanism:ethene> * 500,<gas:bxp2:hydrogen_cyanide> * 500,<item:bxp2:copper_chloride>,<item:minecraft:raw_copper>,<gas:bxp2:acrylonitrile>*500,20);
     purifyingRecipe(<item:minecraft:raw_copper>,<gas:mekanism:hydrogen_chloride>*5,<item:bxp2:copper_chloride>);
@@ -219,10 +217,12 @@ for i in 0 .. rd.length{
     <tag:items:bxp2:radiation_pellet>.add(rd[i]);
 }
 
+separatingRecipe(<fluid:mekanism:ethene>,<gas:bxp2:acetylene>,<gas:mekanism:hydrogen>);
 if(difficulty() == 1){
     furnaceRecipe(<item:biggerreactors:blutonium_ingot>,<item:mekanism:pellet_plutonium>);
     furnaceRecipe(<item:biggerreactors:cyanite_ingot>,<item:mekanism:pellet_polonium>);
     evaporatingRecipe(<fluid:mekanism:uranium_oxide>,<fluid:bxp2:condense_uns>,"bxp2");
+    easyEnergy();
 }
 
 if(CrTManager.isDevMode()){
@@ -393,4 +393,49 @@ for i in 0 .. installer.length{
     }
 }
 
+reactionRecipe(<fluid:minecraft:water> * 100,<gas:mekanism:water_vapor>*100,<item:minecraft:ender_pearl>,<item:minecraft:shulker_shell>,<gas:mekanism:oxygen>*30,3);
 reactionRecipe(<fluid:minecraft:water> * 100,<gas:bxp2:propylamine> * 100,<item:minecraft:nether_star>,<item:bxp2:oumang_ingot>,<gas:mekanism:ethene>*100,10);
+activatingRecipe(<gas:mekanismscience:americium>,<gas:bxp2:activated_americium>);
+activatingRecipe(<gas:bxp2:activated_curium>,<gas:bxp2:curium>);
+chemicalInfusionRecipe(<gas:mekanism_extras:silicon_tetrafluoride>,<gas:mekanism:superheated_sodium>,<gas:bxp2:sodium_fluosilicate> * 2);
+chemicalInfusionRecipe(<gas:mekanism:uranium_hexafluoride>,<gas:bxp2:sodium_fluosilicate>,<gas:bxp2:uranyl_fluosilicate> * 2);
+removeChemicalInfusionRecipe("mekanism_extras:processing/fluorinated_silicon_uranium_fuel");
+chemicalInfusionRecipe(<gas:bxp2:curium>,<gas:bxp2:uranyl_fluosilicate>,<gas:mekanism_extras:fluorinated_silicon_uranium_fuel> * 2);
+dissolutionRecipe(<tag:items:forge:silicon>,<gas:mekanism:hydrofluoric_acid>,<gas:mekanism_extras:silicon_tetrafluoride>*100);
+//removeNuclearRecipe("mekanism_extras:naquadah_reactor/casing");
+removeCraftRecipe(<item:mekanism:sps_casing>);
+removeCraftRecipe(<item:mekanismgenerators:fusion_reactor_frame>);
+modifyCraftRecipe([
+    [<item:mekanism:ingot_lead>,<item:mekanism:elite_control_circuit>,<item:mekanism:ingot_lead>],
+    [<item:bxp2:stainless_steel_ingot>,<item:immersiveengineering:ingot_hop_graphite>,<item:bxp2:stainless_steel_ingot>],
+    [<item:bxp2:stainless_steel_ingot>,<item:immersiveengineering:ingot_hop_graphite>,<item:bxp2:stainless_steel_ingot>]
+],<item:mekanismgenerators:control_rod_assembly>,"bxp");
+
+public function advancedReaction(input as IIngredient,output as IItemStack) as void{
+    reactionRecipe(<fluid:mekanism:heavy_water>*100,<gas:mekanism_extras:polonium-208>*50,input,output,<gas:mekanism:spent_nuclear_waste> * 100,5);
+}
+
+advancedReaction(<tag:items:bxp2:high_quality_concrete>,<item:mekanism:sps_casing>);
+advancedReaction(<item:mekanism:steel_casing>,<item:mekanismgenerators:fusion_reactor_frame>);
+
+public function gasTankRecipe(input as IIngredient,output as IItemStack) as void{
+    var qq = <item:mekanismscience:high_quality_concrete>;
+    addCraftRecipe([
+        [qq,qq,qq],
+        [qq,input,qq],
+        [qq,qq,qq]
+    ],output,"bxp");
+}
+
+var l = [
+    <item:minecraft:emerald_block>,
+    <item:minecraft:redstone_block>,
+    <item:mekanism:reprocessed_fissile_fragment>,
+    <item:mbd2:gas_input>,
+    <item:mbd2:gas_output>,
+    <item:mbd2:curium_machine>
+];
+
+for i in 0 .. 3{
+    gasTankRecipe(l[i],l[i+3]);
+}

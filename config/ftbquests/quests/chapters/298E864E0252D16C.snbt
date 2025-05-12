@@ -216,17 +216,29 @@
 		{
 			dependencies: ["02386D8BD969F2E7"]
 			id: "5A65229A1C902A43"
-			rewards: [{
-				id: "3FE32FE14B3D606E"
-				item: {
-					Count: 1
-					id: "bxp2:money"
-					tag: {
-						money: 1
+			rewards: [
+				{
+					id: "3FE32FE14B3D606E"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "047B14D147373A1B"
+					item: "bxp2:creative_ability_skull"
+					type: "item"
+				}
+				{
+					id: "24A7D2F91E1A1E57"
+					item: "bxp2:creative_ability_skull"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "19B67AE833A40792"
@@ -813,6 +825,7 @@
 		}
 		{
 			dependencies: ["63C2AE01F3D4C943"]
+			description: ["客官，你的第一份千层饼已经为您端上来了～"]
 			id: "143D68252930C16F"
 			rewards: [{
 				id: "5557B6C14DAFE454"

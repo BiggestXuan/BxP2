@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"rats:plague_essence"
+  },
+  "temperature": 1000,
+  "time": 300,
+  "result":
+  {
+    "fluid": "bxp2:plague_essence",
+    "amount": 10
+  }
+}

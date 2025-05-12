@@ -36,6 +36,11 @@ public class BxPFluids {
     public static final FlowingFluidObject<ForgeFlowingFluid> MANA_STEEL= register("molten_mana_steel");
     public static final FlowingFluidObject<ForgeFlowingFluid> TERRA_STEEL= register("molten_terra_steel");
     public static final FlowingFluidObject<ForgeFlowingFluid> ELEMENTIUM_STEEL= register("molten_elementium_steel");
+    public static final FlowingFluidObject<ForgeFlowingFluid> PLAGUE_ESSENCE= register("plague_essence");
+    public static final FlowingFluidObject<ForgeFlowingFluid> PLAGUE_METAL= register("molten_plague_metal");
+    public static final FlowingFluidObject<ForgeFlowingFluid> OUHUANG= register("molten_ouhuang");
+    public static final FlowingFluidObject<ForgeFlowingFluid> BLOOD_IRON = register("molten_blood_iron");
+    public static final FlowingFluidObject<ForgeFlowingFluid> OMITE = register("molten_omite");
 
     private static FluidType.Properties hot(String name) {
         return FluidType.Properties.create().density(2000).viscosity(10000).temperature(1000).descriptionId(BxP2.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).motionScale(0.0023333333333333335).canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null);

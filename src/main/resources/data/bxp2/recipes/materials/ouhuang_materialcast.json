@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "bxp2:molten_ouhuang",
+    "amount":90
+  },
+  "temperature":1000,
+  "output":"bxp2:ouhuang"
+}

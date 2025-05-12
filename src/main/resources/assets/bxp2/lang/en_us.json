@@ -205,11 +205,6 @@
   "item.bxp2.molten_elementium_steel_bucket": "Molten ElementiumSteel Bucket",
   "block.bxp2.molten_elementium_steel_fluid": "Molten ElementiumSteel "
 ,
-  "material.bxp2.awakened_draconium": "Awakened Draconium",
-  "fluid.bxp2.molten_awakened_draconium": "MoltenAwakened Draconium",
-  "item.bxp2.molten_awakened_draconium_bucket": "Molten Awakened Draconium Bucket",
-  "block.bxp2.molten_awakened_draconium_fluid": "Molten Awakened Draconium "
-,
   "material.bxp2.wyvern": "Wyvern",
   "fluid.bxp2.molten_wyvern_draconium": "MoltenWyvern",
   "item.bxp2.molten_wyvern_draconium_bucket": "Molten Wyvern Bucket",
@@ -219,4 +214,29 @@
   "fluid.bxp2.molten_chaotic_draconium": "MoltenChaotic",
   "item.bxp2.molten_chaotic_draconium_bucket": "Molten Chaotic Bucket",
   "block.bxp2.molten_chaotic_draconium_fluid": "Molten Chaotic "
+,
+  "material.bxp2.plague_metal": "PlagueMetal",
+  "fluid.bxp2.molten_plague_metal": "MoltenPlagueMetal",
+  "item.bxp2.molten_plague_metal_bucket": "Molten PlagueMetal Bucket",
+  "block.bxp2.molten_plague_metal_fluid": "Molten PlagueMetal "
+,
+  "material.bxp2.ouhuang": "Ouhuang",
+  "fluid.bxp2.molten_ouhuang": "MoltenOuhuang",
+  "item.bxp2.molten_ouhuang_bucket": "Molten Ouhuang Bucket",
+  "block.bxp2.molten_ouhuang_fluid": "Molten Ouhuang "
+,
+  "material.bxp2.ouhuang": "Ouhuang",
+  "fluid.bxp2.molten_ouhuang": "MoltenOuhuang",
+  "item.bxp2.molten_ouhuang_bucket": "Molten Ouhuang Bucket",
+  "block.bxp2.molten_ouhuang_fluid": "Molten Ouhuang "
+,
+  "material.bxp2.blood_iron": "BloodIron",
+  "fluid.bxp2.molten_blood_iron": "MoltenBloodIron",
+  "item.bxp2.molten_blood_iron_bucket": "Molten BloodIron Bucket",
+  "block.bxp2.molten_blood_iron_fluid": "Molten BloodIron "
+,
+  "material.bxp2.omite": "Omite",
+  "fluid.bxp2.molten_omite": "MoltenOmite",
+  "item.bxp2.molten_omite_bucket": "Molten Omite Bucket",
+  "block.bxp2.molten_omite_fluid": "Molten Omite "
 }

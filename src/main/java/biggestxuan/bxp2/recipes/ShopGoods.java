@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.recipes;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.items.BxPItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -133,12 +134,15 @@ public enum ShopGoods {
     fa3(BxP2.getStack("bxp2:chaos_health_scroll"),10,35f),
     qqb(BxP2.getStack("bxp2:chaos_crystal_scroll"),10,25f),
     iahf(BxP2.getStack("bxp2:oumang_upgrade"),5,15f),
+    iahaf(BxP2.getStack("bxp2:bx_upgrade"),5,13.67f),
     ioaw(BxP2.getStack("bxp2:ou_gold_upgrade"),5,18f),
     iawur(BxP2.getStack("bxp2:ouhuang_upgrade"),6,25f),
     //ihhy(BxP2.getTconstructCreative("upgrades"),0,10f,true),
     //ihhay(BxP2.getTconstructCreative("defense"),0,10f,true),
    // iahhy(BxP2.getTconstructCreative("abilities"),0,15f,true),
    // aihhay(BxP2.getTconstructCreative("souls"),0,12.5f,true),
+    i3ayu(BxPItems.CREATIVE_ABILITY_SKULL.get().getDefaultInstance(),0,15f,true),
+    i3a3yu(BxPItems.CREATIVE_UPGRADE_SKULL.get().getDefaultInstance(),0,12.5f,true);
     ;
 
     private final ItemStack stack;

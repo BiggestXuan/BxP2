@@ -1,0 +1,22 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:black_death"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "tconstruct:ductile"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "tconstruct:insatiable"
+      }
+    ]
+  }
+}

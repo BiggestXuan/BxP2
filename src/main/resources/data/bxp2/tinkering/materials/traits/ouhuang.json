@@ -1,0 +1,20 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:lucky_attack"
+      },
+      {
+        "leval": 1,
+        "name": "bxp2:evolution"
+      }
+    ],
+    "tconstruct:grip": [
+      {
+        "level": 1,
+        "name": "bxp2:fps_killer"
+      }
+    ]
+  }
+}

@@ -2,14 +2,25 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "28363016DB4D9DA8"
-	group: "455ED0AB8CCEDEB5"
+	group: "3B03478F18523D29"
 	icon: "brewinandchewin:flaxen_cheese_wedge"
 	id: "28363016DB4D9DA8"
-	order_index: 4
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			id: "07ED883741FBF571"
+			rewards: [{
+				id: "11F2BBDA911A9552"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "35139378310D3FC8"
 				item: "minecraft:cauldron"
@@ -20,6 +31,17 @@
 		}
 		{
 			id: "6A591D68A0EDB124"
+			rewards: [{
+				id: "4A27BC0695E74816"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5758FCFED02D8D43"
 				item: "minecraft:milk_bucket"
@@ -34,6 +56,17 @@
 				"6A591D68A0EDB124"
 			]
 			id: "1D26D561CCF33C05"
+			rewards: [{
+				id: "6F2B99E9D2965E9B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "676A6F631221300B"
 				item: "rats:cheese"
@@ -45,6 +78,17 @@
 		{
 			dependencies: ["1D26D561CCF33C05"]
 			id: "18468DE7BFC97AF3"
+			rewards: [{
+				id: "64F381EAF6A4BF2B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "rats:tame_rat"
 				criterion: ""
@@ -57,6 +101,17 @@
 		{
 			dependencies: ["18468DE7BFC97AF3"]
 			id: "56DFB5C6D93E7CD0"
+			rewards: [{
+				id: "6C1EF1A88B303EF9"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "74159A733AF2F98F"
 				item: "rats:rat_upgrade_basic"
@@ -68,6 +123,17 @@
 		{
 			dependencies: ["56DFB5C6D93E7CD0"]
 			id: "2CC76D1A1A2A4F76"
+			rewards: [{
+				id: "4DF967A0BF8611D6"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D8054130789F799"
 				item: "rats:rat_upgrade_warrior"
@@ -79,6 +145,17 @@
 		{
 			dependencies: ["56DFB5C6D93E7CD0"]
 			id: "0EFE1A3794145016"
+			rewards: [{
+				id: "162A5C02926B501F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6AB9C00D793189C0"
 				item: "rats:rat_upgrade_remedy"
@@ -90,6 +167,17 @@
 		{
 			dependencies: ["56DFB5C6D93E7CD0"]
 			id: "45DAC8511A0309D2"
+			rewards: [{
+				id: "556CE662DC54300C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "20A5A3EEC7BE6F6A"
 				item: "rats:rat_upgrade_tick_accelerator"
@@ -102,6 +190,17 @@
 			dependencies: ["45DAC8511A0309D2"]
 			description: ["何尝不是加速火把？"]
 			id: "5D98A0CA3E197A24"
+			rewards: [{
+				id: "64415538E68A4252"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "13DB5127DE982B89"
 				item: "rats:rat_upgrade_time_manipulator"
@@ -113,6 +212,17 @@
 		{
 			dependencies: ["51880249A3AB7081"]
 			id: "477467DA569736E0"
+			rewards: [{
+				id: "0FE371B9F762BAC5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "029F9EA8A6198E0C"
 				item: "rats:rat_upgrade_nonbeliever"
@@ -124,6 +234,17 @@
 		{
 			dependencies: ["2CC76D1A1A2A4F76"]
 			id: "51880249A3AB7081"
+			rewards: [{
+				id: "319E257054546F59"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "75B7315F969F31C2"
 				item: "rats:rat_upgrade_god"
@@ -135,6 +256,17 @@
 		{
 			description: ["瘟疫医生被雷击后，或使用瘟疫古卷生成黑死神。"]
 			id: "166164F1DD53FAEC"
+			rewards: [{
+				id: "42AA23EB3E75C90F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C887C7AB8C396D0"
 				item: {
@@ -151,6 +283,17 @@
 		}
 		{
 			id: "04C35B796E4EE5B3"
+			rewards: [{
+				id: "49D0E17F37860C94"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1AA56AF8621E5C06"
 				item: "rats:trash_can"
@@ -163,6 +306,17 @@
 			dependencies: ["04C35B796E4EE5B3"]
 			description: ["右击一下老鼠也许会有神奇的事情发生。"]
 			id: "626F04AA1D77CA48"
+			rewards: [{
+				id: "11C1795A4511D49B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "308405AFEDCB4809"
 				item: "rats:filth_corruption"
@@ -179,6 +333,17 @@
 			dependency_requirement: "one_completed"
 			description: ["进入鼠西洲的世界吧！"]
 			id: "62DB227C75A54957"
+			rewards: [{
+				id: "1B6F97C428601A43"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 9L
 				id: "21081AD6D749C05C"
@@ -193,6 +358,17 @@
 			description: ["类似铁傀儡摆放方式，只是中间的方块为战机核心，其他用大理石块即可。"]
 			icon: "rats:marbled_cheese_rat_head"
 			id: "7A20CF4C63531C89"
+			rewards: [{
+				id: "5E51BFB75DBAFC42"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "40CED1D21914FEAA"
@@ -218,6 +394,17 @@
 			description: ["对野生老鼠丢出这个瓶子！"]
 			icon: "rats:psionic_rat_brain"
 			id: "57C7F84BBB535301"
+			rewards: [{
+				id: "65396454AF397F08"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "483C358591F93E91"
@@ -237,6 +424,17 @@
 			dependencies: ["62DB227C75A54957"]
 			description: ["拉响警报！"]
 			id: "5798484D611F43EE"
+			rewards: [{
+				id: "47C75D66B03ABAD5"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "544D805A614F35FF"
 				item: "rats:biplane_wing"
@@ -249,6 +447,17 @@
 			dependencies: ["62DB227C75A54957"]
 			description: ["找到天空的那艘幽灵船。"]
 			id: "5496F23535223B73"
+			rewards: [{
+				id: "62EE07A51A5A9BAC"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "78BA5A8D7F43E7B9"
 				item: "rats:dutchrat_wheel"
@@ -265,6 +474,17 @@
 				"57C7F84BBB535301"
 			]
 			id: "2B45FB41FBADF019"
+			rewards: [{
+				id: "23AC2AAA81EDF587"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "52E916B5B284C9B9"
 				item: "rats:idol_of_ratlantis"

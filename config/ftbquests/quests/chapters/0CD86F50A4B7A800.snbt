@@ -41,7 +41,7 @@
 		}
 		{
 			dependencies: ["1EE2729C31EF9DDE"]
-			description: ["用牙齿咬一下自己"]
+			description: ["用牙齿咬一下自己，再送你一点小零食。"]
 			id: "0DC485395002C69A"
 			rewards: [
 				{
@@ -59,6 +59,12 @@
 							money: 1
 						}
 					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5FC04C97207B348C"
+					item: "bxp2:blood_sac"
 					type: "item"
 				}
 			]

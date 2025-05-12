@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:creative_ability",
+  "text": [
+    {
+      "text": "给匠魂物品添加一个额外的能力槽。"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "可以使用多个",
+    "你可以在大轩商店购买或任务获得"
+  ]
+}

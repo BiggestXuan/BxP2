@@ -15,6 +15,11 @@
         "level": 3,
         "name": "bxp2:fist_of_absolute_justice"
       }
+      ,
+    {
+      "name":"bxp2:server_save_kill",
+      "level":1
+    }
     ]
   }
 }

@@ -13,6 +13,10 @@ public function removeCraftRecipe(output as IIngredient) as void{
     craftingTable.remove(output);
 }
 
+public function removeCraftRecipeByName(name as string) as void{
+    craftingTable.removeByName([name]);
+}
+
 public function addCraftRecipe(inputs as IIngredient[][],output as IItemStack, addon as string) as void{
    craftingTable.addShaped(CrTManager.getRecipeName(output,addon),output,inputs);
 }
@@ -95,3 +99,11 @@ modifyCraftRecipe([
     [d,<item:minecraft:netherrack>,d],
     [d,d,d]
 ],<item:minecraft:netherite_upgrade_smithing_template>,"mc");
+
+
+removeCraftRecipeByName("mekanism_extras:naquadah_reactor/port");
+removeCraftRecipeByName("mekanism_extras:naquadah_reactor/controller");
+removeFurnaceRecipe(<item:biggerreactors:graphite_ingot>);
+removeCraftRecipe(<item:aether:golden_ring>);
+removeCraftRecipe(<item:extendedcrafting:elite_component>);
+addShaplessRecipe([<item:extendedcrafting:black_iron_slate>,<item:extendedcrafting:black_iron_slate>,<item:extendedcrafting:black_iron_slate>,<item:extendedcrafting:black_iron_slate>,<item:bxp2:oumang_ingot>,<item:bxp2:bx_unstable_ingot>,<item:bxp2:bx_unstable_ingot>],<item:extendedcrafting:elite_component>*4,"bxp2");

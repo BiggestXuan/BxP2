@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:sunshine_protect",
+  "text": [
+    {
+      "text": "对吸血鬼玩家和实体提供持续的防晒保护。"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "最高1级",
+    "每级需要1个能力槽"
+  ]
+}

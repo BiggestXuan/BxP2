@@ -3,7 +3,7 @@ package biggestxuan.bxp2.integration.CraftTweaker;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.items.IBXItem;
-import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
+import biggestxuan.bxp2.integration.TConstruct.TinkersSurvival;
 import biggestxuan.bxp2.recipes.CombineCycleRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;

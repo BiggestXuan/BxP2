@@ -4,6 +4,10 @@
       {
         "level": 1,
         "name": "bxp2:money_devourer"
+      },
+      {
+        "name":"bxp2:px_killer",
+        "level":1
       }
     ],
     "tconstruct:grip": [

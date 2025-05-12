@@ -1588,11 +1588,6 @@
 					type: "item"
 				}
 				{
-					id: "584317CF7BD4603C"
-					item: "mekanism:module_gravitational_modulating_unit"
-					type: "item"
-				}
-				{
 					id: "5FCD742D15B94D28"
 					item: {
 						Count: 1
@@ -1633,14 +1628,16 @@
 				}
 			]
 			title: "我是超人强"
-			x: 24.0d
-			y: 9.0d
+			x: 21.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"2D70733A9B44481A"
 				"3563AEE73B167787"
+				"28968696FD3200E7"
 			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
 			id: "05E2C2520A248F50"
 			rewards: [
 				{
@@ -1661,7 +1658,8 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 3.0d
+			subtitle: "开火！"
 			tasks: [
 				{
 					id: "7AC2DA9AC2B6F23B"
@@ -1674,13 +1672,14 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: 9.0d
+			x: 28.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
 				"2D70733A9B44481A"
 				"3563AEE73B167787"
+				"28968696FD3200E7"
 			]
 			id: "51C08C5CBEFBA044"
 			rewards: [
@@ -1702,7 +1701,7 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 3.0d
 			tasks: [
 				{
 					id: "1A317A87BA85EAA3"
@@ -1715,8 +1714,8 @@
 					type: "item"
 				}
 			]
-			x: 21.0d
-			y: 9.0d
+			x: 28.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1725,6 +1724,7 @@
 				"3F1EB5EFB1F89D8D"
 				"5D28A96BBD032AE2"
 				"2AEA6C49BF751FEB"
+				"2234190DF42A84AF"
 			]
 			description: ["当你合成完毕后手持10秒，即可进入下界。"]
 			icon: "bxp2:bx_ingot"
@@ -2374,7 +2374,7 @@
 				item: "mekanism_extras:alloy_thermonuclear"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 31.0d
 			y: 0.0d
 		}
 		{
@@ -2399,7 +2399,7 @@
 				item: "mekanism_extras:alloy_shining"
 				type: "item"
 			}]
-			x: 34.5d
+			x: 37.0d
 			y: 0.0d
 		}
 		{
@@ -2421,7 +2421,7 @@
 				item: "mekanism_extras:alloy_spectrum"
 				type: "item"
 			}]
-			x: 37.5d
+			x: 40.0d
 			y: 0.0d
 		}
 		{
@@ -2465,7 +2465,7 @@
 				item: "mekanism_extras:supreme_control_circuit"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 31.0d
 			y: 3.0d
 		}
 		{
@@ -2490,7 +2490,7 @@
 				item: "mekanism_extras:cosmic_control_circuit"
 				type: "item"
 			}]
-			x: 34.5d
+			x: 37.0d
 			y: 3.0d
 		}
 		{
@@ -2512,7 +2512,7 @@
 				item: "mekanism_extras:infinite_control_circuit"
 				type: "item"
 			}]
-			x: 37.5d
+			x: 40.0d
 			y: 3.0d
 		}
 		{
@@ -2667,7 +2667,7 @@
 				item: "mekanism_extras:cosmic_tier_installer"
 				type: "item"
 			}]
-			x: 34.5d
+			x: 37.0d
 			y: 6.0d
 		}
 		{
@@ -2693,7 +2693,7 @@
 				item: "mekanism_extras:supreme_tier_installer"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 31.0d
 			y: 6.0d
 		}
 		{
@@ -2719,7 +2719,7 @@
 				item: "mekanism_extras:infinite_tier_installer"
 				type: "item"
 			}]
-			x: 37.5d
+			x: 40.0d
 			y: 6.0d
 		}
 		{
@@ -2742,8 +2742,8 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 12.0d
+			x: 31.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -2776,7 +2776,7 @@
 				item: "bxp2:bx_ench_ingot"
 				type: "item"
 			}]
-			x: 31.5d
+			x: 34.0d
 			y: 1.5d
 		}
 		{
@@ -2810,7 +2810,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C8E8160CC1ABCD1"]
@@ -2833,6 +2833,105 @@
 			}]
 			x: 25.0d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"441976289D07F56E"
+				"283492A83305B610"
+			]
+			description: [
+				"一个相比聚变来说差点意思的反应堆，你需要使用含氟硅铀燃料来给黑体辐射腔供给燃料。"
+				""
+				"以下是简要的燃料制作流程："
+				"1.你之前应该已经制作氢氟酸了，现在用硅岩锭或硅与其反应，合成&3四氟化硅&r。"
+				"2.再次启动裂变，使用钠作为冷却剂，生产&3过热钠&r，和四氟化硅合成&b氟硅酸钠&r。"
+				"3.用之前生产的六氟化铀和氟硅酸钠合成&3氟硅酸铀酰&r。"
+				"4.和四氟化钚合成&b含氟硅铀燃料&r。"
+				""
+				"启动硅岩反应堆可以产生一些电量，此外还可以产生钋蒸汽，这是合成聚变反应堆或者超临界的重要材料。"
+			]
+			icon: "mekanism_extras:naquadah_reactor_controller"
+			id: "28968696FD3200E7"
+			rewards: [{
+				id: "3610ACBCF2D49F91"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			size: 3.0d
+			tasks: [
+				{
+					id: "35EB36A581B600C7"
+					item: "mekanism_extras:naquadah_reactor_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "45D99703DBD340CB"
+					item: { Count: 16, id: "mekanism_extras:naquadah_reactor_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "572E0C0C028958E9"
+					item: { Count: 2, id: "mekanism_extras:naquadah_reactor_port" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "64942A8996C406AF"
+					item: { Count: 2, id: "mekanism_extras:lead_coated_laser_focus_matrix" }
+					type: "item"
+				}
+				{
+					id: "791B33E15CAD3B03"
+					item: "mekanism_extras:naquadah_hohlraum"
+					type: "item"
+				}
+			]
+			title: "硅岩反应堆"
+			x: 28.0d
+			y: 1.5d
+		}
+		{
+			description: ["没有烈焰血？试试植物魔法的恶魔南瓜头吧～"]
+			icon: "mbd2:bx_furnace"
+			id: "2234190DF42A84AF"
+			rewards: [{
+				count: 16
+				id: "0EE5334EE48EF804"
+				item: "bxp2:bx_unstable_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E5FF877D01F4984"
+					item: "mbd2:bx_furnace"
+					type: "item"
+				}
+				{
+					id: "0893A3B5C04D26E2"
+					item: "mbd2:item_input"
+					type: "item"
+				}
+				{
+					id: "7DC5479373D90407"
+					item: "mbd2:energy_input"
+					type: "item"
+				}
+				{
+					id: "479023C07E0C3505"
+					item: "mbd2:item_output"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 3.0d
 		}
 	]
 	title: "通用机械"

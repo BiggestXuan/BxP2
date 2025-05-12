@@ -9,13 +9,12 @@ import biggestxuan.bxp2.integration.Mekanism.BxPGases;
 import biggestxuan.bxp2.integration.Mekanism.BxPInfuseTypes;
 import biggestxuan.bxp2.integration.Mekanism.BxPMekFluids;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
-import biggestxuan.bxp2.integration.Thinker.Modifiers.BxPModifiers;
-import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
+import biggestxuan.bxp2.integration.TConstruct.TinkersSurvival;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.network.PacketHandler;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -44,11 +43,11 @@ import javax.annotation.Nullable;
 @Mod(BxP2.MODID)
 public class BxP2
 {
-    public static boolean devMode = false;
+    public static boolean devMode = true;
     @SuppressWarnings("all")
     public static String TITLE = "BxP2 - " + BxP2.VERSION + (devMode ? "-DevMode" : "");
     public static final String MODID = "bxp2";
-    public static final String VERSION = "Beta-0.4.0";
+    public static final String VERSION = "Beta-0.5.0";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static final Logger LOGGER = LogUtils.getLogger();

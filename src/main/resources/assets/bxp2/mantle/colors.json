@@ -20,7 +20,19 @@
     "dragon_damage": "#1D428F",
     "wyvern_damage": "#36134A",
     "awakened_damage": "#B12400",
-    "chaotic_damage": "#140808"
+    "chaotic_damage": "#140808",
+    "black_death": "#1c1d2a",
+    "creative_ability": "#c6c411",
+    "creative_upgrade": "#c6c411",
+    "plague_damage": "#1c1d2a",
+    "fps_killer": "#FF1493",
+    "px_killer": "#9932CC",
+    "server_save_kill": "#696969",
+    "drink_blood": "#822b2a",
+    "lucky_attack": "#b7f2ff",
+    "fly": "#b460ce",
+    "sunshine_protect": "#e6af15",
+    "omite": "#53a4fc"
   },
   "material.bxp2": {
     "bx_unstable": "#5AE4E6",
@@ -38,6 +50,10 @@
     "terra_steel": "#69E561",
     "elementium_steel": "#C342A6",
     "wyvern": "#7612B0",
-    "chaotic": "#120430"
+    "chaotic": "#120430",
+    "plague_metal": "#1c1d2a",
+    "blood_iron": "#822b2a",
+    "ouhuang": "#b7f2ff",
+    "omite": "#53a4fc"
   }
 }

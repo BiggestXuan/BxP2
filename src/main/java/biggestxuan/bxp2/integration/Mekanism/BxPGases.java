@@ -36,5 +36,9 @@ public class BxPGases {
     public static final GasRegistryObject<Gas> Fluorine = GASES.register("fluorine",0xE6E6FA);
     public static final GasRegistryObject<Gas> Plutonium_Tetrafluoride = GASES.register("plutonium_tetrafluoride",0xFF3860,new GasAttributes.Radiation(30F));
     public static final GasRegistryObject<Gas> Polonium_Dioxide = GASES.register("polonium_dioxide",0x4B0082,new GasAttributes.Radiation(30F));
-
+    public static final GasRegistryObject<Gas> Curium = GASES.register("curium",0x1E90FF,new GasAttributes.Radiation(50F));
+    public static final GasRegistryObject<Gas> ActivatedAmericium = GASES.register("activated_americium",0xf2b5b4);
+    public static final GasRegistryObject<Gas> ActivatedCurium = GASES.register("activated_curium",0x89bbec);
+    public static final GasRegistryObject<Gas> SodiumFluosilicate = GASES.register("sodium_fluosilicate",0xF0E68C);
+    public static final GasRegistryObject<Gas> UranylFluosilicate = GASES.register("uranyl_fluosilicate",0x9ACD32);
 }

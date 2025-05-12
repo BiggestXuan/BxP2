@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:plague_metal"
+  },
+  "temperature": 1000,
+  "time": 150,
+  "result":
+  {
+    "fluid": "bxp2:molten_plague_metal",
+    "amount": 90
+  }
+}

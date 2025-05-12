@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:ouhuang_ingot"
+  },
+  "temperature": 1000,
+  "time": 150,
+  "result":
+  {
+    "fluid": "bxp2:molten_ouhuang",
+    "amount": 90
+  }
+}

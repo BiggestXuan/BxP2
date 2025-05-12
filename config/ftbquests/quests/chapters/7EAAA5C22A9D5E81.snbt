@@ -1134,7 +1134,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["6360991687F1453E"]
+			dependencies: ["1D719F6738F91561"]
 			id: "6AC8F61414B5F1A2"
 			rewards: [{
 				id: "291E0F6DB2236447"
@@ -1152,7 +1152,7 @@
 				item: "bxp2:oumang_upgrade"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -8.5d
 		}
 		{
@@ -1175,7 +1175,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["09BA9DF1FBA1280B"]
@@ -1196,8 +1196,184 @@
 				item: "bxp2:ouhuang_upgrade"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["46781D191A3C8C0C"]
+			id: "7445D73E1EA43C14"
+			rewards: [{
+				id: "449AA87D4683A71F"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E288BA5FAAE978F"
+				item: "bxp2:wyvern_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["61F303A02282D316"]
+			id: "4644BB45534F0E65"
+			rewards: [{
+				id: "272D4609C54D331C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "011FD0D7E46953ED"
+				item: "bxp2:draconium_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4644BB45534F0E65"]
+			id: "083DBAE84FC39C09"
+			rewards: [{
+				id: "2848EBC9BC40487A"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D98BE64CF7AB2C2"
+				item: "bxp2:chaotic_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6360991687F1453E"]
+			id: "1D719F6738F91561"
+			rewards: [{
+				id: "2FFB6608A4F4D64C"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "64AF0CF0FB47DEF7"
+				item: "bxp2:bx_upgrade"
+				type: "item"
+			}]
+			x: 7.5d
 			y: -8.5d
+		}
+		{
+			dependencies: ["7445D73E1EA43C14"]
+			id: "61F303A02282D316"
+			rewards: [{
+				id: "5D4B70DA70CE8FAE"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "41521DB580250358"
+				item: "bxp2:ench_bx_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["083DBAE84FC39C09"]
+			id: "614BBEEED2E4E4F0"
+			rewards: [{
+				id: "2B791D4DB8D2526B"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "036948F4561F9AE2"
+				item: "bxp2:final_upgrade"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D199F0EE7ED64D3"]
+			description: ["多方块结构可以在工程师手册中查看。"]
+			id: "0C3DE0FAFC4F07CC"
+			rewards: [
+				{
+					id: "3036C8F3992DA624"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5B37464EC4154EA4"
+					table_id: 2184139927143331923L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "7BF12D9FA6F37CEC"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "0FB7717D9EB428D7"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "30C676BD285DAE2B"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "工程块块"
+			x: -6.5d
+			y: -4.0d
 		}
 	]
 	title: "基础科技"

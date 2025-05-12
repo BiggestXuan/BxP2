@@ -28,4 +28,8 @@ public interface IBxPCapability extends INBTSerializable<CompoundTag> {
     void setMoney(float money);
     int getBuyCreativeCount();
     void setBuyCreativeCount(int count);
+    boolean isPcl();
+    void setPcl(boolean pcl);
+    int[] getClientData();
+    void setClientData(int[] data); //0 fps
 }

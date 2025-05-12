@@ -73,7 +73,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "618448AEED93F680"
-				item: "megacells:cell_component_256m"
+				item: "bxp2:final_upgrade"
 				type: "item"
 			}]
 			x: 0.0d

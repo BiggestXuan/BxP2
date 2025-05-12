@@ -4,9 +4,13 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.integration.Mekanism.MekUtils;
+import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.utils.Utils;
+import biggestxuan.bxp2.utils.WorldUtils;
 import com.brandon3055.draconicevolution.init.DEDamage;
 import com.jerotes.jerotesvillage.entity.Animal.DeepBatEntity;
+import de.teamlapen.vampirism.api.VampirismAPI;
+import de.teamlapen.vampirism.api.entity.player.vampire.IVampirePlayer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.server.level.ServerLevel;
@@ -18,10 +22,18 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingHealEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.living.MobSpawnEvent;
@@ -29,6 +41,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.system.MathUtil;
 
+import java.util.Collection;
 import java.util.UUID;
 
 /**
@@ -166,5 +179,32 @@ public class LivingCombatEvent {
             }
             mob.heal(mob.getMaxHealth());
         }
+    }
+
+    @SubscribeEvent
+    public static void deathDrop(LivingDropsEvent event){
+        LivingEntity livingEntity = event.getEntity();
+        if(!livingEntity.level().isClientSide){
+            ItemStack bloodSac = BxPItems.BLOOD_SAC.get().getDefaultInstance();
+            Collection<ItemEntity> drops = event.getDrops();
+            if(livingEntity instanceof Animal){
+                if(Config.difficulty == 1){
+                    bloodSac.setCount(2);
+                }
+                if(Config.difficulty == 2 && Utils.isRandom(0.25)){
+                    bloodSac.setCount(2);
+                }
+                drops.add(WorldUtils.getItemEntity(livingEntity,bloodSac));
+                if (Config.difficulty != 3 && Utils.isRandom(0.5)) {
+                    drops.add(WorldUtils.getItemEntity(livingEntity,bloodSac));
+                }
+            }
+            if(livingEntity instanceof Monster && Config.difficulty != 3 && event.getSource().getDirectEntity() instanceof Player player){
+                if(VampirismAPI.getVampirePlayer(player).isPresent()){
+                    drops.add(WorldUtils.getItemEntity(livingEntity,bloodSac));
+                }
+            }
+        }
+
     }
 }

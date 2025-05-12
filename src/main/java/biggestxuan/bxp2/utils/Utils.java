@@ -1,11 +1,14 @@
 package biggestxuan.bxp2.utils;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import slimeknights.tconstruct.library.modifiers.Modifier;
+import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
 
 import java.util.*;
 
@@ -166,6 +169,15 @@ public final class Utils {
 
     public static void sendMessage(Player player, String message){
         player.displayClientMessage(BxP2.tr(message),false);
+    }
+
+    public static boolean playerArmorHasTrait(Player player, Modifier modifier){
+        for(ItemStack stack : player.getInventory().armor){
+            if(ModifierUtil.getModifierLevel(stack, modifier.getId()) > 0){
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void sendMessage(Player player, Component message){

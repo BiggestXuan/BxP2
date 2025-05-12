@@ -54,7 +54,7 @@ public class CrTPlantRecipe {
                 water(),
                 getOutputList(),
                 getOutputChance(),
-                getOutWater()
+                new ArrayList<>()
         );
     }
 

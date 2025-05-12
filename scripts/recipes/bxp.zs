@@ -99,18 +99,27 @@ for i in 0 .. 4{
 transRatsRecipe(<item:jerotesvillage:meror_metal_ingot>,<item:ad_astra:calorite_ingot>);
 
 public function upgradeRecipe(a as IIngredient,b as IIngredient,c as IIngredient,d as IIngredient,e as IItemStack) as void{
-    addCraftRecipe([
-        [a,b,a],
-        [c,d,c],
-        [a,b,a]
-    ],e,"bxp2");
+    if(difficulty() == 1){
+        addCraftRecipe([
+            [a,b,a],
+            [c,d,c],
+            [a,b,a]
+        ],e,"bxp2");
+    }else{
+        addCraftRecipe([
+            [a,b,a],
+            [d,c,d],
+            [a,d,a]
+        ],e,"bxp2");
+    }
 }
 
 public function removeAlloyRecipe(name as string) as void{
     <recipetype:tconstruct:alloying>.removeRecipeByName(name);
 }
 
-upgradeRecipe(<item:bxp2:oumang_ingot>,<item:tinkers_thinking:silky_jewel>,<item:mekanism:ultimate_control_circuit>,<item:thermalendergy:endergy_upgrade_3>,<item:bxp2:oumang_upgrade>);
+upgradeRecipe(<item:bxp2:bx_ingot>,<item:bxp2:caigengzi>,<item:mekanism:elite_control_circuit>,<item:thermalendergy:endergy_upgrade_3>,<item:bxp2:bx_upgrade>);
+upgradeRecipe(<item:bxp2:oumang_ingot>,<item:tinkers_thinking:silky_jewel>,<item:mekanism:ultimate_control_circuit>,<item:bxp2:bx_upgrade>,<item:bxp2:oumang_upgrade>);
 upgradeRecipe(<item:bxp2:ou_gold_ingot>,<item:mekanismscience:pellet_neutron_source>,<item:mekanism_extras:absolute_control_circuit>,<item:bxp2:oumang_upgrade>,<item:bxp2:ou_gold_upgrade>);
 upgradeRecipe(<item:bxp2:ouhuang_ingot>,<item:mekanism:pellet_antimatter>,<item:mekanism_extras:supreme_control_circuit>,<item:bxp2:ou_gold_upgrade>,<item:bxp2:ouhuang_upgrade>);
 alloyRecipe([<fluid:tinkers_thinking:molten_electrical_steel> * 30,<fluid:tinkers_thinking:molten_tinkers_bronze> * 20,<fluid:tinkers_thinking:molten_obsidian_bronze> * 20,<fluid:tconstruct:molten_amethyst_bronze> * 20],<fluid:bxp2:molten_umbra_amethyst_brass> * 90,900);
@@ -122,3 +131,19 @@ removeAlloyRecipe("tconstruct:smeltery/alloys/molten_lumium");
 removeAlloyRecipe("tconstruct:smeltery/alloys/molten_enderium");
 alloyRecipe([<fluid:tconstruct:molten_tin> * 270,<fluid:tconstruct:molten_silver> * 90,<fluid:thermal:glowstone> * 500],<fluid:tconstruct:molten_lumium> * 360,999);
 alloyRecipe([<fluid:tconstruct:molten_lead> * 270,<fluid:tconstruct:molten_diamond> * 100,<fluid:tconstruct:molten_ender> * 500],<fluid:tconstruct:molten_enderium> * 180,999);
+alloyRecipe([<fluid:bxp2:plague_essence> * 10,<fluid:bxp2:molten_bx> * 30],<fluid:bxp2:molten_plague_metal> * 30,1200);
+upgradeRecipe(<item:bxp2:wyvern_ingot>,<item:minecraft:nether_star>,<item:mekanism_extras:supreme_control_circuit>,<item:bxp2:ouhuang_upgrade>,<item:bxp2:wyvern_upgrade>);
+upgradeRecipe(<item:bxp2:bx_ench_ingot>,<item:mekanism:pellet_antimatter>,<item:mekanism_extras:supreme_control_circuit>,<item:bxp2:wyvern_upgrade>,<item:bxp2:ench_bx_upgrade>);
+upgradeRecipe(<item:bxp2:draconium_ingot>,<item:draconicevolution:dragon_heart>,<item:mekanism_extras:cosmic_control_circuit>,<item:bxp2:ench_bx_upgrade>,<item:bxp2:draconium_upgrade>);
+upgradeRecipe(<item:bxp2:chaotic_ingot>,<item:draconicevolution:chaos_shard>,<item:mekanism_extras:infinite_control_circuit>,<item:bxp2:draconium_upgrade>,<item:bxp2:chaotic_upgrade>);
+upgradeRecipe(<item:extendedcrafting:the_ultimate_ingot>,<item:ae2_mega_things:item_disk_drive_256m>,<item:mekanism_extras:infinite_control_circuit>,<item:bxp2:chaotic_upgrade>,<item:bxp2:final_upgrade>);
+var ups = [<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>,<item:thermalendergy:endergy_upgrade_3>];
+for i in 0 .. ups.length{
+    removeCraftRecipe(ups[i]);
+}
+upgradeRecipe(<item:thermalendergy:prismalium_ingot>,<item:minecraft:ender_eye>,<item:thermal:enderium_gear>,<item:thermal:upgrade_augment_3>,<item:thermalendergy:endergy_upgrade_1>);
+upgradeRecipe(<item:thermalendergy:melodium_ingot>,<item:minecraft:shulker_shell>,<item:thermalendergy:prismalium_gear>,<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>);
+upgradeRecipe(<item:thermalendergy:stellarium_ingot>,<item:minecraft:clay>,<item:thermalendergy:melodium_gear>,<item:thermalendergy:endergy_upgrade_2>,<item:thermalendergy:endergy_upgrade_3>);
+addShaplessRecipe([<item:vampirism:blood_sieve>],<item:mbd2:common_food_to_blood>,"bxp2");
+alloyRecipe([<fluid:vampirism:blood> * 600,<fluid:tconstruct:molten_iron> * 90],<fluid:bxp2:molten_blood_iron> * 90,700);
+alloyRecipe([<fluid:tconstruct:molten_iron> * 90,<fluid:minecraft:water> * 2000],<fluid:bxp2:molten_omite> * 90,30);

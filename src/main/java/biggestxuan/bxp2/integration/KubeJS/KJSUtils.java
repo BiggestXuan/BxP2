@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -117,5 +118,9 @@ public class KJSUtils {
                         },new ItemStack[]{BxP2.getStack("bxp2:ench_cai_seed")}, BxPCatalyst.ADAPT.CAISEED,
                         22500,330000000,0).copy()
         );
+    }
+
+    public static List<int[]> getCuriumRecipe(){
+        return RecipeUtils.getCuriumRecipeData();
     }
 }

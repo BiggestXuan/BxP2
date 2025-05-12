@@ -12,6 +12,10 @@
       {
         "level": 1,
         "name": "bxp2:guisuo_reckoning"
+      },
+      {
+        "leval": 1,
+        "name": "bxp2:evolution"
       }
     ],
     "tconstruct:grip": [

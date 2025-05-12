@@ -40,6 +40,17 @@ function addBXFuranceRecipe(event,inputs,outputs,data,name){
     .outputItems(outputs)
 }
 
+function addCuriumRecipe(event,data){
+    event.recipes.mbd2.curium_recipe()
+    .id("curium_recipe_"+data[0]+"_"+data[1])
+    .priority(data[4])
+    .perTick(builder => builder.inputFE(data[2]))
+    .duration(data[3])
+    .inputItems(data[0].toString()+"x mekanism:upgrade_energy",data[1].toString()+"x mekanism:upgrade_speed")
+    .inputGases("300x bxp2:activated_americium")
+    .outputGases("300x bxp2:activated_curium")
+}
+
 function addBXUnstableFurnaceRecipe(event,inputs,outputs,data,name){
     event.recipes.mbd2.bx_unstable_furnace()
     .id(name)
@@ -52,7 +63,7 @@ function addBXUnstableFurnaceRecipe(event,inputs,outputs,data,name){
 
 function addEasyFissionRecipe(event,data){
     event.recipes.mbd2.easy_fission()
-    .id("easy_fission"+data[0]+"_"+data[1])
+    .id("easy_fission_"+data[0]+"_"+data[1])
     .duration(data[1])
     .inputGases(data[0]+"x mekanism:uranium_oxide")
     .outputGases(data[0]+"x mekanism:fissile_fuel")
@@ -87,6 +98,10 @@ ServerEvents.recipes((event) => {
                 addBXFuranceRecipe(event,q,v,z,a)
             })
         })
+    })
+    BxP2.getCuriumRecipe().forEach(data => {
+        console.log(""+data[0]+"_"+data[1]+"_"+data[2]+"_"+data[3]+"_"+data[4])
+        addCuriumRecipe(event,data)
     })
     BxP2.getEnchSeedRecipe().forEach((a,b) => {
         b.forEach((k,v) => {

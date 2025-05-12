@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "fluid": "bxp2:molten_blood_iron",
+    "amount": 90
+  },
+  "result": "vampirism:blood_infused_iron_ingot",
+  "cooling_time": 60
+}

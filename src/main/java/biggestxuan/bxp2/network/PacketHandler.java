@@ -5,6 +5,7 @@ import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.network.toClient.CapabilityPacket;
 import biggestxuan.bxp2.network.toServer.BuyGoodsPacket;
 import biggestxuan.bxp2.network.toServer.ChangeDifficultyPacket;
+import biggestxuan.bxp2.network.toServer.ClientStatePacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.PacketDistributor;
@@ -47,6 +48,14 @@ public class PacketHandler {
                 .decoder(CapabilityPacket::new)
                 .consumerNetworkThread(CapabilityPacket::handle)
                 .add();
+
+        HANDLER.registerMessage(
+                ++id,
+                ClientStatePacket.class,
+                ClientStatePacket::encode,
+                ClientStatePacket::decode,
+                ClientStatePacket::handle
+        );
 
     }
 

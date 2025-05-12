@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "bxp2:creative_upgrade_skull"
+    }
+  ],
+  "result": "bxp2:creative_upgrade",
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

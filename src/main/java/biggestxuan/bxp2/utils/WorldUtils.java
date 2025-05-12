@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.utils;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -21,6 +22,10 @@ public final class WorldUtils {
 
     public static AABB expandAABB(BlockPos pos, int range){
         return new AABB(new BlockPos(pos.getX()-range,pos.getY()-range,pos.getZ()-range),new BlockPos(pos.getX()+range,pos.getY()+range,pos.getZ()+range));
+    }
+
+    public static ItemEntity getItemEntity(Entity entity,ItemStack stack){
+        return new ItemEntity(entity.level(),entity.getX(),entity.getY(),entity.getZ(),stack);
     }
 
     public static List<LivingEntity> getNearLiving(LivingEntity living, int distance, boolean includePlayer){

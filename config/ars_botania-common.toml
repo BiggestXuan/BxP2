@@ -5,7 +5,7 @@ max_rate = 1000
 
 [player_mana_convert]
 	#Enable player mana convert
-	enable = true
+	enable = false
 	#Allow charging items using player's mana recovery
 	charge = true
 	#One player mana(Ars) to X Mana(Bot) [Referred when receiving/extracting ars-nouveau mana]

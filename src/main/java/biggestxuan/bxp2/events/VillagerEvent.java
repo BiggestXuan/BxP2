@@ -18,13 +18,11 @@ public class VillagerEvent {
     public static void villagerTrade(VillagerTradesEvent event){
         var trade = event.getTrades();
         if(event.getType() == VillagerProfession.FARMER){
-            if(trade.containsKey(2)){
-                trade.get(1).add((entity,rand) -> new MerchantOffer(
-                        BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance(),
-                        BxPItems.CAI_SEED.get().getDefaultInstance(),
-                        16,2,0.05f
-                ));
-            }
+            trade.get(1).add((entity,rand) -> new MerchantOffer(
+                    BxPItems.BX_UNSTABLE_INGOT.get().getDefaultInstance(),
+                    BxPItems.CAI_SEED.get().getDefaultInstance(),
+                    16,2,0.05f
+            ));
         }
     }
 }

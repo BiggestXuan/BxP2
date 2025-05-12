@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "mekanism:module_gravitational_modulating_unit"
+    }
+  ],
+  "result": "bxp2:fly",
+  "slots": {
+    "abilities": 1
+  },
+  "level": 1,
+  "tools": {
+    "tag": "tconstruct:modifiable/armor"
+  }
+}

@@ -5,7 +5,7 @@
 	group: "455ED0AB8CCEDEB5"
 	icon: "brewery:beer_wheat"
 	id: "36A3E07FF1A1A4D8"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{

@@ -7,7 +7,7 @@
 	#Range: 5 ~ 600
 	throwdelay = 10
 	#Sets whether should the mod be turned off when the fishing rod is about to break.
-	rodprotect = false
+	rodprotect = true
 	#Sets the delay before casting the fishing rod again (in ticks).
 	#Minimum is 1 tick to allow Auto Replace to take effect.
 	#Range: 1 ~ 600
@@ -23,7 +23,7 @@
 
 	[forgeautofish.filter]
 		#Toggles the entire item filter
-		all = true
+		all = false
 		#Sets item filter
 		items = ["minecraft:rotten_flesh"]
 		#Puts these items to top of filter.

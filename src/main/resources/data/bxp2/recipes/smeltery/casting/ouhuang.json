@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "fluid": "bxp2:molten_ouhuang",
+    "amount": 90
+  },
+  "result": "bxp2:ouhuang_ingot",
+  "cooling_time": 60
+}

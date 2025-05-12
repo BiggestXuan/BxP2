@@ -9,15 +9,18 @@ import biggestxuan.bxp2.integration.Mekanism.MekaSuit.BxPModules;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.ChaosProtectItem;
 import biggestxuan.bxp2.integration.Mekanism.MekaSuit.ModuleItem.SunProtectItem;
 import biggestxuan.bxp2.integration.Thermal.UpgradeItem;
+import de.teamlapen.vampirism.items.VampirismItemBloodFoodItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.tools.modifiers.slotless.CreativeSlotModifier;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -91,9 +94,20 @@ public class BxPItems {
     public static final RegistryObject<Item> SHIELD_SCROLL = ITEMS.register("chaos_shield_scroll", BreakShieldItem::new);
     public static final RegistryObject<Item> DRACONIC_HEALTH_SCROLL = ITEMS.register("chaos_health_scroll", DamageItem::new);
     public static final RegistryObject<Item> CRYSTAL_SCROLL = ITEMS.register("chaos_crystal_scroll", KillCrystalItem::new);
+    public static final RegistryObject<Item> BX_UPGRADE = ITEMS.register("bx_upgrade",() -> new UpgradeItem(18f));
     public static final RegistryObject<Item> OUMANG_UPGRADE = ITEMS.register("oumang_upgrade",() -> new UpgradeItem(32f));
     public static final RegistryObject<Item> OU_GOLD_UPGRADE = ITEMS.register("ou_gold_upgrade",() -> new UpgradeItem(48f));
     public static final RegistryObject<Item> OU_HUANG_UPGRADE = ITEMS.register("ouhuang_upgrade",() -> new UpgradeItem(128f));
+    public static final RegistryObject<Item> WYVERN_UPGRADE = ITEMS.register("wyvern_upgrade",() -> new UpgradeItem(192f));
+    public static final RegistryObject<Item> ENCH_BX_UPGRADE = ITEMS.register("ench_bx_upgrade",() -> new UpgradeItem(256){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
+    public static final RegistryObject<Item> DRACONIUM_UPGRADE = ITEMS.register("draconium_upgrade",() -> new UpgradeItem(384f));
+    public static final RegistryObject<Item> CHAOTIC_UPGRADE = ITEMS.register("chaotic_upgrade",() -> new UpgradeItem(512f));
+    public static final RegistryObject<Item> FINAL_UPGRADE = ITEMS.register("final_upgrade",() -> new UpgradeItem(1024f));
     public static final RegistryObject<Item> POLY_INGOT = ITEMS.register("poly_ingot",() -> new BxPItem(37){
         @Override
         public Rarity getRarity(ItemStack p_41461_) {
@@ -104,6 +118,7 @@ public class BxPItems {
     public static final RegistryObject<Item> STAINLESS_STEEL_INGOT = ITEMS.register("stainless_steel_ingot",() -> new BxPItem(9));
     public static final RegistryObject<Item> Seismite_INGOT = ITEMS.register("seismite_ingot",() -> new BxPItem(26));
     public static final RegistryObject<Item> Necrosilver_INGOT = ITEMS.register("necrosilver_ingot",() -> new BxPItem(7));
+    public static final RegistryObject<Item> PLAGUE_METAL = ITEMS.register("plague_metal",BxPItem::new);
     public static final RegistryObject<Item> WYVERN_INGOT = ITEMS.register("wyvern_ingot",BxPItem::new);
     public static final RegistryObject<Item> DRACONIUM_INGOT = ITEMS.register("draconium_ingot",BxPItem::new);
     public static final RegistryObject<Item> CHAOTIC_INGOT = ITEMS.register("chaotic_ingot",() -> new BxPItem(){
@@ -112,6 +127,10 @@ public class BxPItems {
             return true;
         }
     });
+    public static final RegistryObject<Item> OMITE_INGOT = ITEMS.register("omite_ingot",BxPItem::new);
+    public static final RegistryObject<Item> BLOOD_SAC = ITEMS.register("blood_sac",() -> new VampirismItemBloodFoodItem(new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build(),new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build()));
+    public static final RegistryObject<Item> CREATIVE_ABILITY_SKULL = ITEMS.register("creative_ability_skull",BxPItem::new);
+    public static final RegistryObject<Item> CREATIVE_UPGRADE_SKULL = ITEMS.register("creative_upgrade_skull",BxPItem::new);
 
     public static final RegistryObject<Item> YUNXI = registryPlayerModelBlock("yunxi", BxPBlocks.YUNXI);
     public static final RegistryObject<Item> BIGGEST_XUAN = registryPlayerModelBlock("biggest_xuan", BxPBlocks.BIGGEST_XUAN);

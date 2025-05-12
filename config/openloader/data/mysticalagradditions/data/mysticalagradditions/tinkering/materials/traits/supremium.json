@@ -1,0 +1,16 @@
+{
+  "perStat":{
+    "tconstruct:head":[
+      {
+        "name":"bxp2:server_save_kill",
+        "level":1
+      }
+    ]
+  },
+  "default": [
+    {
+      "name": "mysticalagradditions:prosperous",
+      "level": 1
+    }
+  ]
+}

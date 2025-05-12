@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"vampirism:blood_infused_iron_ingot"
+  },
+  "temperature": 1000,
+  "time": 150,
+  "result":
+  {
+    "fluid": "bxp2:molten_blood_iron",
+    "amount": 90
+  }
+}

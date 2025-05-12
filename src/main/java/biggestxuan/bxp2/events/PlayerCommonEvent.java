@@ -3,9 +3,12 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
-import biggestxuan.bxp2.integration.Thinker.TinkersSurvival;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
+import biggestxuan.bxp2.integration.TConstruct.TinkersSurvival;
 import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.utils.*;
+import com.github.alexthe666.rats.server.message.RatsNetworkHandler;
+import com.github.alexthe666.rats.server.message.SyncArmSwingPacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
 import net.minecraft.server.MinecraftServer;
@@ -21,10 +24,11 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import vazkii.botania.common.item.equipment.tool.terrasteel.TerraBladeItem;
+import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
 
 import java.util.List;
 
+import static com.github.alexthe666.rats.server.events.ForgeEvents.handleArmSwing;
 import static net.minecraft.world.level.GameRules.RULE_KEEPINVENTORY;
 
 /**
@@ -36,6 +40,9 @@ public class PlayerCommonEvent {
     @SubscribeEvent
     public static void playerLoggedEvent(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
+        if(player.level().isClientSide){
+            ClientUtils.syncClientData();
+        }
         if(BxP2.devMode){
             BxP2.LOGGER.info("AAA");
             BxP2.LOGGER.info("{}", TinkersSurvival.BLACKLISTED_ITEMS);
@@ -125,6 +132,15 @@ public class PlayerCommonEvent {
                 ItemEntity entity = new ItemEntity(player.level(),player.getX(),player.getY(),player.getZ(),stack);
                 player.level().addFreshEntity(entity);
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void clickEvent(PlayerInteractEvent.LeftClickEmpty event){
+        ItemStack stack = event.getItemStack();
+        if(ModifierUtil.getModifierLevel(stack, BxPModifiers.BlackDeath.get().getId()) > 0){
+            handleArmSwing(event.getItemStack(), event.getEntity());
+            RatsNetworkHandler.CHANNEL.sendToServer(new SyncArmSwingPacket(event.getItemStack()));
         }
     }
 

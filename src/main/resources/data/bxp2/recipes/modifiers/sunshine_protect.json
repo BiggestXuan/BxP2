@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "bxp2:sun_protect_module"
+    }
+  ],
+  "result": "bxp2:sunshine_protect",
+  "slots": {
+    "abilities": 1
+  },
+  "level": 1,
+  "tools": {
+    "tag": "tconstruct:modifiable/armor"
+  }
+}

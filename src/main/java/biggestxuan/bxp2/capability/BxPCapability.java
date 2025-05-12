@@ -17,6 +17,8 @@ public class BxPCapability implements IBxPCapability{
     private int dragonCount = 0;
     private float money = 0;
     private int creativeCount = 0;
+    private boolean pcl = false;
+    private int[] clientData = new int[5];
 
     @Override
     public void setPhase(int phase) {
@@ -108,6 +110,26 @@ public class BxPCapability implements IBxPCapability{
         creativeCount = count;
     }
 
+    @Override
+    public boolean isPcl() {
+        return pcl;
+    }
+
+    @Override
+    public void setPcl(boolean pcl) {
+        this.pcl = pcl;
+    }
+
+    @Override
+    public int[] getClientData() {
+        return clientData;
+    }
+
+    @Override
+    public void setClientData(int[] data) {
+        this.clientData = data;
+    }
+
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();
         tag.putInt("phase", phase);
@@ -119,6 +141,8 @@ public class BxPCapability implements IBxPCapability{
         tag.putInt("dragonCount",dragonCount);
         tag.putFloat("money",money);
         tag.putInt("creativeCount",creativeCount);
+        tag.putBoolean("pcl",pcl);
+        tag.putIntArray("clientData",clientData);
         return tag;
     }
 
@@ -132,5 +156,7 @@ public class BxPCapability implements IBxPCapability{
         dragonCount = tag.getInt("dragonCount");
         money = tag.getFloat("money");
         creativeCount = tag.getInt("creativeCount");
+        pcl = tag.getBoolean("pcl");
+        clientData = tag.getIntArray("clientData");
     }
 }

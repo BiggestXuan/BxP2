@@ -33,7 +33,8 @@ DEFusionRecipe(<item:draconicevolution:draconic_sword>,[ds,ds,ds,ds],<item:bxp2:
 DEFusionRecipe(<item:mekanism_extras:enriched_shining>,[ds,ds,ds,ds],<item:bxp2:chaos_shield_scroll>,2,100000000);
 DEFusionRecipe(<item:bxp2:bx_ench_ingot>,[ds,ds,ds,ds],<item:bxp2:chaos_crystal_scroll>,2,100000000);
 DEFusionRecipe(<item:mekanism_extras:supreme_control_circuit>,[dc,dc,dc,dc,dc,dc,dc,dc],<item:draconicevolution:wyvern_core>*8,0,1000000);
-DEFusionRecipe(<item:bxp2:poly_ingot>,[<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:mekanism_extras:alloy_radiance>,<item:mekanism_extras:alloy_radiance>],<item:bxp2:wyvern_ingot>,1,100000000);
+var bsi = <item:bxp2:ouhuang_ingot>;
+DEFusionRecipe(bsi,[<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:draconicevolution:wyvern_core>,<item:mekanism_extras:alloy_radiance>,<item:mekanism_extras:alloy_radiance>],<item:bxp2:wyvern_ingot>,1,100000000);
 
 public function difficultyRecipe(input as IIngredient,input1 as IIngredient) as void{
     DEFusionRecipe(input,[<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:mekanism_extras:alloy_thermonuclear>,<item:mekanism_extras:alloy_thermonuclear>],<item:bxp2:draconium_ingot>,2,10000000000);
@@ -41,7 +42,7 @@ public function difficultyRecipe(input as IIngredient,input1 as IIngredient) as 
 }
 
 if(difficulty() == 1){
-    difficultyRecipe(<item:bxp2:poly_ingot>,<item:bxp2:poly_ingot>);
+    difficultyRecipe(bsi,bsi);
 }else{
     difficultyRecipe(<item:bxp2:wyvern_ingot>,<item:bxp2:draconium_ingot>);
 }

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "A": {
+        "item": "mekanism:block_lead"
+      },
+      "B": {
+        "tag": "forge:circuits/absolute"
+      }
+    },
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
+    ],
+    "result": {
+      "item": "mekanism_extras:naquadah_reactor_casing",
+      "count": 4
+    }
+  }

@@ -2,7 +2,7 @@
 [General]
 	#1 -> relax mode, 2 -> advanced mode, 3 -> expert mode
 	#Range: 1 ~ 3
-	difficulty = 2
+	difficulty = 1
 	#If true,you must use tconstruct's weapons,tools or armors
 	TinkersSurvival = true
 

@@ -4,7 +4,10 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.utils.PhaseUtils;
+import com.github.alexthe666.rats.registry.RatsEffectRegistry;
+import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
@@ -22,6 +25,7 @@ public class PlayerTickEvent {
     public static void playerTickEvent(TickEvent.PlayerTickEvent event) {
         var player = event.player;
         Level world = player.level();
+        if(event.phase == TickEvent.Phase.START) return;
         if(world.isClientSide){
             if(player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent()){
                 var cap = player.getCapability(BxPCapabilityProvider.CAPABILITY).orElseThrow(NullPointerException::new);
@@ -58,6 +62,10 @@ public class PlayerTickEvent {
                     }*/
                 }
             });
+        }
+        MobEffectInstance instance = player.getEffect(RatsEffectRegistry.PLAGUE.get());
+        if(instance != null && instance.getDuration() < 3){
+            player.removeEffect(instance.getEffect());
         }
     }
 }
