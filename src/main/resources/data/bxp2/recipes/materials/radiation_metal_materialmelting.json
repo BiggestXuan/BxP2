@@ -1,0 +1,9 @@
+{
+  "type":"tconstruct:material_melting",
+  "input": "bxp2:radiation_ingot",
+  "temperature": 1000,
+  "result":{
+    "fluid": "bxp2:molten_radiation_metal",
+    "amount": 90
+  }
+}

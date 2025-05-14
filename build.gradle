@@ -139,6 +139,7 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven { url 'https://modmaven.dev/' }
 }
 
 dependencies {
@@ -153,7 +154,6 @@ dependencies {
     implementation fg.deobf("curse.maven:mantle-74924:6258424")
     implementation fg.deobf("curse.maven:draconic-evolution-223565:6065044")
     implementation fg.deobf("curse.maven:brandons-core-231382:5422013")
-    implementation fg.deobf("curse.maven:mekanism-268560:6258796")
     implementation fg.deobf("curse.maven:cofh-core-69162:5374122")
     implementation fg.deobf("curse.maven:vampirism-become-a-vampire-233029:6289561")
     implementation fg.deobf("curse.maven:codechicken-lib-1-8-242818:5753868")
@@ -167,9 +167,10 @@ dependencies {
     implementation fg.deobf("curse.maven:blood-magic-224791:5290993")
     implementation fg.deobf("curse.maven:mekanism-extras-1026040:6424885")
     implementation fg.deobf("curse.maven:time-in-a-bottle-universal-895919:4744787")
-    implementation fg.deobf("curse.maven:mekanism-generators-268566:6258799")
     implementation fg.deobf("curse.maven:ad-astra-635042:6262032")
     implementation fg.deobf("curse.maven:rhino-416294:6186971")
+    implementation fg.deobf("mekanism:Mekanism:1.20.1-10.4.15.75:generators")
+    implementation fg.deobf("mekanism:Mekanism:1.20.1-10.4.15.75")
     implementation fg.deobf("curse.maven:ldlib-626676:6337779")
     implementation fg.deobf("curse.maven:modern-ui-352491:6199942")
     implementation fg.deobf("curse.maven:botania-225643:6366547")

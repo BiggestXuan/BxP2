@@ -138,8 +138,12 @@ upgradeRecipe(<item:bxp2:draconium_ingot>,<item:draconicevolution:dragon_heart>,
 upgradeRecipe(<item:bxp2:chaotic_ingot>,<item:draconicevolution:chaos_shard>,<item:mekanism_extras:infinite_control_circuit>,<item:bxp2:draconium_upgrade>,<item:bxp2:chaotic_upgrade>);
 upgradeRecipe(<item:extendedcrafting:the_ultimate_ingot>,<item:ae2_mega_things:item_disk_drive_256m>,<item:mekanism_extras:infinite_control_circuit>,<item:bxp2:chaotic_upgrade>,<item:bxp2:final_upgrade>);
 var ups = [<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>,<item:thermalendergy:endergy_upgrade_3>];
+var ups1 = [<item:thermal:upgrade_augment_2>,<item:thermal:upgrade_augment_3>,<item:minecraft:debug_stick>];
 for i in 0 .. ups.length{
     removeCraftRecipe(ups[i]);
+    if(difficulty() == 3){
+        removeCraftRecipe(ups1[i]);
+    }
 }
 upgradeRecipe(<item:thermalendergy:prismalium_ingot>,<item:minecraft:ender_eye>,<item:thermal:enderium_gear>,<item:thermal:upgrade_augment_3>,<item:thermalendergy:endergy_upgrade_1>);
 upgradeRecipe(<item:thermalendergy:melodium_ingot>,<item:minecraft:shulker_shell>,<item:thermalendergy:prismalium_gear>,<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>);
@@ -147,3 +151,8 @@ upgradeRecipe(<item:thermalendergy:stellarium_ingot>,<item:minecraft:clay>,<item
 addShaplessRecipe([<item:vampirism:blood_sieve>],<item:mbd2:common_food_to_blood>,"bxp2");
 alloyRecipe([<fluid:vampirism:blood> * 600,<fluid:tconstruct:molten_iron> * 90],<fluid:bxp2:molten_blood_iron> * 90,700);
 alloyRecipe([<fluid:tconstruct:molten_iron> * 90,<fluid:minecraft:water> * 2000],<fluid:bxp2:molten_omite> * 90,30);
+if(difficulty() == 3){
+    upgradeRecipe(<item:thermal:electrum_ingot>,<item:minecraft:quartz>,<item:thermal:signalum_gear>,<item:thermal:upgrade_augment_1>,<item:thermal:upgrade_augment_2>);
+    upgradeRecipe(<item:thermal:enderium_ingot>,<item:thermal:obsidian_glass>,<item:thermal:lumium_gear>,<item:thermal:upgrade_augment_2>,<item:thermal:upgrade_augment_3>);
+}
+alloyRecipe([<fluid:bxp2:molten_polonium> * 10,<fluid:bxp2:molten_plutonium> * 10,<fluid:bxp2:molten_neutron> * 10,<fluid:bxp2:molten_bx> * 10],<fluid:bxp2:molten_radiation_metal> * 10,3500);

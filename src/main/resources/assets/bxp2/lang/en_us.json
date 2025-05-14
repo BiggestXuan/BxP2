@@ -239,4 +239,9 @@
   "fluid.bxp2.molten_omite": "MoltenOmite",
   "item.bxp2.molten_omite_bucket": "Molten Omite Bucket",
   "block.bxp2.molten_omite_fluid": "Molten Omite "
+,
+  "material.bxp2.radiation_metal": "Radiation Metal",
+  "fluid.bxp2.molten_radiation_metal": "MoltenRadiation Metal",
+  "item.bxp2.molten_radiation_metal_bucket": "Molten Radiation Metal Bucket",
+  "block.bxp2.molten_radiation_metal_fluid": "Molten Radiation Metal "
 }

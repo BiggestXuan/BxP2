@@ -4,7 +4,6 @@ import biggestxuan.bxp2.BxP2;
 import mekanism.api.chemical.gas.Gas;
 import mekanism.api.chemical.gas.attribute.GasAttributes;
 import mekanism.api.math.FloatingLong;
-import mekanism.common.base.IChemicalConstant;
 import mekanism.common.registration.impl.GasDeferredRegister;
 import mekanism.common.registration.impl.GasRegistryObject;
 

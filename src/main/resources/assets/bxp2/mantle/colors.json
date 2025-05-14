@@ -32,7 +32,10 @@
     "lucky_attack": "#b7f2ff",
     "fly": "#b460ce",
     "sunshine_protect": "#e6af15",
-    "omite": "#53a4fc"
+    "omite": "#53a4fc",
+    "radiation_damage": "#1affd9",
+    "radiation_protect": "#1affd9",
+    "radiation_add": "#1affd9"
   },
   "material.bxp2": {
     "bx_unstable": "#5AE4E6",
@@ -54,6 +57,7 @@
     "plague_metal": "#1c1d2a",
     "blood_iron": "#822b2a",
     "ouhuang": "#b7f2ff",
-    "omite": "#53a4fc"
+    "omite": "#53a4fc",
+    "radiation_metal": "#1affd9"
   }
 }

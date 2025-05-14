@@ -154,13 +154,7 @@
 		}
 		{
 			dependencies: ["01C2F76368E16905"]
-			icon: {
-				Count: 1
-				id: "ad_astra:space_suit"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "bxp2:omite_ingot"
 			id: "5707F7D609E873F1"
 			rewards: [
 				{
@@ -181,53 +175,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "打扮的白白胖胖的"
-			tasks: [
-				{
-					id: "523C72E48365A5B3"
-					item: {
-						Count: 1
-						id: "ad_astra:space_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0F460E24A491D881"
-					item: {
-						Count: 1
-						id: "ad_astra:space_suit"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "66CF3D028236E0C2"
-					item: {
-						Count: 1
-						id: "ad_astra:space_pants"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "580EC57C5950CB87"
-					item: {
-						Count: 1
-						id: "ad_astra:space_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			subtitle: "也许你需要保暖和氧气？"
+			tasks: [{
+				count: 4L
+				id: "449616BE0E563AE0"
+				item: "bxp2:omite_ingot"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -3.0d
 		}

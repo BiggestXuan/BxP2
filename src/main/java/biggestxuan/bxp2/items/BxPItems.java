@@ -119,6 +119,7 @@ public class BxPItems {
     public static final RegistryObject<Item> Seismite_INGOT = ITEMS.register("seismite_ingot",() -> new BxPItem(26));
     public static final RegistryObject<Item> Necrosilver_INGOT = ITEMS.register("necrosilver_ingot",() -> new BxPItem(7));
     public static final RegistryObject<Item> PLAGUE_METAL = ITEMS.register("plague_metal",BxPItem::new);
+    public static final RegistryObject<Item> AUTO_BUILD = ITEMS.register("auto_build",AutoBuildItem::new);
     public static final RegistryObject<Item> WYVERN_INGOT = ITEMS.register("wyvern_ingot",BxPItem::new);
     public static final RegistryObject<Item> DRACONIUM_INGOT = ITEMS.register("draconium_ingot",BxPItem::new);
     public static final RegistryObject<Item> CHAOTIC_INGOT = ITEMS.register("chaotic_ingot",() -> new BxPItem(){
@@ -128,6 +129,12 @@ public class BxPItems {
         }
     });
     public static final RegistryObject<Item> OMITE_INGOT = ITEMS.register("omite_ingot",BxPItem::new);
+    public static final RegistryObject<Item> RADIATION_INGOT = ITEMS.register("radiation_ingot",() -> new BxPItem(new Item.Properties().rarity(Rarity.UNCOMMON)){
+        @Override
+        public int getBXValue(ItemStack stack) {
+            return 105;
+        }
+    });
     public static final RegistryObject<Item> BLOOD_SAC = ITEMS.register("blood_sac",() -> new VampirismItemBloodFoodItem(new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build(),new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build()));
     public static final RegistryObject<Item> CREATIVE_ABILITY_SKULL = ITEMS.register("creative_ability_skull",BxPItem::new);
     public static final RegistryObject<Item> CREATIVE_UPGRADE_SKULL = ITEMS.register("creative_upgrade_skull",BxPItem::new);

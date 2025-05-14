@@ -43,7 +43,7 @@ import javax.annotation.Nullable;
 @Mod(BxP2.MODID)
 public class BxP2
 {
-    public static boolean devMode = true;
+    public static boolean devMode = false;
     @SuppressWarnings("all")
     public static String TITLE = "BxP2 - " + BxP2.VERSION + (devMode ? "-DevMode" : "");
     public static final String MODID = "bxp2";

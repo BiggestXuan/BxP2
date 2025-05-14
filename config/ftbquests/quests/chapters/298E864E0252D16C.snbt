@@ -815,6 +815,17 @@
 		{
 			dependencies: ["45B54ECD5CB7F385"]
 			id: "34F3E6028AD4BF2C"
+			rewards: [{
+				id: "743663D21075BA76"
+				item: {
+					Count: 1
+					id: "bxp2:money"
+					tag: {
+						money: 1
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C0AA8B07AD483F7"
 				item: "bxp2:bx_gold_ingot"

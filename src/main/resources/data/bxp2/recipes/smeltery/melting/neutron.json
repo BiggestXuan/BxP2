@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"mekanismscience:pellet_neutron_source"
+  },
+  "temperature": 2500,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_neutron",
+    "amount": 10
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"mekanism:pellet_polonium"
+  },
+  "temperature": 2500,
+  "time": 100,
+  "result":
+  {
+    "fluid": "bxp2:molten_polonium",
+    "amount": 10
+  }
+}

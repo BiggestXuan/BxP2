@@ -23,7 +23,9 @@ ServerEvents.tags('item',event => {
     var e = ['brewery:dried_wheat','brewery:dried_barley','brewery:dried_corn'];
     e.forEach(item => event.add("bxp2:wine_dried",item)) 
     var f = ['mekanismscience:high_quality_concrete', 'mekanismscience:aqua_high_quality_concrete', 'mekanismscience:black_high_quality_concrete', 'mekanismscience:blue_high_quality_concrete', 'mekanismscience:green_high_quality_concrete', 'mekanismscience:cyan_high_quality_concrete', 'mekanismscience:dark_red_high_quality_concrete', 'mekanismscience:purple_high_quality_concrete', 'mekanismscience:orange_high_quality_concrete', 'mekanismscience:light_gray_high_quality_concrete', 'mekanismscience:gray_high_quality_concrete', 'mekanismscience:light_blue_high_quality_concrete', 'mekanismscience:lime_high_quality_concrete', 'mekanismscience:red_high_quality_concrete', 'mekanismscience:magenta_high_quality_concrete', 'mekanismscience:yellow_high_quality_concrete', 'mekanismscience:white_high_quality_concrete', 'mekanismscience:brown_high_quality_concrete', 'mekanismscience:pink_high_quality_concrete']
-    f.forEach(item => event.add("bxp2:high_quality_concrete",item)) 
+    f.forEach(item => event.add("bxp2:high_quality_concrete",item))
+    var g = ['mekanism_extras:infinite_induction_provider','mekanism_extras:infinite_induction_cell']
+    g.forEach(item => event.add("bxp2:mekanism_extra_final",item))
 })
 
 ServerEvents.tags('fluid',event => {

@@ -18,6 +18,7 @@
 				"3AF1BBDAE085DC84"
 				"6EB6E4F4A890EEBF"
 				"23F8CD8249AD7499"
+				"1E55244735ED43B6"
 			]
 			description: [
 				"和我结婚吧，这是彩礼和礼花。"
@@ -101,7 +102,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			id: "76DE62EF9B40F79B"
@@ -155,13 +156,32 @@
 			id: "23F8CD8249AD7499"
 			size: 2.0d
 			tasks: [{
-				count: 12L
+				count: 8L
 				id: "260A55D8F14949AC"
 				item: "extendedcrafting:the_ultimate_ingot"
 				type: "item"
 			}]
 			x: -6.0d
 			y: -1.0d
+		}
+		{
+			id: "1E55244735ED43B6"
+			size: 2.0d
+			tasks: [{
+				id: "367C8A40B639FA85"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "bxp2:mekanism_extra_final"
+					}
+				}
+				title: "任意最高级"
+				type: "item"
+			}]
+			title: "任意最高级感应物品"
+			x: 6.0d
+			y: -1.5d
 		}
 	]
 	title: "毕业任务"

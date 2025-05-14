@@ -7,7 +7,6 @@ import biggestxuan.bxp2.recipes.BxPCatalyst;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.recipes.BXFurnaceRecipe;
 import biggestxuan.bxp2.recipes.RecipeUtils;
-import dev.architectury.fluid.FluidStack;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

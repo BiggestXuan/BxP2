@@ -1168,20 +1168,6 @@
 			id: "38EF6679F01FD9F4"
 			rewards: [
 				{
-					count: 500
-					id: "0656D5F104A8E3B8"
-					item: "mekanismgenerators:fission_reactor_casing"
-					team_reward: true
-					type: "item"
-				}
-				{
-					count: 1500
-					id: "1F94563DE93BED75"
-					item: "mekanismgenerators:reactor_glass"
-					team_reward: true
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "1E374A26B585FA2D"
 					table_id: 2530677305745152636L
@@ -2932,6 +2918,418 @@
 			]
 			x: 11.0d
 			y: 3.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "473043C66BE837C6"
+			rewards: [{
+				id: "0C45B1D9DB0BDB50"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "fission"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 200L
+					id: "6F571F63A222D124"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1920L
+					id: "6A567AAAED59716C"
+					item: { Count: 1920, id: "mekanismgenerators:fission_fuel_assembly" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1536L
+					id: "1FDB8EA05AE8537F"
+					item: { Count: 1536, id: "mekanismgenerators:reactor_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 128L
+					id: "257E1417632AB84A"
+					item: { Count: 128, id: "mekanismgenerators:control_rod_assembly" }
+					type: "item"
+				}
+			]
+			title: "裂变反应堆"
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "10195D5BA4A22A3B"
+			rewards: [{
+				id: "4B3361E7105C0F78"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "fusion"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "6F2C3B0120D01AD6"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 65L
+					id: "2531433E67BF0272"
+					item: { Count: 65, id: "mekanismgenerators:fusion_reactor_frame" }
+					type: "item"
+				}
+			]
+			title: "聚变反应堆"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "4FFA898B02B83838"
+			rewards: [{
+				id: "4E3F28EEC6BDDEFD"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "evaporation"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "60605627F4CC9164"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 80L
+					id: "32174217080B23DF"
+					item: { Count: 80, id: "mekanism:thermal_evaporation_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 139L
+					id: "1366CB6CD23242E2"
+					item: { Count: 139, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			title: "热力蒸馏塔"
+			x: 15.5d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanism:superheating_element"
+			id: "128FDDFB881A89CA"
+			rewards: [{
+				id: "38C09247ABF0B546"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "boiler"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 200L
+					id: "53A38BC28C4CB889"
+					item: { Count: 200, id: "mekanism:boiler_casing" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "2323C477C5F5C2F9"
+					item: { Count: 256, id: "mekanism:pressure_disperser" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "3716581ED1B3239D"
+					item: { Count: 256, id: "mekanism:superheating_element" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1536L
+					id: "2CBE954B7961CA29"
+					item: { Count: 1536, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			title: "锅炉"
+			x: 17.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanism:dynamic_tank"
+			id: "16A8509DAED4A3FC"
+			rewards: [{
+				id: "7F4CDF16224FB14F"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "tank"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 200L
+					id: "176EB25C27ECCD55"
+					item: { Count: 200, id: "mekanism:dynamic_tank" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1536L
+					id: "598D7F54ED64FED1"
+					item: { Count: 1536, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			title: "动态储罐"
+			x: 18.5d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanism:sps_casing"
+			id: "397709CB2EDF2574"
+			rewards: [{
+				id: "6E119201561A6C36"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "sps"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 60L
+					id: "1BFF62EF90D719A2"
+					item: { Count: 60, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 126L
+					id: "37C2636CE572F4DE"
+					item: { Count: 126, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			title: "超临界"
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			hide_dependency_lines: false
+			icon: "mekanism:ultimate_induction_cell"
+			id: "16F108D7B5C3EE80"
+			rewards: [{
+				id: "569B6E088EF0529E"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "martix"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 200L
+					id: "3A0FEDC02B0869BA"
+					item: { Count: 200, id: "mekanism:induction_casing" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1536L
+					id: "2142B3A945988AE3"
+					item: { Count: 1536, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 256L
+					id: "53677D7980243BD7"
+					item: { Count: 256, id: "mekanism:ultimate_induction_provider" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3840L
+					id: "7D7F46B95463419A"
+					item: { Count: 3840, id: "mekanism:ultimate_induction_cell" }
+					type: "item"
+				}
+			]
+			title: "矩阵"
+			x: 21.5d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			description: ["注：受 Mekanism 自动建造的限制，此处的涡轮并不是最大速率的，而是最大容积的。"]
+			icon: "mekanismgenerators:turbine_casing"
+			id: "0B3CCD3755A253DC"
+			rewards: [{
+				id: "01D93A334E7EC776"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "turbine"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 192L
+					id: "0E279062FD4B3448"
+					item: { Count: 192, id: "mekanismgenerators:turbine_casing" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "4A35BBDA9587EF20"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 14L
+					id: "30C364C7C74CF43F"
+					item: { Count: 14, id: "mekanismgenerators:turbine_rotor" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 28L
+					id: "57785803A2211129"
+					item: { Count: 28, id: "mekanismgenerators:turbine_blade" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 224L
+					id: "4037E81AE79FFF28"
+					item: { Count: 224, id: "mekanism:pressure_disperser" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 218L
+					id: "76EA0A79EAD60322"
+					item: { Count: 218, id: "mekanismgenerators:saturating_condenser" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1065L
+					id: "2CF957B8920481E6"
+					item: { Count: 1065, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 345L
+					id: "75E0B684F6FAE647"
+					item: { Count: 345, id: "mekanismgenerators:turbine_vent" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 49L
+					id: "3E1EA88B3FD0D6AF"
+					item: { Count: 49, id: "mekanismgenerators:electromagnetic_coil" }
+					type: "item"
+				}
+			]
+			title: "涡轮"
+			x: 23.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: true
+			icon: "mekanism_extras:naquadah_reactor_controller"
+			id: "24396B8DB24ACB66"
+			rewards: [{
+				id: "203D06A14680B3BB"
+				item: {
+					Count: 1
+					id: "bxp2:auto_build"
+					tag: {
+						builder: "naquadah"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "1E3DCE28D14A96D0"
+					item: "mekanism_extras:naquadah_reactor_controller"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 329L
+					id: "28ABB1FC83DE43C0"
+					item: { Count: 329, id: "mekanism_extras:naquadah_reactor_casing" }
+					type: "item"
+				}
+			]
+			title: "硅岩反应堆"
+			x: 24.5d
+			y: 8.0d
 		}
 	]
 	title: "通用机械"

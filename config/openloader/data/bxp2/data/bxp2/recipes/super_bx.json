@@ -1,15 +1,15 @@
 {
     "type": "extendedcrafting:shaped_table",
     "pattern": [
-      "AAAHHHAAA",
+      "AAAHIHAAA",
       "ACDGGGDCA",
       "ADCEEECDA",
       "HGEFFFEGH",
-      "HGEFBFEGH",
+      "IGEFBFEGI",
       "HGEFFFEGH",
       "ADCEEECDA",
       "ACDGGGDCA",
-      "AAAHHHAAA"
+      "AAAHIHAAA"
     ],
     "key": {
       "A": {
@@ -35,6 +35,9 @@
       },
       "H":{
         "item":"extendedcrafting:the_ultimate_ingot"
+      },
+      "I":{
+        "tag":"bxp2:mekanism_extra_final"
       }
     },
     "result": {

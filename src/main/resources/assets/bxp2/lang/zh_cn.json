@@ -122,7 +122,13 @@
   "modifier.bxp2.chronodragon_fury.description": "手持时缓慢提高伤害，词条等级影响最高增幅",
 
   "tooltip.modifiers.chronodragon.fury": "当前伤害增幅：",
+  "tooltip.auto_build.warning": "使用前最好备份存档！",
+  "tooltip.auto_build.structure": "当前结构：%d",
+  "tooltip.auto_build.tips": "在玩家当前位置以X和Z正轴建造，谨慎使用，无法撤销！",
+  "item.bxp2.auto_build": "自动建造器",
+  "item.bxp2.radiation_ingot": "辐射金属锭",
   "block.bloodmagic.life_essence_block": "生命源质",
+  "block.mbd2.pressure_input": "气压输入室",
   "quests.bxp2.main": "大轩整合包2",
   "block.mbd2.bx_simple_power": "简易大轩能源器",
   "mbd2.bx_simple_power": "简易大轩能源器",
@@ -318,6 +324,18 @@
   "modifier.bxp2.black_death.flavor": "你怕了吗？",
   "modifier.bxp2.black_death.description": "召唤瘟云击退你的敌人！",
 
+  "modifier.bxp2.radiation_damage": "裂变克星",
+  "modifier.bxp2.radiation_damage.flavor": "辐射收割者",
+  "modifier.bxp2.radiation_damage.description": "对辐射目标造成额外伤害",
+
+  "modifier.bxp2.radiation_add": "辐射侵染",
+  "modifier.bxp2.radiation_add.flavor": "谁不喜欢绿泡泡",
+  "modifier.bxp2.radiation_add.description": "攻击使目标辐射化",
+
+  "modifier.bxp2.radiation_protect": "净化壁垒",
+  "modifier.bxp2.radiation_protect.flavor": "辐射绝缘体",
+  "modifier.bxp2.radiation_protect.description": "你不再受到辐射影响",
+
   "jei.desc.curium.title": "锔合成",
   "jei.desc.curium.speed": "速度：每 60 秒处理 300 mb，耗电 100M FE",
   "jei.desc.curium.upgrade": "每个速度升级和每个能量升级都可以加快速度和减少消耗",
@@ -496,5 +514,22 @@
   "material.bxp2.omite": "奥姆",
   "fluid.bxp2.molten_omite": "熔融奥姆",
   "item.bxp2.molten_omite_bucket": "熔融奥姆桶",
-  "block.bxp2.molten_omite_fluid": "熔融奥姆"
+  "block.bxp2.molten_omite_fluid": "熔融奥姆",
+
+  "fluid.bxp2.molten_polonium": "熔融钋",
+  "item.bxp2.molten_polonium_bucket": "熔融钋桶",
+  "block.bxp2.molten_polonium_fluid": "熔融钋",
+
+  "fluid.bxp2.molten_plutonium": "熔融钚",
+  "item.bxp2.molten_plutonium_bucket": "熔融钚桶",
+  "block.bxp2.molten_plutonium_fluid": "熔融钚",
+
+  "fluid.bxp2.molten_neutron": "熔融中子源",
+  "item.bxp2.molten_neutron_bucket": "熔融中子源桶",
+  "block.bxp2.molten_neutron_fluid": "熔融中子源"
+,
+  "material.bxp2.radiation_metal": "辐射金属",
+  "fluid.bxp2.molten_radiation_metal": "熔融辐射金属",
+  "item.bxp2.molten_radiation_metal_bucket": "熔融辐射金属桶",
+  "block.bxp2.molten_radiation_metal_fluid": "熔融辐射金属"
 }

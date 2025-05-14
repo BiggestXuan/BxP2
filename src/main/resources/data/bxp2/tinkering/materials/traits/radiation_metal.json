@@ -1,0 +1,50 @@
+{
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_damage"
+      },
+      {
+        "level": 1,
+        "name": "bxp2:radiation_add"
+      }
+    ],
+    "tconstruct:handle": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_damage"
+      }
+    ],
+    "tconstruct:binding": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_damage"
+      }
+    ],
+    "tconstruct:plating_helmet": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_protect"
+      }
+    ],
+    "tconstruct:plating_chestplate": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_protect"
+      }
+    ],
+    "tconstruct:plating_leggings": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_protect"
+      }
+    ],
+    "tconstruct:plating_boots": [
+      {
+        "level": 1,
+        "name": "bxp2:radiation_protect"
+      }
+    ]
+  }
+}

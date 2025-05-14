@@ -8,6 +8,9 @@ import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModi
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.DefenseBreaker;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.FistOfAbsoluteJustice;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.GuiSuoReckoning;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationAddModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationDamageModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationProtectModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Vampirism.DrinkBloodModifier;
 import com.brandon3055.brandonscore.api.TechLevel;
 import de.teamlapen.vampirism.core.ModEffects;
@@ -54,6 +57,9 @@ public class BxPModifiers {
     public static StaticModifier<BaseMeleeDamageModifier> PxKiller = REGISTER.register("px_killer",PxKiller::new);
     public static StaticModifier<BaseMeleeDamageModifier> ServerSaveKiller = REGISTER.register("server_save_kill",ServerSaveKiller::new);
     public static StaticModifier<BaseMeleeDamageModifier> LUCKY_ATTACK = REGISTER.register("lucky_attack",LuckyAttackModifier::new);
+    public static StaticModifier<BaseMeleeDamageModifier> Radiation_add = REGISTER.register("radiation_add", RadiationAddModifier::new);
+    public static StaticModifier<BaseMeleeDamageModifier> Radiation_damage = REGISTER.register("radiation_damage", RadiationDamageModifier::new);
+    public static StaticModifier<RadiationProtectModifier> Radiation_protect = REGISTER.register("radiation_protect", RadiationProtectModifier::new);
     public static StaticModifier<DrinkBloodModifier> DrinkBlood = REGISTER.register("drink_blood",DrinkBloodModifier::new);
     public static StaticModifier<FlyModifier> Fly = REGISTER.register("fly",FlyModifier::new);
     public static StaticModifier<OmiteModifier> omite = REGISTER.register("omite",OmiteModifier::new);
