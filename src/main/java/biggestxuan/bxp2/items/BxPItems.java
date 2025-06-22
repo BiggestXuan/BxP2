@@ -35,12 +35,7 @@ public class BxPItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BxP2.MODID);
     public static final RegistryObject<Item> CAIGENGZI = ITEMS.register("caigengzi",() -> new BxPItem.BxPFoodItem(2,0.2F));
     public static final RegistryObject<Item> BX_UNSTABLE_INGOT = ITEMS.register("bx_unstable_ingot",() -> new BxPItem(4));
-    public static final RegistryObject<Item> BX_INGOT = ITEMS.register("bx_ingot", () -> new BXCycleBaseItem(){
-        @Override
-        public int getBXValue(ItemStack stack){
-            return 75;
-        }
-    });
+    public static final RegistryObject<Item> BX_INGOT = ITEMS.register("bx_ingot", () -> new BXCycleBaseItem(75));
     public static final RegistryObject<Item> BX_ENCH_INGOT = ITEMS.register("bx_ench_ingot",() -> new BxPItem(Rarity.RARE){
         public int getBXValue(ItemStack stack) {
             return 900;
@@ -135,9 +130,19 @@ public class BxPItems {
             return 105;
         }
     });
+    public static final RegistryObject<Item> mithrillium_ingot = ITEMS.register("mithrillium_ingot", WaitingItem.ThuamcraftItem::new);
+    public static final RegistryObject<Item> adaminite_ingot = ITEMS.register("adaminite_ingot",WaitingItem.ThuamcraftItem::new);
+    public static final RegistryObject<Item> mithminite_ingot = ITEMS.register("mithminite_ingot",WaitingItem.ThuamcraftItem::new);
+
+    public static final RegistryObject<Item> BXSHOP = ITEMS.register("bx_shop", BxPItem.BXShopItem::new);
+    public static final RegistryObject<Item> MEKA_CUBE = ITEMS.register("meka_cube",() -> new BxPItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> XP_GEM = ITEMS.register("xp_gem",BxPItem::new);
+    public static final RegistryObject<Item> XP_LIMIT_GEM = ITEMS.register("xp_limit_gem",BxPItem::new);
     public static final RegistryObject<Item> BLOOD_SAC = ITEMS.register("blood_sac",() -> new VampirismItemBloodFoodItem(new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build(),new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build()));
     public static final RegistryObject<Item> CREATIVE_ABILITY_SKULL = ITEMS.register("creative_ability_skull",BxPItem::new);
     public static final RegistryObject<Item> CREATIVE_UPGRADE_SKULL = ITEMS.register("creative_upgrade_skull",BxPItem::new);
+    public static final RegistryObject<Item> TOUGHNESS_PLATE = ITEMS.register("toughness_plate",BxPItem::new);
+    public static final RegistryObject<Item> KNOCKBACK_PLATE = ITEMS.register("knockback_plate",BxPItem::new);
 
     public static final RegistryObject<Item> YUNXI = registryPlayerModelBlock("yunxi", BxPBlocks.YUNXI);
     public static final RegistryObject<Item> BIGGEST_XUAN = registryPlayerModelBlock("biggest_xuan", BxPBlocks.BIGGEST_XUAN);

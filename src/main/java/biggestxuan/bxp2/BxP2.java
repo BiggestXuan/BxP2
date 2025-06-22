@@ -13,6 +13,8 @@ import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
 import biggestxuan.bxp2.integration.TConstruct.TinkersSurvival;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.network.PacketHandler;
+import biggestxuan.bxp2.utils.CalendarUtils;
+import com.brandon3055.brandonscore.BrandonsCore;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
@@ -26,7 +28,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -45,13 +46,14 @@ public class BxP2
 {
     public static boolean devMode = false;
     @SuppressWarnings("all")
-    public static String TITLE = "BxP2 - " + BxP2.VERSION + (devMode ? "-DevMode" : "");
+    public static String TITLE = "BxP2 - " + BxP2.VERSION + " - " + CalendarUtils.INSTANCE.getNowTimeWelcome() + (devMode ? "-DevMode" : "");
     public static final String MODID = "bxp2";
-    public static final String VERSION = "Beta-0.5.0";
+    public static final String VERSION = "Beta-0.6.0";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static final Logger LOGGER = LogUtils.getLogger();
     public static boolean enableCycleRecipe = false;
+    public static String QQGroup = "754879163";
 
     public BxP2(FMLJavaModLoadingContext context)
     {
@@ -70,19 +72,15 @@ public class BxP2
         BxPMekFluids.FLUID.register(modEventBus);
         BxPModules.MODULES.register(modEventBus);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        if(devMode){
+            BrandonsCore.inDev = true;
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(PacketHandler::init);
         TinkersSurvival.init();
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-
-        // LOGGER.info("HELLO from server starting");
     }
 
     @SubscribeEvent

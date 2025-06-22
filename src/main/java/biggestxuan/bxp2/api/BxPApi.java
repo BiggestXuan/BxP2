@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 public interface BxPApi {
     BxPApi INSTANCE = new BxPApi(){};
 
-    default IBxPCapability getPlayerCap(Player player){
+    static IBxPCapability getPlayerCap(Player player){
         return player.getCapability(BxPCapabilityProvider.CAPABILITY).orElse(baseCap);
     };
 

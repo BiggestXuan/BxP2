@@ -1,6 +1,6 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism;
 
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.BaseMeleeDamageModifier;
 import mekanism.api.radiation.IRadiationManager;
 import net.minecraft.world.entity.LivingEntity;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;

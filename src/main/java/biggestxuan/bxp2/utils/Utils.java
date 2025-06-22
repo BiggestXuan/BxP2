@@ -2,6 +2,7 @@ package biggestxuan.bxp2.utils;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
+import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
@@ -10,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
 
+import java.math.BigInteger;
 import java.util.*;
 
 /**
@@ -51,6 +53,14 @@ public final class Utils {
 
     public static String format(String text){
         return thousandSign(text);
+    }
+
+    public static String KMT(BigInteger big){
+        return KMT(big.longValue());
+    }
+
+    public static String KMT(long text){
+        return KMT(String.valueOf(text));
     }
 
     public static String KMT(String text){
@@ -182,5 +192,25 @@ public final class Utils {
 
     public static void sendMessage(Player player, Component message){
         player.displayClientMessage(message,false);
+    }
+
+    public static void sendDevMessage(Player player, String message){
+        sendDevMessage(player,BxP2.tr(message));
+    }
+
+    public static void sendDevMessage(Player player, Component message){
+        if(!BxP2.devMode) return;
+        player.displayClientMessage(message,false);
+    }
+
+    public static <T> NonNullList<T> mergeNonNullList(NonNullList<T> i,NonNullList<T> i1){
+        NonNullList<T> list = NonNullList.create();
+        for(T t : i){
+            list.add(t);
+        }
+        for(T t : i1){
+            list.add(t);
+        }
+        return list;
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "bxp2:meka_cube"
+    }
+  ],
+  "result": "bxp2:meka_armor",
+  "slots": {
+    "abilities": 1
+  },
+  "level": 1,
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/trim"
+  }
+}

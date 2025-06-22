@@ -30,7 +30,7 @@ public class FlyModifier extends Modifier implements InventoryTickModifierHook, 
         if(livingEntity instanceof Player player && b1){
             if(!player.isCreative() && !player.isSpectator()){
                 player.getAbilities().mayfly = true;
-                if(level.getDayTime() % 200 == 0){
+                if(player.tickCount % 200 == 0){
                     itemStack.setDamageValue(itemStack.getDamageValue() + 1);
                 }
             }

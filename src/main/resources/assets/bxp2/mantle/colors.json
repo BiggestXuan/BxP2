@@ -35,7 +35,18 @@
     "omite": "#53a4fc",
     "radiation_damage": "#1affd9",
     "radiation_protect": "#1affd9",
-    "radiation_add": "#1affd9"
+    "radiation_add": "#1affd9",
+    "half_damage": "#98221B",
+    "weapon_level": "#d97b27",
+    "armor_level": "#d97b27",
+    "tool_level": "#d97b27",
+    "tool_xp": "#21A947",
+    "tool_limit_xp": "#6A07EA",
+    "rats_soul": "#ccc083",
+    "toughness": "#302f2b",
+    "knockback_resistance": "#f3edd0",
+    "emc_killer": "#AD18D4",
+    "meka_armor": "#08D432"
   },
   "material.bxp2": {
     "bx_unstable": "#5AE4E6",
@@ -58,6 +69,7 @@
     "blood_iron": "#822b2a",
     "ouhuang": "#b7f2ff",
     "omite": "#53a4fc",
-    "radiation_metal": "#1affd9"
+    "radiation_metal": "#1affd9",
+    "oratchalcum": "#ccc083"
   }
 }

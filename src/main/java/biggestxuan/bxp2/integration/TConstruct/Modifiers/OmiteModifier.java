@@ -28,13 +28,13 @@ public class OmiteModifier extends Modifier implements InventoryTickModifierHook
         if(livingEntity instanceof Player player && b1){
             if(player.isCreative() || player.isSpectator()) return;
             player.setTicksFrozen(0);
-            if(level.getDayTime() % 80 == 0){
+            if(player.tickCount % 80 == 0){
                 if(player.getAirSupply() < 300){
                     oxygen(itemStack,player);
                     return;
                 }
             }
-            if(level.getDayTime() % 60 == 0){
+            if(player.tickCount % 60 == 0){
                 if (!OxygenApi.API.hasOxygen(player)) {
                     oxygen(itemStack, player);
                 }

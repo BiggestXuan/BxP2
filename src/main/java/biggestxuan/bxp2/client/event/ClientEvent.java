@@ -35,7 +35,7 @@ public class ClientEvent {
             arr[1] = px;
         });
 
-        if(player.level().getDayTime() % 20 == 0){
+        if(player.tickCount % 20 == 0){
             ClientUtils.syncClientData();
         }
     }

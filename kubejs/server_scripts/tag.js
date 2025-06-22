@@ -26,6 +26,8 @@ ServerEvents.tags('item',event => {
     f.forEach(item => event.add("bxp2:high_quality_concrete",item))
     var g = ['mekanism_extras:infinite_induction_provider','mekanism_extras:infinite_induction_cell']
     g.forEach(item => event.add("bxp2:mekanism_extra_final",item))
+    var h = ['tconstruct:cheese_ingot','ad_astra:cheese'];
+    h.forEach(item => event.add('forge:cheese',item))
 })
 
 ServerEvents.tags('fluid',event => {

@@ -1,0 +1,99 @@
+
+[General]
+	#1 -> relax mode, 2 -> advanced mode, 3 -> expert mode
+	#Range: 1 ~ 3
+	difficulty = 2
+	#If true,you must use tconstruct's weapons,tools or armors
+	TinkersSurvival = true
+
+["Difficulty Setting"]
+
+	["Difficulty Setting".Relax]
+		#Range: 0.0 ~ 3.4028234663852886E38
+		RegenerationRate = 2.0
+		#Interest you will receive if your balance is negative
+		#Range: 1.0 ~ 100.0
+		InterestRate = 1.0
+		#Amount reduction rate caused by each person in your team, 0.8 -> -20%
+		#Range: 0.0 ~ 1.0
+		MoneyLossRate = 1.0
+		#Duration of flight ritual(tick)
+		#Range: > 0
+		FlightTime = 120000
+		#Can use time in bottle in any machine
+		TIBNoLimit = true
+		#Drop money base when you death. Total = base + (phase * addition)
+		#Range: 0.0 ~ 1.0
+		DeathMoneyBase = 0.0
+		#Range: 0.0 ~ 1.0
+		DeathMoneyAddition = 0.0
+		#Mobs daily enhancement rate,1 -> 1%,10 -> 10%
+		#Range: 0.0 ~ 1.7976931348623157E308
+		EnhancementRate = 0.0
+		#The production probability of ouhuang ingot also affects the reuse rate of vegetable seeds
+		#Range: 0.01 ~ 1.0
+		OuhuangChance = 0.75
+		#Additional price after each purchase of creative items
+		#Range: 0.0 ~ 1.7976931348623157E308
+		CreativeRate = 0.0
+
+	["Difficulty Setting".Advanced]
+		#Range: 0.0 ~ 3.4028234663852886E38
+		RegenerationRate = 1.0
+		#Interest you will receive if your balance is negative
+		#Range: 1.0 ~ 100.0
+		InterestRate = 1.01
+		#Amount reduction rate caused by each person in your team, 0.8 -> -20%
+		#Range: 0.0 ~ 1.0
+		MoneyLossRate = 0.85
+		#Duration of flight ritual(tick)
+		#Range: > 0
+		FlightTime = 12000
+		#Can use time in bottle in any machine
+		TIBNoLimit = false
+		#Drop money base when you death. Total = base + (phase * addition)
+		#Range: 0.0 ~ 1.0
+		DeathMoneyBase = 0.1
+		#Range: 0.0 ~ 1.0
+		DeathMoneyAddition = 0.015
+		#Mobs daily enhancement rate,1 -> 1%,10 -> 10%
+		#Range: 0.0 ~ 1.7976931348623157E308
+		EnhancementRate = 1.0
+		#The production probability of ouhuang ingot also affects the reuse rate of vegetable seeds
+		#Range: 0.01 ~ 1.0
+		OuhuangChance = 0.03
+		#Additional price after each purchase of creative items
+		#Range: 0.0 ~ 1.7976931348623157E308
+		CreativeRate = 0.2
+
+	["Difficulty Setting".Expert]
+		#Range: 0.0 ~ 3.4028234663852886E38
+		RegenerationRate = 0.5
+		#Interest you will receive if your balance is negative
+		#Range: 1.0 ~ 100.0
+		InterestRate = 1.02
+		#Amount reduction rate caused by each person in your team, 0.8 -> -20%
+		#Range: 0.0 ~ 1.0
+		MoneyLossRate = 0.8
+		#Drop your inventory items when you death
+		DeathDrop = true
+		#Duration of flight ritual(tick)
+		#Range: > 0
+		FlightTime = 1200
+		#Can use time in bottle in any machine
+		TIBNoLimit = false
+		#Drop money base when you death. Total = base + (phase * addition)
+		#Range: 0.0 ~ 1.0
+		DeathMoneyBase = 0.2
+		#Range: 0.0 ~ 1.0
+		DeathMoneyAddition = 0.022
+		#Mobs daily enhancement rate,1 -> 1%,10 -> 10%
+		#Range: 0.0 ~ 1.7976931348623157E308
+		EnhancementRate = 2.5
+		#The production probability of ouhuang ingot also affects the reuse rate of vegetable seeds
+		#Range: 0.01 ~ 1.0
+		OuhuangChance = 0.01
+		#Additional price after each purchase of creative items
+		#Range: 0.0 ~ 1.7976931348623157E308
+		CreativeRate = 0.35
+

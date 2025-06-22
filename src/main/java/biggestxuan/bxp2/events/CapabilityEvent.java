@@ -26,7 +26,7 @@ public class CapabilityEvent {
     @SubscribeEvent
     public static void sendPacketToClient(TickEvent.PlayerTickEvent event){
         if(event.player instanceof ServerPlayer player && event.phase == TickEvent.Phase.START){
-            if(player.level().getDayTime() % 10 == 0){
+            if(player.tickCount % 10 == 0){
                 PacketHandler.syncPlayerCapability(player);
             }
         }

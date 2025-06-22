@@ -3,6 +3,7 @@ package biggestxuan.bxp2.integration.TConstruct.Modifiers.Vampirism;
 import de.teamlapen.vampirism.api.VampirismAPI;
 import de.teamlapen.vampirism.api.entity.player.vampire.IVampirePlayer;
 import de.teamlapen.vampirism.entity.vampire.DrinkBloodContext;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -71,7 +72,7 @@ public class DrinkBloodModifier extends Modifier implements GeneralInteractionMo
 
     @Override
     public void onInventoryTick(IToolStackView iToolStackView, ModifierEntry modifierEntry, Level level, LivingEntity livingEntity, int i, boolean b, boolean b1, ItemStack itemStack) {
-        if(!level.isClientSide && level.getDayTime() % 40 == 0 && livingEntity instanceof Player player){
+        if(level instanceof ServerLevel sl && sl.getServer().getTickCount() % 40 == 0 && livingEntity instanceof Player player){
             drinkBlood(iToolStackView,modifierEntry,player);
         }
     }

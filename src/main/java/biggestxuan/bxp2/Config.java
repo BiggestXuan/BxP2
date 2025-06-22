@@ -15,7 +15,7 @@ public class Config
 
     public static final ForgeConfigSpec.DoubleValue EASY_HEALTH = builder.pop().push("Difficulty Setting").push("Relax").defineInRange("RegenerationRate",2.0d,0,Float.MAX_VALUE);
     public static final ForgeConfigSpec.DoubleValue EASY_INTEREST = builder.comment("Interest you will receive if your balance is negative").defineInRange("InterestRate",1d,1,100);
-    public static final ForgeConfigSpec.DoubleValue EASY_ENHANCEMENT = builder.comment("Mobs daily enhancement rate,1 -> 1%,10 -> 10%").defineInRange("EnhancementRate",0d,0,Double.MAX_VALUE);
+    public static final ForgeConfigSpec.DoubleValue EASY_ENHANCEMENT = builder.comment("Mobs enhancement rate,1 -> 1%,10 -> 10%").defineInRange("EnhancementRate",0d,0,Double.MAX_VALUE);
     public static final ForgeConfigSpec.DoubleValue EASY_TEAM_MONEY = builder.comment("Amount reduction rate caused by each person in your team, 0.8 -> -20%").defineInRange("MoneyLossRate",1d,0,1);
     public static final ForgeConfigSpec.IntValue EASY_RITUAL_FLIGHT = builder.comment("Duration of flight ritual(tick)").defineInRange("FlightTime",120000,0,Integer.MAX_VALUE);
     public static final ForgeConfigSpec.BooleanValue EASY_TIB_NO_LIMIT = builder.comment("Can use time in bottle in any machine").define("TIBNoLimit",true);
@@ -26,7 +26,7 @@ public class Config
 
     public static final ForgeConfigSpec.DoubleValue NORMAL_HEALTH = builder.pop().push("Advanced").defineInRange("RegenerationRate",1.0d,0,Float.MAX_VALUE);
     public static final ForgeConfigSpec.DoubleValue NORMAL_INTEREST = builder.comment("Interest you will receive if your balance is negative").defineInRange("InterestRate",1.01d,1,100);
-    public static final ForgeConfigSpec.DoubleValue NORMAL_ENHANCEMENT = builder.comment("Mobs daily enhancement rate,1 -> 1%,10 -> 10%").defineInRange("EnhancementRate",1d,0,Double.MAX_VALUE);
+    public static final ForgeConfigSpec.DoubleValue NORMAL_ENHANCEMENT = builder.comment("Mobs enhancement rate,1 -> 1%,10 -> 10%").defineInRange("EnhancementRate",1d,0,Double.MAX_VALUE);
     public static final ForgeConfigSpec.DoubleValue NORMAL_TEAM_MONEY = builder.comment("Amount reduction rate caused by each person in your team, 0.8 -> -20%").defineInRange("MoneyLossRate",0.85d,0,1);
     public static final ForgeConfigSpec.IntValue NORMAL_RITUAL_FLIGHT = builder.comment("Duration of flight ritual(tick)").defineInRange("FlightTime",12000,0,Integer.MAX_VALUE);
     public static final ForgeConfigSpec.BooleanValue NORMAL_TIB_NO_LIMIT = builder.comment("Can use time in bottle in any machine").define("TIBNoLimit",false);

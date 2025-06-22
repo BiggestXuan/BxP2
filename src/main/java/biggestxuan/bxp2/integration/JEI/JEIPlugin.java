@@ -2,6 +2,7 @@ package biggestxuan.bxp2.integration.JEI;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.api.recipes.ICycleRecipe;
+import biggestxuan.bxp2.integration.CraftTweaker.Utils;
 import biggestxuan.bxp2.integration.JEI.catalyst.BxPCatalystCategory;
 import biggestxuan.bxp2.integration.JEI.cycle.BxPCombineCycleCategory;
 import biggestxuan.bxp2.recipes.BxPCatalyst;
@@ -11,13 +12,24 @@ import biggestxuan.bxp2.recipes.RecipeUtils;
 import mekanism.common.registries.MekanismBlocks;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.ISubtypeRegistration;
+import mezz.jei.api.runtime.IIngredientManager;
+import mezz.jei.api.runtime.IJeiRuntime;
+import moze_intel.projecte.gameObjs.blocks.TransmutationStone;
+import moze_intel.projecte.gameObjs.items.TransmutationTablet;
+import moze_intel.projecte.gameObjs.registries.PEItems;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,6 +51,20 @@ public class JEIPlugin implements IModPlugin {
         registry.addRecipeCategories(new BxPCombineCycleCategory(registry.getJeiHelpers().getGuiHelper()));
     }
 
+    @Override
+    public void onRuntimeAvailable(@NotNull IJeiRuntime jeiRuntime) {
+        List<ItemStack> hide = new ArrayList<>();
+        for (Item item : Utils.getAllProjectEItems()){
+            if(ForgeRegistries.ITEMS.getKey(item) != null && ForgeRegistries.ITEMS.getKey(item).getPath().contains("transmutation")) continue;
+            hide.add(item.getDefaultInstance());
+        }
+        jeiRuntime.getIngredientManager().removeIngredientsAtRuntime(
+                VanillaTypes.ITEM_STACK,
+                hide
+        );
+    }
+
+    @Override
     public void registerItemSubtypes(ISubtypeRegistration registration) {
         registration.useNbtForSubtypes(BxPItems.BX_INGOT.get());
         registration.useNbtForSubtypes(MekanismBlocks.COMBINER.asItem());

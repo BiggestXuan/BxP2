@@ -12,6 +12,10 @@ import org.jetbrains.annotations.NotNull;
  * 2025/4/21
  */
 public class BXCycleBaseItem extends BxPItem{
+    public BXCycleBaseItem(int value){
+        super(value);
+    }
+
     @Override
     public void inventoryTick(ItemStack p_41404_, Level p_41405_, Entity p_41406_, int p_41407_, boolean p_41408_) {
         super.inventoryTick(p_41404_, p_41405_, p_41406_, p_41407_, p_41408_);

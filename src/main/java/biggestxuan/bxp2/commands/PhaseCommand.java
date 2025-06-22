@@ -2,12 +2,15 @@ package biggestxuan.bxp2.commands;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
 import com.blamejared.crafttweaker.impl.network.PacketHandler;
 import com.blamejared.crafttweaker.impl.network.message.MessageCopy;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
+import com.mojang.brigadier.arguments.LongArgumentType;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -45,7 +48,34 @@ public class PhaseCommand {
                         .then(Commands.literal("hand")
                                 .executes(context -> copyItemNameToClipboard(context.getSource()))
                         )
+                        .then(Commands.literal("tool").requires(source -> source.hasPermission(4))
+                                .then(Commands.literal("level").then(Commands.argument("level",IntegerArgumentType.integer(1))
+                                        .executes(context -> setToolLevel(context.getSource(),IntegerArgumentType.getInteger(context,"level"))))
+                                )
+                                .then(Commands.literal("xp").then(Commands.argument("xp", LongArgumentType.longArg()))
+                                        .executes(context -> addToolXp(context.getSource(),LongArgumentType.getLong(context,"xp"))))
+                        )
         );
+    }
+
+    private static int addToolXp(CommandSourceStack source,long xp){
+        if (source.getEntity() instanceof ServerPlayer player) {
+            ItemStack stack = player.getMainHandItem();
+            LevelUtils.addToolXp(stack,xp,player);
+            source.sendSuccess(()->BxP2.tr("success"),true);
+            return 1;
+        }
+        return 0;
+    }
+
+    private static int setToolLevel(CommandSourceStack source,int level){
+        if (source.getEntity() instanceof ServerPlayer player) {
+            ItemStack stack = player.getMainHandItem();
+            LevelUtils.setToolLevel(stack,level,player);
+            source.sendSuccess(()->BxP2.tr("success"),true);
+            return 1;
+        }
+        return 0;
     }
 
     private static int copyItemNameToClipboard(CommandSourceStack source) {

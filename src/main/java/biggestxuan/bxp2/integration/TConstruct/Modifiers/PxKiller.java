@@ -3,7 +3,6 @@ package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.api.BxPApi;
 import biggestxuan.bxp2.capability.IBxPCapability;
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
 import biggestxuan.bxp2.utils.Utils;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -21,7 +20,7 @@ public class PxKiller extends BaseMeleeDamageModifier {
     public float getMeleeDamage(IToolStackView iToolStackView, ModifierEntry modifierEntry, ToolAttackContext toolAttackContext, float v, float v1) {
         var attacker = toolAttackContext.getAttacker();
         if(attacker instanceof ServerPlayer player){
-            IBxPCapability cap = BxPApi.INSTANCE.getPlayerCap(player);
+            IBxPCapability cap = BxPApi.getPlayerCap(player);
             int[] data = cap.getClientData();
             if(data[1] != 0){
                 if(data[1] > 1920 * 1080 && Utils.isRandom(0.01d)){

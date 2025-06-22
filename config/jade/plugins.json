@@ -132,6 +132,9 @@
     "tesseract": true,
     "remove_default": true
   },
+  "projecte": {
+    "emc_provider": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,

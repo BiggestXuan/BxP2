@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "bxp2:knockback_plate"
+    }
+  ],
+  "result": "bxp2:knockback_resistance",
+  "slots": {
+    "upgrades": 1
+  },
+  "level": 1,
+  "tools": {
+    "tag": "tconstruct:modifiable/armor"
+  }
+}

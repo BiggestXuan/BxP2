@@ -1,6 +1,5 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
 import com.github.alexthe666.rats.registry.RatsEffectRegistry;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;

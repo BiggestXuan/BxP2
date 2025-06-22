@@ -10,6 +10,7 @@ import mods.bxp2.CrTConfig;
 import mods.bxp2.HarvestEntry;
 import mods.bxp2.PlantRecipe;
 
+var a = <item:minecraft:air>;
 var base_chance as float = CrTConfig.getOuhuangChance();
 
 var czHarvestEntry as HarvestEntry = new HarvestEntry(1f,<item:bxp2:cai_seed>);
@@ -156,3 +157,15 @@ if(difficulty() == 3){
     upgradeRecipe(<item:thermal:enderium_ingot>,<item:thermal:obsidian_glass>,<item:thermal:lumium_gear>,<item:thermal:upgrade_augment_2>,<item:thermal:upgrade_augment_3>);
 }
 alloyRecipe([<fluid:bxp2:molten_polonium> * 10,<fluid:bxp2:molten_plutonium> * 10,<fluid:bxp2:molten_neutron> * 10,<fluid:bxp2:molten_bx> * 10],<fluid:bxp2:molten_radiation_metal> * 10,3500);
+
+for i in CrTManager.getProjecteItems(){
+    removeCraftRecipe(i);
+}
+
+combineRecipe(<item:minecraft:copper_ingot>*16,<tag:items:forge:cheese>,<item:rats:oratchalcum_ingot>);
+addShaplessRecipe([<item:bxp2:bx_unstable_ingot>,<item:bxp2:bx_gold_ingot>],<item:bxp2:bx_shop>,"");
+addCraftRecipe([
+    [a,<item:mekanism:mekasuit_helmet>,a],
+    [<item:mekanism:mekasuit_bodyarmor>,<item:bxp2:bx_ingot>,<item:mekanism:mekasuit_pants>],
+    [a,<item:mekanism:mekasuit_boots>,a]
+],<item:bxp2:meka_cube> * 4,"");

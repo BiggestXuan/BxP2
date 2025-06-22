@@ -244,4 +244,9 @@
   "fluid.bxp2.molten_radiation_metal": "MoltenRadiation Metal",
   "item.bxp2.molten_radiation_metal_bucket": "Molten Radiation Metal Bucket",
   "block.bxp2.molten_radiation_metal_fluid": "Molten Radiation Metal "
+,
+  "material.bxp2.oratchalcum": "Oratchalcum",
+  "fluid.bxp2.molten_oratchalcum": "MoltenOratchalcum",
+  "item.bxp2.molten_oratchalcum_bucket": "Molten Oratchalcum Bucket",
+  "block.bxp2.molten_oratchalcum_fluid": "Molten Oratchalcum "
 }

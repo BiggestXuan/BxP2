@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Biggest_Xuan",
+      "uniqueId": "29328b6c-6f03-4fba-9436-678b696e8aeb"
+    },
+    "time": 1748528952525,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Js6qgYZBiS"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Biggest_Xuan",
+      "uniqueId": "29328b6c-6f03-4fba-9436-678b696e8aeb"
+    },
+    "time": 1748528951107,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/DGd4BFYT3c"
+    }
+  }
+]

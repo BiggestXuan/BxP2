@@ -797,6 +797,7 @@
 		}
 		{
 			dependencies: ["75FA90494DC83EF6"]
+			description: ["&4注意：混沌守卫被&o&n&l击杀&r&r&r&4后30秒后会产生一个混沌爆炸。&r"]
 			id: "384B8497F55343E6"
 			rewards: [{
 				id: "34A53F4D23D0CAED"
@@ -814,7 +815,7 @@
 				item: "draconicevolution:chaos_shard"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 18.5d
 			y: 11.0d
 		}
 		{

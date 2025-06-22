@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:knockback_resistance",
+  "text": [
+    {
+      "text": "每一级提供0.05的击退抗性。"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "最高3级",
+    "每一级需要消耗一个升级槽"
+  ]
+}

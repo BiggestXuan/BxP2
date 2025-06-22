@@ -3,6 +3,7 @@ package biggestxuan.bxp2.events;
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.BxPModifiers;
 import biggestxuan.bxp2.integration.TConstruct.TinkersSurvival;
 import biggestxuan.bxp2.recipes.BxPCatalyst;
@@ -12,16 +13,20 @@ import com.github.alexthe666.rats.server.message.SyncArmSwingPacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
@@ -45,7 +50,7 @@ public class PlayerCommonEvent {
         }
         if(BxP2.devMode){
             BxP2.LOGGER.info("AAA");
-            BxP2.LOGGER.info("{}", TinkersSurvival.BLACKLISTED_ITEMS);
+            //BxP2.LOGGER.info("{}", TinkersSurvival.BLACKLISTED_ITEMS);
             BxP2.LOGGER.info("{}",player.getCapability(BxPCapabilityProvider.CAPABILITY).isPresent());
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(c -> {
                 if(c.getPhase() == -1){
@@ -141,6 +146,15 @@ public class PlayerCommonEvent {
         if(ModifierUtil.getModifierLevel(stack, BxPModifiers.BlackDeath.get().getId()) > 0){
             handleArmSwing(event.getItemStack(), event.getEntity());
             RatsNetworkHandler.CHANNEL.sendToServer(new SyncArmSwingPacket(event.getItemStack()));
+        }
+    }
+
+    @SubscribeEvent
+    public static void playerBreakEvent(BlockEvent.BreakEvent event){
+        Player player = event.getPlayer();
+        ItemStack stack = player.getMainHandItem();
+        if(player.level() instanceof ServerLevel sl){
+            LevelUtils.pickXp(stack,event.getState(),player);
         }
     }
 

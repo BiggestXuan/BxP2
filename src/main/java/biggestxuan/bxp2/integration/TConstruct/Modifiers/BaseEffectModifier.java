@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
 import biggestxuan.bxp2.utils.Utils;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -32,10 +33,10 @@ public class BaseEffectModifier extends Modifier implements InventoryTickModifie
 
     @Override
     public void onInventoryTick(IToolStackView iToolStackView, ModifierEntry modifierEntry, Level level, LivingEntity livingEntity, int i, boolean b, boolean b1, ItemStack itemStack) {
-        if(livingEntity instanceof Player player&& level.getDayTime() % 10 == 0){
+        if(livingEntity instanceof Player player && player.tickCount % 10 == 0){
             //Utils.sendMessage(player, String.valueOf(i));
         }
-        if(!level.isClientSide && level.getDayTime() % 20 == 0 && b1){
+        if(level instanceof ServerLevel sl && sl.getServer().getTickCount() % 20 == 0 && b1){
             livingEntity.addEffect(this.instance);
         }
     }

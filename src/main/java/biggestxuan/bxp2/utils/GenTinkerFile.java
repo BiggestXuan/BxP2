@@ -17,12 +17,12 @@ import java.util.List;
 
 @OnlyDev
 public class GenTinkerFile {
-    public static final String ID = "radiation_metal"; //
-    public static final String ITEM = "bxp2:radiation_ingot";
-    public static final String FLUID = "bxp2:molten_radiation_metal";
-    public static final String CN = "辐射金属"; //
-    public static final String EN = "Radiation Metal"; //
-    public static final String COLOR = "1affd9";
+    public static final String ID = "oratchalcum"; //
+    public static final String ITEM = "rats:oratchalcum_ingot";
+    public static final String FLUID = "bxp2:molten_oratchalcum";
+    public static final String CN = "鼠铜"; //
+    public static final String EN = "Oratchalcum"; //
+    public static final String COLOR = "ccc083";
     public static final String path1 = "src/main/resources/data/bxp2/tinkering/materials/";
     public static final String path2 = "src/main/resources/data/bxp2/recipes/materials/";
     public static final String path3 = "src/main/resources/data/bxp2/recipes/smeltery/";

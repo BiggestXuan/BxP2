@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:tool_xp",
+  "text": [
+    {
+      "text": "使你的匠魂物品使用时获得额外的经验，每一级提升100%，最高1500%"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "最高4级",
+    "每级需要1个能力槽"
+  ]
+}

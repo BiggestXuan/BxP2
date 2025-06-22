@@ -1,16 +1,20 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelBufferModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Armor.KnockbackModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.MekaArmorModifiers.MekaArmorModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Armor.ToughnessModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Botania.ManaRepairModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Botania.TerraModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.DE.*;
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.DefenseBreaker;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.FistOfAbsoluteJustice;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.GuiSuoReckoning;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationAddModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationDamageModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationProtectModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.ProjectE.EMCKillerModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Vampirism.DrinkBloodModifier;
 import com.brandon3055.brandonscore.api.TechLevel;
 import de.teamlapen.vampirism.core.ModEffects;
@@ -64,4 +68,15 @@ public class BxPModifiers {
     public static StaticModifier<FlyModifier> Fly = REGISTER.register("fly",FlyModifier::new);
     public static StaticModifier<OmiteModifier> omite = REGISTER.register("omite",OmiteModifier::new);
     public static StaticModifier<BaseEffectModifier> SunShineProtect = REGISTER.register("sunshine_protect",() -> new BaseEffectModifier(new MobEffectInstance(ModEffects.SUNSCREEN.get(),200,6,false,false)));
+    public static StaticModifier<HalfDamageModifier> HalfDamage = REGISTER.register("half_damage",HalfDamageModifier::new);
+    public static StaticModifier<LevelBufferModifier> WeaponLevelModifier = REGISTER.register("weapon_level", LevelBufferModifier.WeaponLevelModifier::new);
+    public static StaticModifier<LevelBufferModifier> ToolLevelModifier = REGISTER.register("tool_level", LevelBufferModifier.ToolLevelModifier::new);
+    public static StaticModifier<LevelBufferModifier> ArmorLevelModifier = REGISTER.register("armor_level", LevelBufferModifier.ArmorLevelModifier::new);
+    public static StaticModifier<LimitLevelModifier> Tool_XP = REGISTER.register("tool_xp",LimitLevelModifier::new);
+    public static StaticModifier<LimitLevelModifier> Tool_LIMIT_XP = REGISTER.register("tool_limit_xp",LimitLevelModifier::new);
+    public static StaticModifier<RatsSoulModifier> RatSoul = REGISTER.register("rats_soul",RatsSoulModifier::new);
+    public static StaticModifier<LimitLevelModifier> Toughness = REGISTER.register("toughness", ToughnessModifier::new);
+    public static StaticModifier<LimitLevelModifier> Knockback_resistance = REGISTER.register("knockback_resistance", KnockbackModifier::new);
+    public static StaticModifier<BaseMeleeDamageModifier> EMCKiller = REGISTER.register("emc_killer", EMCKillerModifier::new);
+    public static StaticModifier<MekaArmorModifier> MekaArmor = REGISTER.register("meka_armor",MekaArmorModifier::new);
 }

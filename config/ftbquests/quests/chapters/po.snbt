@@ -1558,21 +1558,10 @@
 		}
 		{
 			dependencies: ["3563AEE73B167787"]
+			description: ["此外，你可以使用这四个盔甲制作 Meka 核心，从而让你的匠魂盔甲也有 Meka 盔甲的性能。"]
 			icon: "mekanism:mekasuit_bodyarmor"
 			id: "5CA386BEEC7B46AE"
 			rewards: [
-				{
-					count: 40
-					id: "62FA18774D2C5549"
-					item: "mekanism:module_energy_unit"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "55DFE4C15901881D"
-					item: "mekanism:module_attack_amplification_unit"
-					type: "item"
-				}
 				{
 					id: "5FCD742D15B94D28"
 					item: {
@@ -1584,6 +1573,12 @@
 					}
 					type: "item"
 				}
+				{
+					count: 8
+					id: "2CFDA35AAD9ED13F"
+					item: "bxp2:bx_ingot"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			tasks: [
@@ -1593,23 +1588,9 @@
 					type: "item"
 				}
 				{
-					id: "645B7FC7CBE93538"
-					item: "mekanism:mekasuit_helmet"
-					type: "item"
-				}
-				{
-					id: "23382EB006339F9A"
-					item: "mekanism:mekasuit_bodyarmor"
-					type: "item"
-				}
-				{
-					id: "3BC712C1B25D8D97"
-					item: "mekanism:mekasuit_pants"
-					type: "item"
-				}
-				{
-					id: "1D84E32556E2E879"
-					item: "mekanism:mekasuit_boots"
+					count: 4L
+					id: "4B153DECF2BE7355"
+					item: { Count: 4, id: "bxp2:meka_cube" }
 					type: "item"
 				}
 			]

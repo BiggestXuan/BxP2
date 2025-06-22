@@ -112,7 +112,6 @@ var il = [
 <item:thermal:signalum_ingot>,
 <item:thermal:lumium_ingot>,
 <item:thermal:enderium_ingot>,
-<item:mysticalagriculture:awakened_supremium_ingot>,
 <item:mekanism:ingot_bronze>,
 <item:mekanism:ingot_steel>,
 <item:mekanism:ingot_refined_obsidian>,

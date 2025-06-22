@@ -1,12 +1,9 @@
 package biggestxuan.bxp2.mixin;
 
 import biggestxuan.bxp2.Config;
-import biggestxuan.bxp2.utils.ShopUtils;
-import net.minecraft.core.NonNullList;
+import biggestxuan.bxp2.utils.BXUtils;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.ItemSteerable;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -38,8 +35,11 @@ public abstract class PlayerMixin extends LivingEntity {
 
         if(Config.difficulty == 3 && Config.DEATH_DROP){
             for (int i = 9; i < inventory.items.size(); i++) {
-                player.drop(inventory.items.get(i),true,false);
-                inventory.items.set(i,ItemStack.EMPTY);
+                ItemStack stack = inventory.items.get(i);
+                if(BXUtils.shouldDropPlayerItemsWhenDeath(player,stack)){
+                    player.drop(inventory.items.get(i),true,false);
+                    inventory.items.set(i,ItemStack.EMPTY);
+                }
             }
             ci.cancel();
         }

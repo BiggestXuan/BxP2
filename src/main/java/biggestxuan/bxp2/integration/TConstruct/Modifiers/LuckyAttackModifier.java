@@ -1,6 +1,5 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
 import biggestxuan.bxp2.utils.Utils;
 import net.minecraft.world.entity.player.Player;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;

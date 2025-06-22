@@ -1,7 +1,6 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.BaseMeleeDamageModifier;
 import biggestxuan.bxp2.utils.ServerUtils;
 import biggestxuan.bxp2.utils.Utils;
 import net.minecraft.server.level.ServerLevel;

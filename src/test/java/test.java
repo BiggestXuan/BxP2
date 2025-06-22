@@ -1,4 +1,5 @@
 import biggestxuan.bxp2.Config;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
 import mekanism.api.math.FloatingLong;
 
 /**
@@ -7,18 +8,8 @@ import mekanism.api.math.FloatingLong;
  */
 public class test {
     public static void main(String[] args) {
-        FloatingLong amount = FloatingLong.create(10000);
-        double amt = amount.getValue();
-        int q = 2;
-        switch (q){
-            case 2 -> {
-                amt *= 1.5;
-            }
-            case 3 -> {
-                amt *= 1.25;
-            }
+        for (int i = 0; i < 35; i++) {
+            System.out.println("level:"+i+","+ LevelUtils.getRequireXp(i,null));
         }
-        System.out.println(amt);
-        System.out.println(FloatingLong.create(amt).getValue());
     }
 }

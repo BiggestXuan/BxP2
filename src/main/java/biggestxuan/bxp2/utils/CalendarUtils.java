@@ -48,7 +48,7 @@ public class CalendarUtils {
     }
 
     public NationalUtils isNationalDay(){
-        return new NationalUtils(month == 10 && day == 1,year-1949);
+        return new NationalUtils(month == 10 && day == 1,year);
     }
 
     public boolean isMidAutumnFestival(){
@@ -79,22 +79,7 @@ public class CalendarUtils {
         return calendar.get(Calendar.SECOND);
     }
 
-    public static class NationalUtils{
-        private final boolean isNationalDay;
-        private final int year;
-
-        public NationalUtils(boolean isNationalDay,int year){
-            this.isNationalDay = isNationalDay;
-            this.year = year;
-        }
-
-        public int getYear() {
-            return year;
-        }
-
-        public boolean isNationalDay() {
-            return isNationalDay;
-        }
+    public record NationalUtils(boolean isNationalDay, int year) {
     }
 
     @OnlyIn(Dist.CLIENT)
@@ -108,7 +93,7 @@ public class CalendarUtils {
         if(hour >= 6 && hour < 12){
             s = "Good Morning";
         }else if(hour >= 12 && hour < 18){
-            s = "Good Afternoon";//sdxhop
+            s = "Good Afternoon";
         } else if(hour >= 18 && hour <= 23){
             s = "Good Evening";
         }else{

@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:modifier",
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "bxp2:xp_gem"
+    }
+  ],
+  "result": "bxp2:tool_xp",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

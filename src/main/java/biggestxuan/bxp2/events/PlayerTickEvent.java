@@ -2,10 +2,16 @@ package biggestxuan.bxp2.events;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.utils.PhaseUtils;
+import biggestxuan.bxp2.utils.Utils;
 import com.github.alexthe666.rats.registry.RatsEffectRegistry;
 import net.minecraft.client.renderer.EffectInstance;
+import net.minecraft.core.NonNullList;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.ItemStack;
@@ -13,6 +19,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import slimeknights.tconstruct.library.tools.item.ModifiableItem;
+import slimeknights.tconstruct.library.tools.item.armor.ModifiableArmorItem;
 
 /**
  * @Author Biggest_Xuan
@@ -47,7 +55,8 @@ public class PlayerTickEvent {
                 }
             }
         }*/
-        if(world.getDayTime() % 100 == 0){
+        MinecraftServer server = ((ServerLevel) world).getServer();
+        if(server.getTickCount() % 100 == 0){
             PhaseUtils.setPlayerPhase((ServerPlayer) player);
             player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
                 for(ItemStack stack : player.getInventory().items){
@@ -62,6 +71,12 @@ public class PlayerTickEvent {
                     }*/
                 }
             });
+        }
+        NonNullList<ItemStack> allItem = Utils.mergeNonNullList(player.getInventory().items,player.getInventory().armor);
+        for(ItemStack stack : allItem){
+            if((stack.getItem() instanceof ModifiableItem || stack.getItem() instanceof ModifiableArmorItem) && LevelUtils.getToolLevel(stack) <= 0){
+                LevelUtils.initStack(stack);
+            }
         }
         MobEffectInstance instance = player.getEffect(RatsEffectRegistry.PLAGUE.get());
         if(instance != null && instance.getDuration() < 3){

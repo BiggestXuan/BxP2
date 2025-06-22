@@ -13,13 +13,15 @@ import slimeknights.mantle.client.TooltipKey;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
+import slimeknights.tconstruct.library.modifiers.hook.build.ToolStatsModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.combat.MeleeDamageModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.display.TooltipModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.interaction.InventoryTickModifierHook;
 import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
-import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
-import slimeknights.tconstruct.library.tools.nbt.ModDataNBT;
+import slimeknights.tconstruct.library.tools.nbt.*;
+import slimeknights.tconstruct.library.tools.stat.ModifierStatsBuilder;
+import slimeknights.tconstruct.library.tools.stat.ToolStats;
 
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class ChronodragonFuryModifier extends Modifier implements InventoryTickM
     @Override
     protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         super.registerHooks(hookBuilder);
-        hookBuilder.addHook(this, ModifierHooks.INVENTORY_TICK,ModifierHooks.MELEE_DAMAGE, ModifierHooks.TOOLTIP);
+        hookBuilder.addHook(this,ModifierHooks.INVENTORY_TICK,ModifierHooks.MELEE_DAMAGE, ModifierHooks.TOOLTIP);
     }
 
     @Override
@@ -41,7 +43,7 @@ public class ChronodragonFuryModifier extends Modifier implements InventoryTickM
         if(!toolAttackContext.getLevel().isClientSide) {
             ModDataNBT nbt = iToolStackView.getPersistentData();
             int time = nbt.getInt(BxP2.RL("dragon_time"));
-            return (float) ((1 + 0.000033 * time) * v1);
+            return (float) ((1 + 0.000025 * time) * v1);
         }
         return v1;
     }
@@ -61,6 +63,6 @@ public class ChronodragonFuryModifier extends Modifier implements InventoryTickM
     @Override
     public void addTooltip(IToolStackView iToolStackView, ModifierEntry modifierEntry, @Nullable Player player, List<Component> list, TooltipKey tooltipKey, TooltipFlag tooltipFlag) {
         int time = iToolStackView.getPersistentData().getInt(BxP2.RL("dragon_time"));
-        list.add(BxP2.tr("tooltip.modifiers.chronodragon.fury").copy().append(Utils.formatPercent(0.000033 * time)));
+        list.add(BxP2.tr("tooltip.modifiers.chronodragon.fury").copy().append(Utils.formatPercent(0.000025 * time)));
     }
 }

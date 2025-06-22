@@ -2,11 +2,7 @@ package biggestxuan.bxp2.integration.TConstruct;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
-import com.brandon3055.draconicevolution.api.IReaperItem;
-import com.brandon3055.draconicevolution.items.equipment.IModularArmor;
-import mekanism.common.content.gear.IModuleContainerItem;
-import mekanism.common.item.ItemEnergized;
-import mekanism.common.item.gear.ItemSpecialArmor;
+import mekanism.common.item.gear.ItemMekaTool;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -104,7 +100,7 @@ public class  TinkersSurvival {
     @SubscribeEvent
     public static void onItemUse(PlayerInteractEvent.RightClickItem event) {
         ItemStack stack = event.getItemStack();
-        if (isBlackList(stack.getItem())) {
+        if (isBlackList(stack.getItem(),event.getEntity())) {
             event.setCanceled(true);
             event.getEntity().displayClientMessage(
                     BxP2.tr("message.tinker_must")
@@ -118,7 +114,7 @@ public class  TinkersSurvival {
     public static void onAttackEntity(AttackEntityEvent event) {
         Player player = event.getEntity();
         ItemStack stack = player.getMainHandItem();
-        if (isBlackList(stack.getItem())) {
+        if (isBlackList(stack.getItem(),player)) {
             event.setCanceled(true);
             player.displayClientMessage(
                     BxP2.tr("message.tinker_must")
@@ -131,7 +127,7 @@ public class  TinkersSurvival {
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
         ItemStack stack = event.getPlayer().getMainHandItem();
-        if (isBlackList(stack.getItem())) {
+        if (isBlackList(stack.getItem(), event.getPlayer())) {
             event.setCanceled(true);
             event.getPlayer().displayClientMessage(
                     BxP2.tr("message.tinker_must")
@@ -145,7 +141,7 @@ public class  TinkersSurvival {
     public static void onArmorEquip(LivingEquipmentChangeEvent event) {
         if (event.getEntity() instanceof Player player) {
             ItemStack newItem = event.getTo();
-            if (isBlackList(newItem.getItem())) {
+            if (isBlackList(newItem.getItem(),player)) {
                 if (!player.getInventory().add(newItem)) {
                     player.drop(newItem, false);
                 }
@@ -159,14 +155,14 @@ public class  TinkersSurvival {
         }
     }
 
-    private static boolean isBlackList(Item item){
-        if(BxP2.devMode){
+    private static boolean isBlackList(Item item,Player player){
+        if(BxP2.devMode || player.isCreative() || !Config.TinkersSurvival){
             return false;
         }
         if(item instanceof TerraShattererItem){
             return false; // Botania
         }
-        if(item instanceof ItemSpecialArmor || item instanceof IModuleContainerItem || item instanceof ItemEnergized){
+        if(item instanceof ItemMekaTool){
             return false; //Mek
         }
         //if(item instanceof IReaperItem || item instanceof IModularArmor){

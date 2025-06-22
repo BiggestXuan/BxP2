@@ -6,6 +6,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @Author Biggest_Xuan
@@ -13,7 +14,7 @@ import net.minecraft.world.level.Level;
  */
 public class DifficultyChangeItem extends BxPItem{
     @Override
-    public InteractionResultHolder<ItemStack> use(Level p_41432_, Player p_41433_, InteractionHand p_41434_) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level p_41432_, Player p_41433_, InteractionHand p_41434_) {
         if(p_41432_.isClientSide){
             DifficultyScreen.open();
             return InteractionResultHolder.success(p_41433_.getItemInHand(p_41434_));

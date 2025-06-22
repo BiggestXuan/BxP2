@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL;
+package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;

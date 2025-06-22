@@ -4,7 +4,9 @@ import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.integration.Mekanism.MekUtils;
+import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
 import biggestxuan.bxp2.items.BxPItems;
+import biggestxuan.bxp2.utils.MobUtils;
 import biggestxuan.bxp2.utils.Utils;
 import biggestxuan.bxp2.utils.WorldUtils;
 import com.brandon3055.draconicevolution.init.DEDamage;
@@ -57,38 +59,52 @@ public class LivingCombatEvent {
 
     @SubscribeEvent
     public static void onLivingHurt(LivingHurtEvent event) {
-        LivingEntity entity = event.getEntity();
-        Level world = entity.level();
+        LivingEntity target = event.getEntity();
+        Level world = target.level();
         DamageSource sources = event.getSource();
         float amount = event.getAmount();
-        if(!world.isClientSide()) {
-            MobEffectInstance instance = entity.getEffect(BxPEffects.Vulnerability.get());
+        if(world instanceof ServerLevel sl) {
+            MobEffectInstance instance = target.getEffect(BxPEffects.Vulnerability.get());
             Entity attacker = sources.getDirectEntity();
-            if(entity instanceof Warden){
+            if(target instanceof Warden){
                 if(!(attacker instanceof Player)){
                     double rate = Config.difficulty == 3 ? 0.36F : 0.6F;
                     amount *= (float) rate;
                 }
             }
-            if(attacker instanceof Warden warden){
-                warden.heal(amount * 0.4F);
-                if(Config.difficulty == 3){
-                    warden.heal(amount * 0.4F);
-                }
-            }
             double r = BxP2.devMode ? 1 : 0.03;
-            if(attacker instanceof Player){
-                if(Config.difficulty == 1){
-                    if(Utils.isRandom(r)){
-                        entity.addEffect(new MobEffectInstance(BxPEffects.Vulnerability.get()));
+            if(!sl.getServer().isHardcore()){
+                if(attacker instanceof Warden warden){
+                    warden.heal(amount * 0.4F);
+                    if(Config.difficulty == 3){
+                        warden.heal(amount * 0.4F);
+                    }
+                }
+                if(instance != null){
+                    for (int i = 0; i <= instance.getAmplifier(); i++) {
+                        amount *= 1.2F;
                     }
                 }
             }
-            if(entity instanceof Player player){
+            MobEffectInstance instance1 = target.getEffect(BxPEffects.HalfDamage.get());
+            if(instance1 != null){
+                amount = (float) (amount * Math.pow(0.5,instance1.getAmplifier()+1));
+                target.removeEffect(BxPEffects.HalfDamage.get());
+            }
+            if(attacker instanceof Player player){
+                if(Config.difficulty == 1){
+                    if(Utils.isRandom(r)){
+                        target.addEffect(new MobEffectInstance(BxPEffects.Vulnerability.get()));
+                    }
+                }
+                ItemStack stack = player.getMainHandItem();
+                LevelUtils.attackXp(stack,amount,player,target);
+            }
+            if(target instanceof Player player){
                 if(Config.difficulty == 3){
                     if(Utils.isRandom(r)){
-                        entity.addEffect(new MobEffectInstance(BxPEffects.Vulnerability.get()));
-                        entity.addEffect(new MobEffectInstance(BxPEffects.Debilitated.get()));
+                        target.addEffect(new MobEffectInstance(BxPEffects.Vulnerability.get()));
+                        target.addEffect(new MobEffectInstance(BxPEffects.Debilitated.get()));
                     }
                 }
                 if(sources.is(DEDamage.CHAOTIC_ARROW) || sources.is(DEDamage.CHAOTIC_ARROW_SPOOF) || sources.is(DEDamage.CHAOS_IMPLOSION) || sources.is(DEDamage.GUARDIAN) || sources.is(DEDamage.GUARDIAN_LASER) || sources.is(DEDamage.GUARDIAN_PROJECTILE)){
@@ -104,10 +120,8 @@ public class LivingCombatEvent {
                         amount *= rate;
                     }
                 }
-            }
-            if(instance != null){
-                for (int i = 0; i <= instance.getAmplifier(); i++) {
-                    amount *= 1.2F;
+                for(ItemStack stack : player.getInventory().armor){
+                    LevelUtils.getDamage(stack,sources,player,amount);
                 }
             }
             event.setAmount(amount);
@@ -153,14 +167,7 @@ public class LivingCombatEvent {
             if(mob instanceof DeepBatEntity bat){
                 bat.setNoAi(true);
             }
-            ServerLevel world = sl.getServer().overworld();
-            double rate = 0;
-            switch (Config.difficulty){
-                case 1 -> rate = Config.EASY_ENHANCEMENT_RATE;
-                case 2 -> rate = Config.NORMAL_ENHANCEMENT_RATE;
-                case 3 -> rate = Config.HARD_ENHANCEMENT_RATE;
-            }
-            double day = 1d * world.getDayTime() / 24000 * rate;
+            double day = MobUtils.getAvgGameDay(mob);
             AttributeInstance health = mob.getAttribute(Attributes.MAX_HEALTH);
             AttributeInstance attack = mob.getAttribute(Attributes.ATTACK_DAMAGE);
             if(health != null){

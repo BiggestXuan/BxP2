@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 public class SunProtectUnit implements ICustomModule<SunProtectUnit> {
     public void tickServer(IModule<SunProtectUnit> module, Player player) {
         Level level = player.level();
-        if(level.getDayTime() % 100 == 0){
+        if(player.tickCount % 100 == 0){
             player.addEffect(new MobEffectInstance(ModEffects.SUNSCREEN.get(),200,6,false,false));
         }
     }

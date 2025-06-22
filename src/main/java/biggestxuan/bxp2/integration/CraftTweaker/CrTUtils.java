@@ -10,6 +10,7 @@ import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker.api.item.IItemStack;
 import mekanism.api.chemical.gas.GasStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import org.openzen.zencode.java.ZenCodeType;
 import owmii.powah.api.PowahAPI;
 
@@ -102,5 +103,14 @@ public class CrTUtils {
             return arr;
         }
         return new IItemStack[]{};
+    }
+
+    @ZenCodeType.Method
+    public static IItemStack[] getProjecteItems(){
+        IItemStack[] arr = new IItemStack[Utils.getAllProjectEItems().size()];
+        for (int i = 0; i < Utils.getAllProjectEItems().size(); i++) {
+            arr[i] = IItemStack.of(Utils.getAllProjectEItems().get(i).getDefaultInstance());
+        }
+        return arr;
     }
 }

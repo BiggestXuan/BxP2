@@ -72,10 +72,7 @@ public class ModifiableSwordItemMixin implements IModularMelee {
         return true;
     }
 
-    /*public void initCapabilities(ItemStack stack, ModuleHostImpl host, MultiCapabilityProvider provider) {
+    public void initCapabilities(ItemStack stack, ModuleHostImpl host, MultiCapabilityProvider provider) {
     }
 
-    public ICapabilityProvider initCapabilities(ItemStack stack, @javax.annotation.Nullable CompoundTag nbt) {
-        return IModularMelee.super.initCapabilities(stack,nbt);
-    }*/
 }

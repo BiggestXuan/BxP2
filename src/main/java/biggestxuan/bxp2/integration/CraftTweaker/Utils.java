@@ -1,7 +1,12 @@
 package biggestxuan.bxp2.integration.CraftTweaker;
 
 import com.blamejared.crafttweaker.api.item.IItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author Biggest_Xuan
@@ -23,5 +28,15 @@ public final class Utils {
             array[i] = IItemStack.of(items[i]);
         }
         return array;
+    }
+
+    public static List<Item> getAllProjectEItems(){
+        List<Item> list = new ArrayList<>();
+        for(Item item : ForgeRegistries.ITEMS.getValues()){
+            if(ForgeRegistries.ITEMS.getKey(item) != null && ForgeRegistries.ITEMS.getKey(item).getNamespace().contains("projecte")){
+                list.add(item);
+            }
+        }
+        return list;
     }
 }

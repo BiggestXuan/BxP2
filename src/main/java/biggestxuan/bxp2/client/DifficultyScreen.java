@@ -60,7 +60,7 @@ public class DifficultyScreen extends Screen {
             case "hard" -> color = 0xD52121;
         }
         int h = a(height * 0.25);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <= 10; i++) {
             g.drawString(font,BxP2.tr(name+diff+"_"+i),w,h,color);
             h += a(height * 0.04);
         }

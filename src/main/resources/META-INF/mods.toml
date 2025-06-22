@@ -3,7 +3,7 @@ loaderVersion="${loader_version_range}"
 license="ARR"
 [[mods]] #mandatory
 modId="bxp2" #mandatory
-version="0.4.0" #mandatory
+version="0.6.0" #mandatory
 displayName="BxP 2" #mandatory
 authors="Biggest_Xuan" #optional
 description=''

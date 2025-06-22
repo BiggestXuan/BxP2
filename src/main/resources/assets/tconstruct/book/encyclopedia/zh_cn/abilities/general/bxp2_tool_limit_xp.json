@@ -1,0 +1,13 @@
+{
+  "modifier_id": "bxp2:tool_limit_xp",
+  "text": [
+    {
+      "text": "使你的匠魂物品升级所需经验减少，每一级减少50%，最高减少93.75%"
+    }
+  ],
+  "more_text_space": true,
+  "effects": [
+    "最高4级",
+    "每级需要1个能力槽"
+  ]
+}
