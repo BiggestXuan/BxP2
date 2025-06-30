@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:poly_block"
+  },
+  "temperature": 1000,
+  "time": 300,
+  "result":
+  {
+    "fluid": "bxp2:molten_poly",
+    "amount": 810
+  }
+}

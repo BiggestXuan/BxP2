@@ -1604,6 +1604,7 @@
 				"3563AEE73B167787"
 				"28968696FD3200E7"
 			]
+			description: ["为避免出现long上限的温度问题，整合包对裂变的&l&4最高&r&r温度进行了限制：外壳温度为200GK，等离子体温度为300GK。"]
 			icon: "mekanismgenerators:fusion_reactor_controller"
 			id: "05E2C2520A248F50"
 			rewards: [
@@ -1942,7 +1943,7 @@
 				type: "checkmark"
 			}]
 			title: "更强的冷却剂！"
-			x: 21.0d
+			x: 19.0d
 			y: 5.0d
 		}
 		{
@@ -3311,6 +3312,25 @@
 			title: "硅岩反应堆"
 			x: 24.5d
 			y: 8.0d
+		}
+		{
+			dependencies: ["38EF6679F01FD9F4"]
+			description: [
+				"一些玩家可能在查看多方块结构的时候导致客户端崩溃，对此简要介绍："
+				""
+				"是一个标准的火柴盒，内部：在最中间的位置放上laser stopper，在同高度的四个面的中心放上激光。"
+				""
+				"高品质混凝土可以用作各种输入输出仓，可以替换对应的高品质混凝土。"
+			]
+			id: "539D1477ADAA2FDA"
+			tasks: [{
+				id: "1C3FE73A4DA3CF05"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
+			title: "有关镭射锔活化多方块的说明"
+			x: 23.0d
+			y: 5.0d
 		}
 	]
 	title: "通用机械"

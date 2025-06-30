@@ -1,0 +1,13 @@
+{
+  "type":"tconstruct:melting",
+  "ingredient":{
+    "item":"bxp2:ou_gold_block"
+  },
+  "temperature": 1000,
+  "time": 300,
+  "result":
+  {
+    "fluid": "bxp2:molten_ou_gold",
+    "amount": 810
+  }
+}

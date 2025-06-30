@@ -51,6 +51,45 @@ public final class Utils {
         return o;
     }
 
+    public static String insertNewLines(String input, int maxLength) {
+        if (input == null || input.isEmpty()) {
+            return input;
+        }
+        StringBuilder result = new StringBuilder();
+        int currentLength = 0;
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            int charLength = getCharLength(c);
+            if (currentLength + charLength > maxLength && currentLength != 0) {
+                result.append('\n');
+                currentLength = 0;
+            }
+
+            result.append(c);
+            currentLength += charLength;
+        }
+
+        return result.toString();
+    }
+
+    public static int getTextLength(String text){
+        int currentLength = 0;
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            currentLength += getCharLength(c);
+        }
+        return currentLength;
+    }
+
+    public static int getCharLength(char c) {
+        if ((c >= '\u4e00' && c <= '\u9fa5') ||
+                (c >= '\u3000' && c <= '\u303f') ||
+                (c >= '\uff00' && c <= '\uffef')) {
+            return 2;
+        }
+        return 1;
+    }
+
     public static String format(String text){
         return thousandSign(text);
     }

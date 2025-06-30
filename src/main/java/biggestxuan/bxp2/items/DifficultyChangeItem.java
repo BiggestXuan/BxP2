@@ -1,6 +1,6 @@
 package biggestxuan.bxp2.items;
 
-import biggestxuan.bxp2.client.DifficultyScreen;
+import biggestxuan.bxp2.client.screen.DifficultyScreen;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;

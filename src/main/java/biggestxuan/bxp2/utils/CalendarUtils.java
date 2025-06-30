@@ -82,7 +82,6 @@ public class CalendarUtils {
     public record NationalUtils(boolean isNationalDay, int year) {
     }
 
-    @OnlyIn(Dist.CLIENT)
     public String getNowTimeWelcome(){
         String s;
         LocalPlayer player = Minecraft.getInstance().player;

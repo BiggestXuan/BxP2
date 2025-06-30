@@ -56,7 +56,7 @@ public class ToolTipEvent {
         if(stack.getItem() instanceof BxPItem bxp){
             int value = bxp.getBXValue(stack);
             if(value > 0){
-                //list.add(BxP2.tr("tooltip.tinker.bx_value",value));
+                list.add(BxP2.tr("tooltip.tinker.bx_value",value));
             }
         }
     }

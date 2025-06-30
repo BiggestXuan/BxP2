@@ -287,6 +287,28 @@
 			x: 5.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["61726B2DE148DE68"]
+			id: "4FA4E92D24AADD2E"
+			tasks: [{
+				id: "552BD1302A7896E7"
+				item: "bxp2:epic_essence"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FA4E92D24AADD2E"]
+			id: "08968B8CFFD79305"
+			tasks: [{
+				id: "173117F2DA845470"
+				item: "bxp2:final_essence"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
 	]
 	title: "菜还是矿？"
 }

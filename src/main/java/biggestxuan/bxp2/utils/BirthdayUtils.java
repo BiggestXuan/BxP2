@@ -29,12 +29,10 @@ public record BirthdayUtils(Player player) {
         UNIECHO("uniEcho","1cb6a52c-8a39-47ac-9618-959ee4d88fca",5,18),
         XIANGSHUSHUMIAO("xiangshushumiao","19cd7e09-e249-4b92-b35a-770b3399a302",10,14),
         LAMB_KISARA("LAMB_Kisara","92a115f6-ce06-4c09-be16-0e9521148f42",9,14),
-        ONE_WAN("One_Wan","50f1a6b0-a176-4102-a4bd-86ed2277b4bb",9,28),
         YULUO_1("yuluo_1","1719c509-2b62-47a4-a080-bef535fa1e68",8,19),
         CHARA_SS("Chara_SS","1738cb1b-ea69-4e0f-8678-688aea7e8d1b",8,28),
         TULYE("Tulye","52a0f9c3-5551-4de9-bfe5-16f803f44633",9,8),
         MCYUNXI("MCyunxi","eb91acd8-a70e-4b1d-b1c4-34fc4c8af495",3,28),
-        DYTLJ7788("dytlj7788","e690ea7a-8fce-4049-80dd-07158cd6a348",9,2),
         ABUNANA("Abunana","6105dab8-94a6-440f-b797-00d046587eda",1,29),
         ;
         private final String name;

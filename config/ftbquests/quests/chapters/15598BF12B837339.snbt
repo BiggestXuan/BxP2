@@ -1,0 +1,333 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "15598BF12B837339"
+	group: "455ED0AB8CCEDEB5"
+	icon: "projecte:transmutation_table"
+	id: "15598BF12B837339"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B0E3360EFD913DF"]
+			id: "7AA62A51300D2501"
+			rewards: [
+				{
+					id: "6B061CC1ECC7C5EE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CA137330F0486C9"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "50227619FD2E6261"
+				item: "projecte:mobius_fuel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AA62A51300D2501"]
+			id: "30F783A5ADF83083"
+			rewards: [
+				{
+					id: "56BF67C6C4C9701B"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AF417B6CEA0F531"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "502777CB1B733AED"
+				item: "projecte:aeternalis_fuel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30F783A5ADF83083"]
+			id: "7D7B0954F780C4D2"
+			rewards: [
+				{
+					id: "41B4117E06724F8A"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24CF9FCE67893EF5"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7CC783233BDFA218"
+				item: "projecte:dark_matter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D7B0954F780C4D2"]
+			id: "53DF1AB41F5EA820"
+			rewards: [
+				{
+					id: "470846678162BCF9"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AE5379014ED32E5"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "41347E67565D594D"
+				item: "projecte:dark_matter_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53DF1AB41F5EA820"]
+			id: "614A8E1C7B1B6C96"
+			rewards: [
+				{
+					id: "500F91B33FF99A58"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "606E90BAB83B6626"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B3BC0113E83FA6F"
+				item: "projecte:red_matter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["614A8E1C7B1B6C96"]
+			id: "5130383FAA831826"
+			rewards: [
+				{
+					id: "117BA9C81CE67869"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A81689525A2488B"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "50275FE717B1033A"
+				item: "projecte:red_matter_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5130383FAA831826"]
+			id: "20476FD210AFFED0"
+			rewards: [
+				{
+					id: "7E1C4795DF6572B5"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "457C86C9382346FE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7B498F6F5D546FBE"
+				item: "projecte:transmutation_table"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20476FD210AFFED0"]
+			id: "59E6891F0E79B497"
+			rewards: [
+				{
+					id: "7CB93C1058B714AE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07A944DB16D3CC79"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "20303603F1BDF012"
+				item: "projecte:transmutation_tablet"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&4等价交换并不在所有模式可用！&r"
+				""
+				"如果你选择了挑战模式，那么你无法使用等价交换，而剩下的难度，配方上会有所区别。"
+			]
+			id: "1B0E3360EFD913DF"
+			rewards: [
+				{
+					id: "3AA0DD59E92AFBBE"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D6BE374D96905F3"
+					item: {
+						Count: 1
+						id: "bxp2:money"
+						tag: {
+							money: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "711E63BBCC74865C"
+				title: "简要说明"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+	]
+	title: "等价交换"
+}

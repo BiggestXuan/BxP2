@@ -1,0 +1,9 @@
+{
+  "primaryColor": "#A8E635",
+  "secondaryColor": "#08080f",
+  "tertiaryColor": "#400438",
+  "flowerBlock": "bxp2:ench_bx_block",
+  "breedingItem": "bxp2:ench_bx_ingot",
+  "size": 1.6,
+  "selfbreed": false
+}

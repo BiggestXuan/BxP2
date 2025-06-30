@@ -27,7 +27,7 @@
 		DeathMoneyBase = 0.0
 		#Range: 0.0 ~ 1.0
 		DeathMoneyAddition = 0.0
-		#Mobs daily enhancement rate,1 -> 1%,10 -> 10%
+		#Mobs enhancement rate,1 -> 1%,10 -> 10%
 		#Range: 0.0 ~ 1.7976931348623157E308
 		EnhancementRate = 0.0
 		#The production probability of ouhuang ingot also affects the reuse rate of vegetable seeds
@@ -56,7 +56,7 @@
 		DeathMoneyBase = 0.1
 		#Range: 0.0 ~ 1.0
 		DeathMoneyAddition = 0.015
-		#Mobs daily enhancement rate,1 -> 1%,10 -> 10%
+		#Mobs enhancement rate,1 -> 1%,10 -> 10%
 		#Range: 0.0 ~ 1.7976931348623157E308
 		EnhancementRate = 1.0
 		#The production probability of ouhuang ingot also affects the reuse rate of vegetable seeds

@@ -16,12 +16,22 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Supplier;
+
 /**
  * @Author Biggest_Xuan
  * 2025/4/16
  */
 public class BxPBlocks {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,BxP2.MODID);
+
+    public static RegistryObject<Block> UNSTABLE_BX_BLOCK = register("unstable_bx_block");
+    public static RegistryObject<Block> BX_BLOCK = register("bx_block");
+    public static RegistryObject<Block> OUMANG_BLOCK = register("oumang_block");
+    public static RegistryObject<Block> OU_GOLD_BLOCK = register("ou_gold_block");
+    public static RegistryObject<Block> SX_BLOCK = register("sx_block");
+    public static RegistryObject<Block> POLY_BLOCK = register("poly_block");
+    public static RegistryObject<Block> ENCH_BX_BLOCK = register("ench_bx_block");
 
     public static RegistryObject<Block> YUNXI = BLOCKS.register("yunxi",() -> new PlayerModelBlock(){
         @Override
@@ -46,4 +56,8 @@ public class BxPBlocks {
     public static RegistryObject<Block> ABUNANA = BLOCKS.register("abunana",PlayerModelBlock::new);
     public static RegistryObject<Block> KLPZM = BLOCKS.register("klpzm",PlayerModelBlock::new);
     //public static RegistryObject<Block> CLSHERLOCK = BLOCKS.register("clsherlock",PlayerModelBlock::new);
+
+    public static RegistryObject<Block> register(String name){
+        return BLOCKS.register(name,() -> new BxPBlock(name));
+    }
 }

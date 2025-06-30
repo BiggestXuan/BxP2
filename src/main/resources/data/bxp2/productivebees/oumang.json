@@ -1,0 +1,9 @@
+{
+  "primaryColor": "#f9fa89",
+  "secondaryColor": "#08080f",
+  "tertiaryColor": "#400438",
+  "flowerBlock": "bxp2:oumang_block",
+  "breedingItem": "bxp2:oumang_ingot",
+  "size": 1,
+  "selfbreed": false
+}

@@ -142,7 +142,19 @@ public enum ShopGoods {
    // iahhy(BxP2.getTconstructCreative("abilities"),0,15f,true),
    // aihhay(BxP2.getTconstructCreative("souls"),0,12.5f,true),
     i3ayu(BxPItems.CREATIVE_ABILITY_SKULL.get().getDefaultInstance(),0,15f,true),
-    i3a3yu(BxPItems.CREATIVE_UPGRADE_SKULL.get().getDefaultInstance(),0,12.5f,true);
+    i3a3yu(BxPItems.CREATIVE_UPGRADE_SKULL.get().getDefaultInstance(),0,12.5f,true),
+    i31yju(BxP2.getStack("productivebees:upgrade_productivity"),5,12.5f),
+    i31a3yu(BxP2.getStack("productivebees:upgrade_productivity_2"),6,20f),
+    i1a3yu(BxP2.getStack("productivebees:upgrade_productivity_3"),7,30.5f),
+    i3ga3kyu(BxP2.getStack("productivebees:upgrade_productivity_4"),8,38f),
+    i3aa3yu(BxP2.getStack("productivebees:upgrade_simulator"),2,4.5f),
+    i3ga3yu(BxP2.getStack("productivebees:upgrade_time"),3,5.5f),
+    i3a3yuh(BxP2.getStack("mysticalagriculture:inferium_farmland"),0,0.1f),
+    i3g3yu(BxP2.getStack("mysticalagriculture:prudentium_farmland"),0,0.42f),
+    i3kga3yu(BxP2.getStack("mysticalagriculture:tertium_farmland"),0,1.7f),
+    i3a3u(BxP2.getStack("mysticalagriculture:imperium_farmland"),0,7f),
+    i3av3yu(BxP2.getStack("mysticalagriculture:supremium_farmland"),0,30f),
+    f3ga3yu(BxP2.getStack("mysticalagradditions:insanium_farmland"),0,125f),
     ;
 
     private final ItemStack stack;

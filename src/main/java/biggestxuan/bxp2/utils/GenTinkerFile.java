@@ -43,6 +43,44 @@ public class GenTinkerFile {
         addBucketAssets();
     }
 
+    public static class o{
+        public static void genBlockMeltingRecipe() throws Exception{
+            String[] arr = new String[]{"bx","sx","ench_bx","oumang","ou_gold","poly","unstable_bx"};
+            for(String s : arr){
+                File file = new File(path3+"/casting/"+s+"_toblock.json");
+                String c = "{\n" +
+                        "  \"type\": \"tconstruct:casting_basin\",\n" +
+                        "  \"cooling_time\": 203,\n" +
+                        "  \"fluid\": {\n" +
+                        "    \"amount\": 810,\n" +
+                        "    \"fluid\": \"bxp2:molten_"+s+"\"\n" +
+                        "  },\n" +
+                        "  \"result\": \"bxp2:"+s+"_block"+"\"\n" +
+                        "}";
+                writeFile(file,c);
+                File file1 = new File(path3+"/melting/"+s+"_tomolten.json");
+                String c1 = "{\n" +
+                        "  \"type\":\"tconstruct:melting\",\n" +
+                        "  \"ingredient\":{\n" +
+                        "    \"item\":\"bxp2:"+s+"_block"+"\"\n" +
+                        "  },\n" +
+                        "  \"temperature\": 1000,\n" +
+                        "  \"time\": 300,\n" +
+                        "  \"result\":\n" +
+                        "  {\n" +
+                        "    \"fluid\": \"bxp2:molten_"+s+"\",\n" +
+                        "    \"amount\": 810\n" +
+                        "  }\n" +
+                        "}";
+                writeFile(file1,c1);
+            }
+        }
+
+        public static void main(String[] args) throws Exception{
+            genBlockMeltingRecipe();
+        }
+    }
+
     public static void addBucketAssets() throws Exception{
         String name = FLUID.split(":")[1];
         File file = new File(path7+name+"_bucket.json");

@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
         })
     })
     BxP2.getCuriumRecipe().forEach(data => {
-        console.log(""+data[0]+"_"+data[1]+"_"+data[2]+"_"+data[3]+"_"+data[4])
+        //console.log(""+data[0]+"_"+data[1]+"_"+data[2]+"_"+data[3]+"_"+data[4])
         addCuriumRecipe(event,data)
     })
     BxP2.getEnchSeedRecipe().forEach((a,b) => {

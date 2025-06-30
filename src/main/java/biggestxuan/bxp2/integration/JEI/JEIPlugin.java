@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.integration.JEI;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.recipes.ICycleRecipe;
 import biggestxuan.bxp2.integration.CraftTweaker.Utils;
 import biggestxuan.bxp2.integration.JEI.catalyst.BxPCatalystCategory;
@@ -17,11 +18,7 @@ import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.ISubtypeRegistration;
-import mezz.jei.api.runtime.IIngredientManager;
 import mezz.jei.api.runtime.IJeiRuntime;
-import moze_intel.projecte.gameObjs.blocks.TransmutationStone;
-import moze_intel.projecte.gameObjs.items.TransmutationTablet;
-import moze_intel.projecte.gameObjs.registries.PEItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -55,7 +52,15 @@ public class JEIPlugin implements IModPlugin {
     public void onRuntimeAvailable(@NotNull IJeiRuntime jeiRuntime) {
         List<ItemStack> hide = new ArrayList<>();
         for (Item item : Utils.getAllProjectEItems()){
-            if(ForgeRegistries.ITEMS.getKey(item) != null && ForgeRegistries.ITEMS.getKey(item).getPath().contains("transmutation")) continue;
+            if(Config.difficulty == 3){
+                hide.add(item.getDefaultInstance());
+                continue;
+            }
+            if(ForgeRegistries.ITEMS.getKey(item) != null){
+                if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("fuel")) continue;
+                if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("transmutation")) continue;
+                if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("matter")) continue;
+            }
             hide.add(item.getDefaultInstance());
         }
         jeiRuntime.getIngredientManager().removeIngredientsAtRuntime(

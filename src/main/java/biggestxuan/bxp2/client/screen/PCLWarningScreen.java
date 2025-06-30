@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.client;
+package biggestxuan.bxp2.client.screen;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.client.event.ClientScreenEvent;

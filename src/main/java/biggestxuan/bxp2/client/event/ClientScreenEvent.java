@@ -1,8 +1,10 @@
 package biggestxuan.bxp2.client.event;
 
 import biggestxuan.bxp2.BxP2;
-import biggestxuan.bxp2.client.PCLWarningScreen;
+import biggestxuan.bxp2.client.screen.PCLWarningScreen;
+import biggestxuan.bxp2.client.screen.UpdateLogScreen;
 import biggestxuan.bxp2.utils.ClientUtils;
+import dev.shadowsoffire.packmenu.gui.SupporterScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.TitleScreen;
@@ -28,6 +30,12 @@ public class ClientScreenEvent {
                 Minecraft.getInstance().setScreen(new PCLWarningScreen(PCLScreen));
                 isShowPCL = true;
             }
+        }
+        if(screen instanceof SupporterScreen){
+            Minecraft.getInstance().setScreen(null);
+            Minecraft.getInstance().execute(() -> {
+                Minecraft.getInstance().setScreen(new UpdateLogScreen(BxP2.VERSION));
+            });
         }
     }
 }

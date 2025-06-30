@@ -1,0 +1,75 @@
+
+["Centrifuge Tiers Reproduced Options"]
+	#
+	#Nuclear Centrifuge Fluid Capacity
+	#Range: > 1
+	nuclearCentrifugeFluidCapacity = 200000
+	#
+	#Nuclear Centrifuge Speed
+	#Range: > 1
+	nuclearCentrifugeSpeed = 5
+	#
+	#High End Centrifuge Fluid Capacity
+	#Range: > 1
+	highEndCentrifugeFluidCapacity = 100000
+	#
+	#Cosmic Centrifuge Fluid Capacity
+	#Range: > 1
+	cosmicCentrifugeFluidCapacity = 600000
+	#
+	#Nuclear Centrifuge Item Max Stack Size
+	#Range: > 1
+	nuclearCentrifugeItemMaxStackSize = 512
+	#
+	#High End Centrifuge Speed
+	#Range: > 1
+	highEndCentrifugeSpeed = 4
+	#
+	#High End Centrifuge Item Max Stack Size
+	#Range: > 1
+	highEndCentrifugeItemMaxStackSize = 256
+	#
+	#Creative Centrifuge Item Max Stack Size
+	#Range: > 1
+	creativeCentrifugeItemMaxStackSize = 16384
+	#
+	#High End Centrifuge Output Multiplier
+	#Range: > 1
+	highEndCentrifugeOutputMultiplier = 2
+	#
+	#Nuclear Centrifuge Output Multiplier
+	#Range: > 1
+	nuclearCentrifugeOutputMultiplier = 4
+	#
+	#Creative Centrifuge Fluid Capacity
+	#Range: > 1
+	creativeCentrifugeFluidCapacity = 2147483647
+	#
+	#Cosmic Centrifuge Speed
+	#Range: > 1
+	cosmicCentrifugeSpeed = 7
+	#
+	#Cosmic Centrifuge Item Max Stack Size
+	#Range: > 1
+	cosmicCentrifugeItemMaxStackSize = 1024
+	#
+	#Cosmic Centrifuge Output Multiplier
+	#Range: > 1
+	cosmicCentrifugeOutputMultiplier = 8
+	#
+	#Creative Centrifuge Output Multiplier
+	#Range: > 1
+	creativeCentrifugeOutputMultiplier = 100
+	#
+	#Nuclear Centrifuge Energy Capacity
+	#Range: > 1
+	nuclearCentrifugeEnergyCapacity = 200000
+	#
+	#Cosmic Centrifuge Energy Capacity
+	#Range: > 1
+	cosmicCentrifugeEnergyCapacity = 600000
+	#
+	#High End Centrifuge Energy Capacity
+	#Range: > 1
+	highEndCentrifugeEnergyCapacity = 100000
+

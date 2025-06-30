@@ -9,6 +9,8 @@ import mods.bxp2.CrTManager;
 import mods.bxp2.CrTConfig;
 import mods.bxp2.HarvestEntry;
 import mods.bxp2.PlantRecipe;
+import mods.bxp2.CrTWeight;
+import mods.bxp2.CrTWeightItem;
 
 var a = <item:minecraft:air>;
 var base_chance as float = CrTConfig.getOuhuangChance();
@@ -169,3 +171,177 @@ addCraftRecipe([
     [<item:mekanism:mekasuit_bodyarmor>,<item:bxp2:bx_ingot>,<item:mekanism:mekasuit_pants>],
     [a,<item:mekanism:mekasuit_boots>,a]
 ],<item:bxp2:meka_cube> * 4,"");
+
+var bui = <item:bxp2:bx_unstable_ingot>;
+var be = <item:mysticalagriculture:unstable_bx_essence>;
+var pe = <item:mysticalagriculture:poly_essence>;
+var bxe = <item:mysticalagriculture:bx_essence>;
+var ebxe = <item:mysticalagriculture:ench_bx_essence>;
+
+rrecipe(be,<item:minecraft:iron_ingot>,bui * dm(6));
+rrecipe(pe,bui,<item:bxp2:poly_ingot>*dm(3));
+rrecipe(bxe,<item:bxp2:bx_unstable_ingot>,<item:bxp2:bx_ingot>*dm(2));
+rrecipe(ebxe,<item:bxp2:bx_ingot>,<item:bxp2:bx_ench_ingot>);
+rrecipe(<item:mysticalagriculture:oumang_essence>,<item:bxp2:bx_unstable_ingot>,<item:bxp2:oumang_ingot>);
+rrecipe(<item:mysticalagriculture:ou_gold_essence>,<item:bxp2:oumang_ingot>,<item:bxp2:ou_gold_ingot>);
+rrecipe(<item:mysticalagriculture:sx_essence>,<item:bxp2:bx_unstable_ingot>,<item:bxp2:sx_ingot>*dm(4));
+
+public function dm(amt as int) as int{
+    return amt / difficulty();
+}
+
+public function rrecipe(i as IIngredient,i1 as IIngredient,output as IItemStack) as void{
+    addCraftRecipe([
+        [i,i,i],
+        [i,i1,i],
+        [i,i,i]
+    ],output,"");
+}
+
+public function blockRecipe(ingot as IItemStack,block as IItemStack) as void{
+    addCraftRecipe([
+        [ingot,ingot,ingot],
+        [ingot,ingot,ingot],
+        [ingot,ingot,ingot]
+    ],block,"");
+    addShaplessRecipe([block],ingot*9,"");
+}
+
+public function eachRecipe(i as IItemStack,i1 as IItemStack) as void{
+    addShaplessRecipe([i],i1,"");
+    addShaplessRecipe([i1],i,"");
+}
+
+public function projectECommonRecipe() as void{
+    addShaplessRecipe([<item:minecraft:coal>,<item:minecraft:blaze_powder>],<item:projecte:mobius_fuel>,"");
+    var list = [
+        <item:projecte:mobius_fuel>,
+        <item:projecte:aeternalis_fuel>,
+        <item:projecte:dark_matter>,
+        <item:projecte:red_matter>,
+        <item:projecte:mobius_fuel_block>,
+        <item:projecte:aeternalis_fuel_block>,
+        <item:projecte:dark_matter_block>,
+        <item:projecte:red_matter_block>
+    ] as IItemStack[];
+    for i in 0 .. 4{
+        blockRecipe(list[i],list[i+4]);
+    }
+    infusionRecipe(list[0],<infuse_type:bxp2:bx> * 40,list[1]);
+    var m = difficulty() == 2 ? <item:draconicevolution:chaotic_core> : <item:bxp2:bx_ingot>;
+    var r = <item:projecte:red_matter_block>;
+    DEFusionRecipe(m,[r,r,r,r],<item:projecte:transmutation_table>,difficulty(),200000000);
+    eachRecipe(<item:projecte:transmutation_table>,<item:projecte:transmutation_tablet>);
+}
+
+public function projectEEasyRecipe() as void{
+    combineRecipe(<item:projecte:aeternalis_fuel>,<item:bxp2:bx_ingot>,<item:projecte:dark_matter>);
+    combineRecipe(<item:projecte:dark_matter_block>,<item:bxp2:bx_ingot>,<item:projecte:red_matter>);
+}
+
+public function projectENormalRecipe() as void{
+    var bx = <item:bxp2:bx_ingot>;
+    var r = <tag:items:bxp2:radiation_pellet>;
+    DEFusionRecipe(<item:projecte:aeternalis_fuel>,[bx,bx,bx,bx],<item:projecte:dark_matter>,1,1000000);
+    DEFusionRecipe(<item:projecte:dark_matter_block>,[r,r,r,r],<item:projecte:red_matter>,2,100000000);
+}
+
+var ie = <item:mysticalagradditions:insanium_essence>;
+var ee = <item:bxp2:epic_essence>;
+if(difficulty() == 3){
+    projectECommonRecipe();
+    DEFusionRecipe(<item:minecraft:nether_star>,[ie,ie,ie,ie],<item:bxp2:epic_essence>*4,1,1000000);
+    DEFusionRecipe(<item:draconicevolution:medium_chaos_frag>,[ee,ee,ee,ee],<item:bxp2:final_essence>*4,2,2000000000);
+}else{
+    DEFusionRecipe(<item:minecraft:nether_star>,[ie,ie,ie,ie,ie,ie,ie,ie],<item:bxp2:epic_essence>*8,1,500000);
+    DEFusionRecipe(<item:draconicevolution:medium_chaos_frag>,[ee,ee,ee,ee,ee,ee,ee,ee],<item:bxp2:final_essence>*8,2,1000000000);
+    if(difficulty() == 2){
+        projectENormalRecipe();
+    }
+    if(difficulty() == 1){
+        projectEEasyRecipe();
+    }
+}
+
+public function combRecipe(name as string,weight as CrTWeight) as void{
+    <recipetype:productivebees:advanced_beehive>.addCommonRecipe(name,weight);
+}
+
+public function combUsing(name as string,item as CrTWeightItem,time as int) as void{
+    <recipetype:productivebees:centrifuge>.addCommonRecipe(name,item,time);
+}
+
+public function addBeeRecipe(name as string,weight as CrTWeight,output as CrTWeightItem,time as int) as void{
+    combRecipe(name,weight);
+    combUsing(name,output,time);
+}
+
+var l1 as CrTWeight = new CrTWeight(1,3,70);
+var l2 as CrTWeight = new CrTWeight(1,3,30);
+var l3 as CrTWeight = new CrTWeight(1,2,40);
+var l4 as CrTWeight = new CrTWeight(1,2,20);
+var l5 as CrTWeight = new CrTWeight(1,1,30);
+var l6 as CrTWeight = new CrTWeight(1,1,10);
+
+addBeeRecipe("bxp2:unstable_bx",l1,new CrTWeightItem(<item:mysticalagriculture:unstable_bx_essence>,l2),20);
+addBeeRecipe("bxp2:sx",l2,new CrTWeightItem(<item:mysticalagriculture:sx_essence>,l3),20);
+addBeeRecipe("bxp2:oumang",l3,new CrTWeightItem(<item:mysticalagriculture:oumang_essence>,l4),20);
+addBeeRecipe("bxp2:poly",l3,new CrTWeightItem(<item:mysticalagriculture:poly_essence>,l3),20);
+addBeeRecipe("bxp2:bx",l4,new CrTWeightItem(<item:mysticalagriculture:bx_essence>,l4),20);
+addBeeRecipe("bxp2:ou_gold",l5,new CrTWeightItem(<item:mysticalagriculture:ou_gold_essence>,l5),20);
+addBeeRecipe("bxp2:ench_bx",l6,new CrTWeightItem(<item:mysticalagriculture:ench_bx_essence>,l6),20);
+
+var blist = [
+    <item:bxp2:bx_ingot>,
+    <item:bxp2:poly_ingot>,
+    <item:bxp2:bx_unstable_ingot>,
+    <item:bxp2:oumang_ingot>,
+    <item:bxp2:ou_gold_ingot>,
+    <item:bxp2:umbra_amethyst_brass_ingot>,
+    <item:bxp2:bx_ench_ingot>,
+    <item:bxp2:bx_block>,
+    <item:bxp2:poly_block>,
+    <item:bxp2:unstable_bx_block>,
+    <item:bxp2:oumang_block>,
+    <item:bxp2:ou_gold_block>,
+    <item:bxp2:sx_block>,
+    <item:bxp2:ench_bx_block>
+];
+
+for i in 0 .. 7{
+    blockRecipe(blist[i],blist[i+7]);
+}
+
+public function centrifugeRecipe(old as IItemStack,c1 as IItemStack,mainI as IItemStack,c2 as IItemStack,output as IItemStack) as void{
+    addCraftRecipe([
+        [c1,c1,c1],
+        [c2,mainI,c2],
+        [c2,old,c2]
+    ],output,"");
+}
+
+public function beeEgg(name as string) as IItemStack{
+    return <item:productivebees:spawn_egg_configurable_bee>.withTag({EntityTag: {type: "bxp2:"+name}});
+}
+
+var egg = <item:minecraft:egg>;
+var atmt = <item:mekanism:pellet_antimatter>;
+var ali as IIngredient[]= difficulty() == 3 ? [<item:bxp2:ou_gold_block>,<item:bxp2:ou_gold_block>,atmt,atmt,atmt,atmt] : [<item:bxp2:ou_gold_block>,<item:bxp2:ou_gold_block>,atmt,atmt];
+combineRecipe(egg,<item:bxp2:unstable_bx_block>,beeEgg("unstable_bx"));
+combineRecipe(<item:bxp2:bx_unstable_ingot>,<item:bxp2:umbra_amethyst_brass_ingot>|<item:bxp2:seismite_ingot>|<item:bxp2:stainless_steel_ingot>,<item:bxp2:sx_ingot>);
+DEFusionRecipe(beeEgg("bx"),ali,beeEgg("ou_gold"),1,200000000);
+
+centrifugeRecipe(<item:productivebees:heated_centrifuge>,<item:productivebees:upgrade_productivity_2>,<item:bxp2:oumang_upgrade>,<item:mekanism:ultimate_control_circuit>,<item:centrifugetiersreproduced:high_end_centrifuge>);
+centrifugeRecipe(<item:centrifugetiersreproduced:high_end_centrifuge>,<item:productivebees:upgrade_productivity_3>,<item:bxp2:wyvern_upgrade>,<item:mekanism_extras:supreme_control_circuit>,<item:centrifugetiersreproduced:nuclear_centrifuge>);
+centrifugeRecipe(<item:centrifugetiersreproduced:nuclear_centrifuge>,<item:productivebees:upgrade_productivity_4>,<item:bxp2:draconium_upgrade>,<item:mekanism_extras:cosmic_control_circuit>,<item:centrifugetiersreproduced:cosmic_centrifuge>);
+
+var omb1 = new HarvestEntry(0.33f,<item:bxp2:oumang_ingot> * 5);
+var omb2 = new HarvestEntry(0.16f,<item:bxp2:oumang_ingot> * 3);
+var omb3 = new HarvestEntry(0.03f,<item:bxp2:oumang_ingot> * 1);
+var omb4 = new HarvestEntry(0.01f,beeEgg("oumang"));
+var obr = new PlantRecipe(<item:bxp2:oumang_block>,600,300000,[omb1,omb2,omb3,omb4],["dirt"]);
+addPlantRecipe(obr);
+
+var oge as IIngredient = beeEgg("ou_gold");
+centrifugeRecipe(egg,<item:bxp2:poly_block>,beeEgg("bx"),<item:mekanism:hdpe_sheet>,beeEgg("poly"));
+DEFusionRecipe(oge,[<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:draconicevolution:awakened_core>,<item:bxp2:ench_bx_block>,<item:bxp2:ench_bx_block>],beeEgg("ench_bx"),2,10000000000);

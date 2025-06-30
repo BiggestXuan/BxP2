@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.mixin;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.client.ClientCommon;
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -22,13 +23,13 @@ public abstract class MinecraftMixin {
      */
     @Overwrite
     private String createTitle() {
-        return BxP2.TITLE;
+        return ClientCommon.TITLE;
     }
 
     @Inject(method = "updateTitle", at = @At("HEAD"), cancellable = true)
     private void onUpdateTitle(CallbackInfo ci) {
         Minecraft mc = (Minecraft) (Object) this;
-        mc.getWindow().setTitle(BxP2.TITLE);
+        mc.getWindow().setTitle(ClientCommon.TITLE);
         ci.cancel();
     }
 }

@@ -1,6 +1,7 @@
 package biggestxuan.bxp2.events;
 
 import biggestxuan.bxp2.BxP2;
+import biggestxuan.bxp2.blocks.BxPBlock;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.data.DifficultyData;
 import biggestxuan.bxp2.integration.TConstruct.Leveling.LevelUtils;
@@ -30,6 +31,7 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import slimeknights.tconstruct.library.tools.helper.ModifierUtil;
+import slimeknights.tconstruct.library.tools.item.ModifiableItem;
 
 import java.util.List;
 
@@ -155,6 +157,14 @@ public class PlayerCommonEvent {
         ItemStack stack = player.getMainHandItem();
         if(player.level() instanceof ServerLevel sl){
             LevelUtils.pickXp(stack,event.getState(),player);
+        }
+    }
+
+    @SubscribeEvent
+    public static void check(PlayerEvent.HarvestCheck event){
+        ItemStack stack = event.getEntity().getMainHandItem();
+        if(stack.getItem() instanceof ModifiableItem && event.getTargetBlock().getBlock() instanceof BxPBlock){
+            event.setCanHarvest(true);
         }
     }
 

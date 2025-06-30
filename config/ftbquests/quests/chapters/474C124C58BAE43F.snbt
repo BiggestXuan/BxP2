@@ -284,6 +284,12 @@
 					item: { Count: 6, id: "bxp2:klpzm" }
 					type: "item"
 				}
+				{
+					count: 6L
+					id: "04052FED8E9D85B1"
+					item: { Count: 6, id: "expatternprovider:fishbig" }
+					type: "item"
+				}
 			]
 			title: "一些小玩偶"
 			x: 6.0d

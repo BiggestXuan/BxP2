@@ -38,7 +38,7 @@ public class CrTDERecipe implements IRecipeManager<IFusionRecipe> {
 
     @ZenCodeType.Method
     public void addRecipe(IIngredient main, IIngredient[] other, IItemStack output, int level, long energy){
-        ResourceLocation rl = BxP2.MODRL(RecipeUtils.getRecipeName(output.getInternal(),"de_recipe"));
+        ResourceLocation rl = BxP2.MODRL(RecipeUtils.getRecipeName(output.getInternal(),"de_recipe_"+level+"_"+energy/1000000L));
         FusionRecipe recipe = new FusionRecipe(
                 rl,output.getInternal(),main.asVanillaIngredient(),energy,getTechLevel(level),getFusionIngredient(other)
         );

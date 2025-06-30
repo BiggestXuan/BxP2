@@ -7,10 +7,8 @@
   "mixins": [
     "AbstractTiabItemMixin",
     "BoilerMultiblockDataMixin",
-    "BrandonsCoreMixin",
     "ChemicalStorageMixin",
     "CitadelConstantsMixin",
-    "DataModelItemMixin",
     "DataModelMixin",
     "EMCHelperMixin",
     "EMCMappingHandlerMixin",
@@ -21,6 +19,7 @@
     "ForgeEventsMixin",
     "ForgeGuiRegistryMixin",
     "FusionReactorBuilderMixin",
+    "FusionReactorMultiblockDataMixin",
     "GaiaGuardianEntityMixin",
     "ItemDaggerOfSacrificeMixin",
     "ItemEntityMixin",
@@ -56,6 +55,8 @@
     "LoadingOverlayMixin",
     "MinecraftMixin",
     "ToolTipEventMixin",
-    "WindowMixin"
+    "WindowMixin",
+    "BrandonsCoreMixin",
+    "DataModelItemMixin"
   ]
 }

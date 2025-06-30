@@ -1,6 +1,5 @@
 package biggestxuan.bxp2.items;
 
-import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.api.items.IBXItem;
 import biggestxuan.bxp2.client.shop.ShopScreen;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.MekaArmorModifiers.MekaTinkerUtils;
@@ -15,6 +14,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -52,13 +53,11 @@ public class BxPItem extends Item implements IBXItem {
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag p_41424_) {
         super.appendHoverText(stack,level,list, p_41424_);
         if(level.isClientSide){
-            Minecraft mc = Minecraft.getInstance();
-            Player player = mc.player;
-            if(player != null){
-                if(MekaTinkerUtils.isAllMekaArmor(player) && getBXValue(stack) > 0){
-                    list.add(BxP2.tr("tooltip.tinker.bx_value",getBXValue(stack)));
-                }
-            }
+            //if(Minecraft.getInstance().player != null){
+            //    if(MekaTinkerUtils.isAllMekaArmor(Minecraft.getInstance().player) && getBXValue(stack) > 0){
+            //        list.add(BxP2.tr("tooltip.tinker.bx_value",getBXValue(stack)));
+            //    }
+            //}
         }
     }
 
@@ -71,8 +70,8 @@ public class BxPItem extends Item implements IBXItem {
     public static class BXShopItem extends BxPItem{
         @Override
         public @NotNull InteractionResultHolder<ItemStack> use(Level p_41432_, Player player, InteractionHand p_41434_) {
-            if(p_41432_.isClientSide && player != null){
-                Minecraft.getInstance().setScreen(new ShopScreen());
+            if(p_41432_.isClientSide){
+                DistExecutor.unsafeCallWhenOn(Dist.CLIENT,() -> ShopScreen.open::new);
             }
             return super.use(p_41432_, player, p_41434_);
         }

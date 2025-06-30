@@ -1,0 +1,9 @@
+{
+  "primaryColor": "#AB18D2",
+  "secondaryColor": "#08080f",
+  "tertiaryColor": "#400438",
+  "flowerBlock": "bxp2:ou_gold_block",
+  "breedingItem": "bxp2:ou_gold_ingot",
+  "size": 1,
+  "selfbreed": false
+}

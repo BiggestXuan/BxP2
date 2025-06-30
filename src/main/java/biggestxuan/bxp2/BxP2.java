@@ -2,6 +2,7 @@ package biggestxuan.bxp2;
 
 import biggestxuan.bxp2.blocks.BxPBlocks;
 import biggestxuan.bxp2.capability.IBxPCapability;
+import biggestxuan.bxp2.client.ClientCommon;
 import biggestxuan.bxp2.creativeTabs.BxPCreativeTabs;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.fluids.BxPFluids;
@@ -26,6 +27,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -45,10 +47,8 @@ import javax.annotation.Nullable;
 public class BxP2
 {
     public static boolean devMode = false;
-    @SuppressWarnings("all")
-    public static String TITLE = "BxP2 - " + BxP2.VERSION + " - " + CalendarUtils.INSTANCE.getNowTimeWelcome() + (devMode ? "-DevMode" : "");
     public static final String MODID = "bxp2";
-    public static final String VERSION = "Beta-0.6.0";
+    public static final String VERSION = "Beta-0.7.0";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static final Logger LOGGER = LogUtils.getLogger();
@@ -95,7 +95,7 @@ public class BxP2
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             Minecraft.getInstance().execute(() -> {
-                Minecraft.getInstance().getWindow().setTitle(TITLE);
+                Minecraft.getInstance().getWindow().setTitle(ClientCommon.TITLE);
             });
             //event.enqueueWork(() -> {
             //    ItemProperties.register(BxPItems.ENCH_SDBZ.get(), MODRL("glint"), (stack, level, entity, seed) -> 1.0f);

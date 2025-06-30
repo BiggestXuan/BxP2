@@ -41,3 +41,5 @@ var output = [
 for i in 0 .. input.length{
     reactionChamberRecipe([input[i],<item:rats:oratchalcum_ingot>],[output[i]],2f);
 }
+
+reactionChamberRecipe([<item:productivebees:spawn_egg_configurable_bee>.withTag({EntityTag: {type: "bxp2:unstable_bx"}}),<item:bxp2:sx_block>],[<item:productivebees:spawn_egg_configurable_bee>.withTag({EntityTag: {type: "bxp2:sx"}})],3);

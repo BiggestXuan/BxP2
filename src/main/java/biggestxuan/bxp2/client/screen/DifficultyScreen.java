@@ -1,4 +1,4 @@
-package biggestxuan.bxp2.client;
+package biggestxuan.bxp2.client.screen;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.network.PacketHandler;
@@ -8,7 +8,6 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.Difficulty;
 
 import java.util.ArrayList;
 import java.util.List;

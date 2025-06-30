@@ -1,6 +1,8 @@
 package biggestxuan.bxp2.integration.CraftTweaker;
 
+import biggestxuan.bxp2.BxP2;
 import com.blamejared.crafttweaker.api.item.IItemStack;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,5 +40,14 @@ public final class Utils {
             }
         }
         return list;
+    }
+
+    public static ItemStack getHoneyComb(String name){
+        ItemStack stack = BxP2.getStack("productivebees:configurable_honeycomb");
+        CompoundTag tag = stack.getOrCreateTag();
+        CompoundTag tag1 = new CompoundTag();
+        tag1.putString("type",name);
+        tag.put("EntityTag",tag1);
+        return stack;
     }
 }

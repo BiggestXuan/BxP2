@@ -20,7 +20,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import slimeknights.tconstruct.tools.modifiers.slotless.CreativeSlotModifier;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -47,6 +46,13 @@ public class BxPItems {
         }
     });
     public static final RegistryObject<Item> SX_INGOT = ITEMS.register("sx_ingot",() -> new BxPItem(25));
+    public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(1){
+        @Override
+        public void appendHoverText(ItemStack p_41421_, @org.jetbrains.annotations.Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
+            super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
+            p_41423_.add(BxP2.tr("tooltip.bx_gold_ingot"));
+        }
+    });
     public static final RegistryObject<Item> SDBZ = ITEMS.register("sdbz",() -> new BxPItem(160));
     public static final RegistryObject<Item> ENCH_SDBZ = ITEMS.register("ench_sdbz",() -> new BxPItem(1500){
         @Override
@@ -69,18 +75,11 @@ public class BxPItems {
             return true;
         }
     });
-    public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(1){
-        @Override
-        public void appendHoverText(ItemStack p_41421_, @org.jetbrains.annotations.Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
-            super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
-            p_41423_.add(BxP2.tr("tooltip.bx_gold_ingot"));
-        }
-    });
-    public static final RegistryObject<Item> DIFFICULTY_CHANGE = ITEMS.register("difficulty_change",DifficultyChangeItem::new);
     public static final RegistryObject<Item> ENRICHED_BX = ITEMS.register("enriched_bx",BxPItem::new);
     public static final RegistryObject<Item> COPPER_CHLORIDE = ITEMS.register("copper_chloride", BxPItem::new);
     public static final RegistryObject<Item> CONDENSE_URANIUM = ITEMS.register("condense_uranium", BxPItem::new);
     public static final RegistryObject<Item> POTASSIUM = ITEMS.register("potassium", BxPItem::new);
+    public static final RegistryObject<Item> DIFFICULTY_CHANGE = ITEMS.register("difficulty_change",DifficultyChangeItem::new);
     public static final RegistryObject<Item> SUN_PROTECT_MODULE = ITEMS.register("sun_protect_module", () -> new SunProtectItem(BxPModules.SUN_PROTECT));
     public static final RegistryObject<Item> CHAOS_PROTECT_MODULE = ITEMS.register("chaos_protect_module", () -> new ChaosProtectItem(BxPModules.CHAOS_PROTECT));
     public static final RegistryObject<Item> MONEY = ITEMS.register("money", MoneyItem::new);
@@ -143,7 +142,25 @@ public class BxPItems {
     public static final RegistryObject<Item> CREATIVE_UPGRADE_SKULL = ITEMS.register("creative_upgrade_skull",BxPItem::new);
     public static final RegistryObject<Item> TOUGHNESS_PLATE = ITEMS.register("toughness_plate",BxPItem::new);
     public static final RegistryObject<Item> KNOCKBACK_PLATE = ITEMS.register("knockback_plate",BxPItem::new);
-
+    public static final RegistryObject<Item> EPIC_ESSENCE = ITEMS.register("epic_essence",() -> new BxPItem(){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
+    public static final RegistryObject<Item> FINAL_ESSENCE = ITEMS.register("final_essence",() -> new BxPItem(){
+        @Override
+        public boolean isFoil(ItemStack p_41453_) {
+            return true;
+        }
+    });
+    public static final RegistryObject<Item> UNSTABLE_BX_BLOCK = registryBlock("unstable_bx_block",BxPBlocks.UNSTABLE_BX_BLOCK);
+    public static final RegistryObject<Item> BX_BLOCK = registryBlock("bx_block",BxPBlocks.BX_BLOCK);
+    public static final RegistryObject<Item> OUMANG_BLOCK = registryBlock("oumang_block",BxPBlocks.OUMANG_BLOCK);
+    public static final RegistryObject<Item> OU_GOLD_BLOCK = registryBlock("ou_gold_block",BxPBlocks.OU_GOLD_BLOCK);
+    public static final RegistryObject<Item> SX_BLOCK = registryBlock("sx_block",BxPBlocks.SX_BLOCK);
+    public static final RegistryObject<Item> POLY_BLOCK = registryBlock("poly_block",BxPBlocks.POLY_BLOCK);
+    public static final RegistryObject<Item> ENCH_BX_BLOCK = registryBlock("ench_bx_block",BxPBlocks.ENCH_BX_BLOCK);
     public static final RegistryObject<Item> YUNXI = registryPlayerModelBlock("yunxi", BxPBlocks.YUNXI);
     public static final RegistryObject<Item> BIGGEST_XUAN = registryPlayerModelBlock("biggest_xuan", BxPBlocks.BIGGEST_XUAN);
     public static final RegistryObject<Item> DCTOR_0415 = registryPlayerModelBlock("dctor_0415", BxPBlocks.DCTOR_0415);

@@ -5,7 +5,6 @@ import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.capability.IBxPCapability;
 import biggestxuan.bxp2.network.PacketHandler;
 import biggestxuan.bxp2.network.toServer.BuyGoodsPacket;
-import biggestxuan.bxp2.recipes.RecipeUtils;
 import biggestxuan.bxp2.recipes.ShopGoods;
 import biggestxuan.bxp2.utils.PhaseUtils;
 import biggestxuan.bxp2.utils.ShopUtils;
@@ -136,6 +135,12 @@ public class ShopScreen extends Screen {
             return true;
         }
         return false;
+    }
+
+    public static class open{
+        public open(){
+            Minecraft.getInstance().setScreen(new ShopScreen());
+        }
     }
 
     public boolean nextPage() {
