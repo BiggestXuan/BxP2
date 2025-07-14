@@ -4,7 +4,7 @@
   "forge:rubber": "null",
   "forge:ingots/chrome": "null",
   "forge:ingots/mithril": "null",
-  "forge:dusts/saltpeter": "electrodynamics:dustniter",
-  "forge:ingots/titanium": "electrodynamics:ingottitanium",
+  "forge:dusts/saltpeter": "bloodmagic:saltpeter",
+  "forge:ingots/titanium": "null",
   "forge:ingots/tungsten": "null"
 }

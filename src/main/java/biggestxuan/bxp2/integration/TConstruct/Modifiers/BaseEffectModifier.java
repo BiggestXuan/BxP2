@@ -1,8 +1,10 @@
 package biggestxuan.bxp2.integration.TConstruct.Modifiers;
 
 import biggestxuan.bxp2.utils.Utils;
+import de.teamlapen.vampirism.core.ModEffects;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -36,8 +38,13 @@ public class BaseEffectModifier extends Modifier implements InventoryTickModifie
         if(livingEntity instanceof Player player && player.tickCount % 10 == 0){
             //Utils.sendMessage(player, String.valueOf(i));
         }
-        if(level instanceof ServerLevel sl && sl.getServer().getTickCount() % 20 == 0 && b1){
+        MobEffectInstance instance1 = livingEntity.getEffect(instance.getEffect());
+        if(instance1 == null){
             livingEntity.addEffect(this.instance);
+        }else{
+            if(level instanceof ServerLevel sl && b1){
+                livingEntity.addEffect(this.instance);
+            }
         }
     }
 }

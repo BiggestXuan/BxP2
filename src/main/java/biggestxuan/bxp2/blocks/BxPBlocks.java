@@ -16,8 +16,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.function.Supplier;
-
 /**
  * @Author Biggest_Xuan
  * 2025/4/16
@@ -32,6 +30,7 @@ public class BxPBlocks {
     public static RegistryObject<Block> SX_BLOCK = register("sx_block");
     public static RegistryObject<Block> POLY_BLOCK = register("poly_block");
     public static RegistryObject<Block> ENCH_BX_BLOCK = register("ench_bx_block");
+    public static RegistryObject<Block> ATM = BLOCKS.register("atm",ATMBlock::new);
 
     public static RegistryObject<Block> YUNXI = BLOCKS.register("yunxi",() -> new PlayerModelBlock(){
         @Override

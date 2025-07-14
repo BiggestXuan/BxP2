@@ -38,12 +38,16 @@ public function alloyRecipe(input as IFluidStack[],output as IFluidStack,temp as
 
 public function addPlantRecipe(recipe as PlantRecipe) as void{
     <recipetype:botanypots:crop>.addRecipe(recipe);
+    addInsolatorRecipe(recipe);
+}
+
+public function addInsolatorRecipe(recipe as PlantRecipe) as void{
     <recipetype:thermal:insolator>.addRecipe(recipe);
 }
 
 var caiRecipe = new PlantRecipe(<item:bxp2:cai_seed>,200,10000,[czHarvestEntry,caigengzi1,caigengzi2,caigengzi3],["dirt"]);
 addPlantRecipe(caiRecipe);
-addPlantRecipe(new PlantRecipe(<item:bxp2:ench_cai_seed>,200,30000,[caigengzi4,caigengzi5,caigengzi6],["dirt"]));
+addInsolatorRecipe(new PlantRecipe(<item:bxp2:ench_cai_seed>,200,30000,[caigengzi4,caigengzi5,caigengzi6],["dirt"]));
 
 var eyes = [
     <item:endrem:black_eye>,
@@ -78,6 +82,8 @@ addCraftRecipe([
 
 addRatsRecipe(<item:bxp2:bx_unstable_ingot>,<item:bxp2:sx_ingot>);
 
+var eib = <item:extendedcrafting:ender_ingot_block>;
+/*
 var mbds = [
     <item:mbd2:item_input>,
     <item:mbd2:item_output>,
@@ -89,7 +95,6 @@ var mbds = [
     <item:thermal:ruby_block>
 ];
 
-var eib = <item:extendedcrafting:ender_ingot_block>;
 
 for i in 0 .. 4{
     addCraftRecipe([
@@ -98,22 +103,30 @@ for i in 0 .. 4{
         [eib,eib,eib]
     ],mbds[i],"bxp");
 }
-
+*/
 transRatsRecipe(<item:jerotesvillage:meror_metal_ingot>,<item:ad_astra:calorite_ingot>);
+
+public function euRecipe(a as IIngredient,b as IIngredient,c as IIngredient,d as IIngredient,e as IItemStack) as void{
+    addCraftRecipe([
+        [a,b,a],
+        [c,d,c],
+        [a,b,a]
+    ],e,"bxp2");
+}
+
+public function nuRecipe(a as IIngredient,b as IIngredient,c as IIngredient,d as IIngredient,e as IItemStack) as void{
+    addCraftRecipe([
+        [a,b,a],
+        [d,c,d],
+        [a,d,a]
+    ],e,"bxp2");
+}
 
 public function upgradeRecipe(a as IIngredient,b as IIngredient,c as IIngredient,d as IIngredient,e as IItemStack) as void{
     if(difficulty() == 1){
-        addCraftRecipe([
-            [a,b,a],
-            [c,d,c],
-            [a,b,a]
-        ],e,"bxp2");
+        euRecipe(a,b,c,d,e);
     }else{
-        addCraftRecipe([
-            [a,b,a],
-            [d,c,d],
-            [a,d,a]
-        ],e,"bxp2");
+        nuRecipe(a,b,c,d,e);
     }
 }
 
@@ -121,8 +134,8 @@ public function removeAlloyRecipe(name as string) as void{
     <recipetype:tconstruct:alloying>.removeRecipeByName(name);
 }
 
-upgradeRecipe(<item:bxp2:bx_ingot>,<item:bxp2:caigengzi>,<item:mekanism:elite_control_circuit>,<item:thermalendergy:endergy_upgrade_3>,<item:bxp2:bx_upgrade>);
-upgradeRecipe(<item:bxp2:oumang_ingot>,<item:tinkers_thinking:silky_jewel>,<item:mekanism:ultimate_control_circuit>,<item:bxp2:bx_upgrade>,<item:bxp2:oumang_upgrade>);
+euRecipe(<item:bxp2:bx_ingot>,<item:bxp2:caigengzi>,<item:mekanism:elite_control_circuit>,<item:thermalendergy:endergy_upgrade_3>,<item:bxp2:bx_upgrade>);
+euRecipe(<item:bxp2:oumang_ingot>,<item:tinkers_thinking:silky_jewel>,<item:mekanism:ultimate_control_circuit>,<item:bxp2:bx_upgrade>,<item:bxp2:oumang_upgrade>);
 upgradeRecipe(<item:bxp2:ou_gold_ingot>,<item:mekanismscience:pellet_neutron_source>,<item:mekanism_extras:absolute_control_circuit>,<item:bxp2:oumang_upgrade>,<item:bxp2:ou_gold_upgrade>);
 upgradeRecipe(<item:bxp2:ouhuang_ingot>,<item:mekanism:pellet_antimatter>,<item:mekanism_extras:supreme_control_circuit>,<item:bxp2:ou_gold_upgrade>,<item:bxp2:ouhuang_upgrade>);
 alloyRecipe([<fluid:tinkers_thinking:molten_electrical_steel> * 30,<fluid:tinkers_thinking:molten_tinkers_bronze> * 20,<fluid:tinkers_thinking:molten_obsidian_bronze> * 20,<fluid:tconstruct:molten_amethyst_bronze> * 20],<fluid:bxp2:molten_umbra_amethyst_brass> * 90,900);
@@ -148,9 +161,9 @@ for i in 0 .. ups.length{
         removeCraftRecipe(ups1[i]);
     }
 }
-upgradeRecipe(<item:thermalendergy:prismalium_ingot>,<item:minecraft:ender_eye>,<item:thermal:enderium_gear>,<item:thermal:upgrade_augment_3>,<item:thermalendergy:endergy_upgrade_1>);
-upgradeRecipe(<item:thermalendergy:melodium_ingot>,<item:minecraft:shulker_shell>,<item:thermalendergy:prismalium_gear>,<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>);
-upgradeRecipe(<item:thermalendergy:stellarium_ingot>,<item:minecraft:clay>,<item:thermalendergy:melodium_gear>,<item:thermalendergy:endergy_upgrade_2>,<item:thermalendergy:endergy_upgrade_3>);
+euRecipe(<item:thermalendergy:prismalium_ingot>,<item:minecraft:ender_eye>,<item:thermal:enderium_gear>,<item:thermal:upgrade_augment_3>,<item:thermalendergy:endergy_upgrade_1>);
+euRecipe(<item:thermalendergy:melodium_ingot>,<item:minecraft:shulker_shell>,<item:thermalendergy:prismalium_gear>,<item:thermalendergy:endergy_upgrade_1>,<item:thermalendergy:endergy_upgrade_2>);
+euRecipe(<item:thermalendergy:stellarium_ingot>,<item:minecraft:clay>,<item:thermalendergy:melodium_gear>,<item:thermalendergy:endergy_upgrade_2>,<item:thermalendergy:endergy_upgrade_3>);
 addShaplessRecipe([<item:vampirism:blood_sieve>],<item:mbd2:common_food_to_blood>,"bxp2");
 alloyRecipe([<fluid:vampirism:blood> * 600,<fluid:tconstruct:molten_iron> * 90],<fluid:bxp2:molten_blood_iron> * 90,700);
 alloyRecipe([<fluid:tconstruct:molten_iron> * 90,<fluid:minecraft:water> * 2000],<fluid:bxp2:molten_omite> * 90,30);
@@ -248,11 +261,12 @@ public function projectENormalRecipe() as void{
 
 var ie = <item:mysticalagradditions:insanium_essence>;
 var ee = <item:bxp2:epic_essence>;
+
 if(difficulty() == 3){
-    projectECommonRecipe();
     DEFusionRecipe(<item:minecraft:nether_star>,[ie,ie,ie,ie],<item:bxp2:epic_essence>*4,1,1000000);
     DEFusionRecipe(<item:draconicevolution:medium_chaos_frag>,[ee,ee,ee,ee],<item:bxp2:final_essence>*4,2,2000000000);
 }else{
+    projectECommonRecipe();
     DEFusionRecipe(<item:minecraft:nether_star>,[ie,ie,ie,ie,ie,ie,ie,ie],<item:bxp2:epic_essence>*8,1,500000);
     DEFusionRecipe(<item:draconicevolution:medium_chaos_frag>,[ee,ee,ee,ee,ee,ee,ee,ee],<item:bxp2:final_essence>*8,2,1000000000);
     if(difficulty() == 2){
@@ -340,7 +354,7 @@ var omb2 = new HarvestEntry(0.16f,<item:bxp2:oumang_ingot> * 3);
 var omb3 = new HarvestEntry(0.03f,<item:bxp2:oumang_ingot> * 1);
 var omb4 = new HarvestEntry(0.01f,beeEgg("oumang"));
 var obr = new PlantRecipe(<item:bxp2:oumang_block>,600,300000,[omb1,omb2,omb3,omb4],["dirt"]);
-addPlantRecipe(obr);
+addInsolatorRecipe(obr);
 
 var oge as IIngredient = beeEgg("ou_gold");
 centrifugeRecipe(egg,<item:bxp2:poly_block>,beeEgg("bx"),<item:mekanism:hdpe_sheet>,beeEgg("poly"));

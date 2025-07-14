@@ -46,7 +46,8 @@
     "toughness": "#302f2b",
     "knockback_resistance": "#f3edd0",
     "emc_killer": "#AD18D4",
-    "meka_armor": "#08D432"
+    "meka_armor": "#08D432",
+    "soul": "#b06a4b"
   },
   "material.bxp2": {
     "bx_unstable": "#5AE4E6",

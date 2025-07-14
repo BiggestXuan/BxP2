@@ -6,6 +6,9 @@
   "refmap": "bxp.refmap.json",
   "mixins": [
     "AbstractTiabItemMixin",
+    "Allthemodium_OreMixin",
+    "AtoBlockBreakMixin",
+    "BlockBreakMixin",
     "BoilerMultiblockDataMixin",
     "ChemicalStorageMixin",
     "CitadelConstantsMixin",
@@ -21,6 +24,7 @@
     "FusionReactorBuilderMixin",
     "FusionReactorMultiblockDataMixin",
     "GaiaGuardianEntityMixin",
+    "GuardianCrystalEntityMixin",
     "ItemDaggerOfSacrificeMixin",
     "ItemEntityMixin",
     "ItemStackIngredientCreatorMixin",
@@ -28,8 +32,11 @@
     "LogHelperMixin",
     "MachineInsolatorMenuMixin",
     "ManaBurstEntityMixin",
+    "MobSoulHandlerMixin",
+    "ModifiableItemMixin",
     "ModuleHelperMixin",
     "NaquadahReactorBuilderMixin",
+    "OtherOreBlockMixin",
     "OxygenApiImplMixin",
     "PlayerMixin",
     "PowahWorldGenMixin",
@@ -47,16 +54,19 @@
     "ToolStackMixin",
     "ToolStatsMixin",
     "TurbineBuilderMixin",
+    "Unobtainium_OreMixin",
+    "VampirePlayerMixin",
     "WandJobMixin",
     "WitherMixin"
   ],
   "client": [
+    "BrandonsCoreMixin",
+    "DataModelItemMixin",
     "DisconnectedScreenMixin",
     "LoadingOverlayMixin",
     "MinecraftMixin",
     "ToolTipEventMixin",
-    "WindowMixin",
-    "BrandonsCoreMixin",
-    "DataModelItemMixin"
+    "VampirismHUDOverlayMixin",
+    "WindowMixin"
   ]
 }

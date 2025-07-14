@@ -86,6 +86,14 @@ public final class EMCMap {
         emc(BxP2.getStack("draconicevolution:chaos_shard"),49152000);
         emc(BxP2.getStack("draconicevolution:chaotic_core"),27689603);
         emc(BxP2.getStack("draconicevolution:awakened_draconium_ingot"),15644);
+        emc(BxP2.getStack("projecte:dark_matter"),1024);
+        emc(BxP2.getStack("projecte:red_matter"),74752);
+        emc(BxP2.getStack("projecte:red_matter_block"),672768);
+        emc(BxP2.getStack("projecte:dark_matter_block"),9216);
+        emc(BxP2.getStack("mekanism:basic_control_circuit"),1);
+        emc(BxP2.getStack("mekanism:advanced_control_circuit"),3);
+        emc(BxP2.getStack("mekanism:advanced_control_circuit"),15);
+        emc(BxP2.getStack("mekanism:advanced_control_circuit"),96+15);
         emc(BxPItems.BX_INGOT,256);
         emc(BxPItems.BX_ENCH_INGOT,584039);
         emc(BxPItems.SX_INGOT,5);

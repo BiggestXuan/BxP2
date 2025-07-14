@@ -11,8 +11,6 @@ import slimeknights.tconstruct.library.tools.nbt.ToolStack;
 import slimeknights.tconstruct.library.tools.stat.IToolStat;
 import slimeknights.tconstruct.library.tools.stat.ToolStats;
 
-import java.util.Optional;
-
 /**
  * @Author Biggest_Xuan
  * 2025/5/28

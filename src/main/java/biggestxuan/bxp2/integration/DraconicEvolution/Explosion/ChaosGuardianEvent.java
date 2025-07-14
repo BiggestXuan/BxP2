@@ -2,11 +2,9 @@ package biggestxuan.bxp2.integration.DraconicEvolution.Explosion;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.utils.Utils;
-import com.brandon3055.draconicevolution.blocks.reactor.ProcessExplosion;
 import com.brandon3055.draconicevolution.entity.guardian.DraconicGuardianEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -33,7 +31,7 @@ public class ChaosGuardianEvent {
             explosionWorld = (ServerLevel) entity.level();
             BlockPos pos = entity.blockPosition();
             explosionPos = new BlockPos(pos.getX(),64,pos.getZ());
-            delayTicks = 600;
+            delayTicks = 900;
             for(Player player : world.players()){
                 Utils.sendMessage(player,BxP2.tr("bxp2.chaos_island.warning",pos.getX(),pos.getZ()).withStyle(ChatFormatting.RED));
             }

@@ -40,11 +40,7 @@ public class BxPItems {
             return 900;
         }
     });
-    public static final RegistryObject<Item> BX_SUPER_INGOT = ITEMS.register("bx_super_ingot",() -> new BxPItem(Rarity.EPIC){
-        public int getBXValue(ItemStack stack) {
-            return 30000;
-        }
-    });
+    public static final RegistryObject<Item> BX_SUPER_INGOT = ITEMS.register("bx_super_ingot",() -> new BxPItem(Rarity.EPIC));
     public static final RegistryObject<Item> SX_INGOT = ITEMS.register("sx_ingot",() -> new BxPItem(25));
     public static final RegistryObject<Item> BX_GOLD_INGOT = ITEMS.register("bx_gold_ingot",() -> new BxPItem(1){
         @Override
@@ -133,6 +129,7 @@ public class BxPItems {
     public static final RegistryObject<Item> adaminite_ingot = ITEMS.register("adaminite_ingot",WaitingItem.ThuamcraftItem::new);
     public static final RegistryObject<Item> mithminite_ingot = ITEMS.register("mithminite_ingot",WaitingItem.ThuamcraftItem::new);
 
+    public static final RegistryObject<Item> ATM = registryBlock("atm",BxPBlocks.ATM);
     public static final RegistryObject<Item> BXSHOP = ITEMS.register("bx_shop", BxPItem.BXShopItem::new);
     public static final RegistryObject<Item> MEKA_CUBE = ITEMS.register("meka_cube",() -> new BxPItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> XP_GEM = ITEMS.register("xp_gem",BxPItem::new);

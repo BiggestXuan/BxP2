@@ -1,7 +1,9 @@
 package biggestxuan.bxp2.mixin;
 
+import biggestxuan.bxp2.fluids.BxPFluids;
 import biggestxuan.bxp2.items.BxPItems;
 import biggestxuan.bxp2.utils.WorldUtils;
+import com.fxd927.mekanismscience.common.registries.MSFluids;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.Entity;
@@ -10,6 +12,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -37,6 +40,7 @@ public abstract class ItemEntityMixin extends Entity {
             if(!world.isClientSide){
                 float level = 10 + 0.1F * this.getItem().getCount();
                 world.explode(null,getX(),getY(),getZ(),level, Level.ExplosionInteraction.MOB);
+                world.setBlock(getOnPos(), MSFluids.POTASSIUM_HYDROXIDE.getBlock().defaultBlockState(),1);
                 remove(RemovalReason.KILLED);
             }
         }

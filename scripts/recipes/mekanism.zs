@@ -231,7 +231,7 @@ if(CrTManager.isDevMode()){
 }
 removeCompressRecipe("mekanism_extras:processing/enriched_spectrum/from_enriched_shining");
 removeNuclearRecipe("mekanism_extras:nucleosynthesizing/enriched_shining");
-DEFusionRecipe(<item:mekanism_extras:enriched_thermonuclear> * 4,[bi,bi,ac,ac,ac,ac,<item:mysticalagradditions:insanium_essence>],es*4,2,3000000000);
+DEFusionRecipe(<item:mekanism_extras:enriched_thermonuclear>,[bi,bi,ac,ac,ac,ac,<item:mysticalagradditions:insanium_essence>],es*4,2,3000000000);
 removeReactionRecipe("mekanism_extras:reaction/enriched_radiance_gasification/enriched_thermonuclear");
 removeReactionRecipe("mekanism_extras:reaction/molten_thermonuclear_gasification/molten_thermonuclear");
 removeCompressRecipe("mekanism_extras:processing/dust_radiance/from_glowstone");
@@ -245,7 +245,7 @@ enrichRecipe(<item:minecraft:ender_pearl>,<item:enderio:pulsating_alloy_nugget> 
 
 infusionConversion(bsi,<infuse_type:bxp2:bx> * 10);
 infusionConversion(<item:bxp2:enriched_bx>,<infuse_type:bxp2:bx> * 80);
-
+activatingRecipe(<gas:mekanismscience:americium>,<gas:bxp2:curium>);
 removeInfusionRecipe("mekanism:control_circuit/basic");
 removeInfusionRecipe("mekanism:metallurgic_infusing/alloy/infused");
 removeInfusionRecipe("mekanism:metallurgic_infusing/alloy/atomic");
@@ -287,11 +287,13 @@ addCraftRecipe([
 ],<item:mekanism:upgrade_gas> * 32,"mek");
 
 var et = <item:mekanism:energy_tablet>;
+/*
 addCraftRecipe([
     [bsi,et,bsi],
-    [et,<item:mekanism:elite_combining_factory>,et],
+    [et,<item:bxp2:bx_unstable_ingot>,et],
     [bsi,et,bsi]
 ],<item:mbd2:bx_furnace>,"mek");
+*/
 
 for i in CrTManager.getAllCycleRecipe(){
     //combineCycleRecipe(i);
@@ -346,7 +348,7 @@ var installer = [
     <item:mekanism_extras:supreme_tier_installer>,
     <item:mekanism_extras:cosmic_tier_installer>,
     <item:mekanism_extras:infinite_tier_installer>
-] as IIngredient[];
+] as IItemStack[];
 
 var alloy = [
     <item:enderio:energetic_alloy_block>,
@@ -390,13 +392,15 @@ for i in 0 .. installer.length{
                 [alloy[i-1],control[i-1],alloy[i-1]],
             ],installer[i],"installer"
         );
+        var er as IItemStack= installer[i]*2;
+        addShaplessRecipe([installer[i]],er,"");
     }
 }
 
 reactionRecipe(<fluid:minecraft:water> * 100,<gas:mekanism:water_vapor>*100,<item:minecraft:ender_pearl>,<item:minecraft:shulker_shell>,<gas:mekanism:oxygen>*30,3);
 reactionRecipe(<fluid:minecraft:water> * 100,<gas:bxp2:propylamine> * 100,<item:minecraft:nether_star>,<item:bxp2:oumang_ingot>,<gas:mekanism:ethene>*100,10);
-activatingRecipe(<gas:mekanismscience:americium>,<gas:bxp2:activated_americium>);
-activatingRecipe(<gas:bxp2:activated_curium>,<gas:bxp2:curium>);
+//activatingRecipe(<gas:mekanismscience:americium>,<gas:bxp2:activated_americium>);
+//activatingRecipe(<gas:bxp2:activated_curium>,<gas:bxp2:curium>);
 chemicalInfusionRecipe(<gas:mekanism_extras:silicon_tetrafluoride>,<gas:mekanism:superheated_sodium>,<gas:bxp2:sodium_fluosilicate> * 2);
 chemicalInfusionRecipe(<gas:mekanism:uranium_hexafluoride>,<gas:bxp2:sodium_fluosilicate>,<gas:bxp2:uranyl_fluosilicate> * 2);
 removeChemicalInfusionRecipe("mekanism_extras:processing/fluorinated_silicon_uranium_fuel");
@@ -405,11 +409,12 @@ dissolutionRecipe(<tag:items:forge:silicon>,<gas:mekanism:hydrofluoric_acid>,<ga
 //removeNuclearRecipe("mekanism_extras:naquadah_reactor/casing");
 removeCraftRecipe(<item:mekanism:sps_casing>);
 removeCraftRecipe(<item:mekanismgenerators:fusion_reactor_frame>);
+var aCount as int = difficulty() == 3 ? 1 : 4;
 modifyCraftRecipe([
     [<item:mekanism:ingot_lead>,<item:mekanism:elite_control_circuit>,<item:mekanism:ingot_lead>],
     [<item:bxp2:stainless_steel_ingot>,<item:immersiveengineering:ingot_hop_graphite>,<item:bxp2:stainless_steel_ingot>],
     [<item:bxp2:stainless_steel_ingot>,<item:immersiveengineering:ingot_hop_graphite>,<item:bxp2:stainless_steel_ingot>]
-],<item:mekanismgenerators:control_rod_assembly>,"bxp");
+],<item:mekanismgenerators:control_rod_assembly> * aCount,"bxp");
 
 public function advancedReaction(input as IIngredient,output as IItemStack) as void{
     reactionRecipe(<fluid:mekanism:heavy_water>*100,<gas:mekanism_extras:polonium-208>*50,input,output,<gas:mekanism:spent_nuclear_waste> * 100,5);
@@ -426,7 +431,7 @@ public function gasTankRecipe(input as IIngredient,output as IItemStack) as void
         [qq,qq,qq]
     ],output,"bxp");
 }
-
+/*
 var l = [
     <item:minecraft:emerald_block>,
     <item:minecraft:redstone_block>,
@@ -439,3 +444,10 @@ var l = [
 for i in 0 .. 3{
     gasTankRecipe(l[i],l[i+3]);
 }
+*/
+
+modifyCraftRecipe([
+    [a,<item:minecraft:glass>,a],
+    [<item:minecraft:glass>,<item:mekanism:ingot_steel>,<item:minecraft:glass>],
+    [a,<item:minecraft:glass>,a]
+],<item:mekanism:structural_glass>*4,"");

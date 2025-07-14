@@ -1,0 +1,36 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item":"bxp2:cai_seed"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "item":"bxp2:ou_gold_ingot"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "item":"mekanism_extras:alloy_thermonuclear"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "bxp2:ench_cai_seed",
+      "count": 1
+    }
+  ],
+  "energy": 12000
+}

@@ -2,6 +2,7 @@ package biggestxuan.bxp2.utils;
 
 import biggestxuan.bxp2.Config;
 import biggestxuan.bxp2.api.BxPApi;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.ServerStatsCounter;
 import net.minecraft.stats.Stats;
@@ -37,8 +38,9 @@ public final class MobUtils {
 
     public static double getAvgGameDay(LivingEntity living){
         Level level = living.level();
+        if(level.isClientSide) return 0F;
         AABB aabb = new AABB(living.getX() - 128, living.getY() - 128, living.getZ() - 128, living.getX() + 128, living.getY() + 128, living.getZ() + 128);
-        List<Player> list = level.getNearbyPlayers(TargetingConditions.DEFAULT,living,aabb);
+        List<ServerPlayer> list = ((ServerLevel) level).getServer().getPlayerList().getPlayers();
         if(Config.difficulty == 3){
             long time = 0;
             int pCount = 0;

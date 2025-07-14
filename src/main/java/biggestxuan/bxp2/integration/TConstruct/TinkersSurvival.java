@@ -2,6 +2,7 @@ package biggestxuan.bxp2.integration.TConstruct;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
+import com.brandon3055.draconicevolution.items.equipment.IModularArmor;
 import mekanism.common.item.gear.ItemMekaTool;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.entity.player.Player;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
 import slimeknights.tconstruct.library.tools.item.armor.ModifiableArmorItem;
 import vazkii.botania.common.item.equipment.tool.terrasteel.TerraShattererItem;
+import vectorwing.farmersdelight.common.item.KnifeItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -159,15 +161,18 @@ public class  TinkersSurvival {
         if(BxP2.devMode || player.isCreative() || !Config.TinkersSurvival){
             return false;
         }
+        if(item instanceof KnifeItem){
+            return false;
+        }
         if(item instanceof TerraShattererItem){
             return false; // Botania
         }
         if(item instanceof ItemMekaTool){
             return false; //Mek
         }
-        //if(item instanceof IReaperItem || item instanceof IModularArmor){
-        //    return false; //DE
-        //}
+        if(item instanceof IModularArmor){
+            return false; //DE
+        }
         if(item instanceof TieredItem && !(item instanceof ModifiableItem)){
             return true;
         }

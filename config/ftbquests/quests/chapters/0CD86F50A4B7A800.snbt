@@ -284,8 +284,9 @@
 		}
 		{
 			description: [
-				"成为猎人最高获得接近50%伤害增幅，吸血鬼最高获得200%左右伤害增幅～ \\n"
-				"吸血鬼白天无法行动，整合包在前期不会提供防晒。\\n"
+				"成为猎人最高获得接近50%伤害增幅，狼人最高可以获得100%伤害增幅（野兽模式下空手最高获得400%伤害增幅），吸血鬼最高获得200%左右伤害增幅 \\n"
+				"吸血鬼白天无法行动，只有你完成裂变反应堆后才能持续防晒。\\n"
+				"狼人只能食用肉类。\\n"
 				"此外增加了吸血鬼和猎人专用的匠魂武器，可以按需使用。"
 			]
 			id: "1EE2729C31EF9DDE"
@@ -305,6 +306,7 @@
 				title: "你想成为吸血鬼还是猎杀？"
 				type: "checkmark"
 			}]
+			title: "你想成为什么？"
 			x: -2.5d
 			y: 1.0d
 		}
@@ -663,9 +665,41 @@
 				type: "item"
 			}]
 			title: "吸血鬼的福音"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EE2729C31EF9DDE"]
+			id: "72264B941DF6D1B2"
+			tasks: [{
+				entity: "werewolves:human_werewolf"
+				id: "49BB4D035D1525F7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "为了你我变成狼人模样"
 			x: -2.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["72264B941DF6D1B2"]
+			id: "6EFDBCCC6D9CF4DC"
+			tasks: [
+				{
+					id: "5A8378C9F540628F"
+					item: "werewolves:stone_altar"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "66B21ED536CE616C"
+					item: { Count: 4, id: "werewolves:stone_altar_fire_bowl" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -4.0d
+		}
 	]
-	title: "选择你的阵营！"
+	title: "血族传说"
 }

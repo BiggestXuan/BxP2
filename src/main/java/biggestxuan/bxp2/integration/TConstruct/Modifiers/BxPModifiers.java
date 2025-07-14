@@ -14,11 +14,13 @@ import biggestxuan.bxp2.integration.TConstruct.Modifiers.LOL.GuiSuoReckoning;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationAddModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationDamageModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mekanism.RadiationProtectModifier;
+import biggestxuan.bxp2.integration.TConstruct.Modifiers.Mysticalagriculture.SoulModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.ProjectE.EMCKillerModifier;
 import biggestxuan.bxp2.integration.TConstruct.Modifiers.Vampirism.DrinkBloodModifier;
 import com.brandon3055.brandonscore.api.TechLevel;
 import de.teamlapen.vampirism.core.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 import slimeknights.tconstruct.library.tools.SlotType;
@@ -52,7 +54,7 @@ public class BxPModifiers {
     public static StaticModifier<DEDamageModifier> DragonDamageModifier = REGISTER.register("dragon_damage",() -> new DEDamageModifier(4f, TechLevel.DRACONIC));
     public static StaticModifier<DEDamageModifier> WyvernDamageModifier = REGISTER.register("wyvern_damage",() -> new DEDamageModifier(12f,TechLevel.WYVERN));
     public static StaticModifier<DEDamageModifier> AwakenedDamageModifier = REGISTER.register("awakened_damage",() -> new DEDamageModifier(36f,TechLevel.DRACONIUM));
-    public static StaticModifier<DEDamageModifier> ChaoticDamageModifier = REGISTER.register("chaotic_damage",() -> new DEDamageModifier(108f,TechLevel.CHAOTIC));
+    public static StaticModifier<DEDamageModifier> ChaoticDamageModifier = REGISTER.register("chaotic_damage",() -> new DEDamageModifier.ChaoticDamageModifier(108f,TechLevel.CHAOTIC));
     public static StaticModifier<BlackDeathModifier> BlackDeath = REGISTER.register("black_death",BlackDeathModifier::new);
     public static StaticModifier<BaseMeleeDamageModifier> PLAGUEModifier = REGISTER.register("plague_damage",PlagueDamageModifier::new);
     public static StaticModifier<CreativeModifier> CREATIVE_ABILITY = REGISTER.register("creative_ability",() -> new CreativeModifier(SlotType.ABILITY));
@@ -67,7 +69,7 @@ public class BxPModifiers {
     public static StaticModifier<DrinkBloodModifier> DrinkBlood = REGISTER.register("drink_blood",DrinkBloodModifier::new);
     public static StaticModifier<FlyModifier> Fly = REGISTER.register("fly",FlyModifier::new);
     public static StaticModifier<OmiteModifier> omite = REGISTER.register("omite",OmiteModifier::new);
-    public static StaticModifier<BaseEffectModifier> SunShineProtect = REGISTER.register("sunshine_protect",() -> new BaseEffectModifier(new MobEffectInstance(ModEffects.SUNSCREEN.get(),200,6,false,false)));
+    public static StaticModifier<BaseEffectModifier> SunShineProtect = REGISTER.register("sunshine_protect",() -> new BaseEffectModifier(new MobEffectInstance(ModEffects.SUNSCREEN.get(),1000,5,true,true)));
     public static StaticModifier<HalfDamageModifier> HalfDamage = REGISTER.register("half_damage",HalfDamageModifier::new);
     public static StaticModifier<LevelBufferModifier> WeaponLevelModifier = REGISTER.register("weapon_level", LevelBufferModifier.WeaponLevelModifier::new);
     public static StaticModifier<LevelBufferModifier> ToolLevelModifier = REGISTER.register("tool_level", LevelBufferModifier.ToolLevelModifier::new);
@@ -79,4 +81,5 @@ public class BxPModifiers {
     public static StaticModifier<LimitLevelModifier> Knockback_resistance = REGISTER.register("knockback_resistance", KnockbackModifier::new);
     public static StaticModifier<BaseMeleeDamageModifier> EMCKiller = REGISTER.register("emc_killer", EMCKillerModifier::new);
     public static StaticModifier<MekaArmorModifier> MekaArmor = REGISTER.register("meka_armor",MekaArmorModifier::new);
+    public static StaticModifier<Modifier> SOUL = REGISTER.register("soul", SoulModifier::new);
 }

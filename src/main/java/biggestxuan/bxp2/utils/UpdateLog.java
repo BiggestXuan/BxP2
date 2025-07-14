@@ -43,6 +43,9 @@ public record UpdateLog(String version,int add,int modify,int fix,int other,Stri
         A30(new UpdateLog("0.5.0",5,6,2,0,"2025-5-14")),
         A31(new UpdateLog("0.6.0",14,9,2,0,"2025-6-15")),
         A32(new UpdateLog("0.7.0",9,5,5,0,"2025-6-30")),
+        A33(new UpdateLog("0.7.1",0,2,1,0,"2025-7-1")),
+        A34(new UpdateLog("0.7.2",1,10,1,0,"2025-7-2")),
+        A35(new UpdateLog("1.0.0-pre1",11,23,5,0,"2025-7-13")),
         ;
         public final UpdateLog log;
 

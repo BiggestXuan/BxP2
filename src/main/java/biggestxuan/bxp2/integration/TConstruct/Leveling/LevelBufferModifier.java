@@ -103,19 +103,24 @@ public abstract class LevelBufferModifier extends Modifier implements ToolStatsM
         protected float getPickSpeed(float v,int level){
             return v * getLevelRate(new float[]{0.05f,0.06f,0.08f,0.1f,0.13f,0.15f,0.23f},level);
         }
+
+        @Override
+        protected float getDurability(float v,int level){
+            return  v * getLevelRate(new float[]{0.05f,0.08f,0.13f,0.2f,0.26f,0.35f,0.5f},level);
+        }
     }
 
     public static class ArmorLevelModifier extends LevelBufferModifier{
         protected float getArmor(float v,int level){
-            return v * getLevelRate(new float[]{0.01f,0.013f,0.016f,0.02f,0.022f,0.027f,0.033f},level);
+            return v * getLevelRate(new float[]{0.013f,0.015f,0.018f,0.022f,0.025f,0.033f,0.038f},level);
         }
 
         protected float getArmorToughness(float v,int level){
-            return v * getLevelRate(new float[]{0.005f,0.006f,0.008f,0.01f,0.013f,0.015f,0.023f},level);
+            return v * getLevelRate(new float[]{0.003f,0.004f,0.005f,0.007f,0.01f,0.015f,0.023f},level);
         }
 
         protected float getKnockbackResistance(float v,int level){
-            return v * getLevelRate(new float[]{0.005f,0.006f,0.008f,0.01f,0.013f,0.015f,0.023f},level);
+            return v * getLevelRate(new float[]{0.003f,0.004f,0.005f,0.008f,0.011f,0.015f,0.023f},level);
         }
     }
 }

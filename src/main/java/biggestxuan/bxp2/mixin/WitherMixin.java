@@ -61,7 +61,7 @@ public abstract class WitherMixin extends Monster {
             total = Math.round(total * 1.5F);
             ItemStack stack = BxP2.getStack("mysticalagriculture:nether_star_essence");
 
-            int count = total * 3;
+            int count = total;
             if(count <= 64){
                 stack.setCount(count);
                 ItemEntity entity = new ItemEntity(level(),getX(),getY(),getZ(),stack.copy());

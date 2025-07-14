@@ -1,6 +1,31 @@
 [
   {
     "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1751801514215,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/w670Yp2Esh"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Biggest_Xuan",
+      "uniqueId": "29328b6c-6f03-4fba-9436-678b696e8aeb"
+    },
+    "time": 1751788402500,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/0yc9z9T0jz"
+    }
+  },
+  {
+    "user": {
       "type": "player",
       "name": "Biggest_Xuan",
       "uniqueId": "29328b6c-6f03-4fba-9436-678b696e8aeb"

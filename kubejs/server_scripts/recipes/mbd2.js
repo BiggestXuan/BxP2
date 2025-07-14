@@ -92,6 +92,7 @@ ServerEvents.recipes((event) => {
         })
     })
     addEasyFissionRecipe(event,BxP2.getEasyFissionData())
+    /*
     BxP2.getBXIngotRecipe().forEach((a,b) => {
         b.forEach((k,v) => {
             k.forEach((q,z) => {
@@ -109,6 +110,6 @@ ServerEvents.recipes((event) => {
                 addBXFuranceRecipe(event,q,v,z,a)
             })
         })
-    })
-    addBXFuranceRecipe(event,['thermal:gold_gear', 'thermal:copper_gear', 'thermal:tin_gear', 'thermal:lead_gear', 'thermal:silver_gear', 'thermal:nickel_gear', 'thermal:steel_gear', 'thermal:rose_gold_gear', 'thermal:bronze_gear', 'thermal:electrum_gear', 'thermal:invar_gear', 'thermal:constantan_gear', 'thermal:signalum_gear', 'thermal:lumium_gear', 'thermal:diamond_gear', 'thermal:emerald_gear'],'bxp2:meaning_less',[6666666,1024,1],"test")
+    })*/
+    addBXUnstableFurnaceRecipe(event,['thermal:gold_gear', 'thermal:copper_gear', 'thermal:tin_gear', 'thermal:lead_gear', 'thermal:silver_gear', 'thermal:nickel_gear', 'thermal:steel_gear', 'thermal:rose_gold_gear', 'thermal:bronze_gear'],'bxp2:meaning_less',[6666666,1024,1,1000],"bxp2_test")
 })

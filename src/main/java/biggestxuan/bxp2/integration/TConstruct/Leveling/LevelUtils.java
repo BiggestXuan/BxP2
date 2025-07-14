@@ -148,26 +148,20 @@ public final class LevelUtils {
         //new ToolLevelBuffer(stack).addDamage(1f,player);
         ToolStack tool = ToolStack.from(stack);
         ToolDataNBT toolDataNBT = tool.getPersistentData();
+        if(level % 4 == 0){
+            toolDataNBT.addSlots(SlotType.ABILITY,1);
+        }
+        if(level % 4 == 0){
+            toolDataNBT.addSlots(SlotType.UPGRADE,1);
+        }
         if(stack.is(TinkerTags.Items.MELEE_PRIMARY)){
             tool.addModifier(BxPModifiers.WeaponLevelModifier.getId(), + 1);
-            if(level % 4 == 0){
-                toolDataNBT.addSlots(SlotType.UPGRADE,1);
-            }
-            if(level % 5 == 0){
-                toolDataNBT.addSlots(SlotType.ABILITY,1);
-            }
             if(level % 6 == 0){
                 toolDataNBT.addSlots(SlotType.SOUL,1);
             }
         }
         else if(stack.is(TinkerTags.Items.HARVEST_PRIMARY)){
             tool.addModifier(BxPModifiers.ToolLevelModifier.getId(), + 1);
-            if(level % 4 == 0){
-                toolDataNBT.addSlots(SlotType.UPGRADE,1);
-            }
-            if(level % 5 == 0){
-                toolDataNBT.addSlots(SlotType.ABILITY,1);
-            }
         }
         else if(stack.is(TinkerTags.Items.ARMOR)){
             tool.addModifier(BxPModifiers.ArmorLevelModifier.getId(), + 1);
@@ -223,7 +217,7 @@ public final class LevelUtils {
 
     public static void pickXp(ItemStack stack, BlockState state, Player player){
         int parse = BxPApi.getPlayerCap(player).getPhase();
-        addToolXp(stack,5L * parse,player);
+        addToolXp(stack,5L * (parse + 1),player);
     }
 
     public static void getDamage(ItemStack stack, DamageSource source,Player player,float damage){

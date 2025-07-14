@@ -70,7 +70,7 @@ public final class ShopUtils {
             }
         }
         if(shopGoods == null || player == null){
-            throw new BxPNoGoodsException("玩家发送了无效的购买商品数据包！");
+            BxP2.LOGGER.error("玩家发送了无效的购买商品数据包！");
         }
         if(canBuyGoods(shopGoods,player)){
             ShopGoods finalShopGoods = shopGoods;
@@ -108,6 +108,7 @@ public final class ShopUtils {
             cap.setMoney(cap.getMoney() - drop);
             CompoundTag tag = stack.getOrCreateTag();
             tag.putFloat("money",drop);
+            tag.putBoolean("noLoss",true);
             Utils.sendMessage(player, BxP2.tr("bxp2.message.death",String.format("%.2f",drop)));
         }
         return stack;

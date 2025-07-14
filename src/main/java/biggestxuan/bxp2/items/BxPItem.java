@@ -52,13 +52,6 @@ public class BxPItem extends Item implements IBXItem {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag p_41424_) {
         super.appendHoverText(stack,level,list, p_41424_);
-        if(level.isClientSide){
-            //if(Minecraft.getInstance().player != null){
-            //    if(MekaTinkerUtils.isAllMekaArmor(Minecraft.getInstance().player) && getBXValue(stack) > 0){
-            //        list.add(BxP2.tr("tooltip.tinker.bx_value",getBXValue(stack)));
-            //    }
-            //}
-        }
     }
 
     public static class BxPFoodItem extends BxPItem{

@@ -32,7 +32,7 @@ public class LimitLevelModifier extends Modifier implements ValidateModifierHook
 
     @Override
     public @Nullable Component validate(IToolStackView iToolStackView, ModifierEntry modifierEntry) {
-        if(modifierEntry.getLevel()-1>= maxLevel){
+        if((modifierEntry.getLevel()-1)>= maxLevel){
             return BxP2.tr("tooltip.tconstruct.max_level");
         }
         return null;

@@ -60,6 +60,7 @@ public class JEIPlugin implements IModPlugin {
                 if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("fuel")) continue;
                 if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("transmutation")) continue;
                 if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("matter")) continue;
+                if(ForgeRegistries.ITEMS.getKey(item).getPath().contains("condenser")) continue;
             }
             hide.add(item.getDefaultInstance());
         }

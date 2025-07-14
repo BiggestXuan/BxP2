@@ -20,6 +20,10 @@ public class BxPBlock extends Block {
         super(Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops().strength(3.0F, 30.0F).sound(SoundType.METAL));
     }
 
+    public BxPBlock(){
+        this("");
+    }
+
     @Override
     public List<ItemStack> getDrops(BlockState p_287732_, LootParams.Builder p_287596_) {
         List<ItemStack> list = new ArrayList<>();

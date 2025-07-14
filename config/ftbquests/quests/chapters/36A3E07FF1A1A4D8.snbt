@@ -364,29 +364,6 @@
 			x: 7.5d
 			y: 5.0d
 		}
-		{
-			id: "2E3BDC8178D59528"
-			rewards: [{
-				id: "4A01B006A326E6FC"
-				item: {
-					Count: 1
-					id: "bxp2:money"
-					tag: {
-						money: 0.4f
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "你真来啊"
-			tasks: [{
-				id: "1A1C0F3C99B63E9F"
-				item: "crossroads:poison_vodka"
-				type: "item"
-			}]
-			title: "这不对吧"
-			x: -2.5d
-			y: 0.0d
-		}
 	]
 	title: "未成年请勿饮酒"
 }

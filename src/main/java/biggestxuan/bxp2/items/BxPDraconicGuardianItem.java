@@ -45,8 +45,8 @@ public abstract class BxPDraconicGuardianItem extends BxPItem{
             return InteractionResultHolder.fail(stack);
         }
         if(doSomething(player,level,dragon)){
-            if(!BxP2.devMode){
-                player.getCooldowns().addCooldown(this,1200);
+            if(!BxP2.devMode || !player.isCreative()){
+                player.getCooldowns().addCooldown(this,400);
             }
             stack.shrink(1);
             return InteractionResultHolder.success(stack);

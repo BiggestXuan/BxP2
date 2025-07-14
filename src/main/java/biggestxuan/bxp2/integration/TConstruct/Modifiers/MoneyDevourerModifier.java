@@ -36,10 +36,10 @@ public class MoneyDevourerModifier extends Modifier implements MeleeDamageModifi
             }
             if(toolAttackContext.getAttacker() instanceof Player player){
                 float heal = v1 * 0.05F;
-                if(player.getMaxHealth() - player.getHealth() > heal && tag.getFloat(MONEY_ID) > 0f){
+                if(player.getMaxHealth() - player.getHealth() < heal && tag.getFloat(MONEY_ID) > 0f){
                     float money = tag.getFloat(MONEY_ID) * 0.15f * (v1 / target.getMaxHealth());
                     tag.putFloat(MONEY_ID,Math.max(0,tag.getFloat(MONEY_ID) - money));
-                    MoneyItem.dropMoney(target,Math.min(money,0.15f * (1 + 0.1F * modifierEntry.getLevel())));
+                    MoneyItem.dropMoney(target,Math.min(money,0.15f * (1 + 0.1F * modifierEntry.getLevel())),true);
                 }
                 player.heal(heal);
             }

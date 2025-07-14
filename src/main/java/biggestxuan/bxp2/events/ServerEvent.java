@@ -2,22 +2,23 @@ package biggestxuan.bxp2.events;
 
 import biggestxuan.bxp2.BxP2;
 import biggestxuan.bxp2.Config;
+import biggestxuan.bxp2.blocks.BxPBlocks;
+import biggestxuan.bxp2.blocks.TileEntity.ATMTileEntity;
 import biggestxuan.bxp2.capability.BxPCapabilityProvider;
 import biggestxuan.bxp2.integration.DraconicEvolution.Explosion.ChaosGuardianEvent;
 import biggestxuan.bxp2.utils.Utils;
 import com.brandon3055.brandonscore.handlers.ProcessHandler;
 import com.brandon3055.draconicevolution.blocks.reactor.ProcessExplosion;
-import moze_intel.projecte.emc.EMCMappingHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.client.event.RecipesUpdatedEvent;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.server.ServerStartedEvent;
-import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 
 /**
  * @Author Biggest_Xuan

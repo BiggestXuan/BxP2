@@ -1,9 +1,13 @@
 package biggestxuan.bxp2;
 
 import biggestxuan.bxp2.blocks.BxPBlocks;
+import biggestxuan.bxp2.blocks.TileEntity.BxPTileEntities;
 import biggestxuan.bxp2.capability.IBxPCapability;
 import biggestxuan.bxp2.client.ClientCommon;
+import biggestxuan.bxp2.client.screen.ATMScreen;
+import biggestxuan.bxp2.container.BxPContainers;
 import biggestxuan.bxp2.creativeTabs.BxPCreativeTabs;
+import biggestxuan.bxp2.damage.BxPDamageType;
 import biggestxuan.bxp2.effects.BxPEffects;
 import biggestxuan.bxp2.fluids.BxPFluids;
 import biggestxuan.bxp2.integration.Mekanism.BxPGases;
@@ -18,6 +22,7 @@ import biggestxuan.bxp2.utils.CalendarUtils;
 import com.brandon3055.brandonscore.BrandonsCore;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -42,13 +47,15 @@ import org.slf4j.Logger;
 
 import javax.annotation.Nullable;
 
+import static biggestxuan.bxp2.container.BxPContainers.ATM_CONTAINER;
+
 
 @Mod(BxP2.MODID)
 public class BxP2
 {
-    public static boolean devMode = false;
+    public static boolean devMode = true;
     public static final String MODID = "bxp2";
-    public static final String VERSION = "Beta-0.7.0";
+    public static final String VERSION = "1.0.0";
     public static final int ID = 1;
     public static boolean isSkyBlock = false;
     public static final Logger LOGGER = LogUtils.getLogger();
@@ -71,6 +78,9 @@ public class BxP2
         BxPGases.GASES.register(modEventBus);
         BxPMekFluids.FLUID.register(modEventBus);
         BxPModules.MODULES.register(modEventBus);
+        BxPTileEntities.TILES.register(modEventBus);
+        BxPContainers.CONTAINERS.register(modEventBus);
+        //BxPDamageType.DAMAGE_TYPES.register(modEventBus);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         if(devMode){
             BrandonsCore.inDev = true;
@@ -97,6 +107,7 @@ public class BxP2
             Minecraft.getInstance().execute(() -> {
                 Minecraft.getInstance().getWindow().setTitle(ClientCommon.TITLE);
             });
+            MenuScreens.register(ATM_CONTAINER.get(), ATMScreen::new);
             //event.enqueueWork(() -> {
             //    ItemProperties.register(BxPItems.ENCH_SDBZ.get(), MODRL("glint"), (stack, level, entity, seed) -> 1.0f);
             //});

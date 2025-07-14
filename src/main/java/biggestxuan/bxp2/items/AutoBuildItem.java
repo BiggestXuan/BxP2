@@ -14,11 +14,13 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
@@ -46,24 +48,27 @@ public class AutoBuildItem extends BxPItem{
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        super.use(level,player,hand);
-        ItemStack stack = player.getItemInHand(hand);
-        if(!level.isClientSide){
-            BuilderWrapper wrapper = getBuilder(stack);
-            if(wrapper != null){
-                StructureBuilder builder = wrapper.builder;
-                StructureBuilderAccessor accessor = (StructureBuilderAccessor) builder;
-                if(builder instanceof IMekBuildAccessor accessor1){
-                    accessor1.publicBuild(level,player.blockPosition(),false);
-                }else{
-                    accessor.build(level,player.blockPosition(),false);
+    public InteractionResult useOn(UseOnContext context) {
+        Player player = context.getPlayer();
+        if(player != null){
+            ItemStack stack = player.getItemInHand(context.getHand());
+            Level level = player.level();
+            if(!level.isClientSide){
+                BuilderWrapper wrapper = getBuilder(stack);
+                if(wrapper != null){
+                    StructureBuilder builder = wrapper.builder;
+                    StructureBuilderAccessor accessor = (StructureBuilderAccessor) builder;
+                    if(builder instanceof IMekBuildAccessor accessor1){
+                        accessor1.publicBuild(level,player.blockPosition(),false);
+                    }else{
+                        accessor.build(level,player.blockPosition(),false);
+                    }
+                    stack.shrink(1);
+                    return InteractionResult.CONSUME;
                 }
-                stack.shrink(1);
-                return InteractionResultHolder.consume(stack);
             }
         }
-        return InteractionResultHolder.fail(stack);
+        return InteractionResult.FAIL;
     }
 
     @Nullable

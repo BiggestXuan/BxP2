@@ -6,6 +6,7 @@ import biggestxuan.bxp2.network.toClient.CapabilityPacket;
 import biggestxuan.bxp2.network.toServer.BuyGoodsPacket;
 import biggestxuan.bxp2.network.toServer.ChangeDifficultyPacket;
 import biggestxuan.bxp2.network.toServer.ClientStatePacket;
+import biggestxuan.bxp2.network.toServer.WithdrawPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.PacketDistributor;
@@ -56,6 +57,13 @@ public class PacketHandler {
                 ClientStatePacket::decode,
                 ClientStatePacket::handle
         );
+        HANDLER.registerMessage(
+                ++id,
+                WithdrawPacket.class,
+                WithdrawPacket::encode,
+                WithdrawPacket::decode,
+                WithdrawPacket::handle
+        );
 
     }
 
@@ -70,7 +78,7 @@ public class PacketHandler {
     public static void syncPlayerCapability(ServerPlayer player){
         player.getCapability(BxPCapabilityProvider.CAPABILITY).ifPresent(cap -> {
             CapabilityPacket packet = new CapabilityPacket(cap.getPhase(),cap.getMoney(),cap.getBuyCreativeCount());
-            PacketHandler.sendToClient(packet,player);
+            sendToClient(packet,player);
         });
     }
 }
